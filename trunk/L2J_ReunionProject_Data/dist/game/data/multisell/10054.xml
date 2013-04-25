@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Cloacks -->
+<list maintainEnchantment="false">
+  <!-- Knight's Cloak - Heavy Armor exclusive -->
+  <item id="1">
+    <ingredient id="40002" count="5000"/>
+    <production id="13687" count="1"/>
+  </item>
+  <!-- Holy Spirit's Cloak - Heavy Armor exclusive -->
+  <item id="6">
+    <ingredient id="40002" count="5000"/>
+    <production id="13890" count="1"/>
+  </item> 
+  <!-- Ancient Cloak - Heavy Armor exclusive -->
+  <item id="11">
+    <ingredient id="40002" count="5000"/>
+    <production id="14609" count="1"/>
+  </item>
+</list>

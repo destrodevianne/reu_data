@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- safe scrols -->
+
+
+<list maintainEnchantment="false">
+
+  <!-- safe armor -->
+  <item id="1">
+    <ingredient id="40000" count="2"/>
+    <production id="40109" count="1"/>
+  </item>
+ <!-- safe weapon -->
+  <item id="6">
+    <ingredient id="40000" count="4"/>
+    <production id="40104" count="1"/>
+  </item>
+</list>

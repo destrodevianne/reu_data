@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+
+<list maintainEnchantment="false">
+
+
+<item id="1">
+    <ingredient id="40002" count="80"/>
+    <production id="16171" count="1"/>
+  </item>
+
+
+ <item id="1">
+    <ingredient id="40002" count="80"/>
+    <production id="15592" count="1"/>
+  </item>
+
+  <item id="2">
+    <ingredient id="40002" count="80"/>
+    <production id="15589" count="1"/>
+  </item>
+
+  <item id="3">
+    <ingredient id="40002" count="80"/>
+    <production id="15595" count="1"/>
+  </item>
+
+  <item id="4">
+    <ingredient id="40002" count="80"/>
+    <production id="15598" count="1"/>
+  </item>
+
+  <item id="5">
+    <ingredient id="40002" count="80"/>
+    <production id="15601" count="1"/>
+  </item>
+
+   <!-- Vorpal Shield -->
+  <item id="16">
+  <ingredient id="40002" count="80"/>
+    <production id="15604" count="1"/>
+  </item>
+  
+</list>

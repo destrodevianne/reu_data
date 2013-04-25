@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- bracelets -->
+
+
+<list maintainEnchantment="false">
+
+   <!-- Iron Bracelet -->
+  <item id="58">
+    <production id="9589" count="1"/>     
+	<ingredient id="57" count="10000000"/>
+  </item>
+
+  <!-- Bronze Bracelet -->
+  <item id="59">
+    <production id="9590" count="1"/>     
+	<ingredient id="57" count="10000000"/>
+  </item>
+
+  <!-- Steel Bracelet -->
+  <item id="60">
+    <production id="9591" count="1"/>     
+	<ingredient id="40002" count="5000"/>
+  </item>
+
+  <!-- Mithril Bracelet -->
+  <item id="61">
+    <production id="9592" count="1"/>     
+	<ingredient id="40002" count="10000"/>
+  </item>
+<!--enhanced Mithril Bracelet -->
+  <item id="61">
+    <production id="10210" count="1"/>     
+	<ingredient id="40002" count="15000"/>
+  </item>
+
+</list>
