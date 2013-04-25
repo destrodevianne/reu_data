@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+
+<list maintainEnchantment="false">
+
+
+<item id="1">
+    <ingredient id="40002" count="60"/>
+    <production id="16176" count="1"/>
+  </item>
+
+
+ <item id="1">
+    <ingredient id="40002" count="60"/>
+    <production id="15611" count="1"/>
+  </item>
+
+  <item id="2">
+    <ingredient id="40002" count="60"/>
+    <production id="15608" count="1"/>
+  </item>
+
+  <item id="3">
+    <ingredient id="40002" count="60"/>
+    <production id="15614" count="1"/>
+  </item>
+
+  <item id="4">
+    <ingredient id="40002" count="60"/>
+    <production id="15617" count="1"/>
+  </item>
+
+  <item id="5">
+    <ingredient id="40002" count="60"/>
+    <production id="15620" count="1"/>
+  </item>
+
+  <!-- Moirai Sigil -->
+  <item id="17">
+      <ingredient id="40002" count="60"/>
+    <production id="16305" count="1"/>
+  </item>
+  
+</list>

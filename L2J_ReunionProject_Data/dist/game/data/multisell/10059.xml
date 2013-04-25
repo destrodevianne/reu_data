@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- gemstone -->
+
+
+<list maintainEnchantment="false">
+
+  <!-- aio gemstone -->
+  <item id="1">
+    <ingredient id="40000" count="25"/>
+    <production id="40001" count="1"/>
+  </item>
+</list>

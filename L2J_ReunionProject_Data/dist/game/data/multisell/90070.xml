@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- S-84 Weapon -->
+
+
+<list maintainEnchantment="false">
+
+  <!-- Vesper Avenger - PvP Health -->
+  <item id="1">
+    <ingredient id="40002" count="80"/>
+    <production id="14497" count="1"/>
+  </item>
+
+  <!-- Vesper Avenger - HP Drain -->
+  <item id="2">
+    <ingredient id="40002" count="80"/>
+    <production id="14496" count="1"/>
+  </item>
+
+  <!-- Vesper Avenger - HP Regeneration -->
+  <item id="3">
+    <ingredient id="40002" count="80"/>
+    <production id="14498" count="1"/>
+  </item>
+
+  <!-- Vesper Buster - Acumen -->
+  <item id="4">
+    <ingredient id="40002" count="80"/>
+    <production id="14485" count="1"/>
+  </item>
+
+  <!-- Vesper Buster - Magic Hold -->
+  <item id="80">
+    <ingredient id="40002" count="80"/>
+    <production id="14486" count="1"/>
+  </item>
+
+  <!-- Vesper Buster - Mana Up -->
+  <item id="6">
+    <ingredient id="40002" count="80"/>
+    <production id="14484" count="1"/>
+  </item>
+
+  <!-- Vesper Caster -->
+  <item id="7">
+    <ingredient id="40002" count="80"/>
+    <production id="14502" count="1"/>
+  </item>
+
+  <!-- Vesper Caster - Mana Up -->
+  <item id="8">
+    <ingredient id="40002" count="80"/>
+    <production id="14504" count="1"/>
+  </item>
+
+  <!-- Vesper Caster - MP Regeneration -->
+  <item id="9">
+    <ingredient id="40002" count="80"/>
+    <production id="14503" count="1"/>
+  </item>
+
+  <!-- Vesper Cutter -->
+  <item id="10">
+    <ingredient id="40002" count="80"/>
+    <production id="14480" count="1"/>
+  </item>
+
+  <!-- Vesper Cutter - Haste -->
+  <item id="11">
+    <ingredient id="40002" count="80"/>
+    <production id="14478" count="1"/>
+  </item>
+
+  <!-- Vesper Cutter - Health -->
+  <item id="12">
+    <ingredient id="40002" count="80"/>
+    <production id="14479" count="1"/>
+  </item>
+
+  <!-- Vesper Fighter - Critical Stun -->
+  <item id="13">
+    <ingredient id="40002" count="80"/>
+    <production id="14492" count="1"/>
+  </item>
+
+  <!-- Vesper Fighter - Focus -->
+  <item id="14">
+    <ingredient id="40002" count="80"/>
+    <production id="14490" count="1"/>
+  </item>
+
+  <!-- Vesper Fighter - Health -->
+  <item id="15">
+    <ingredient id="40002" count="80"/>
+    <production id="14491" count="1"/>
+  </item>
+
+  <!-- Vesper Nagan - Focus -->
+  <item id="16">
+    <ingredient id="40002" count="80"/>
+    <production id="14519" count="1"/>
+  </item>
+
+  <!-- Vesper Nagan - Health -->
+  <item id="17">
+    <ingredient id="40002" count="80"/>
+    <production id="14518" count="1"/>
+  </item>
+
+  <!-- Vesper Nagan - Haste -->
+  <item id="18">
+    <ingredient id="40002" count="80"/>
+    <production id="14517" count="1"/>
+  </item>
+
+  <!-- Vesper Pincer - Focus -->
+  <item id="19">
+    <ingredient id="40002" count="80"/>
+    <production id="14513" count="1"/>
+  </item>
+
+  <!-- Vesper Pincer - Haste -->
+  <item id="20">
+    <ingredient id="40002" count="80"/>
+    <production id="14511" count="1"/>
+  </item>
+
+  <!-- Vesper Pincer - Health -->
+  <item id="21">
+    <ingredient id="40002" count="80"/>
+    <production id="14512" count="1"/>
+  </item>
+
+  <!-- Vesper Retributer - Health -->
+  <item id="22">
+    <ingredient id="40002" count="80"/>
+    <production id="14500" count="1"/>
+  </item>
+
+  <!-- Vesper Retributer - HP Drain -->
+  <item id="23">
+    <ingredient id="40002" count="80"/>
+    <production id="14501" count="1"/>
+  </item>
+
+  <!-- Vesper Retributer - HP Regeneration -->
+  <item id="24">
+    <ingredient id="40002" count="80"/>
+    <production id="14499" count="1"/>
+  </item>
+
+  <!-- Vesper Shaper - Critical Damage -->
+  <item id="25">
+    <ingredient id="40002" count="80"/>
+    <production id="14487" count="1"/>
+  </item>
+
+  <!-- Vesper Shaper - HP Drain -->
+  <item id="26">
+    <ingredient id="40002" count="80"/>
+    <production id="14488" count="1"/>
+  </item>
+
+  <!-- Vesper Shaper - Haste -->
+  <item id="27">
+    <ingredient id="40002" count="80"/>
+    <production id="14489" count="1"/>
+  </item>
+
+  <!-- Vesper Sheutjeh - Cheap Shot -->
+  <item id="28">
+    <ingredient id="40002" count="80"/>
+    <production id="14514" count="1"/>
+  </item>
+
+  <!-- Vesper Sheutjeh - Critical Slow -->
+  <item id="29">
+    <ingredient id="40002" count="80"/>
+    <production id="14516" count="1"/>
+  </item>
+
+  <!-- Vesper Sheutjeh - Focus -->
+  <item id="30">
+    <ingredient id="40002" count="80"/>
+    <production id="14515" count="1"/>
+  </item>
+
+  <!-- Vesper Singer - Empower -->
+  <item id="31">
+    <ingredient id="40002" count="80"/>
+    <production id="14505" count="1"/>
+  </item>
+
+  <!-- Vesper Singer - Magic Hold -->
+  <item id="32">
+    <ingredient id="40002" count="80"/>
+    <production id="14506" count="1"/>
+  </item>
+
+  <!-- Vesper Singer - MP Regeneration -->
+  <item id="33">
+    <ingredient id="40002" count="80"/>
+    <production id="14507" count="1"/>
+  </item>
+
+  <!-- Vesper Slasher - Focus -->
+  <item id="34">
+    <ingredient id="40002" count="80"/>
+    <production id="14483" count="1"/>
+  </item>
+
+  <!-- Vesper Slasher - Haste -->
+  <item id="35">
+    <ingredient id="40002" count="80"/>
+    <production id="14481" count="1"/>
+  </item>
+
+  <!-- Vesper Slasher - Health -->
+  <item id="36">
+    <ingredient id="40002" count="80"/>
+    <production id="14482" count="1"/>
+  </item>
+
+  <!-- Vesper Stormer - Guidance -->
+  <item id="37">
+    <ingredient id="40002" count="80"/>
+    <production id="14493" count="1"/>
+  </item>
+
+  <!-- Vesper Stormer - Haste -->
+  <item id="38">
+    <ingredient id="40002" count="80"/>
+    <production id="14494" count="1"/>
+  </item>
+
+  <!-- Vesper Stormer - Health -->
+  <item id="39">
+    <ingredient id="40002" count="80"/>
+    <production id="14495" count="1"/>
+  </item>
+
+  <!-- Vesper Thrower - Cheap Shot -->
+  <item id="40">
+    <ingredient id="40002" count="80"/>
+    <production id="14508" count="1"/>
+  </item>
+
+  <!-- Vesper Thrower - Focus -->
+  <item id="41">
+    <ingredient id="40002" count="80"/>
+    <production id="14509" count="1"/>
+  </item>
+
+  <!-- Vesper Thrower - Critical Slow -->
+  <item id="42">
+    <ingredient id="40002" count="80"/>
+    <production id="14510" count="1"/>
+  </item>
+
+ <!-- vesper dual sword -->
+  <item id="42">
+    <ingredient id="40002" count="80"/>
+    <production id="14462" count="1"/>
+  </item>
+ <!-- vesper dual dagger -->
+  <item id="42">
+    <ingredient id="40002" count="80"/>
+    <production id="14477" count="1"/>
+  </item>
+
+</list>
