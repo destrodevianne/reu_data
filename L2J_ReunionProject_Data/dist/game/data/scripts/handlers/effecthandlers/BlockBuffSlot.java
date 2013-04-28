@@ -18,81 +18,51 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.model.effects.EffectFlag;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.effects.L2EffectType;
-import l2r.gameserver.model.skills.L2SkillType;
 import l2r.gameserver.model.stats.Env;
-import l2r.gameserver.network.SystemMessageId;
 
-public class SilentMove extends L2Effect
+/**
+ * Block Buff Slot effect.
+ * @author Zoey76
+ */
+public class BlockBuffSlot extends L2Effect
 {
-	public SilentMove(Env env, EffectTemplate template)
+	public BlockBuffSlot(Env env, EffectTemplate template)
 	{
 		super(env, template);
-	}
-	
-	// Special constructor to steal this effect
-	public SilentMove(Env env, L2Effect effect)
-	{
-		super(env, effect);
-	}
-	
-	@Override
-	public boolean canBeStolen()
-	{
-		return true;
 	}
 	
 	@Override
 	public boolean onStart()
 	{
-		super.onStart();
+		if ((getEffector() == null) || (getEffected() == null) || ((getSkill() == null) && !getSkill().getBlockBuffSlots().isEmpty()))
+		{
+			return false;
+		}
+		getEffected().addBlockedBuffSlots(getSkill().getBlockBuffSlots());
 		return true;
 	}
 	
 	@Override
 	public void onExit()
 	{
-		super.onExit();
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.SILENT_MOVE;
+		if ((getEffected() != null) && (getSkill() != null) && !getSkill().getBlockBuffSlots().isEmpty())
+		{
+			getEffected().removeBlockedBuffSlots(getSkill().getBlockBuffSlots());
+		}
 	}
 	
 	@Override
 	public boolean onActionTime()
 	{
-		// Only cont skills shouldn't end
-		if (getSkill().getSkillType() != L2SkillType.CONT)
-		{
-			return false;
-		}
-		
-		if (getEffected().isDead())
-		{
-			return false;
-		}
-		
-		double manaDam = calc();
-		
-		if (manaDam > getEffected().getCurrentMp())
-		{
-			getEffected().sendPacket(SystemMessageId.SKILL_REMOVED_DUE_LACK_MP);
-			return false;
-		}
-		
-		getEffected().reduceCurrentMp(manaDam);
-		return true;
+		return false;
 	}
 	
 	@Override
-	public int getEffectFlags()
+	public L2EffectType getEffectType()
 	{
-		return EffectFlag.SILENT_MOVE.getMask();
+		return L2EffectType.NONE;
 	}
 }
