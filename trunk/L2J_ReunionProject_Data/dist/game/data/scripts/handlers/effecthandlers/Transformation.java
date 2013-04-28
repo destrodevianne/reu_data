@@ -27,6 +27,7 @@ import l2r.gameserver.model.stats.Env;
 import l2r.gameserver.network.SystemMessageId;
 
 /**
+ * Transformation effect.
  * @author nBd
  */
 public class Transformation extends L2Effect
@@ -91,7 +92,7 @@ public class Transformation extends L2Effect
 			return false;
 		}
 		
-		TransformationManager.getInstance().transformPlayer(getSkill().getTransformId(), trg);
+		TransformationManager.getInstance().transformPlayer((int) calc(), trg);
 		return true;
 	}
 	

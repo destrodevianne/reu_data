@@ -23,7 +23,9 @@ public class RecoBonus extends L2Effect
 	public boolean onStart()
 	{
 		if (!(getEffected() instanceof L2PcInstance))
+		{
 			return false;
+		}
 		
 		((L2PcInstance) getEffected()).setRecomBonusType(1).setRecoBonusActive(true);
 		return true;
@@ -36,7 +38,7 @@ public class RecoBonus extends L2Effect
 	}
 	
 	@Override
-	protected boolean effectCanBeStolen()
+	public boolean canBeStolen()
 	{
 		return false;
 	}

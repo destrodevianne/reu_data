@@ -18,14 +18,18 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.model.actor.L2Character;
+import java.util.Map.Entry;
+
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.effects.L2EffectType;
+import l2r.gameserver.model.skills.AbnormalType;
+import l2r.gameserver.model.skills.L2Skill;
 import l2r.gameserver.model.stats.Env;
 
 /**
- * @author Gnacik
+ * Dispel By Slot effect.
+ * @author Gnacik, Zoey76
  */
 public class DispelBySlot extends L2Effect
 {
@@ -41,52 +45,35 @@ public class DispelBySlot extends L2Effect
 	}
 	
 	@Override
+	public boolean onActionTime()
+	{
+		return false;
+	}
+	
+	@Override
 	public boolean onStart()
 	{
-		L2Character target = getEffected();
-		if ((target == null) || target.isDead())
+		final L2Skill skill = getSkill();
+		if (skill.getNegateAbnormals().isEmpty())
 		{
 			return false;
 		}
 		
-		String stackType = getAbnormalType();
-		float stackOrder = getAbnormalLvl();
-		int skillCast = getSkill().getId();
-		
-		// If order is 0 don't remove effect
-		if (stackOrder == 0)
+		for (L2Effect effect : getEffected().getAllEffects())
 		{
-			return true;
-		}
-		
-		final L2Effect[] effects = target.getAllEffects();
-		
-		for (L2Effect e : effects)
-		{
-			if (!e.getSkill().canBeDispeled())
+			if (effect == null)
 			{
 				continue;
 			}
 			
-			// Fist check for stacktype
-			if (stackType.equalsIgnoreCase(e.getAbnormalType()) && (e.getSkill().getId() != skillCast))
+			for (Entry<AbnormalType, Byte> negate : skill.getNegateAbnormals().entrySet())
 			{
-				if (stackOrder == -1)
+				if ((effect.getSkill().getAbnormalType() == negate.getKey()) && (negate.getValue() >= effect.getSkill().getAbnormalLvl()))
 				{
-					e.exit();
-				}
-				else if (stackOrder >= e.getAbnormalLvl())
-				{
-					e.exit();
+					effect.exit();
 				}
 			}
 		}
 		return true;
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
 	}
 }
