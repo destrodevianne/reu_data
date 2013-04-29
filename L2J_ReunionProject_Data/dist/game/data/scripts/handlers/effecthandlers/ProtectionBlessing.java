@@ -18,7 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.model.actor.L2Playable;
 import l2r.gameserver.model.effects.EffectFlag;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
@@ -26,6 +25,7 @@ import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
 
 /**
+ * Protection Blessing effect.
  * @author kerberos_20
  */
 public class ProtectionBlessing extends L2Effect
@@ -36,35 +36,26 @@ public class ProtectionBlessing extends L2Effect
 	}
 	
 	@Override
+	public int getEffectFlags()
+	{
+		return EffectFlag.PROTECTION_BLESSING.getMask();
+	}
+	
+	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.PROTECTION_BLESSING;
 	}
 	
-	/** Notify started */
-	@Override
-	public boolean onStart()
-	{
-		return false;
-	}
-	
-	/** Notify exited */
-	@Override
-	public void onExit()
-	{
-		((L2Playable) getEffected()).stopProtectionBlessing(this);
-	}
-	
 	@Override
 	public boolean onActionTime()
 	{
-		// just stop this effect
 		return false;
 	}
 	
 	@Override
-	public int getEffectFlags()
+	public boolean onStart()
 	{
-		return EffectFlag.PROTECTION_BLESSING.getMask();
+		return (getEffector() != null) && (getEffected() != null) && getEffected().isPlayer();
 	}
 }
