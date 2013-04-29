@@ -6,7 +6,7 @@ qn = "347_GoGetTheCalculator"
 import sys
 from l2r.gameserver.model.quest import State
 from l2r.gameserver.model.quest import QuestState
-from l2r.gameserver.model.quest.jython import QuestJython as JQuest
+from l2r.gameserver.model.quest import Quest as JQuest
 
 # NPCs to talk to
 BRUNON = 30526

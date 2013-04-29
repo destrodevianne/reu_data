@@ -5,7 +5,7 @@ from java.lang import System
 from l2r import Config 
 from l2r.gameserver.model.quest import QuestState
 from l2r.gameserver.model.quest import State
-from l2r.gameserver.model.quest.jython import QuestJython as JQuest
+from l2r.gameserver.model.quest import Quest as JQuest
 from l2r.gameserver.network.serverpackets import NpcSay
 from l2r.util import Rnd
 

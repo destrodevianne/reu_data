@@ -4,7 +4,7 @@ from l2r import Config
 from l2r.util import Rnd
 from l2r.gameserver.model.quest import State
 from l2r.gameserver.model.quest import QuestState
-from l2r.gameserver.model.quest.jython import QuestJython as JQuest
+from l2r.gameserver.model.quest import Quest as JQuest
 
 qn = "624_TheFinestIngredientsPart1"
 

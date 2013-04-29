@@ -5,7 +5,7 @@
 import sys
 from l2r.gameserver.model.quest import State
 from l2r.gameserver.model.quest import QuestState
-from l2r.gameserver.model.quest.jython import QuestJython as JQuest
+from l2r.gameserver.model.quest import Quest as JQuest
 
 #Quest info
 QUEST_NUMBER,QUEST_NAME,QUEST_DESCRIPTION = 348,"ArrogantSearch","An Arrogant Search"

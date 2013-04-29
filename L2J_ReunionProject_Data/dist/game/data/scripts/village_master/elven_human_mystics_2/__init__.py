@@ -7,7 +7,7 @@ import sys
 
 from l2r.gameserver.model.quest        import State
 from l2r.gameserver.model.quest        import QuestState
-from l2r.gameserver.model.quest.jython import QuestJython as JQuest
+from l2r.gameserver.model.quest import Quest as JQuest
 
 qn = "elven_human_mystics_2"
 #Quest items

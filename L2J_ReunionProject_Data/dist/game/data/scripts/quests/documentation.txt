@@ -6,7 +6,7 @@ quest mobs, completing a quest, and getting rewards.
 In order for quest scripts to function properly, at least 3 classes must be imported from Java:
 from l2r.gameserver.model.quest import State
 from l2r.gameserver.model.quest import QuestState
-from l2r.gameserver.model.quest.jython import QuestJython as JQuest
+from l2r.gameserver.model.quest import Quest as JQuest
 
 In addition, the jython library "sys" is generally imported for convinience.  More classes can
 be imported as needed, in order to access other components of the core and enhance the abilities
