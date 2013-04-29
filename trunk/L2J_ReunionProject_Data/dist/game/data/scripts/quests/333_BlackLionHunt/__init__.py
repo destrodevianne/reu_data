@@ -176,7 +176,7 @@ import sys
 from l2r import Config 
 from l2r.gameserver.model.quest import State
 from l2r.gameserver.model.quest import QuestState
-from l2r.gameserver.model.quest.jython import QuestJython as JQuest
+from l2r.gameserver.model.quest import Quest as JQuest
 #This Put all Mob Ids from dictionari in a list. So its possible to add new mobs, to one of this 4 Areas, without modification on the addKill Part.
 MOBS=DROPLIST.keys()
 

@@ -4,7 +4,7 @@ import sys
 from l2r import Config
 from l2r.gameserver.model.quest import State
 from l2r.gameserver.model.quest import QuestState
-from l2r.gameserver.model.quest.jython import QuestJython as JQuest
+from l2r.gameserver.model.quest import Quest as JQuest
 from l2r.gameserver.network.serverpackets import NpcSay
 
 qn = "420_LittleWings"

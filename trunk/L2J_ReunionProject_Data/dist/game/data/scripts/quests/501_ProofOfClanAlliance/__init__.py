@@ -8,7 +8,7 @@ from l2r.gameserver.network.serverpackets      	import NpcSay
 from l2r.gameserver.network.serverpackets      	import MagicSkillUse
 from l2r.gameserver.model.quest        			import State
 from l2r.gameserver.model.quest        			import QuestState
-from l2r.gameserver.model.quest.jython 			import QuestJython as JQuest
+from l2r.gameserver.model.quest 			import Quest as JQuest
 
 qn="501_ProofOfClanAlliance"
 
