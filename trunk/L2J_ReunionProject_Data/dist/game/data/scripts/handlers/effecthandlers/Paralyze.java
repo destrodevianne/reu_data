@@ -18,6 +18,7 @@
  */
 package handlers.effecthandlers;
 
+import l2r.gameserver.ai.CtrlEvent;
 import l2r.gameserver.ai.CtrlIntention;
 import l2r.gameserver.model.effects.AbnormalEffect;
 import l2r.gameserver.model.effects.EffectFlag;
@@ -64,8 +65,10 @@ public class Paralyze extends L2Effect
 	public void onExit()
 	{
 		getEffected().stopAbnormalEffect(AbnormalEffect.HOLD_1);
-		getEffected().stopParalyze(false);
-		super.onExit();
+		if (!getEffected().isPlayer())
+		{
+			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
+		}
 	}
 	
 	@Override

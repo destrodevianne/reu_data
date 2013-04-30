@@ -769,18 +769,24 @@
 		<set name="icon" val="BranchSys2.icon.etc_ancient_treasure_sack_i00" />
 		<set name="material" val="cotton" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22272-1" />
 	</item>
 	<item id="21748" type="EtcItem" name="Experienced Adventurer's Treasure Sack">
 		<!-- Description: Treasure sack containing the treasure of experienced adventurers. Open it to obtain one random B, A or S-Grade Weapon (Dynasty excluded). -->
 		<set name="icon" val="BranchSys2.icon.etc_ancient_treasure_sack_i00" />
 		<set name="material" val="cotton" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22273-1" />
 	</item>
 	<item id="21749" type="EtcItem" name="Great Adventurer's Treasure Sack">
 		<!-- Description: Treasure sack containing the treasure of great adventurers. Open it to obtain one random Dynasty, Icarus or Vesper Weapon. -->
 		<set name="icon" val="BranchSys2.icon.etc_ancient_treasure_sack_i00" />
 		<set name="material" val="cotton" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22274-1" />
 	</item>
 	<item id="21750" type="EtcItem" name="Blue Elmore Coin">
 		<!-- Description: Token received by adventurers for their service to the Elmore king. If you bring it to Captain Mathias in Rune, you will receive a reward. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
@@ -799,8 +805,16 @@
 	<item id="21752" type="EtcItem" name="Rune Jewelry Box - Talisman">
 		<!-- Description: Jewelry box containing the precious treasure of Rune. When used, you can obtain a Talisman with a certain rate of chance. -->
 		<set name="icon" val="icon.etc_treasure_box_i06" />
-		<set name="material" val="crystal" />
-		<set name="is_stackable" val="true" />
+		<set name="default_action" val="capsule" />
+		<set name="material" val="fish" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+ 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="22276-1" />
 	</item>
 	<item id="21753" type="EtcItem" name="Pablo's Box">
 		<!-- Description: Box containing the precious treasure of Elmore's renowned scholar Pablo. When used, you can obtain a hat with a certain rate of chance. -->
