@@ -18,8 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import java.util.List;
-
 import l2r.gameserver.model.actor.L2Summon;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectFlag;
@@ -48,7 +46,7 @@ public class ServitorShare extends L2Effect
 	@Override
 	public void onExit()
 	{
-		List<L2Effect> effects = null;
+		L2Effect[] effects = null;
 		if (getEffected().isPlayer())
 		{
 			L2Summon summon = getEffector().getSummon();
