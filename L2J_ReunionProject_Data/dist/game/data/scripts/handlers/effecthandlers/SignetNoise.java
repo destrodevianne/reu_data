@@ -18,8 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import java.util.List;
-
 import l2r.gameserver.model.actor.L2Character;
 import l2r.gameserver.model.actor.instance.L2EffectPointInstance;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
@@ -72,7 +70,7 @@ public class SignetNoise extends L2Effect
 			
 			if (caster.canAttackCharacter(target))
 			{
-				List<L2Effect> effects = target.getAllEffects();
+				L2Effect[] effects = target.getAllEffects();
 				if (effects != null)
 				{
 					for (L2Effect effect : effects)

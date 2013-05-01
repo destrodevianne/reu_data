@@ -26,18 +26,30 @@ import l2r.gameserver.model.stats.Env;
 
 public class ChanceSkillTrigger extends L2Effect
 {
+	private final int _triggeredId;
+	private final int _triggeredLevel;
+	private final ChanceCondition _chanceCondition;
+	
 	public ChanceSkillTrigger(Env env, EffectTemplate template)
 	{
 		super(env, template);
+		
+		_triggeredId = template.triggeredId;
+		_triggeredLevel = template.triggeredLevel;
+		_chanceCondition = template.chanceCondition;
 	}
 	
 	public ChanceSkillTrigger(Env env, L2Effect effect)
 	{
 		super(env, effect);
+		
+		_triggeredId = effect.getEffectTemplate().triggeredId;
+		_triggeredLevel = effect.getEffectTemplate().triggeredLevel;
+		_chanceCondition = effect.getEffectTemplate().chanceCondition;
 	}
 	
 	@Override
-	public boolean canBeStolen()
+	protected boolean effectCanBeStolen()
 	{
 		return true;
 	}
@@ -67,7 +79,7 @@ public class ChanceSkillTrigger extends L2Effect
 	public void onExit()
 	{
 		// trigger only if effect in use and successfully ticked to the end
-		if (isInUse() && (getCount() == 0))
+		if (getInUse() && (getCount() == 0))
 		{
 			getEffected().onExitChanceEffect(getSkill().getElement());
 		}
@@ -78,24 +90,24 @@ public class ChanceSkillTrigger extends L2Effect
 	@Override
 	public int getTriggeredChanceId()
 	{
-		return getEffectTemplate().getTriggeredId();
+		return _triggeredId;
 	}
 	
 	@Override
 	public int getTriggeredChanceLevel()
 	{
-		return getEffectTemplate().getTriggeredLevel();
+		return _triggeredLevel;
 	}
 	
 	@Override
 	public boolean triggersChanceSkill()
 	{
-		return getEffectTemplate().getTriggeredId() > 1;
+		return _triggeredId > 1;
 	}
 	
 	@Override
 	public ChanceCondition getTriggeredChanceCondition()
 	{
-		return getEffectTemplate().getChanceCondition();
+		return _chanceCondition;
 	}
 }

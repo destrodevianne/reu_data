@@ -63,14 +63,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="PA_UP" />
+		<set name="abnormalType" val="pa_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="20" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="pa_up">
 				<mul order="0x30" stat="pAtk" val="1.12" />
 			</effect>
 		</for>
@@ -79,14 +79,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="PD_UP" />
+		<set name="abnormalType" val="pd_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="25" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="pd_up">
 				<mul order="0x30" stat="pDef" val="1.12" />
 			</effect>
 		</for>
@@ -95,14 +95,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="SPEED_UP" />
+		<set name="abnormalType" val="speed_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="30" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="speed_up">
 				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</for>
@@ -111,14 +111,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="abnormalType" val="critical_prob_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="44" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="critical_prob_up">
 				<basemul order="0x30" stat="rCrit" val="0.25" />
 			</effect>
 		</for>
@@ -127,14 +127,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="abnormalType" val="critical_dmg_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="48" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="critical_dmg_up">
 				<mul order="0x30" stat="cAtk" val="1.3" />
 			</effect>
 		</for>
@@ -143,14 +143,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="HIT_UP" />
+		<set name="abnormalType" val="hit_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="48" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="hit_up">
 				<add order="0x40" stat="accCombat" val="3" />
 			</effect>
 		</for>
@@ -159,14 +159,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="SHIELD_PROB_UP" />
+		<set name="abnormalType" val="shield_prob_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="48" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="shield_prob_up">
 				<mul order="0x30" stat="rShld" val="1.1" />
 			</effect>
 		</for>
@@ -175,14 +175,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="MAX_HP_UP" />
+		<set name="abnormalType" val="max_hp_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="52" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="max_hp_up">
 				<mul order="0x30" stat="maxHp" val="1.2" />
 			</effect>
 		</for>
@@ -191,14 +191,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="abnormalType" val="attack_time_down" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="44" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="attack_time_down">
 				<mul order="0x30" stat="pAtkSpd" val="1.15" />
 			</effect>
 		</for>
@@ -207,14 +207,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="abnormalType" val="vampiric_attack" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="44" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="vampiric_attack">
 				<add order="0x40" stat="absorbDam" val="7" /> <!-- absorb 7% HP from damage inflicted on enemies -->
 			</effect>
 		</for>
@@ -223,14 +223,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="BERSERKER" />
+		<set name="abnormalType" val="berserker" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="35" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="berserker">
 				<mul order="0x30" stat="mAtk" val="1.1" />
 				<mul order="0x30" stat="pAtk" val="1.05" />
 				<mul order="0x30" stat="mDef" val="0.9" />
@@ -246,14 +246,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="MD_UP" />
+		<set name="abnormalType" val="md_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="44" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="md_up">
 				<mul order="0x30" stat="mDef" val="1.23" />
 			</effect>
 		</for>
@@ -262,14 +262,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="MAX_MP_UP" />
+		<set name="abnormalType" val="max_mp_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="52" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="max_mp_up">
 				<mul order="0x30" stat="maxMp" val="1.2" />
 			</effect>
 		</for>
@@ -278,14 +278,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="MA_UP" />
+		<set name="abnormalType" val="ma_up" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="44" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="ma_up">
 				<mul order="0x30" stat="mAtk" val="1.65" />
 			</effect>
 		</for>
@@ -294,14 +294,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="abnormalType" val="casting_time_down" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="35" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="casting_time_down">
 				<mul order="0x30" stat="mAtkSpd" val="1.23" />
 			</effect>
 		</for>
@@ -310,14 +310,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="CHEAP_MAGIC" />
+		<set name="abnormalType" val="cheap_magic" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="58" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="cheap_magic">
 				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.9" />
 				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.96" />
 				<mul order="0x30" stat="DanceMpConsumeRate" val="0.9" />
@@ -484,21 +484,22 @@
 	<skill id="2428" levels="1" name="Scroll of Transformation - Rabbit">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="600" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="105" />
 		<for>
-			<effect name="Transformation" val="105" />
+			<effect name="Transformation" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="transform" /> <!-- Transformation lasts 10 minutes -->
 		</for>
 	</skill>
 	<skill id="2429" levels="1" name="Haste Juice">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="abnormalType" val="attack_time_down" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -506,7 +507,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="attack_time_down">
 				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 		</for>
@@ -515,7 +516,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="HIT_UP" />
+		<set name="abnormalType" val="hit_up" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -523,7 +524,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="hit_up">
 				<add order="0x40" stat="accCombat" val="4" />
 			</effect>
 		</for>
@@ -532,7 +533,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="abnormalType" val="critical_dmg_up" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -540,7 +541,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="critical_dmg_up">
 				<mul order="0x30" stat="cAtk" val="1.35" />
 			</effect>
 		</for>
@@ -549,7 +550,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="abnormalType" val="critical_prob_up" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -557,7 +558,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="critical_prob_up">
 				<basemul order="0x30" stat="rCrit" val="0.3" />
 			</effect>
 		</for>
@@ -566,7 +567,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="abnormalType" val="casting_time_down" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -574,7 +575,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="casting_time_down">
 				<mul order="0x30" stat="mAtkSpd" val="1.3" />
 			</effect>
 		</for>
@@ -583,7 +584,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="AVOID_UP" />
+		<set name="abnormalType" val="avoid_up" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -591,7 +592,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="avoid_up">
 				<add order="0x40" stat="rEvas" val="4" />
 			</effect>
 		</for>
@@ -600,7 +601,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="MA_UP" />
+		<set name="abnormalType" val="ma_up" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -608,7 +609,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="ma_up">
 				<mul order="0x30" stat="mAtk" val="1.75" />
 			</effect>
 		</for>
@@ -617,7 +618,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="PA_UP" />
+		<set name="abnormalType" val="pa_up" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -625,7 +626,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="pa_up">
 				<mul order="0x30" stat="pAtk" val="1.15" />
 			</effect>
 		</for>
@@ -634,7 +635,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="SPEED_UP" />
+		<set name="abnormalType" val="speed_up" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -642,7 +643,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="speed_up">
 				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</for>
@@ -651,7 +652,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="PD_UP" />
+		<set name="abnormalType" val="pd_up" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -659,7 +660,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="pd_up">
 				<mul order="0x30" stat="pDef" val="1.15" />
 			</effect>
 		</for>
@@ -668,7 +669,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="CHEAP_MAGIC" />
+		<set name="abnormalType" val="cheap_magic" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -676,7 +677,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="cheap_magic">
 				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.9" />
 				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.96" />
 				<mul order="0x30" stat="DanceMpConsumeRate" val="0.9" />
