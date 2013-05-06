@@ -92,7 +92,7 @@ public class Transformation extends L2Effect
 			return false;
 		}
 		
-		TransformationManager.getInstance().transformPlayer((int) calc(), trg);
+		TransformationManager.getInstance().transformPlayer(getSkill().getTransformId(), trg);
 		return true;
 	}
 	
