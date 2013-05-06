@@ -24,7 +24,7 @@ import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.skills.L2Skill;
 import l2r.gameserver.model.stats.Env;
-import l2r.gameserver.model.stats.Formulas;
+import l2r.util.Rnd;
 
 /**
  * @author UnAfraid
@@ -82,7 +82,7 @@ public class CancelDebuff extends L2Effect
 				continue;
 			}
 			
-			if (!Formulas.calcCancelSuccess(e, skill.getMagicLevel(), (int) baseRate, skill))
+			if (Rnd.get(100) > baseRate)
 			{
 				continue;
 			}

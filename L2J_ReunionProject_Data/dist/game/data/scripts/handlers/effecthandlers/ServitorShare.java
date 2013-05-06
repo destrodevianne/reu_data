@@ -27,6 +27,7 @@ import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
 
 /**
+ * Servitor Share effect.<br>
  * Synchronizing effects on player and servitor if one of them gets removed for some reason the same will happen to another.
  * @author UnAfraid
  */
@@ -38,9 +39,27 @@ public class ServitorShare extends L2Effect
 	}
 	
 	@Override
+	public boolean canBeStolen()
+	{
+		return false;
+	}
+	
+	@Override
+	public int getEffectFlags()
+	{
+		return EffectFlag.SERVITOR_SHARE.getMask();
+	}
+	
+	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.BUFF;
+	}
+	
+	@Override
+	public boolean onActionTime()
+	{
+		return false;
 	}
 	
 	@Override
@@ -49,7 +68,7 @@ public class ServitorShare extends L2Effect
 		L2Effect[] effects = null;
 		if (getEffected().isPlayer())
 		{
-			L2Summon summon = getEffector().getSummon();
+			final L2Summon summon = getEffected().getSummon();
 			if ((summon != null) && summon.isServitor())
 			{
 				effects = summon.getAllEffects();
@@ -57,7 +76,7 @@ public class ServitorShare extends L2Effect
 		}
 		else if (getEffected().isServitor())
 		{
-			L2PcInstance owner = getEffected().getActingPlayer();
+			final L2PcInstance owner = getEffected().getActingPlayer();
 			if (owner != null)
 			{
 				effects = owner.getAllEffects();
@@ -76,23 +95,5 @@ public class ServitorShare extends L2Effect
 			}
 		}
 		super.onExit();
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
-	}
-	
-	@Override
-	public boolean canBeStolen()
-	{
-		return false;
-	}
-	
-	@Override
-	public int getEffectFlags()
-	{
-		return EffectFlag.SERVITOR_SHARE.getMask();
 	}
 }
