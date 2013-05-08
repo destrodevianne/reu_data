@@ -53,7 +53,7 @@ INSERT INTO `reunion_buffs` VALUES ('Dances', '310', '1', 'Dance of the Vampire'
 INSERT INTO `reunion_buffs` VALUES ('Songs', '349', '1', 'Song of Renewal');
 INSERT INTO `reunion_buffs` VALUES ('Songs', '363', '1', 'Song of Meditation');
 INSERT INTO `reunion_buffs` VALUES ('Songs', '364', '1', 'Song of Champion');
-INSERT INTO `reunion_buffs` VALUES ('Dances', '365', '1', null);
+INSERT INTO `reunion_buffs` VALUES ('Dances', '365', '1', 'Dance of Siren');
 INSERT INTO `reunion_buffs` VALUES ('Songs', '529', '1', 'Song of Elemental');
 INSERT INTO `reunion_buffs` VALUES ('Dances', '530', '1', 'Dance of Alignment');
 INSERT INTO `reunion_buffs` VALUES ('WarCryer', '1002', '3', 'Flame Chant');
@@ -108,7 +108,7 @@ INSERT INTO `reunion_buffs` VALUES ('WarCryer', '1391', '3', 'Earth Chant');
 INSERT INTO `reunion_buffs` VALUES ('Prophet', '1392', '3', 'Holy Resistance');
 INSERT INTO `reunion_buffs` VALUES ('Elder', '1393', '3', 'Unholy Resistance');
 INSERT INTO `reunion_buffs` VALUES ('Elder', '1397', '3', 'Clarity');
-INSERT INTO `reunion_buffs` VALUES ('WarCryer', '1413', '1', null);
+INSERT INTO `reunion_buffs` VALUES ('WarCryer', '1413', '1', 'Magnus' Chant');
 INSERT INTO `reunion_buffs` VALUES ('Elder', '1460', '1', 'Mana Gain');
 INSERT INTO `reunion_buffs` VALUES ('Summon', '4699', '13', 'Blessing of Queen');
 INSERT INTO `reunion_buffs` VALUES ('Summon', '4700', '13', 'Gift of Queen');
