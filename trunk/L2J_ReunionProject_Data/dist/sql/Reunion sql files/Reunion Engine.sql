@@ -108,7 +108,7 @@ INSERT INTO `reunion_buffs` VALUES ('WarCryer', '1391', '3', 'Earth Chant');
 INSERT INTO `reunion_buffs` VALUES ('Prophet', '1392', '3', 'Holy Resistance');
 INSERT INTO `reunion_buffs` VALUES ('Elder', '1393', '3', 'Unholy Resistance');
 INSERT INTO `reunion_buffs` VALUES ('Elder', '1397', '3', 'Clarity');
-INSERT INTO `reunion_buffs` VALUES ('WarCryer', '1413', '1', 'Magnus' Chant');
+INSERT INTO `reunion_buffs` VALUES ('WarCryer', '1413', '1', 'Magnus Chant');
 INSERT INTO `reunion_buffs` VALUES ('Elder', '1460', '1', 'Mana Gain');
 INSERT INTO `reunion_buffs` VALUES ('Summon', '4699', '13', 'Blessing of Queen');
 INSERT INTO `reunion_buffs` VALUES ('Summon', '4700', '13', 'Gift of Queen');
@@ -464,7 +464,7 @@ INSERT INTO `reunion_globalconfigs` VALUES ('Features', 'registerVoicedCommand',
 INSERT INTO `reunion_globalconfigs` VALUES ('Features', 'removeCubicsOnDie', 'You can specify here if the cubics will be removed from the player (while he is in event) when he dies.', 'true', '1');
 INSERT INTO `reunion_globalconfigs` VALUES ('Features', 'setNeutralSkills', '<font color=5f5f5f>(Requires additional core modifications!)</font> Skills written here will be usable on both teammates and enemies. Useful for example for skill Rush (ID 994), which is by default not offensive, and thus the engine doesn\'t allow the player to cast it on his opponent. Write only IDs and separate by \';\', example: <font color=LEVEL>SKILL1;SKILL2;SKILL3</font>.', '994', '2');
 INSERT INTO `reunion_globalconfigs` VALUES ('Features', 'setNotOffensiveSkills', '<font color=5f5f5f>(Requires additional core modifications!)</font> Skills written here will be usable only on player\'s teammates (not opponents/enemies) during events. Write only IDs and separate by \';\', example: <font color=LEVEL>SKILL1;SKILL2;SKILL3</font>.', '', '2');
-INSERT INTO `reunion_globalconfigs` VALUES ('Features', 'setOffensiveSkills', '<font color=5f5f5f>(Requires additional core modifications!)</font> Skills written here will be usable only on player\'s opponents/enemies (not teammates) during events. Write only IDs and separate by \';\', example: <font color=LEVEL>SKILL1;SKILL2;SKILL3</font>.', '', '2');
+INSERT INTO `reunion_globalconfigs` VALUES ('Features', 'setOffensiveSkills', '<font color=5f5f5f>(Requires additional core modifications!)</font> Skills written here will be usable only on player\'s opponents/enemies (not teammates) during events. Write only IDs and separate by \';\', example: <font color=LEVEL>SKILL1;SKILL2;SKILL3</font>.', '976', '2');
 INSERT INTO `reunion_globalconfigs` VALUES ('Features', 'showNextEventName', 'Specify here whether you want to show (in the registration NPC) the name of the next scheduled event.', 'true', '1');
 INSERT INTO `reunion_globalconfigs` VALUES ('Features', 'showNextEventTime', 'Specify here whether you want to show (in the registration NPC) when does the next scheduled event start.', 'true', '1');
 INSERT INTO `reunion_globalconfigs` VALUES ('Scheduler', 'spawnRegNpcCords', 'The x, y, z cords specifiying where the registration NPC will be spawned when an event is started by the automatic scheduler (format: x;y;z).', '83435;148635;-3405', '2');
