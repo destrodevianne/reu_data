@@ -33,7 +33,6 @@
 			<set order="0x40" stat="lethalRate" val="1" />
 			<set order="0x40" stat="accCombat" val="145" />
 			<set order="0x40" stat="runSpd" val="140" />
-			<set order="0x40" stat="walkSpd" val="80" />
 			
 			<set order="0x40" stat="STR" val="40" />
 			<set order="0x40" stat="CON" val="43" />
@@ -388,7 +387,6 @@
 			<set order="0x62" stat="lethalRate" val="1" />
 			<set order="0x62" stat="accCombat" val="145" />
 			<set order="0x62" stat="runSpd" val="175" />
-			<set order="0x62" stat="walkSpd" val="80" />
 		</for>
 	</skill>
 	<skill id="35022" levels="1" name="Frog stats">
@@ -428,7 +426,6 @@
 			<set order="0x62" stat="lethalRate" val="1" />
 			<set order="0x62" stat="accCombat" val="145" />
 			<set order="0x62" stat="runSpd" val="135" />
-			<set order="0x62" stat="walkSpd" val="80" />
 		</for>
 	</skill>
 	<skill id="35024" levels="1" name="Yeti stats">
@@ -458,7 +455,6 @@
 			<set order="0x62" stat="lethalRate" val="1" />
 			<set order="0x62" stat="accCombat" val="145" />
 			<set order="0x62" stat="runSpd" val="140" />
-			<set order="0x62" stat="walkSpd" val="80" />
 		</for>
 	</skill>
 	<skill id="35025" levels="10" name="Kill streak bonus">
