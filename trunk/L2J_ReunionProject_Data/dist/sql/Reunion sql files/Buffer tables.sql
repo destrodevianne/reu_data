@@ -16,19 +16,6 @@ Date: 2013-04-29 16:17:44
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for `aio_scheme_profiles`
--- ----------------------------
-DROP TABLE IF EXISTS `aio_scheme_profiles`;
-CREATE TABLE `aio_scheme_profiles` (
-  `charId` int(10) unsigned NOT NULL,
-  `profile` varchar(45) NOT NULL DEFAULT ''
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of aio_scheme_profiles
--- ----------------------------
-
--- ----------------------------
 -- Table structure for `aio_scheme_profiles_buffs`
 -- ----------------------------
 DROP TABLE IF EXISTS `aio_scheme_profiles_buffs`;
