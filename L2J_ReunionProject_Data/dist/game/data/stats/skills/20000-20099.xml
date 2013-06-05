@@ -25,8 +25,10 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="3420" />
 		<set name="reuseDelay" val="5000" /> <!-- FIXME: value unconfirmed -->
-		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="FatalBlow" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="20003" levels="1" name="Dragon Slash">
 		<!-- A dragon's powerful slash that attacks an enemy with 3420 Power added to P. Atk. Over-hit is possible. -->
@@ -39,8 +41,10 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="3420" />
 		<set name="reuseDelay" val="5000" /> <!-- FIXME: value unconfirmed -->
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="20004" levels="1" name="Dragon Dash">
 		<!-- Increases Speed by 100% for 5 seconds with a dragon's strength. -->
@@ -50,7 +54,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="5" val="0" abnormalLvl="1" abnormalType="speed_up_special">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="runSpd" val="2" />
 			</effect>
 		</for>
@@ -64,7 +68,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="1" abnormalType="critical_prob_up">
+			<effect name="Buff" val="0">
 				<basemul order="0x30" stat="rCrit" val="0.3" />
 			</effect>
 		</for>
@@ -81,7 +85,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="600" val="0">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="maxHp" val="1.15" />
 				<mul order="0x30" stat="maxCp" val="1.15" />
 			</effect>

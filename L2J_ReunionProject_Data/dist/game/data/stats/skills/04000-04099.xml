@@ -18,15 +18,16 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4002" levels="12" name="NPC HP Drain">
 		<!-- Freya retail confirmed -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#mpConsume"> 17 28 38 49 63 78 92 97 102 105 108 109 </table>
 		<table name="#power"> 18 26 38 52 68 85 102 110 116 122 126 129 </table>
-		<set name="absorbPart" val="0.2" /><!-- absorbs 20% of damage -->
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="element" val="5" /> <!-- Dark -->
@@ -39,8 +40,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="DRAIN" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HpDrain" noicon="1" val="0.2" />
+		</for>
 	</skill>
 	<skill id="4003" levels="1" name="Golem Body">
 		<!-- Freya retail confirmed -->
@@ -162,15 +165,17 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="271" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4018" levels="1" name="Decrease Speed">
 		<!-- Confirmed CT2.5 -->
 		<!-- Queen Ant Skills -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="speed_down" />
+		<set name="abnormalType" val="SPEED_DOWN" />
 		<set name="castRange" val="500" />
 		<set name="coolTime" val="500" />
 		<set name="effectRange" val="1000" />
@@ -182,10 +187,10 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="542" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" abnormalTime="60" val="0" effectPower="70" abnormalLvl="3" abnormalType="speed_down">
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="Debuff" val="0" effectPower="70">
 				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
 		</for>
@@ -195,7 +200,7 @@
 		<!-- Queen Ant Skills -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="speed_down" />
+		<set name="abnormalType" val="SPEED_DOWN" />
 		<set name="affectRange" val="200" />
 		<set name="castRange" val="1000" />
 		<set name="coolTime" val="500" />
@@ -211,8 +216,7 @@
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="AREA" />
 		<for>
-			<!-- 30HP * 5 during 60 seconds -->
-			<effect count="12" name="DamOverTime" abnormalTime="5" val="150" abnormalLvl="3" abnormalType="speed_down">
+			<effect name="DamOverTime" ticks="3" val="30">
 				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
 		</for>
@@ -304,8 +308,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="43" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4027" levels="1" name="Gludio Heal">
 		<!-- Freya retail confirmed -->
@@ -329,7 +335,7 @@
 		<table name="#pAtk"> 1.08 1.12 1.15 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="pa_up" />
+		<set name="abnormalType" val="PA_UP" />
 		<set name="aggroPoints" val="100" />
 		<set name="hitTime" val="1800" />
 		<set name="magicLvl" val="#magicLvl" />
@@ -338,7 +344,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Grow" abnormalTime="300" val="0" abnormalLvl="#abnormalLvls" abnormalType="pa_up">
+			<effect name="Grow" val="0">
 				<mul order="0x30" stat="pAtk" val="#pAtk" />
 			</effect>
 		</for>
@@ -351,7 +357,7 @@
 		<table name="#pDef"> 1.08 1.12 1.15 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="pd_up" />
+		<set name="abnormalType" val="PD_UP" />
 		<set name="aggroPoints" val="100" />
 		<set name="hitTime" val="1800" />
 		<set name="magicLvl" val="#magicLvl" />
@@ -360,7 +366,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="#abnormalLvls" abnormalType="pd_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pDef" val="#pDef" />
 			</effect>
 		</for>
@@ -374,7 +380,7 @@
 		<table name="#pAtk"> 1.08 1.12 1.15 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="pa_up" />
+		<set name="abnormalType" val="PA_UP" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -386,7 +392,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="CLAN" />
 		<for>
-			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="#abnormalLvls" abnormalType="pa_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtk" val="#pAtk" />
 			</effect>
 		</for>
@@ -400,7 +406,7 @@
 		<table name="#pDef"> 1.08 1.12 1.15 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="pd_up" />
+		<set name="abnormalType" val="PD_UP" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -412,7 +418,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="CLAN" />
 		<for>
-			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="#abnormalLvls" abnormalType="pd_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pDef" val="#pDef" />
 			</effect>
 		</for>
@@ -434,8 +440,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4033" levels="12" name="NPC Burn">
 		<!-- Freya retail confirmed -->
@@ -451,8 +459,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4034" levels="12" name="Decrease Speed">
 		<!-- Freya retail confirmed -->
@@ -460,7 +470,7 @@
 		<table name="#power"> 11 16 23 31 41 51 61 66 70 73 76 78 </table>
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="speed_down" />
+		<set name="abnormalType" val="SPEED_DOWN" />
 		<set name="castRange" val="600" />
 		<set name="coolTime" val="200" />
 		<set name="effectRange" val="1100" />
@@ -474,10 +484,10 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" abnormalTime="60" val="0" effectPower="60" abnormalLvl="2" abnormalType="speed_down">
+			<effect name="MagicalAttack" noicon="1" val="0" />
+			<effect name="Debuff" val="0" effectPower="60">
 				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 		</for>
@@ -487,11 +497,11 @@
 	<skill id="4035" levels="12" name="Poison">
 		<!-- Freya retail confirmed -->
 		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
-		<table name="#dmg"> 48 72 96 123 150 174 189 189 198 198 204 204 </table>
+		<table name="#dmg"> 16 24 32 41 50 58 63 63 66 66 68 68 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="poison" />
+		<set name="abnormalType" val="POISON" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="2000" />
@@ -508,7 +518,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect count="10" name="DamOverTime" abnormalTime="3" val="#dmg" abnormalVisualEffect="poison" abnormalLvl="#abnormalLvls" abnormalType="poison" />
+			<effect name="DamOverTime" ticks="3" val="#dmg" abnormalVisualEffect="poison" />
 		</for>
 		<table name="#mpConsume"> 13 20 27 35 45 55 65 69 73 83 77 78 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -516,11 +526,11 @@
 	<skill id="4036" levels="12" name="Poison">
 		<!-- Freya retail confirmed -->
 		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
-		<table name="#dmg"> 48 72 96 123 150 174 189 189 198 198 204 204 </table>
+		<table name="#dmg"> 16 24 32 41 50 58 63 63 66 66 68 68 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="poison" />
+		<set name="abnormalType" val="POISON" />
 		<set name="affectRange" val="200" />
 		<set name="castRange" val="500" />
 		<set name="effectRange" val="1000" />
@@ -538,7 +548,7 @@
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect count="10" name="DamOverTime" abnormalTime="3" val="#dmg" abnormalVisualEffect="poison" abnormalLvl="#abnormalLvls" abnormalType="poison" />
+			<effect name="DamOverTime" ticks="3" val="#dmg" abnormalVisualEffect="poison" />
 		</for>
 		<table name="#mpConsume"> 18 29 40 53 68 83 98 104 109 113 115 117 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -550,7 +560,7 @@
 		<table name="#pAtk"> 0.83 0.8 0.77 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="pa_down" />
+		<set name="abnormalType" val="PA_DOWN" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="1500" />
@@ -566,7 +576,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="pa_down">
+			<effect name="Debuff" val="0">
 				<mul order="0x30" stat="pAtk" val="#pAtk" />
 			</effect>
 		</for>
@@ -581,7 +591,7 @@
 		<table name="#time"> 5 10 10 15 15 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="attack_time_up" />
+		<set name="abnormalType" val="ATTACK_TIME_UP" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="1500" />
@@ -597,7 +607,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" abnormalTime="#time" val="0" abnormalLvl="#abnormalLvls" abnormalType="attack_time_up">
+			<effect name="Debuff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
 			</effect>
 		</for>
@@ -619,8 +629,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MANADAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttackMp" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4040" levels="12" name="NPC Bow Attack">
 		<!-- Freya retail confirmed -->
@@ -636,8 +648,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="17000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4041" levels="2" name="Cruma Blaze">
 		<!-- Freya retail confirmed -->
@@ -655,8 +669,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4042" levels="1" name="Nurka Blaze">
 		<!-- Freya retail confirmed -->
@@ -671,8 +687,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="60" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4043" levels="1" name="Partisan Flame">
 		<!-- Freya retail confirmed -->
@@ -689,8 +707,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="30" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4044" levels="1" name="Partisan Heal">
 		<!-- Freya retail confirmed -->
@@ -728,7 +748,7 @@
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="sleep" />
+		<set name="abnormalType" val="SLEEP" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="2500" />
@@ -745,7 +765,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SLEEP" />
 		<for>
-			<effect name="Sleep" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="sleep" />
+			<effect name="Sleep" val="0" />
 		</for>
 		<table name="#mpConsume"> 13 20 27 35 45 55 65 69 73 75 77 78 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -757,7 +777,7 @@
 		<table name="#mpInitialConsume"> 3 4 6 7 9 11 13 14 15 15 16 16 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="root_magically" />
+		<set name="abnormalType" val="ROOT_MAGICALLY" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="2500" />
@@ -776,7 +796,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="HOLD" />
 		<for>
-			<effect name="Root" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="root_magically" />
+			<effect name="Root" val="0" />
 		</for>
 	</skill>
 	<skill id="4048" levels="3" name="NPC Dash">
@@ -785,13 +805,13 @@
 		<table name="#runSpd"> 1.5 1.8 2 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="20" />
-		<set name="abnormalType" val="speed_up_special" />
+		<set name="abnormalType" val="SPEED_UP_SPECIAL" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="20" val="0" abnormalLvl="1" abnormalType="speed_up_special">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="runSpd" val="#runSpd" />
 			</effect>
 		</for>
@@ -806,22 +826,25 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4050" levels="16" name="Cubic DD">
 		<!-- Cubic Skill -->
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 43 49 55 60 64 68 72 74 76 78 80 81 82 83 84 85 </table>
 		<table name="#power"> 543 760 1084 1377 1635 1955 2262 2386 2425 2524 2632 2722 2812 2898 2986 3062 </table>
-		<set name="absorbPart" val="0.4" /> <!-- absorbs 40% of damage -->
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="DRAIN" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HpDrain" noicon="1" val="0.4" />
+		</for>
 	</skill>
 	<skill id="4051" levels="20" name="Cubic Heal">
 		<!-- Cubic Skill -->
@@ -845,11 +868,11 @@
 		<!-- Cubic Skill -->
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvls"> 5 6 7 7 7 8 8 8 8 8 8 8 8 8 8 </table>
-		<table name="#dot"> 123 150 174 174 174 189 189 189 189 198 198 198 198 198 198 </table>
+		<table name="#dot"> 41 50 58 58 58 63 63 63 63 66 66 66 66 66 66 </table>
 		<table name="#magicLvl"> 49 55 60 64 68 72 74 76 78 80 81 82 83 84 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="poison" />
+		<set name="abnormalType" val="POISON" />
 		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="1" />
@@ -861,8 +884,7 @@
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<!-- Retail Values CT2.5: 41 50 58 58 58 63 63 63 63 66 66 66 66 66 66HP * 3 Seconds -->
-			<effect count="10" name="DamOverTime" abnormalTime="3" val="#dot" abnormalVisualEffect="poison" abnormalLvl="#abnormalLvls" abnormalType="poison" />
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="poison" />
 		</for>
 	</skill>
 	<skill id="4053" levels="16" name="Decrease P.Atk">
@@ -871,7 +893,7 @@
 		<table name="#magicLvl"> 40 46 52 58 62 66 70 74 76 78 80 81 82 83 84 85 </table>
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="pa_down" />
+		<set name="abnormalType" val="PA_DOWN" />
 		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="2" />
@@ -883,7 +905,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" abnormalTime="120" val="0" abnormalLvl="3" abnormalType="pa_down">
+			<effect name="Debuff" val="0">
 				<mul order="0x30" stat="pAtk" val="0.77" />
 			</effect>
 		</for>
@@ -894,7 +916,7 @@
 		<table name="#magicLvl"> 40 46 52 58 62 66 70 74 76 78 80 81 82 83 84 85 </table>
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="pd_down" />
+		<set name="abnormalType" val="PD_DOWN" />
 		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="2" />
@@ -906,7 +928,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" abnormalTime="120" val="0" abnormalLvl="3" abnormalType="pd_down">
+			<effect name="Debuff" val="0">
 				<mul order="0x30" stat="pDef" val="0.77" />
 			</effect>
 		</for>
@@ -917,7 +939,7 @@
 		<table name="#magicLvl"> 40 46 52 58 62 66 70 74 76 78 80 81 82 83 84 85 </table>
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="attack_time_up" />
+		<set name="abnormalType" val="ATTACK_TIME_UP" />
 		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="2" />
@@ -929,7 +951,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" abnormalTime="120" val="0" abnormalLvl="3" abnormalType="attack_time_up">
+			<effect name="Debuff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="0.77" />
 			</effect>
 		</for>
@@ -999,7 +1021,7 @@
 		<!-- Orfen Skills -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="paralyze" />
+		<set name="abnormalType" val="PARALYZE" />
 		<set name="castRange" val="50" />
 		<set name="effectRange" val="200" />
 		<set name="hitTime" val="3600" />
@@ -1009,11 +1031,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="916" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="PARALYZE" />
 		<for>
-			<effect name="Paralyze" abnormalTime="120" val="0" effectPower="90" abnormalLvl="1" abnormalType="paralyze" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="Paralyze" val="0" effectPower="90" />
 		</for>
 	</skill>
 	<skill id="4064" levels="1" name="Paralysis">
@@ -1021,7 +1043,7 @@
 		<!-- Orfen Skills -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="paralyze" />
+		<set name="abnormalType" val="PARALYZE" />
 		<set name="affectRange" val="200" />
 		<set name="castRange" val="800" />
 		<set name="effectRange" val="1300" />
@@ -1036,7 +1058,7 @@
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="PARALYZE" />
 		<for>
-			<effect name="Paralyze" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="paralyze" />
+			<effect name="Paralyze" val="0" />
 		</for>
 	</skill>
 	<skill id="4065" levels="12" name="NPC Heal">
@@ -1077,8 +1099,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4067" levels="12" name="NPC Mortal Blow">
 		<!-- Freya retail confirmed -->
@@ -1097,8 +1121,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="FatalBlow" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4068" levels="12" name="Mechanical Cannon">
 		<!-- Freya retail confirmed -->
@@ -1115,8 +1141,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4069" levels="12" name="NPC Curve Beam Cannon">
 		<!-- Freya retail confirmed -->
@@ -1133,15 +1161,17 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4070" levels="1" name="Decrease Atk. Spd.">
 		<!-- Confirmed CT2.5 -->
 		<!-- Zone Skill -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="5" />
-		<set name="abnormalType" val="attack_time_up" />
+		<set name="abnormalType" val="ATTACK_TIME_UP" />
 		<set name="isDebuff" val="true" />
 		<set name="lvlBonusRate" val="1" />
 		<set name="magicLvl" val="1" />
@@ -1152,7 +1182,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" abnormalTime="5" val="0" abnormalLvl="3" abnormalType="attack_time_up">
+			<effect name="Debuff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="0.77" />
 			</effect>
 		</for>
@@ -1172,7 +1202,7 @@
 		<table name="#power"> 16 35 73 139 241 379 542 626 704 774 829 873 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="stun" />
+		<set name="abnormalType" val="STUN" />
 		<set name="affectRange" val="150" />
 		<set name="coolTime" val="800" />
 		<set name="hitTime" val="1000" />
@@ -1184,11 +1214,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="Stun" abnormalTime="9" val="0" effectPower="30" abnormalLvl="1" abnormalType="stun" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="Stun" val="0" effectPower="30" />
 		</for>
 		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -1199,7 +1229,7 @@
 		<table name="#power"> 16 35 73 139 241 379 542 626 704 774 829 873 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="stun" />
+		<set name="abnormalType" val="STUN" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="800" />
 		<set name="effectRange" val="200" />
@@ -1212,11 +1242,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="Stun" abnormalTime="9" val="0" effectPower="50" abnormalLvl="1" abnormalType="stun" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="Stun" val="0" effectPower="50" />
 		</for>
 		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -1228,7 +1258,7 @@
 		<table name="#pAtkSpd"> 1.15 1.33 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="attack_time_down" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -1240,7 +1270,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="#abnormalLvls" abnormalType="attack_time_down">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
 			</effect>
 		</for>
@@ -1252,7 +1282,7 @@
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="stun" />
+		<set name="abnormalType" val="STUN" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="800" />
 		<set name="effectRange" val="200" />
@@ -1269,7 +1299,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="Stun" abnormalTime="9" val="0" abnormalLvl="1" abnormalType="stun" />
+			<effect name="Stun" val="0" />
 		</for>
 		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -1281,7 +1311,7 @@
 		<table name="#runSpd"> 0.9 0.8 0.7 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="speed_down" />
+		<set name="abnormalType" val="SPEED_DOWN" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="2000" />
@@ -1297,7 +1327,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="#abnormalLvls" abnormalType="speed_down">
+			<effect name="Debuff" val="0">
 				<mul order="0x30" stat="runSpd" val="#runSpd" />
 			</effect>
 		</for>
@@ -1321,8 +1351,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4078" levels="12" name="NPC Flamestrike">
 		<!-- Freya retail confirmed -->
@@ -1342,8 +1374,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4079" levels="1" name="Siege Hammer">
 		<!-- Confirmed CT2.5 -->
@@ -1355,8 +1389,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="665060" />
 		<set name="reuseDelay" val="5000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4080" levels="1" name="Dark Heal">
 		<!-- Freya retail confirmed -->
@@ -1387,7 +1423,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="4200" />
-		<set name="abnormalType" val="fatal_poison" />
+		<set name="abnormalType" val="FATAL_POISON" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="isDebuff" val="true" />
@@ -1399,9 +1435,8 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<!-- 20HP * 3 during 4200 seconds -->
-			<effect count="1400" name="DamOverTime" abnormalTime="3" val="60" abnormalVisualEffect="poison" abnormalLvl="1" abnormalType="fatal_poison" />
-			<effect name="Root" abnormalTime="4200" noicon="1" val="0" abnormalLvl="1" abnormalType="fatal_poison_two" /> <!-- TODO: This abnormalLvl="1" and abnormalType="fatal_poison_two" is a TEMP FIX, should be removed when "abnormalType and abnormalLvl" works like main skill attributes and not effect attributes -->
+			<effect name="DamOverTime" ticks="3" val="20" abnormalVisualEffect="poison" />
+			<effect name="Root" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="4083" levels="1" name="Die! You fool!">
@@ -1414,8 +1449,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="90000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4084" levels="11" name="Resist Physical Attack">
 		<!-- Freya retail confirmed -->
@@ -1459,17 +1496,19 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4088" levels="12" name="Bleed">
 		<!-- Freya retail confirmed -->
 		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
-		<table name="#damage"> 54 75 102 132 162 186 201 201 210 210 213 213 </table>
+		<table name="#damage"> 18 25 34 44 54 62 67 67 70 70 71 71 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="20" />
-		<set name="abnormalType" val="bleeding" />
+		<set name="abnormalType" val="BLEEDING" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="800" />
 		<set name="effectRange" val="200" />
@@ -1487,7 +1526,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect count="7" name="DamOverTime" abnormalTime="3" val="#damage" abnormalVisualEffect="bleed" abnormalLvl="#abnormalLvls" abnormalType="bleeding" />
+			<effect name="DamOverTime" ticks="3" val="#damage" abnormalVisualEffect="bleed" />
 		</for>
 		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -1496,7 +1535,7 @@
 		<!-- Freya retail confirmed -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="possession" />
+		<set name="abnormalType" val="POSSESSION" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="40" />
 		<set name="operateType" val="A2" />
@@ -1504,7 +1543,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="possession">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="runSpd" val="0.85" />
 				<mul order="0x30" stat="pAtk" val="1.15" />
 			</effect>
@@ -1515,7 +1554,7 @@
 		<!-- Freya retail confirmed -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="possession" />
+		<set name="abnormalType" val="POSSESSION" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="40" />
 		<set name="operateType" val="A2" />
@@ -1523,7 +1562,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="possession">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="runSpd" val="1.4" />
 			</effect>
 		</for>
@@ -1540,7 +1579,7 @@
 		<table name="#runSpd"> 0.85 0.85 0.9 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="possession" />
+		<set name="abnormalType" val="POSSESSION" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
@@ -1548,7 +1587,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Grow" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="possession">
+			<effect name="Grow" val="0">
 				<mul order="0x30" stat="runSpd" val="#runSpd" />
 				<mul order="0x30" stat="pAtk" val="#pAtk" />
 				<mul order="0x30" stat="pDef" val="#pDef" />
@@ -1564,7 +1603,7 @@
 		<!-- Freya retail confirmed -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="possession" />
+		<set name="abnormalType" val="POSSESSION" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="40" />
 		<set name="operateType" val="A2" />
@@ -1572,7 +1611,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="possession">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="1.3" />
 				<add order="0x40" stat="rEvas" val="4" />
 				<mul order="0x30" stat="pDef" val="0.8" />
@@ -1622,7 +1661,7 @@
 		<table name="#magicLvl"> 20 40 70 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="ab_hawk_eye" />
+		<set name="abnormalType" val="AB_HAWK_EYE" />
 		<set name="aggroPoints" val="100" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="#magicLvl" />
@@ -1631,7 +1670,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="#abnormalLvls" abnormalType="ab_hawk_eye">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="accCombat" val="#accCombat" />
 				<mul order="0x30" stat="pDef" val="0.9" />
 			</effect>
@@ -1642,11 +1681,11 @@
 	<skill id="4097" levels="12" name="NPC Chant of Life">
 		<!-- Freya retail confirmed -->
 		<table name="#abnormalLvls"> 1 2 3 4 5 6 7 8 9 10 11 12 </table>
-		<table name="#hot"> 21 36 54 81 111 138 165 69 96 126 153 174 </table>
+		<table name="#hot"> 7 12 18 27 37 46 55 23 32 42 51 58 </table>
 		<table name="#power"> 1 2 3 4 5 6 7 8 9 10 11 12 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="life_force_others" />
+		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
@@ -1658,7 +1697,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="5" name="HealOverTime" abnormalTime="3" val="#hot" abnormalLvl="#abnormalLvls" abnormalType="life_force_others" />
+			<effect name="HealOverTime" ticks="1" val="#hot" />
 		</for>
 		<table name="#mpConsume"> 33 59 88 122 159 195 228 242 252 259 262 262 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -1668,7 +1707,7 @@
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="silence" />
+		<set name="abnormalType" val="SILENCE" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="2000" />
@@ -1685,7 +1724,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="DERANGEMENT" />
 		<for>
-			<effect name="Mute" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="silence" />
+			<effect name="Mute" val="0" />
 		</for>
 		<table name="#mpConsume"> 13 20 27 35 45 55 65 69 73 75 77 78 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -1704,7 +1743,7 @@
 		<table name="#runSpd"> 5 8 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="berserker" />
+		<set name="abnormalType" val="BERSERKER" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -1716,7 +1755,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="berserker">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtk" val="#pAtk" />
 				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
 				<mul order="0x30" stat="mAtk" val="#mAtk" />

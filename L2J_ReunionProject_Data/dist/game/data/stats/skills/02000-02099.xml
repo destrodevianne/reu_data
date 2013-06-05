@@ -3,56 +3,60 @@
 	<skill id="2001" levels="1" name="Red Potion">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="hp_recover" />
+		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="3" name="HealOverTime" abnormalTime="5" val="2" abnormalLvl="2" abnormalType="hp_recover" />
+			<effect name="HealOverTime" ticks="3" val="2" />
 		</for>
 	</skill>
 	<skill id="2002" levels="1" name="Healing Drug">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="20" />
-		<set name="abnormalType" val="hp_recover" />
+		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="4" name="HealOverTime" abnormalTime="5" val="1.5" abnormalLvl="1" abnormalType="hp_recover" />
+			<effect name="HealOverTime" ticks="3" val="1.5" />
 		</for>
 	</skill>
 	<skill id="2003" levels="1" name="Squash Seed">
 		<!-- Confirmed CT2.5 -->
 		<!-- Summer Squash Event Skill -->
-		<set name="despawnDelay" val="180000" /> <!-- FIXME: This should be controlled by AI -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
-		<set name="npcId" val="12774" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="10000" />
-		<set name="skillType" val="SPAWN" />
 		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="12774" npcCount="1" despawnDelay="180000" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2004" levels="1" name="Large Squash Seed">
 		<!-- Confirmed CT2.5 -->
 		<!-- Summer Squash Event Skill -->
-		<set name="despawnDelay" val="180000" /> <!-- FIXME: This should be controlled by AI -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
-		<set name="npcId" val="12777" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="10000" />
-		<set name="skillType" val="SPAWN" />
 		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="12777" npcCount="1" despawnDelay="180000" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2005" levels="1" name="Nectar">
 		<!-- Confirmed CT2.5 -->
@@ -95,14 +99,14 @@
 	<skill id="2010" levels="1" name="Endeavor Potion">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="hit_up" />
+		<set name="abnormalType" val="HIT_UP" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="hit_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="accCombat" val="4" />
 			</effect>
 		</for>
@@ -110,14 +114,14 @@
 	<skill id="2011" levels="1" name="Haste Potion">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="speed_up" />
+		<set name="abnormalType" val="SPEED_UP" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="1" abnormalType="speed_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="runSpd" val="20" />
 			</effect>
 		</for>
@@ -125,14 +129,14 @@
 	<skill id="2012" levels="1" name="Potion of Alacrity">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="attack_time_down" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="1" abnormalType="attack_time_down">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="1.15" />
 			</effect>
 		</for>
@@ -265,7 +269,7 @@
 	<skill id="2031" levels="1" name="Lesser Healing Potion">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="hp_recover" />
+		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
@@ -273,15 +277,13 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<!-- retail value: 8HP/sec; stat update every 2 sec -->
-			<!-- Verified by slyce - Interlude - 8th Aug 2007 -->
-			<effect count="7" name="HealOverTime" abnormalTime="2" val="16" abnormalLvl="1" abnormalType="hp_recover" />
+			<effect name="HealOverTime" ticks="3" val="8" />
 		</for>
 	</skill>
 	<skill id="2032" levels="1" name="Healing potion">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="hp_recover" />
+		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
@@ -289,9 +291,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<!-- retail value: 24HP/sec; stat update every 2 sec -->
-			<!-- Verified by slyce - Interlude - 8th Aug 2007 -->
-			<effect count="7" name="HealOverTime" abnormalTime="2" val="48" abnormalLvl="2" abnormalType="hp_recover" />
+			<effect name="HealOverTime" ticks="3" val="24" />
 		</for>
 	</skill>
 	<skill id="2033" levels="1" name="Item - Beast Soul Shot">
@@ -304,14 +304,14 @@
 	<skill id="2034" levels="1" name="Greater Haste Potion">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="speed_up" />
+		<set name="abnormalType" val="SPEED_UP" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="2" abnormalType="speed_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</for>
@@ -319,14 +319,14 @@
 	<skill id="2035" levels="1" name="Greater Swift Attack Potion">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="attack_time_down" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="2" abnormalType="attack_time_down">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 		</for>
@@ -347,7 +347,7 @@
 	<skill id="2037" levels="1" name="Greater Healing Potion">
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="hp_recover" />
+		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
@@ -355,9 +355,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<!-- retail value: 50HP/sec; stat update every 2 sec -->
-			<!-- Verified by slyce - Interlude - 8th Aug 2007 -->
-			<effect count="7" name="HealOverTime" abnormalTime="2" val="100" abnormalLvl="3" abnormalType="hp_recover" />
+			<effect name="HealOverTime" ticks="3" val="50" />
 		</for>
 	</skill>
 	<skill id="2038" levels="1" name="Quick Healing Potion">
@@ -407,41 +405,41 @@
 	<skill id="2042" levels="1" name="Antidote">
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
-		<set name="negateAbnormals" val="poison,3" />
+		<set name="negateAbnormals" val="POISON,3" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Negate" noicon="1" val="0" />
+			<effect name="DispelBySlot" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="2043" levels="1" name="Greater Antidote">
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
-		<set name="negateAbnormals" val="poison,7" />
+		<set name="negateAbnormals" val="POISON,7" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Negate" noicon="1" val="0" />
+			<effect name="DispelBySlot" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="2044" levels="1" name="Bandage">
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
-		<set name="negateAbnormals" val="bleeding,3" />
+		<set name="negateAbnormals" val="BLEEDING,3" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Negate" noicon="1" val="0" />
+			<effect name="DispelBySlot" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="2045" levels="1" name="Emergency Dressing">
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
-		<set name="negateAbnormals" val="bleeding,7" />
+		<set name="negateAbnormals" val="BLEEDING,7" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Negate" noicon="1" val="0" />
+			<effect name="DispelBySlot" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="2046" levels="2" name="Wolf's Necklace">
@@ -483,7 +481,7 @@
 	<skill id="2050" levels="1" name="Scroll of Guidance">
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="hit_up" />
+		<set name="abnormalType" val="HIT_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -491,7 +489,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="hit_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="accCombat" val="4" />
 			</effect>
 		</for>
@@ -499,7 +497,7 @@
 	<skill id="2051" levels="1" name="Scroll of Death Whisper">
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="critical_dmg_up" />
+		<set name="abnormalType" val="CRITICAL_DMG_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -507,7 +505,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="critical_dmg_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="cAtk" val="1.35" />
 			</effect>
 		</for>
@@ -515,7 +513,7 @@
 	<skill id="2052" levels="1" name="Scroll of Focus">
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="critical_prob_up" />
+		<set name="abnormalType" val="CRITICAL_PROB_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -523,7 +521,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="critical_prob_up">
+			<effect name="Buff" val="0">
 				<basemul order="0x30" stat="rCrit" val="0.3" />
 			</effect>
 		</for>
@@ -531,7 +529,7 @@
 	<skill id="2053" levels="1" name="Scroll of Greater Acumen">
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="casting_time_down" />
+		<set name="abnormalType" val="CASTING_TIME_DOWN" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -539,7 +537,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="casting_time_down">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="mAtkSpd" val="1.3" />
 			</effect>
 		</for>
@@ -547,7 +545,7 @@
 	<skill id="2054" levels="1" name="Scroll of Haste">
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="attack_time_down" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -555,7 +553,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="attack_time_down">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 		</for>
@@ -563,7 +561,7 @@
 	<skill id="2055" levels="1" name="Scroll of Agility">
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="avoid_up" />
+		<set name="abnormalType" val="AVOID_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -571,7 +569,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="avoid_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="rEvas" val="4" />
 			</effect>
 		</for>
@@ -579,7 +577,7 @@
 	<skill id="2056" levels="1" name="Scroll of Mystic Empower">
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="ma_up" />
+		<set name="abnormalType" val="MA_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -587,7 +585,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="ma_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="mAtk" val="1.75" />
 			</effect>
 		</for>
@@ -595,7 +593,7 @@
 	<skill id="2057" levels="1" name="Scroll of Might">
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="pa_up" />
+		<set name="abnormalType" val="PA_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -603,7 +601,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="pa_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtk" val="1.15" />
 			</effect>
 		</for>
@@ -611,7 +609,7 @@
 	<skill id="2058" levels="1" name="Scroll of Wind Walk">
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="speed_up" />
+		<set name="abnormalType" val="SPEED_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -619,7 +617,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="speed_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</for>
@@ -627,7 +625,7 @@
 	<skill id="2059" levels="1" name="Scroll of Shield">
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="pd_up" />
+		<set name="abnormalType" val="PD_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -635,7 +633,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="pd_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pDef" val="1.15" />
 			</effect>
 		</for>
@@ -645,11 +643,11 @@
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
-		<set name="negateAbnormals" val="fatal_poison,1;fatal_poison_two,1" /> <!-- TODO: This ";fatal_poison_two,1" is a TEMP FIX, should be removed when "abnormalType and abnormalLvl" in skill 4082 works like main skill attributes and not effect attributes -->
+		<set name="negateAbnormals" val="FATAL_POISON,1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Negate" noicon="1" val="0" />
+			<effect name="DispelBySlot" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="2061" levels="1" name="Blessed Spiritshot: No Grade">
@@ -681,7 +679,7 @@
 	<skill id="2064" levels="1" name="Scroll of Mana Regeneration">
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="mp_regen_up" />
+		<set name="abnormalType" val="MP_REGEN_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -689,7 +687,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="mp_regen_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="regMp" val="1.82" />
 			</effect>
 		</for>
@@ -755,7 +753,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="10" />
-		<set name="abnormalType" val="speed_down" />
+		<set name="abnormalType" val="SPEED_DOWN" />
 		<set name="affectLimit" val="9-10" />
 		<set name="affectRange" val="200" />
 		<set name="castRange" val="600" />
@@ -771,7 +769,7 @@
 		<set name="targetType" val="AREA" />
 		<for>
 			<effect name="RandomizeHate" noicon="1" val="0" />
-			<effect name="Debuff" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="speed_down">
+			<effect name="Debuff" val="0">
 				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
 		</for>
@@ -791,7 +789,7 @@
 	<skill id="2076" levels="1" name="Bless of Eva">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="400" />
-		<set name="abnormalType" val="max_breath_up" />
+		<set name="abnormalType" val="MAX_BREATH_UP" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -799,7 +797,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="400" val="0" abnormalLvl="2" abnormalType="max_breath_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="breath" val="5" />
 			</effect>
 		</for>
@@ -808,14 +806,14 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="dmg_shield" />
+		<set name="abnormalType" val="DMG_SHIELD" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="dmg_shield">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pDef" val="0.83" />
 				<add order="0x40" stat="reflectDam" val="20" />
 			</effect>
@@ -823,12 +821,9 @@
 	</skill>
 	<skill id="2078" levels="1" name="Compressed Package of Soulshots: No Grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="1835" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -836,15 +831,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="1835" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2079" levels="1" name="Compressed Package of Soulshots: D-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="1463" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -852,15 +849,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="1463" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2080" levels="1" name="Compressed Package of Soulshots: C-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="1464" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -868,15 +867,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="1464" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2081" levels="1" name="Compressed Package of Soulshots: B-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="1465" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -884,15 +885,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="1465" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2082" levels="1" name="Compressed Package of Soulshots: A-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="1466" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -900,15 +903,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="1466" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2083" levels="1" name="Compressed Package of Soulshots: S-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="1467" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -916,15 +921,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="1467" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2084" levels="1" name="Compressed Package of Spiritshots: No Grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="2509" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -932,15 +939,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="2509" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2085" levels="1" name="Compressed Package of Spiritshots: D-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="2510" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -948,15 +957,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="2510" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2086" levels="1" name="Compressed Package of Spiritshots: C-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="2511" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -964,15 +975,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="2511" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2087" levels="1" name="Compressed Package of Spiritshots: B-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="2512" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -980,15 +993,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="2512" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2088" levels="1" name="Compressed Package of Spiritshots: A-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="2513" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -996,15 +1011,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="2513" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2089" levels="1" name="Compressed Package of Spiritshots: S-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="2514" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -1012,15 +1029,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="2514" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2090" levels="1" name="Compressed Package of Blessed Spiritshots: No Grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="3947" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -1028,15 +1047,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="3947" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2091" levels="1" name="Compressed Package of Blessed Spiritshots: D-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="3948" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -1044,15 +1065,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="3948" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2092" levels="1" name="Compressed Package of Blessed Spiritshots: C-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="3949" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -1060,15 +1083,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="3949" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2093" levels="1" name="Compressed Package of Blessed Spiritshots: B-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="3950" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -1076,15 +1101,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="3950" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2094" levels="1" name="Compressed Package of Blessed Spiritshots: A-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="3951" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -1092,15 +1119,17 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="3951" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2095" levels="1" name="Compressed Package of Blessed Spiritshots: S-grade">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="300" />
-		<set name="create_item_id" val="3952" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -1108,6 +1137,11 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="3952" itemCount="300" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="2096" levels="1" name="Soul Crystal">
 		<set name="castRange" val="300" />
