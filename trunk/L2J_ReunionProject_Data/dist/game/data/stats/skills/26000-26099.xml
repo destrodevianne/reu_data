@@ -219,14 +219,14 @@
 	<skill id="26022" levels="1" name="High grade potion which improves attack speed">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="attack_time_down" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="2" abnormalType="attack_time_down">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 		</for>
@@ -234,14 +234,14 @@
 	<skill id="26023" levels="1" name="High grade potion which improves moving speed">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="speed_up" />
+		<set name="abnormalType" val="SPEED_UP" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="2" abnormalType="speed_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</for>
@@ -258,27 +258,27 @@
 	<skill id="26025" levels="1" name="Powerful Healing Potion">
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="hp_recover" />
+		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="5" name="HealOverTime" abnormalTime="3" val="150" abnormalLvl="3" abnormalType="hp_recover" />
+			<effect name="HealOverTime" ticks="3" val="50" />
 		</for>
 	</skill>
 	<skill id="26026" levels="1" name="High-grade Healing Potion">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="hp_recover" />
+		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="5" name="HealOverTime" abnormalTime="3" val="72" abnormalLvl="2" abnormalType="hp_recover" />
+			<effect name="HealOverTime" ticks="3" val="24" />
 		</for>
 	</skill>
 	<skill id="26027" levels="6" name="Secret medicine of Will">
@@ -338,7 +338,7 @@
 	<skill id="26031" levels="1" name="Wind Walk Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="speed_up" />
+		<set name="abnormalType" val="SPEED_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -346,7 +346,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="speed_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</for>
@@ -354,7 +354,7 @@
 	<skill id="26032" levels="1" name="Haste Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="attack_time_down" />
+		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -362,7 +362,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="attack_time_down">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 		</for>
@@ -370,7 +370,7 @@
 	<skill id="26033" levels="1" name="Might Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="pa_up" />
+		<set name="abnormalType" val="PA_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -378,7 +378,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="pa_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtk" val="1.15" />
 			</effect>
 		</for>
@@ -386,7 +386,7 @@
 	<skill id="26034" levels="1" name="Shield Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="pd_up" />
+		<set name="abnormalType" val="PD_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -394,7 +394,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="pd_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pDef" val="1.15" />
 			</effect>
 		</for>
@@ -402,7 +402,7 @@
 	<skill id="26035" levels="1" name="Death Whisper Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="critical_dmg_up" />
+		<set name="abnormalType" val="CRITICAL_DMG_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -410,7 +410,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="critical_dmg_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="cAtk" val="1.35" />
 			</effect>
 		</for>
@@ -418,7 +418,7 @@
 	<skill id="26036" levels="1" name="Guidance Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="hit_up" />
+		<set name="abnormalType" val="HIT_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -426,7 +426,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="hit_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="accCombat" val="4" />
 			</effect>
 		</for>
@@ -434,7 +434,7 @@
 	<skill id="26037" levels="1" name="Empower Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="ma_up" />
+		<set name="abnormalType" val="MA_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -442,7 +442,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="ma_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="mAtk" val="1.75" />
 			</effect>
 		</for>
@@ -450,7 +450,7 @@
 	<skill id="26038" levels="1" name="Greater Acumen Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="casting_time_down" />
+		<set name="abnormalType" val="CASTING_TIME_DOWN" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -458,7 +458,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="casting_time_down">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="mAtkSpd" val="1.3" />
 			</effect>
 		</for>
@@ -466,7 +466,7 @@
 	<skill id="26039" levels="1" name="Vampiric Rage Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="vampiric_attack" />
+		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -474,7 +474,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="vampiric_attack">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
 			</effect>
 		</for>
@@ -482,7 +482,7 @@
 	<skill id="26040" levels="1" name="Bless the Body Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="max_hp_up" />
+		<set name="abnormalType" val="MAX_HP_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -490,7 +490,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="max_hp_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="maxHp" val="1.35" />
 			</effect>
 		</for>
@@ -498,7 +498,7 @@
 	<skill id="26041" levels="1" name="Berserker Spirit Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="berserker" />
+		<set name="abnormalType" val="BERSERKER" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -506,7 +506,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="berserker">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pDef" val="0.92" />
 				<mul order="0x30" stat="mDef" val="0.84" />
 				<sub order="0x40" stat="rEvas" val="4" />
@@ -521,7 +521,7 @@
 	<skill id="26042" levels="1" name="Magic Barrier Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="md_up" />
+		<set name="abnormalType" val="MD_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -529,7 +529,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="md_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="mDef" val="1.3" />
 			</effect>
 		</for>
@@ -537,7 +537,7 @@
 	<skill id="26043" levels="1" name="Bless the Soul Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="max_mp_up" />
+		<set name="abnormalType" val="MAX_MP_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -545,7 +545,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="max_mp_up">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="maxMp" val="1.35" />
 			</effect>
 		</for>
@@ -553,7 +553,7 @@
 	<skill id="26044" levels="1" name="Clarity Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="cheap_magic" />
+		<set name="abnormalType" val="CHEAP_MAGIC" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -561,7 +561,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="cheap_magic">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.8" />
 				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.9" />
 				<mul order="0x30" stat="DanceMpConsumeRate" val="0.8" />
@@ -571,7 +571,7 @@
 	<skill id="26045" levels="1" name="Wild Magic Scroll">
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="magic_critical_up" />
+		<set name="abnormalType" val="MAGIC_CRITICAL_UP" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
@@ -579,7 +579,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="magic_critical_up">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="mCritRate" val="2" />
 			</effect>
 		</for>
@@ -611,7 +611,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="CrystalGradeModify" abnormalTime="-1" val="#bonus" />
+			<effect name="CrystalGradeModify" val="#bonus" />
 		</for>
 	</skill>
 	<skill id="26049" levels="1" name="Rune of Feather">
@@ -769,13 +769,10 @@
 	</skill>
 	<skill id="26067" levels="5" name="Bone Quiver">
 		<!-- Confirmed CT2.5 -->
-		<table name="#create_item_id"> 22067 22068 22069 22070 22071 </table>
-		<set name="create_item_count" val="10000" />
-		<set name="create_item_id" val="#create_item_id" />
+		<table name="#itemId"> 22067 22068 22069 22070 22071 </table>
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -783,17 +780,19 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="#itemId" itemCount="10000" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="26068" levels="10" name="Blessed Spiritshot Pack">
 		<!-- Confirmed CT2.5 -->
-		<table name="#create_item_count"> 5000 5000 5000 5000 5000 10000 10000 10000 10000 10000 </table>
-		<table name="#create_item_id"> 22072 22073 22074 22075 22076 22072 22073 22074 22075 22076 </table>
-		<set name="create_item_count" val="#create_item_count" />
-		<set name="create_item_id" val="#create_item_id" />
+		<table name="#itemCount"> 5000 5000 5000 5000 5000 10000 10000 10000 10000 10000 </table>
+		<table name="#itemId"> 22072 22073 22074 22075 22076 22072 22073 22074 22075 22076 </table>
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -801,17 +800,19 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="#itemId" itemCount="#itemCount" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="26069" levels="10" name="Spiritshot Pack">
 		<!-- Confirmed CT2.5 -->
-		<table name="#create_item_count"> 5000 5000 5000 5000 5000 10000 10000 10000 10000 10000 </table>
-		<table name="#create_item_id"> 22077 22078 22079 22080 22081 22077 22078 22079 22080 22081 </table>
-		<set name="create_item_count" val="#create_item_count" />
-		<set name="create_item_id" val="#create_item_id" />
+		<table name="#itemCount"> 5000 5000 5000 5000 5000 10000 10000 10000 10000 10000 </table>
+		<table name="#itemId"> 22077 22078 22079 22080 22081 22077 22078 22079 22080 22081 </table>
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -819,17 +820,19 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="#itemId" itemCount="#itemCount" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="26070" levels="10" name="Soulshot Pack">
 		<!-- Confirmed CT2.5 -->
-		<table name="#create_item_count"> 5000 5000 5000 5000 5000 10000 10000 10000 10000 10000 </table>
-		<table name="#create_item_id"> 22082 22083 22084 22085 22086 22082 22083 22084 22085 22086 </table>
-		<set name="create_item_count" val="#create_item_count" />
-		<set name="create_item_id" val="#create_item_id" />
+		<table name="#itemCount"> 5000 5000 5000 5000 5000 10000 10000 10000 10000 10000 </table>
+		<table name="#itemId"> 22082 22083 22084 22085 22086 22082 22083 22084 22085 22086 </table>
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -837,16 +840,18 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="#itemId" itemCount="#itemCount" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="26071" levels="17" name="Wrapped daisy hairpin">
 		<!-- Confirmed CT2.5 -->
-		<table name="#create_item_id"> 22156 22157 22158 22159 22160 22161 22162 22163 22164 22165 22166 22167 22168 22169 22170 22171 22172 </table>
-		<set name="create_item_count" val="1" />
-		<set name="create_item_id" val="#create_item_id" />
+		<table name="#itemId"> 22156 22157 22158 22159 22160 22161 22162 22163 22164 22165 22166 22167 22168 22169 22170 22171 22172 </table>
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -854,16 +859,18 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="#itemId" itemCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="26072" levels="3" name="Wrapped Pet Exchange Ticket">
 		<!-- Confirmed CT2.5 -->
-		<table name="#create_item_id"> 7583 7584 7585 </table>
-		<set name="create_item_count" val="1" />
-		<set name="create_item_id" val="#create_item_id" />
+		<table name="#itemId"> 7583 7584 7585 </table>
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -871,16 +878,18 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="#itemId" itemCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="26073" levels="5" name="Bone Bolt Container">
 		<!-- Confirmed CT2.5 -->
-		<table name="#create_item_id"> 22144 22145 22146 22147 22148 </table>
-		<set name="create_item_count" val="10000" />
-		<set name="create_item_id" val="#create_item_id" />
+		<table name="#itemId"> 22144 22145 22146 22147 22148 </table>
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -888,6 +897,11 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="#itemId" itemCount="10000" />
+			</effect>
+		</for>
 	</skill>
 		<skill id="26075" levels="1" name="Fruit Cocktail">
 		<set name="itemConsumeCount" val="1" />
