@@ -3,7 +3,7 @@
 	<skill id="700" levels="1" name="Divine Healer Group Heal">
 		<set name="abnormalLvl" val="5" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
+		<set name="abnormalType" val="life_force_others" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="400" />
 		<set name="hitTime" val="7000" />
@@ -14,7 +14,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="27" />
+			<effect count="15" name="HealOverTime" val="27" abnormalLvl="5" abnormalType="life_force_others" />
 			<effect name="Heal" noicon="1" val="400" />
 		</for>
 	</skill>
@@ -69,7 +69,7 @@
 	<skill id="704" levels="1" name="Divine Enchanter Water Spirit">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="abnormalType" val="multi_buff" />
 		<set name="aggroPoints" val="669" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -83,7 +83,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY_MEMBER" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="multi_buff">
 				<add order="0x40" stat="mCritRate" val="2" />
 				<mul order="0x30" stat="regMp" val="1.2" />
 				<mul order="0x30" stat="pAtk" val="1.1" />
@@ -101,7 +101,7 @@
 	<skill id="705" levels="1" name="Divine Enchanter Fire Spirit">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="abnormalType" val="multi_buff" />
 		<set name="aggroPoints" val="669" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -115,7 +115,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY_MEMBER" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="multi_buff">
 				<mul order="0x30" stat="maxMp" val="1.2" />
 				<mul order="0x30" stat="regHp" val="1.2" />
 				<add order="0x40" stat="mCritRate" val="2" />
@@ -135,7 +135,7 @@
 	<skill id="706" levels="1" name="Divine Enchanter Wind Spirit">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="abnormalType" val="multi_buff" />
 		<set name="aggroPoints" val="669" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -149,7 +149,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY_MEMBER" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="multi_buff">
 				<mul order="0x30" stat="maxHp" val="1.2" />
 				<basemul order="0x30" stat="rCrit" val="0.2" />
 				<basemul order="0x30" stat="mCritRate" val="0.2" />
@@ -168,7 +168,7 @@
 	<skill id="707" levels="1" name="Divine Enchanter Hero Spirit">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="abnormalType" val="multi_buff" />
 		<set name="aggroPoints" val="669" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -182,7 +182,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY_MEMBER" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="multi_buff">
 				<mul order="0x30" stat="maxHp" val="1.2" />
 				<add order="0x40" stat="mCritRate" val="2" />
 				<mul order="0x30" stat="cAtk" val="1.2" />
@@ -201,7 +201,7 @@
 	<skill id="708" levels="1" name="Divine Enchanter Mass Binding">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="abnormalType" val="root_magically" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
@@ -218,14 +218,14 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="HOLD" />
 		<for>
-			<effect name="Root" val="0" />
+			<effect name="Root" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="root_magically" />
 		</for>
 	</skill>
 	<skill id="709" levels="1" name="Sacrifice Enchanter">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="TRANSFORM_SCRIFICE" />
+		<set name="abnormalType" val="transform_scrifice" />
 		<set name="affectRange" val="300" />
 		<set name="aggroPoints" val="1" />
 		<set name="hitTime" val="2500" />
@@ -240,7 +240,7 @@
 			<player mp="10" />
 		</cond>
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="transform_sacrifice">
 				<add order="0x40" stat="runSpd" val="10" />
 				<add order="0x40" stat="accCombat" val="2" />
 				<mul order="0x30" stat="pDef" val="1.1" />
@@ -277,9 +277,10 @@
 	<skill id="711" levels="1" name="Divine Summoner Transfer Pain">
 		<set name="mpInitialConsume" val="72" />
 		<set name="operateType" val="T" />
+		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="0.4">
+			<effect count="0x7fffffff" name="MpConsumePerLevel" abnormalTime="3" val="0.2">
 				<add order="0x40" stat="transDam" val="50" />
 			</effect>
 		</for>
@@ -287,7 +288,7 @@
 	<skill id="712" levels="1" name="Divine Summoner Final Servitor">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="abnormalType" val="multi_buff" />
 		<set name="aggroPoints" val="669" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -299,10 +300,9 @@
 		<set name="mpInitialConsume" val="15" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="60000" />
-		<set name="skillType" val="BUFF" />
-		<set name="targetType" val="SERVITOR" />
+		<set name="targetType" val="PET" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="multi_buff">
 				<basemul order="0x30" stat="rCrit" val="0.2" />
 				<mul order="0x30" stat="pAtk" val="1.1" />
 				<mul order="0x30" stat="cAtk" val="1.2" />
@@ -328,7 +328,7 @@
 		<set name="mpConsume" val="127" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="3000" />
-		<set name="targetType" val="SERVITOR" />
+		<set name="targetType" val="PET" />
 		<for>
 			<effect name="Heal" noicon="1" val="991" />
 		</for>
@@ -337,7 +337,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="TRANSFORM_SCRIFICE" />
+		<set name="abnormalType" val="transform_scrifice" />
 		<set name="affectRange" val="300" />
 		<set name="aggroPoints" val="1" />
 		<set name="hitTime" val="2500" />
@@ -352,7 +352,7 @@
 			<player mp="10" />
 		</cond>
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="transform_sacrifice">
 				<basemul order="0x30" stat="rCrit" val="0.2" />
 				<mul order="0x30" stat="cAtk" val="1.2" />
 			</effect>
@@ -364,6 +364,7 @@
 		<table name="#magicLvl"> 65 70 75 80 </table>
 		<table name="#mpConsume"> 60 65 69 72 </table>
 		<table name="#power"> 121 133 145 160 </table>
+		<set name="absorbPart" val="0.4" /> <!-- absorbs 40% of damage -->
 		<set name="affectRange" val="100" />
 		<set name="castRange" val="600" />
 		<set name="coolTime" val="2000" />
@@ -378,10 +379,8 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
+		<set name="skillType" val="DRAIN" />
 		<set name="targetType" val="AREA" />
-		<for>
-			<effect name="HpDrain" noicon="1" val="0.4" />
-		</for>
 	</skill>
 	<skill id="716" levels="4" name="Zaken Hold">
 		<!-- Confirmed CT2.5 -->
@@ -389,7 +388,7 @@
 		<table name="#mpConsume"> 60 65 69 72 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="abnormalType" val="root_magically" />
 		<set name="castRange" val="800" />
 		<set name="coolTime" val="2000" />
 		<set name="effectRange" val="1300" />
@@ -406,7 +405,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="HOLD" />
 		<for>
-			<effect name="Root" val="0" />
+			<effect name="Root" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="root_magically" />
 		</for>
 	</skill>
 	<skill id="717" levels="4" name="Zaken Concentrated Attack">
@@ -425,10 +424,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="718" levels="4" name="Zaken Dancing Sword">
 		<!-- Confirmed CT2.5 -->
@@ -445,16 +442,14 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="719" levels="1" name="Zaken Vampiric Rage">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="abnormalType" val="vampiric_attack" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="4000" />
@@ -467,7 +462,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="4" abnormalType="vampiric_attack">
 				<add order="0x40" stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
 			</effect>
 		</for>
@@ -491,10 +486,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="2000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="721" levels="2" name="Anakim Energy Attack">
 		<!-- Confirmed CT2.5 -->
@@ -514,10 +507,8 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="2000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="722" levels="2" name="Anakim Holy Beam">
 		<!-- Confirmed CT2.5 -->
@@ -537,10 +528,8 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="723" levels="1" name="Anakim Sunshine">
 		<!-- Confirmed CT2.5 -->
@@ -589,10 +578,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="2000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="726" levels="2" name="Venom Sonic Storm">
 		<!-- Confirmed CT2.5 -->
@@ -608,16 +595,14 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="5000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AREA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="727" levels="1" name="Venom Disillusion">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="PA_UP" />
+		<set name="abnormalType" val="pa_up" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="75" />
@@ -628,7 +613,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="1" abnormalType="pa_up">
 				<mul order="0x30" stat="pAtk" val="1.08" />
 			</effect>
 		</for>
@@ -646,10 +631,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="2957" />
 		<set name="reuseDelay" val="5000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="729" levels="1" name="Gordon Sword Stab">
 		<!-- Confirmed CT2.5 -->
@@ -664,16 +647,14 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="1774" />
 		<set name="reuseDelay" val="5000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AREA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="730" levels="1" name="Gordon Press">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="ATTACK_TIME_UP" />
+		<set name="abnormalType" val="attack_time_up" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="1500" />
@@ -691,7 +672,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="attack_time_up">
 				<mul order="0x30" stat="runSpd" val="0.77" />
 				<mul order="0x30" stat="pAtkSpd" val="0.77" />
 				<mul order="0x30" stat="mAtkSpd" val="0.77" />
@@ -713,16 +694,14 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="162" />
 		<set name="reuseDelay" val="15000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="732" levels="1" name="Ranku Stun Attack">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="720" />
 		<set name="effectRange" val="400" />
@@ -738,11 +717,11 @@
 		<set name="power" val="1479" />
 		<set name="reuseDelay" val="3000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="50" />
+			<effect name="Stun" abnormalTime="9" val="0" abnormalLvl="1" abnormalType="stun" effectPower="50" />
 		</for>
 	</skill>
 	<skill id="733" levels="1" name="Kechi Double Cutter">
@@ -758,10 +737,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="2957" />
 		<set name="reuseDelay" val="2000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="734" levels="1" name="Kechi Air Blade">
 		<!-- Confirmed CT2.5 -->
@@ -775,10 +752,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="1812" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="735" levels="1" name="Devil Spinning Weapon">
 		<!-- Confirmed CT2.5 -->
@@ -794,16 +769,14 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="162" />
 		<set name="reuseDelay" val="11000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="736" levels="1" name="Devil Seed">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="9" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="DARK_SEED" />
+		<set name="abnormalType" val="dark_seed" />
 		<set name="castRange" val="900" />
 		<set name="coolTime" val="800" />
 		<set name="effectRange" val="1400" />
@@ -824,15 +797,16 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="3" val="351" abnormalVisualEffect="bleed" />
-			<effect name="ChanceSkillTrigger" noicon="1" val="0" triggeredId="5248" triggeredLevel="9" chanceType="ON_EXIT" />
+			<!-- 351HP * 3 during 15 seconds -->
+			<effect count="5" name="DamOverTime" abnormalTime="3" val="1053" abnormalVisualEffect="bleed" abnormalLvl="9" abnormalType="dark_seed" />
+			<effect name="ChanceSkillTrigger" abnormalTime="15" noicon="1" val="0" triggeredId="5248" triggeredLevel="9" chanceType="ON_EXIT" />
 		</for>
 	</skill>
 	<skill id="737" levels="1" name="Devil Ultimate Defense">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="abnormalType" val="pd_up_special" />
 		<set name="hitTime" val="1000" />
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume" val="10" />
@@ -841,7 +815,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ImmobileBuff" val="0">
+			<effect name="ImmobileBuff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="pd_up_special">
 				<add order="0x40" stat="pDef" val="1800" />
 				<add order="0x40" stat="mDef" val="1350" />
 				<sub order="0x40" stat="cancelVuln" val="80" />
@@ -912,7 +886,7 @@
 		<table name="#mpInitialConsume"> 13 14 14 </table>
 		<set name="abnormalLvl" val="8" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="POISON" />
+		<set name="abnormalType" val="poison" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="4000" />
@@ -923,7 +897,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
-		<set name="power" val="70" /> <!-- Base Land Rate -->
+		<set name="power" val="70" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="3000" />
 		<set name="saveVs" val="CON" />
@@ -931,7 +905,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="3" val="52" abnormalVisualEffect="poison" />
+			<effect count="10" name="DamOverTime" abnormalTime="3" val="156" abnormalLvl="8" abnormalType="poison" abnormalVisualEffect="poison" />
 		</for>
 	</skill>
 	<skill id="742" levels="3" name="Vale Master Bursting Flame">
@@ -953,10 +927,8 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="2000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="743" levels="3" name="Vale Master Dark Explosion">
 		<!-- Confirmed CT2.5 -->
@@ -979,10 +951,8 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="4000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="744" levels="3" name="Vale Master Dark Flare">
 		<!-- Confirmed CT2.5 -->
@@ -1004,10 +974,8 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="5000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="745" levels="3" name="Vale Master Dark Cure">
 		<!-- Confirmed CT2.5 -->
@@ -1046,11 +1014,9 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="747" levels="3" name="Saber Tooth Tiger Fear">
 		<!-- Confirmed CT2.5 -->
@@ -1059,7 +1025,7 @@
 		<table name="#mpConsume"> 150 156 160 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="10" />
-		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalType" val="turn_flee" />
 		<set name="affectLimit" val="6-12" />
 		<set name="affectRange" val="150" />
 		<set name="hitTime" val="2000" />
@@ -1072,18 +1038,18 @@
 		<set name="power" val="#dmg" />
 		<set name="reuseDelay" val="15000" />
 		<set name="saveVs" val="MEN" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Fear" val="0" effectPower="60" />
+			<effect count="5" name="Fear" abnormalTime="2" val="0" abnormalLvl="1" abnormalType="turn_flee" effectPower="60" />
 		</for>
 	</skill>
 	<skill id="748" levels="1" name="Saber Tooth Tiger Sprint">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="SPEED_UP" />
+		<set name="abnormalType" val="speed_up" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="70" />
@@ -1094,7 +1060,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="2" abnormalType="speed_up">
 				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</for>
@@ -1106,7 +1072,7 @@
 		<table name="#mpConsume"> 68 71 73 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="720" />
 		<set name="effectRange" val="400" />
@@ -1121,19 +1087,19 @@
 		<set name="power" val="#dmg" />
 		<set name="reuseDelay" val="3000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="50" />
+			<effect name="Stun" abnormalTime="9" val="0" abnormalLvl="1" abnormalType="stun" effectPower="50" />
 		</for>
 	</skill>
 	<skill id="750" levels="1" name="Oel Mahum Ultimate Defense">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="abnormalType" val="pd_up_special" />
 		<set name="hitTime" val="1000" />
 		<set name="magicLvl" val="70" />
 		<set name="mpConsume" val="10" />
@@ -1142,7 +1108,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ImmobileBuff" val="0">
+			<effect name="ImmobileBuff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="pd_up_special">
 				<add order="0x40" stat="pDef" val="1800" />
 				<add order="0x40" stat="mDef" val="1350" />
 				<sub order="0x40" stat="cancelVuln" val="80" />
@@ -1169,11 +1135,9 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#dmg" />
 		<set name="reuseDelay" val="4000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="752" levels="3" name="Doll Blader Sting">
 		<!-- Confirmed CT2.5 -->
@@ -1182,7 +1146,7 @@
 		<table name="#power"> 1193 1303 1412 </table>
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="20" />
-		<set name="abnormalType" val="BLEEDING" />
+		<set name="abnormalType" val="bleeding" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="720" />
 		<set name="effectRange" val="400" />
@@ -1197,11 +1161,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="3" val="134" abnormalVisualEffect="bleed" effectPower="50" />
+			<effect count="7" name="DamOverTime" abnormalTime="3" val="402" abnormalLvl="3" abnormalType="bleeding" abnormalVisualEffect="bleed" effectPower="50" />
 		</for>
 	</skill>
 	<skill id="753" levels="3" name="Doll Blader Throwing Knife">
@@ -1220,16 +1184,14 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="754" levels="1" name="Doll Blader Clairvoyance">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="abnormalType" val="critical_prob_up" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="4000" />
@@ -1242,7 +1204,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="3" abnormalType="critical_prob_up">
 				<basemul order="0x30" stat="rCrit" val="0.3" />
 			</effect>
 		</for>
@@ -1254,7 +1216,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="mDef" val="1.15" />
-			<effect name="ChanceSkillTrigger" val="0" activationChance="20" activationMinDamage="300" chanceType="ON_ATTACKED_HIT" triggeredId="5556" />
+			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="20" activationMinDamage="300" chanceType="ON_ATTACKED_HIT" triggeredId="5556" />
 		</for>
 	</skill>
 	<skill id="756" levels="1" name="Protection of Elemental">
@@ -1267,7 +1229,7 @@
 			<add order="0x40" stat="waterRes" val="20" />
 			<add order="0x40" stat="windRes" val="20" />
 			<add order="0x40" stat="earthRes" val="20" />
-			<effect name="ChanceSkillTrigger" val="0" activationChance="20" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5556" />
+			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="20" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5556" />
 		</for>
 	</skill>
 	<skill id="757" levels="1" name="Protection of Alignment">
@@ -1278,7 +1240,7 @@
 		<for>
 			<add order="0x40" stat="holyRes" val="20" />
 			<add order="0x40" stat="darkRes" val="20" />
-			<effect name="ChanceSkillTrigger" val="0" activationChance="20" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5556" />
+			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="20" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5556" />
 		</for>
 	</skill>
 	<skill id="758" levels="1" name="Fighter's Will">
@@ -1301,7 +1263,7 @@
 				<using kind="Sword,Big Sword,Blunt,Big Blunt,Dual Sword,Dual Fist,Dagger,Dual Dagger,Pole,Ancient,Rapier" />
 			</mul>
 			<!-- TODO: Require support for effects using conditions -->
-			<!-- <effect name="ChanceSkillTrigger" val="0" activationChance="3" chanceType="ON_HIT" triggeredId="5559"> -->
+			<!-- <effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="3" chanceType="ON_HIT" triggeredId="5559"> -->
 			<!-- <using kind="Sword,Big Sword,Blunt,Big Blunt,Dual Sword,Dual Fist,Dagger,Dual Dagger,Pole,Ancient,Rapier" /> -->
 			<!-- </effect> -->
 		</for>
@@ -1326,7 +1288,7 @@
 				<using kind="Crossbow,Bow" />
 			</add>
 			<!-- TODO: Require support for effects using conditions -->
-			<!-- <effect name="ChanceSkillTrigger" val="0" activationChance="3" chanceType="ON_HIT" triggeredId="5559"> -->
+			<!-- <effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="3" chanceType="ON_HIT" triggeredId="5559"> -->
 			<!-- <using kind="Crossbow,Bow" /> -->
 			<!-- </effect> -->
 		</for>
@@ -1334,7 +1296,7 @@
 	<skill id="760" levels="1" name="Anti Magic Armor">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="abnormalType" val="pd_up_special" />
 		<set name="hitTime" val="1000" />
 		<set name="magicLvl" val="81" />
 		<set name="mpConsume" val="21" />
@@ -1343,7 +1305,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0" abnormalVisualEffect="invulnerable">
+			<effect name="Buff" abnormalTime="30" val="0" abnormalVisualEffect="invulnerable" abnormalLvl="2" abnormalType="pd_up_special">
 				<add order="0x40" stat="mDef" val="5000" />
 			</effect>
 		</for>
@@ -1352,7 +1314,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="SEED_OF_KNIGHT" />
+		<set name="abnormalType" val="seed_of_knight" />
 		<set name="aggroPoints" val="679" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -1364,7 +1326,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="8" chanceType="ON_ATTACKED_HIT" triggeredId="5561">
+			<effect name="ChanceSkillTrigger" abnormalTime="60" val="0" activationChance="8" chanceType="ON_ATTACKED_HIT" triggeredId="5561" abnormalLvl="1" abnormalType="seed_of_knight">
 				<add order="0x40" stat="pAtk" val="100" />
 			</effect>
 		</for>
@@ -1373,7 +1335,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="TOUCH_OF_DEATH" />
+		<set name="abnormalType" val="touch_of_death" />
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="300" />
 		<set name="baseCritRate" val="50" />
@@ -1391,6 +1353,7 @@
 		<set name="power" val="8409" />
 		<set name="reuseDelay" val="10000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DEATH" />
@@ -1401,8 +1364,7 @@
 			</and>
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="60" >
+			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="touch_of_death" effectPower="60" >
 				<mul order="0x30" stat="maxCp" val="0.1" />
 				<add order="0x40" stat="debuffVuln" val="30" />
 				<mul order="0x30" stat="healEffect" val="0.7" />
@@ -1414,7 +1376,7 @@
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="8" />
-		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalType" val="turn_flee" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="1000" />
@@ -1423,7 +1385,7 @@
 		<set name="magicLvl" val="81" />
 		<set name="mpConsume" val="87" />
 		<set name="operateType" val="A2" />
-		<set name="power" val="80" /> <!-- Base Land Rate -->
+		<set name="power" val="80" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="75000" />
 		<set name="saveVs" val="MEN" />
@@ -1431,7 +1393,7 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
 		<for>
-			<effect name="Fear" val="0">
+			<effect count="4" name="Fear" abnormalTime="2" val="0" abnormalLvl="1" abnormalType="turn_flee">
 				<mul order="0x30" stat="mDef" val="0.7" />
 				<mul order="0x30" stat="pDef" val="0.7" />
 				<mul order="0x30" stat="runSpd" val="0.7" />
@@ -1444,7 +1406,7 @@
 		<table name="#ench2MpConsume"> 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="SONG_OF_WINDSTORM" />
+		<set name="abnormalType" val="song_of_windstorm" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="666" />
 		<set name="hitTime" val="2500" />
@@ -1458,13 +1420,13 @@
 		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="song_of_windstorm">
 				<mul order="0x30" stat="bowWpnVuln" val="0.9" />
 				<mul order="0x30" stat="crossbowWpnVuln" val="0.95" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1Time" val="0" abnormalLvl="1" abnormalType="song_of_windstorm">
 				<mul order="0x30" stat="bowWpnVuln" val="0.9" />
 				<mul order="0x30" stat="crossbowWpnVuln" val="0.95" />
 			</effect>
@@ -1476,7 +1438,7 @@
 		<table name="#ench2MpConsume"> 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="DANCE_OF_BLADESTORM" />
+		<set name="abnormalType" val="dance_of_bladestorm" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="666" />
 		<set name="hitTime" val="1500" />
@@ -1493,14 +1455,14 @@
 			<using kind="Dual Sword" />
 		</cond>
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="15" val="0" abnormalLvl="1" abnormalType="dance_of_bladestorm">
 				<mul order="0x30" stat="bowWpnVuln" val="0.55" />
 				<mul order="0x30" stat="crossbowWpnVuln" val="0.75" />
 				<mul order="0x30" stat="mAtk" val="0.01" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1Time" val="0" abnormalLvl="1" abnormalType="dance_of_bladestorm">
 				<mul order="0x30" stat="bowWpnVuln" val="0.55" />
 				<mul order="0x30" stat="crossbowWpnVuln" val="0.75" />
 				<mul order="0x30" stat="mAtk" val="0.01" />
@@ -1523,13 +1485,13 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="5" chanceType="ON_ATTACKED_HIT" triggeredId="5565" />
+			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="5" chanceType="ON_ATTACKED_HIT" triggeredId="5565" />
 		</for>
 	</skill>
 	<skill id="768" levels="1" name="Exciting Adventure">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="AVOID_UP_SPECIAL" />
+		<set name="abnormalType" val="avoid_up_special" />
 		<set name="hitTime" val="1000" />
 		<set name="magicLvl" val="81" />
 		<set name="mpConsume" val="36" />
@@ -1538,7 +1500,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0" abnormalVisualEffect="invulnerable">
+			<effect name="Buff" abnormalTime="30" val="0" abnormalVisualEffect="invulnerable" abnormalLvl="2" abnormalType="avoid_up_special">
 				<add order="0x40" stat="runSpd" val="20" />
 				<add order="0x40" stat="rEvas" val="15" />
 				<mul order="0x30" stat="blowRate" val="1.3" />
@@ -1550,7 +1512,7 @@
 	<skill id="769" levels="1" name="Wind Riding">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="AVOID_UP_SPECIAL" />
+		<set name="abnormalType" val="avoid_up_special" />
 		<set name="hitTime" val="1000" />
 		<set name="magicLvl" val="81" />
 		<set name="mpConsume" val="36" />
@@ -1559,7 +1521,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0" abnormalVisualEffect="invulnerable">
+			<effect name="Buff" abnormalTime="30" val="0" abnormalVisualEffect="invulnerable" abnormalLvl="2" abnormalType="avoid_up_special">
 				<add order="0x40" stat="runSpd" val="50" />
 				<add order="0x40" stat="rEvas" val="20" />
 				<mul order="0x30" stat="blowRate" val="1.2" />
@@ -1571,7 +1533,7 @@
 	<skill id="770" levels="1" name="Ghost Walking">
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="AVOID_UP_SPECIAL" />
+		<set name="abnormalType" val="avoid_up_special" />
 		<set name="hitTime" val="1000" />
 		<set name="magicLvl" val="81" />
 		<set name="mpConsume" val="36" />
@@ -1580,7 +1542,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0" abnormalVisualEffect="invulnerable">
+			<effect name="Buff" abnormalTime="30" val="0" abnormalVisualEffect="invulnerable" abnormalLvl="2" abnormalType="avoid_up_special">
 				<add order="0x40" stat="runSpd" val="33" />
 				<add order="0x40" stat="rEvas" val="15" />
 				<mul order="0x30" stat="blowRate" val="1.4" />
@@ -1606,13 +1568,13 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="8049" />
 		<set name="reuseDelay" val="75000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
 		<cond msgId="113" addName="1">
 			<using kind="Bow" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="ChanceSkillTrigger" val="0" chanceType="ON_START" triggeredId="23298" />
 		</for>
 	</skill>
@@ -1632,13 +1594,13 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="7043" />
 		<set name="reuseDelay" val="75000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AREA" />
 		<cond msgId="113" addName="1">
 			<using kind="Bow" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="ChanceSkillTrigger" val="0" chanceType="ON_START" triggeredId="23299" />
 		</for>
 	</skill>
@@ -1659,13 +1621,13 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="8452" />
 		<set name="reuseDelay" val="75000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
 		<cond msgId="113" addName="1">
 			<using kind="Bow" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="ChanceSkillTrigger" val="0" chanceType="ON_START" triggeredId="23300" />
 		</for>
 	</skill>
@@ -1673,7 +1635,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="8" />
-		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalType" val="turn_flee" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="1000" />
@@ -1682,7 +1644,7 @@
 		<set name="magicLvl" val="81" />
 		<set name="mpConsume" val="87" />
 		<set name="operateType" val="A2" />
-		<set name="power" val="70" /> <!-- Base Land Rate -->
+		<set name="power" val="70" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="75000" />
 		<set name="saveVs" val="MEN" />
@@ -1690,7 +1652,7 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
 		<for>
-			<effect name="Fear" val="0">
+			<effect count="4" name="Fear" abnormalTime="2" val="0" abnormalLvl="1" abnormalType="turn_flee">
 				<mul order="0x30" stat="runSpd" val="0.67" />
 				<mul order="0x30" stat="pDef" val="0.67" />
 				<sub order="0x40" stat="rEvas" val="10" />
@@ -1701,7 +1663,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="5" />
-		<set name="abnormalType" val="DISARM" />
+		<set name="abnormalType" val="disarm" />
 		<set name="castRange" val="40" />
 		<set name="chargeConsume" val="2" />
 		<set name="effectRange" val="200" />
@@ -1724,7 +1686,7 @@
 			</and>
 		</cond>
 		<for>
-			<effect name="Disarm" val="0" abnormalVisualEffect="bleed">
+			<effect name="Disarm" abnormalTime="5" val="0" abnormalVisualEffect="bleed" abnormalLvl="1" abnormalType="disarm">
 				<mul order="0x30" stat="pAtk" val="0.6" />
 			</effect>
 		</for>
@@ -1733,7 +1695,7 @@
 		<!-- Confirmed CT2.5 and Partially Updated to H5 -->
 		<set name="abnormalLvl" val="10" />
 		<set name="abnormalTime" val="20" />
-		<set name="abnormalType" val="FORCE_OF_DESTRUCTION" />
+		<set name="abnormalType" val="force_of_destruction" />
 		<set name="baseCritRate" val="20" />
 		<set name="castRange" val="40" />
 		<set name="chargeConsume" val="2" />
@@ -1749,6 +1711,7 @@
 		<set name="power" val="4500" />
 		<set name="reuseDelay" val="15000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="CHARGEDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
@@ -1758,8 +1721,7 @@
 			</and>
 		</cond>
 		<for>
-			<effect name="EnergyAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="1" val="80" effectPower="70" abnormalVisualEffect="poison" />
+			<effect count="20" name="DamOverTime" abnormalTime="1" val="80" abnormalLvl="10" abnormalType="force_of_destruction" effectPower="70" abnormalVisualEffect="poison" />
 		</for>
 	</skill>
 	<skill id="777" levels="1" name="Demolition Impact">
@@ -1777,20 +1739,18 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="7475" />
 		<set name="reuseDelay" val="75000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
 		<cond msgId="113" addName="1">
 			<using kind="Big Sword,Big Blunt" />
 		</cond>
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="778" levels="1" name="Golem Armor">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="44" />
@@ -1799,8 +1759,9 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="259" />
 		<for>
-			<effect name="Transformation" val="259">
+			<effect name="Transformation" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="transform">
 				<set order="0x08" stat="STR" val="39" />
 				<set order="0x08" stat="INT" val="20" />
 				<set order="0x08" stat="CON" val="45" />
@@ -1939,7 +1900,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="SEED_OF_KNIGHT" />
+		<set name="abnormalType" val="seed_of_knight" />
 		<set name="aggroPoints" val="138" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -1951,7 +1912,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="20" chanceType="ON_ATTACKED_HIT" triggeredId="5562">
+			<effect name="ChanceSkillTrigger" abnormalTime="60" val="0" activationChance="20" chanceType="ON_ATTACKED_HIT" triggeredId="5562" abnormalLvl="1" abnormalType="seed_of_knight">
 				<add order="0x40" stat="pDef" val="200" />
 			</effect>
 		</for>
@@ -1960,7 +1921,7 @@
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="POSSESSION_SPECIAL" />
+		<set name="abnormalType" val="possession" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="835" />
 		<set name="hitTime" val="1800" />
@@ -1974,7 +1935,7 @@
 			<player active_effect_id_lvl="5562,3" />
 		</cond>
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="3" abnormalType="possession_special">
 				<sub order="0x40" stat="debuffVuln" val="40" />
 				<mul order="0x30" stat="pDef" val="1.5" />
 				<mul order="0x30" stat="mDef" val="1.5" />
@@ -1996,7 +1957,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="SEED_OF_KNIGHT" />
+		<set name="abnormalType" val="seed_of_knight" />
 		<set name="aggroPoints" val="138" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -2008,7 +1969,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="20" chanceType="ON_ATTACKED_HIT" triggeredId="5563">
+			<effect name="ChanceSkillTrigger" abnormalTime="60" val="0" activationChance="20" chanceType="ON_ATTACKED_HIT" triggeredId="5563" abnormalLvl="1" abnormalType="seed_of_knight">
 				<add order="0x40" stat="mDef" val="200" />
 			</effect>
 		</for>
@@ -2019,7 +1980,7 @@
 		<!-- set name="effectRange" val="400" / -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="TOUCH_OF_LIFE" />
+		<set name="abnormalType" val="touch_of_life" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="835" />
 		<set name="element" val="4" /> <!-- Holy -->
@@ -2035,12 +1996,13 @@
 			<player active_effect_id_lvl="5563,3" />
 		</cond>
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="touch_of_life">
 				<sub order="0x40" stat="cancelVuln" val="100" />
 				<sub order="0x40" stat="debuffVuln" val="30" />
 				<mul order="0x30" stat="healEffect" val="1.3" />
 			</effect>
-			<effect name="HealOverTime" noicon="1" ticks="3" val="50" />
+			<!-- 50HP * 5 during 60 seconds -->
+			<effect count="12" name="HealOverTime" abnormalTime="5" noicon="1" val="250" />
 			<effect name="HealPercent" noicon="1" val="50" />
 		</for>
 	</skill>
@@ -2048,7 +2010,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="SEED_OF_KNIGHT" />
+		<set name="abnormalType" val="seed_of_knight" />
 		<set name="aggroPoints" val="138" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -2060,7 +2022,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="20" chanceType="ON_ATTACKED_HIT" triggeredId="5564">
+			<effect name="ChanceSkillTrigger" abnormalTime="60" val="0" activationChance="20" chanceType="ON_ATTACKED_HIT" triggeredId="5564" abnormalLvl="1" abnormalType="seed_of_knight">
 				<mul order="0x30" stat="cAtk" val="1.1" />
 			</effect>
 		</for>
@@ -2069,7 +2031,7 @@
 		<!-- Confirmed CT2.5 and Update to H5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="POSSESSION_SPECIAL" />
+		<set name="abnormalType" val="possession" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="835" />
 		<set name="hitTime" val="1800" />
@@ -2083,7 +2045,7 @@
 			<player active_effect_id_lvl="5564,3" />
 		</cond>
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="3" abnormalType="possession_special">
 				<mul order="0x30" stat="pAtk" val="1.3" />
 				<mul order="0x30" stat="mAtk" val="1.3" />
 				<add order="0x40" stat="runSpd" val="30" />
@@ -2116,21 +2078,19 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="7475" />
 		<set name="reuseDelay" val="75000" />
+		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
 		<cond msgId="113" addName="1">
 			<using kind="Crossbow" />
 		</cond>
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="791" levels="1" name="Lightning Shock">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="5" />
-		<set name="abnormalType" val="PARALYZE" />
+		<set name="abnormalType" val="paralyze" />
 		<set name="affectLimit" val="6-12" />
 		<set name="affectRange" val="150" />
 		<set name="coolTime" val="720" />
@@ -2145,13 +2105,13 @@
 		<set name="power" val="69" />
 		<set name="reuseDelay" val="5000" />
 		<set name="saveVs" val="MEN" />
+		<set name="skillType" val="MDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="PARALYZE" />
 		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="ChanceSkillTrigger" val="0" triggeredId="6092" chanceType="ON_EXIT" effectPower="50">
+			<effect name="ChanceSkillTrigger" abnormalTime="5" val="0" triggeredId="6092" chanceType="ON_EXIT" effectPower="50" abnormalLvl="1" abnormalType="paralyze">
 				<mul order="0x30" stat="pAtkSpd" val="0.5" />
 				<mul order="0x30" stat="runSpd" val="0.5" />
 				<mul order="0x30" stat="mAtkSpd" val="0.5" />
@@ -2162,7 +2122,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="BETRAYAL_MARK" />
+		<set name="abnormalType" val="betrayal_mark" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="1200" />
@@ -2179,7 +2139,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" abnormalVisualEffect="poison" activationChance="10" chanceType="ON_ATTACKED_HIT" triggeredId="5600" />
+			<effect name="ChanceSkillTrigger" abnormalTime="30" val="0" abnormalVisualEffect="poison" activationChance="10" chanceType="ON_ATTACKED_HIT" triggeredId="5600" abnormalLvl="1" abnormalType="betrayal_mark" />
 		</for>
 	</skill>
 	<skill id="793" levels="1" name="Rush Impact" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6" enchantGroup5="6" enchantGroup6="6" enchantGroup7="6" enchantGroup8="6">
@@ -2192,7 +2152,7 @@
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="600" />
 		<set name="castRange" val="600" />
@@ -2210,6 +2170,7 @@
 		<set name="operateType" val="DA2" />
 		<set name="power" val="4040" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
@@ -2240,12 +2201,10 @@
 			</and>
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="60" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="60" abnormalLvl="1" abnormalType="stun" />
 		</for>
 		<enchant3for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="#ench3Chance" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="#ench3Chance" abnormalLvl="1" abnormalType="stun" />
 		</enchant3for>
 	</skill>
 	<skill id="794" levels="1" name="Mass Disarm" enchantGroup1="6" enchantGroup2="6">
@@ -2255,7 +2214,7 @@
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="5" />
-		<set name="abnormalType" val="DISARM" />
+		<set name="abnormalType" val="disarm" />
 		<set name="affectLimit" val="6-12" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="1500" />
@@ -2275,7 +2234,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2Reuse" />
 		<for>
-			<effect name="Disarm" val="0" abnormalVisualEffect="bleed">
+			<effect name="Disarm" abnormalTime="5" val="0" abnormalVisualEffect="bleed" abnormalLvl="1" abnormalType="disarm">
 				<mul order="0x30" stat="pAtk" val="0.6" />
 			</effect>
 		</for>
@@ -2294,11 +2253,9 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="2322" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="796" levels="1" name="Divine Knight Explosion Attack">
 		<set name="affectLimit" val="5-12" />
@@ -2310,11 +2267,9 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="1900" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="797" levels="1" name="Divine Rogue Piercing Attack">
 		<set name="affectLimit" val="5-12" />
@@ -2330,16 +2285,14 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="2111" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="798" levels="1" name="Divine Warrior Assault Attack">
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="20" />
-		<set name="abnormalType" val="POISON" />
+		<set name="abnormalType" val="poison" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="720" />
 		<set name="effectRange" val="400" />
@@ -2353,12 +2306,12 @@
 		<set name="power" val="1689" />
 		<set name="reuseDelay" val="3000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="3" val="69" abnormalVisualEffect="poison" effectPower="50" />
+			<effect count="10" name="DamOverTime" abnormalTime="3" val="144" abnormalLvl="3" abnormalType="poison" abnormalVisualEffect="poison" effectPower="50" />
 		</for>
 	</skill>
 	<skill id="799" levels="3" name="Master Ability - Defense">

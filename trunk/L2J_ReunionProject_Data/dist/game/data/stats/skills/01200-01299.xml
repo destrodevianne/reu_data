@@ -12,7 +12,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="abnormalType" val="root_magically" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="2500" />
@@ -37,10 +37,10 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Root" val="0" />
+			<effect name="Root" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="root_magically" />
 		</for>
 		<enchant2for>
-			<effect name="Root" val="0" />
+			<effect name="Root" abnormalTime="#ench2Time" val="0" abnormalLvl="1" abnormalType="root_magically" />
 		</enchant2for>
 	</skill>
 	<skill id="1204" levels="2" name="Wind Walk" enchantGroup1="1" enchantGroup2="1">
@@ -56,7 +56,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="SPEED_UP" />
+		<set name="abnormalType" val="speed_up" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -74,12 +74,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="speed_up">
 				<add order="0x40" stat="runSpd" val="#runSpd" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="2" abnormalType="speed_up">
 				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</enchant1for>
@@ -100,7 +100,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="ATTACK_TIME_UP" />
+		<set name="abnormalType" val="attack_time_up" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="1500" />
@@ -125,17 +125,17 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="attack_time_up">
 				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
 			</effect>
 		</for>
 		<enchant2for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="#ench2abnormalTime" val="0" abnormalLvl="3" abnormalType="attack_time_up">
 				<mul order="0x30" stat="pAtkSpd" val="0.77" />
 			</effect>
 		</enchant2for>
 		<enchant3for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="attack_time_up">
 				<mul order="0x30" stat="pAtkSpd" val="0.77" />
 				<sub order="0x40" stat="windPower" val="#ench3WindPowerVuln" />
 			</effect>
@@ -152,7 +152,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="ROOT_MAGICALLY" />
+		<set name="abnormalType" val="root_magically" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
@@ -177,18 +177,18 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant2 name="power" val="#ench2Power" />
 		<for>
-			<effect name="Root" val="0" />
+			<effect name="Root" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="root_magically" />
 		</for>
 	</skill>
 	<skill id="1209" levels="6" name="Seal of Poison">
 		<table name="#abnormalLvls"> 3 4 5 6 7 8 </table>
-		<table name="#dot"> 14 19 24 30 34 37 </table>
+		<table name="#dot"> 42 57 72 90 102 111 </table>
 		<table name="#magicLvl"> 20 30 40 52 62 70 </table>
 		<table name="#mpConsume"> 23 32 42 56 69 78 </table>
 		<table name="#mpInitialConsume"> 6 8 11 14 18 20 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="POISON" />
+		<set name="abnormalType" val="poison" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
@@ -207,19 +207,20 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="poison" />
+			<!-- Retail Values CT2.3: 14 19 24 30 34 37HP * 3 Sec -->
+			<effect count="10" name="DamOverTime" abnormalTime="3" abnormalLvl="#abnormalLvls" abnormalType="poison" val="#dot" abnormalVisualEffect="poison" />
 		</for>
 	</skill>
 	<skill id="1210" levels="4" name="Seal of Gloom">
 		<table name="#abnormalLvls"> 5 6 7 8 </table>
 		<table name="#magicLvl"> 44 52 64 72 </table>
-		<table name="#mdot"> 9 11 14 15 </table>
+		<table name="#mdot"> 27 33 42 45 </table>
 		<table name="#mpConsume"> 70 84 107 120 </table>
 		<table name="#mpInitialConsume"> 18 21 27 30 </table>
 		<table name="#power"> 29 36 46 53 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="DOT_MP" />
+		<set name="abnormalType" val="dot_mp" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
@@ -234,10 +235,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="5000" />
 		<set name="saveVs" val="MEN" />
+		<set name="skillType" val="MANADAM" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect name="MagicalAttackMp" noicon="1" val="0" />
-			<effect name="ManaDamOverTime" ticks="3" val="#mdot" effectPower="60" />
+			<!-- Retail Values CT2.3: 9 11 14 15MP * 3 Sec -->
+			<effect count="5" name="ManaDamOverTime" abnormalTime="3" val="#mdot" abnormalLvl="#abnormalLvls" abnormalType="dot_mp" effectPower="60" />
 		</for>
 	</skill>
 	<skill id="1213" levels="13" name="Seal of Mirage">
@@ -254,12 +256,13 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
+		<set name="power" val="40" /> <!-- Base Land Rate -->
 		<set name="reuseDelay" val="5000" />
 		<set name="skillType" val="CONFUSE_MOB_ONLY" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
 		<for>
-			<effect name="Confusion" abnormalTime="20" val="0" effectPower="60" />
+			<effect count="5" name="Confusion" abnormalTime="4" val="0" />
 		</for>
 	</skill>
 	<skill id="1216" levels="1" name="Self Heal">
@@ -292,7 +295,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
+		<set name="abnormalType" val="life_force_others" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
@@ -310,11 +313,11 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hotValue" />
+			<effect count="15" name="HealOverTime" val="#hotValue" abnormalLvl="#abnormalLvls" abnormalType="life_force_others" />
 			<effect name="Heal" noicon="1" val="#amount" />
 		</for>
 		<enchant1for>
-			<effect name="HealOverTime" ticks="1" val="32" />
+			<effect count="15" name="HealOverTime" val="32" abnormalLvl="7" abnormalType="life_force_others" />
 			<effect name="Heal" noicon="1" val="#ench1amount" />
 		</enchant1for>
 	</skill>
@@ -366,7 +369,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
+		<set name="abnormalType" val="life_force_others" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="hitTime" val="7000" />
@@ -383,11 +386,11 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hotValue" />
+			<effect count="15" name="HealOverTime" val="#hotValue" abnormalLvl="#abnormalLvls" abnormalType="life_force_others" />
 			<effect name="Heal" noicon="1" val="#amount" />
 		</for>
 		<enchant1for>
-			<effect name="HealOverTime" ticks="1" val="26" />
+			<effect count="15" name="HealOverTime" val="26" abnormalLvl="5" abnormalType="life_force_others" />
 			<effect name="Heal" noicon="1" val="#ench1amount" />
 		</enchant1for>
 	</skill>
@@ -409,10 +412,8 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1222" levels="15" name="Curse Chaos" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
 		<table name="#abnormalLvls"> 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </table>
@@ -430,7 +431,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="HIT_DOWN" />
+		<set name="abnormalType" val="hit_down" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="1500" />
@@ -455,17 +456,17 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="hit_down">
 				<sub order="0x40" stat="accCombat" val="#accCombat" />
 			</effect>
 		</for>
 		<enchant2for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="#ench2Time" val="0" abnormalLvl="3" abnormalType="hit_down">
 				<sub order="0x40" stat="accCombat" val="12" />
 			</effect>
 		</enchant2for>
 		<enchant3for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#ench3abnormalLvl" abnormalType="hit_down">
 				<sub order="0x40" stat="accCombat" val="#ench3accCombat" />
 			</effect>
 		</enchant3for>
@@ -487,7 +488,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="ARMOR_EARTH" />
+		<set name="abnormalType" val="armor_earth" />
 		<set name="castRange" val="#castRange" />
 		<set name="effectRange" val="#effectRange" />
 		<set name="element" val="3" /> <!-- Earth -->
@@ -514,19 +515,19 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="armor_earth">
 				<sub order="0x40" stat="earthRes" val="20" />
 				<add order="0x40" stat="windRes" val="10" />
 			</effect>
 		</for>
 		<enchant2for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="#ench2Time" val="0" abnormalLvl="4" abnormalType="armor_earth">
 				<sub order="0x40" stat="earthRes" val="20" />
 				<add order="0x40" stat="windRes" val="10" />
 			</effect>
 		</enchant2for>
 		<enchant3for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="4" abnormalType="armor_earth">
 				<sub order="0x40" stat="earthRes" val="20" />
 				<add order="0x40" stat="windRes" val="10" />
 				<sub order="0x40" stat="earthPower" val="#enchElementPower" />
@@ -550,7 +551,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="RESIST_POISON" />
+		<set name="abnormalType" val="resist_poison" />
 		<set name="castRange" val="#castRange" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="1500" />
@@ -576,17 +577,17 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="resist_poison">
 				<add order="0x40" stat="poisonVuln" val="#poisonVuln" />
 			</effect>
 		</for>
 		<enchant2for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="#ench2Time" val="0" abnormalLvl="4" abnormalType="resist_poison">
 				<add order="0x40" stat="poisonVuln" val="30" />
 			</effect>
 		</enchant2for>
 		<enchant3for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="#ench3Time" val="0" abnormalLvl="#ench3abnormalLvl" abnormalType="resist_poison">
 				<add order="0x40" stat="poisonVuln" val="30" />
 			</effect>
 		</enchant3for>
@@ -729,7 +730,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_ORC" />
+		<set name="abnormalType" val="life_force_orc" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="hitTime" val="7000" />
@@ -746,10 +747,10 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hot" />
+			<effect count="15" name="HealOverTime" val="#hot" abnormalLvl="#abnormalLvls" abnormalType="life_force_orc" />
 		</for>
 		<enchant1for>
-			<effect name="HealOverTime" ticks="1" val="#ench1hot" />
+			<effect count="15" name="HealOverTime" val="#ench1hot" abnormalLvl="#ench1abnormalLvl" abnormalType="life_force_orc" />
 		</enchant1for>
 	</skill>
 	<skill id="1230" levels="28" name="Prominence" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
@@ -779,6 +780,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1200" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -790,12 +792,8 @@
 		<enchant3 name="saveVs" val="MEN" />
 		<enchant4 name="elementPower" val="#ench4ElementPower" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 		<enchant3for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="40">
+			<effect name="Debuff" abnormalTime="30" val="0" effectPower="40" abnormalLvl="1" abnormalType="holy_attack">
 				<sub order="0x40" stat="firePower" val="#ench3FirePowerVuln" />
 			</effect>
 		</enchant3for>
@@ -812,7 +810,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="0" />
 		<set name="abnormalTime" val="3" />
-		<set name="abnormalType" val="MA_DOWN" />
+		<set name="abnormalType" val="ma_down" />
 		<set name="castRange" val="150" />
 		<set name="effectRange" val="650" />
 		<set name="hitTime" val="1500" />
@@ -824,6 +822,7 @@
 		<set name="operateType" val="A3" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -832,8 +831,7 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant2 name="power" val="#ench2Power" />
 		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect self="1" name="Buff" val="0">
+			<effect self="1" name="Buff" abnormalTime="3" val="0" abnormalLvl="0" abnormalType="ma_down">
 				<mul order="0x30" stat="pvpMagicalDmg" val="0.5" />
 			</effect>
 		</for>
@@ -853,7 +851,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="DMG_SHIELD" />
+		<set name="abnormalType" val="dmg_shield" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -873,23 +871,23 @@
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="#reflectDam" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="20" />
 			</effect>
 		</enchant1for>
 		<enchant3for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="3" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="20" />
 				<mul order="0x30" stat="pDef" val="#ench3pDef" />
 			</effect>
 		</enchant3for>
 		<enchant4for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="3" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="20" />
 				<add order="0x40" stat="fireRes" val="#ench4fireRes" />
 			</effect>
@@ -903,7 +901,7 @@
 		<table name="#mpInitialConsume"> 13 16 18 21 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="DOT_ATTR" />
+		<set name="abnormalType" val="dot_attr" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="element" val="3" /> <!-- Earth -->
@@ -923,7 +921,8 @@
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="#dot" />
+			<!-- Retail Values CT2.3: 102 125 144 157HP * 1 Sec -->
+			<effect count="15" name="DamOverTime" val="#dot" abnormalLvl="#abnormalLvls" abnormalType="dot_attr" />
 		</for>
 	</skill>
 	<skill id="1234" levels="28" name="Vampiric Claw" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
@@ -937,6 +936,7 @@
 		<table name="#ench3absorbPart"> 0.41 0.42 0.43 0.44 0.45 0.46 0.47 0.48 0.49 0.5 0.51 0.52 0.53 0.54 0.55 0.56 0.57 0.58 0.59 0.6 0.61 0.62 0.63 0.64 0.65 0.66 0.67 0.68 0.69 0.7 </table>
 		<table name="#enchElementPower"> 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="absorbPart" val="0.4" /> <!-- absorbs 40% of damage -->
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="element" val="5" /> <!-- Dark -->
@@ -950,23 +950,18 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="DRAIN" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
+		<enchant3 name="absorbPart" val="#ench3absorbPart" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
-		<for>
-			<effect name="HpDrain" noicon="1" val="0.4" />
-		</for>
-		<enchant3for>
-			<effect name="HpDrain" noicon="1" val="#ench3absorbPart" />
-		</enchant3for>
 		<enchant4for>
-			<effect name="HpDrain" noicon="1" val="0.4" />
-			<effect self="1" name="Buff" val="0">
+			<effect self="1" name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="holy_attack">
 				<add order="0x40" stat="darkPower" val="#enchElementPower" />
 			</effect>
 		</enchant4for>
@@ -998,6 +993,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1200" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -1009,12 +1005,8 @@
 		<enchant3 name="saveVs" val="MEN" />
 		<enchant4 name="elementPower" val="#ench4ElementPower" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 		<enchant3for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="60">
+			<effect name="Debuff" abnormalTime="60" val="0" effectPower="60" abnormalLvl="1" abnormalType="holy_attack">
 				<sub order="0x40" stat="waterPower" val="#ench3WaterPowerVuln" />
 			</effect>
 		</enchant3for>
@@ -1033,7 +1025,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="SPEED_DOWN" />
+		<set name="abnormalType" val="speed_down" />
 		<set name="castRange" val="900" />
 		<set name="coolTime" val="200" />
 		<set name="effectRange" val="1400" />
@@ -1051,6 +1043,7 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1000" />
 		<set name="saveVs" val="MEN" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -1062,21 +1055,19 @@
 		<enchant4 name="elementPower" val="#enchElementPower" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="60">
+			<effect name="Debuff" abnormalTime="60" val="0" effectPower="60" abnormalLvl="2" abnormalType="speed_down">
 				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 		</for>
 		<enchant3for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="#ench3Power">
+			<effect name="Debuff" abnormalTime="60" val="0" effectPower="#ench3Power" abnormalLvl="2" abnormalType="speed_down">
 				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 		</enchant3for>
 	</skill>
 	<skill id="1237" levels="17" name="Ice Dagger" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
 		<table name="#abnormalLvls"> 5 5 5 5 6 6 6 6 6 7 7 7 7 7 8 8 8 </table>
-		<table name="#dot"> 44 44 44 44 54 54 54 54 54 62 62 62 62 62 67 67 67 </table>
+		<table name="#dot"> 132 132 132 132 162 162 162 162 162 186 186 186 186 186 201 201 201 </table>
 		<table name="#magicLvl"> 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 </table>
 		<table name="#mpConsume"> 29 31 31 34 35 37 38 41 42 43 45 46 47 50 50 53 53 </table>
 		<table name="#mpInitialConsume"> 8 8 9 9 10 10 11 11 11 12 12 13 13 13 14 14 15 </table>
@@ -1090,7 +1081,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="20" />
-		<set name="abnormalType" val="BLEEDING" />
+		<set name="abnormalType" val="bleeding" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="element" val="1" /> <!-- Water -->
@@ -1107,6 +1098,7 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -1118,12 +1110,11 @@
 		<enchant4 name="elementPower" val="#enchElementPower" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed" effectPower="50" />
+			<!-- Retail Values CT2.3: 44 44 44 44 54 54 54 54 54 62 62 62 62 62 67 67 67HP * 3 Sec -->
+			<effect count="5" name="DamOverTime" abnormalTime="3" val="#dot" abnormalLvl="#abnormalLvls" abnormalType="bleeding" abnormalVisualEffect="bleed" effectPower="50" />
 		</for>
 		<enchant3for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="3" val="67" abnormalVisualEffect="bleed" effectPower="#ench3Power" />
+			<effect count="5" name="DamOverTime" abnormalTime="3" val="201" abnormalLvl="8" abnormalType="bleeding" abnormalVisualEffect="bleed" effectPower="#ench3Power" />
 		</enchant3for>
 	</skill>
 	<skill id="1238" levels="3" name="Freezing Skin" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1" enchantGroup4="1">
@@ -1142,7 +1133,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="DMG_SHIELD" />
+		<set name="abnormalType" val="dmg_shield" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -1161,28 +1152,28 @@
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="#reflectDam" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="20" />
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="3" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="#ench2reflectDam" />
 			</effect>
 		</enchant2for>
 		<enchant3for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="3" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="20" />
 				<mul order="0x30" stat="pDef" val="#ench3pDef" />
 			</effect>
 		</enchant3for>
 		<enchant4for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="3" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="20" />
 				<add order="0x40" stat="waterRes" val="#ench4waterRes" />
 			</effect>
@@ -1212,6 +1203,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1200" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -1219,12 +1211,8 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="saveVs" val="MEN" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 		<enchant3for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="40">
+			<effect name="Debuff" abnormalTime="60" val="0" effectPower="40" abnormalLvl="1" abnormalType="holy_attack">
 				<sub order="0x40" stat="windPower" val="#ench3WindPowerVuln" />
 			</effect>
 		</enchant3for>
@@ -1242,7 +1230,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="HIT_UP" />
+		<set name="abnormalType" val="hit_up" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -1260,12 +1248,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="hit_up">
 				<add order="0x40" stat="accCombat" val="#accCombat" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="hit_up">
 				<add order="0x40" stat="accCombat" val="4" />
 			</effect>
 		</enchant1for>
@@ -1283,7 +1271,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="abnormalType" val="critical_dmg_up" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -1301,12 +1289,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="critical_dmg_up">
 				<mul order="0x30" stat="cAtk" val="#cAtk" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="critical_dmg_up">
 				<mul order="0x30" stat="cAtk" val="1.35" />
 			</effect>
 		</enchant1for>
@@ -1324,7 +1312,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="SHIELD_PROB_UP" />
+		<set name="abnormalType" val="shield_prob_up" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -1342,12 +1330,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="shield_prob_up">
 				<mul order="0x30" stat="rShld" val="#rShld" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="6" abnormalType="shield_prob_up">
 				<mul order="0x30" stat="rShld" val="1.3" />
 			</effect>
 		</enchant1for>
@@ -1360,7 +1348,7 @@
 		<table name="#mpInitialConsume"> 11 14 18 20 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="DOT_ATTR" />
+		<set name="abnormalType" val="dot_attr" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="element" val="0" /> <!-- Fire -->
@@ -1380,7 +1368,8 @@
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="#dot" />
+			<!-- Retail Values CT2.3: 102 125 144 157HP * 1 Sec -->
+			<effect count="15" name="DamOverTime" val="#dot" abnormalLvl="#abnormalLvls" abnormalType="dot_attr" />
 		</for>
 	</skill>
 	<skill id="1245" levels="14" name="Steal Essence" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
@@ -1393,6 +1382,7 @@
 		<table name="#ench2mpInitialConsume"> 34 34 34 33 33 32 32 31 31 30 30 29 29 28 28 27 27 26 26 26 25 25 24 24 23 23 22 22 21 21 </table>
 		<table name="#ench3absorbPart"> 0.8 0.81 0.82 0.82 0.83 0.84 0.84 0.85 0.86 0.86 0.87 0.88 0.88 0.89 0.9 0.9 0.91 0.92 0.92 0.93 0.94 0.94 0.95 0.96 0.96 0.97 0.98 0.98 0.99 1 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
+		<set name="absorbPart" val="0.8" /> <!-- absorbs 80% of damage -->
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4000" />
@@ -1404,19 +1394,15 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="2000" />
+		<set name="skillType" val="DRAIN" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
+		<enchant3 name="absorbPart" val="#ench3absorbPart" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
-		<for>
-			<effect name="HpDrain" noicon="1" val="0.8" />
-		</for>
-		<enchant3for>
-			<effect name="HpDrain" noicon="1" val="#ench3absorbPart" />
-		</enchant3for>
 	</skill>
 	<skill id="1246" levels="12" name="Seal of Silence" enchantGroup1="1" enchantGroup2="1">
 		<table name="#magicLvl"> 48 52 56 58 60 62 64 66 68 70 72 74 </table>
@@ -1429,7 +1415,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="SILENCE" />
+		<set name="abnormalType" val="silence" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
@@ -1454,7 +1440,7 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant2 name="power" val="#ench2Power" />
 		<for>
-			<effect name="Mute" val="0" />
+			<effect name="Mute" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="silence" />
 		</for>
 	</skill>
 	<skill id="1247" levels="14" name="Seal of Scourge" enchantGroup1="1" enchantGroup2="1">
@@ -1468,7 +1454,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="HP_REGEN_DOWN" />
+		<set name="abnormalType" val="hp_regen_down" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
@@ -1492,7 +1478,7 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="hp_regen_down">
 				<mul order="0x50" stat="regHp" val="0" />
 			</effect>
 		</for>
@@ -1507,7 +1493,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="REUSE_DELAY_UP" />
+		<set name="abnormalType" val="reuse_delay_up" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
@@ -1530,7 +1516,7 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="reuse_delay_up">
 				<mul order="0x30" stat="mReuse" val="3" />
 				<mul order="0x30" stat="pReuse" val="3" />
 			</effect>
@@ -1549,7 +1535,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="HIT_UP" />
+		<set name="abnormalType" val="hit_up" />
 		<set name="affectLimit" val="50-50" />
 		<set name="affectRange" val="900" />
 		<set name="aggroPoints" val="#aggroPoints" />
@@ -1567,12 +1553,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="hit_up">
 				<add order="0x40" stat="accCombat" val="#accCombat" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="hit_up">
 				<add order="0x40" stat="accCombat" val="4" />
 			</effect>
 		</enchant1for>
@@ -1590,7 +1576,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="SHIELD_PROB_UP" />
+		<set name="abnormalType" val="shield_prob_up" />
 		<set name="affectLimit" val="50-50" />
 		<set name="affectRange" val="900" />
 		<set name="aggroPoints" val="#aggroPoints" />
@@ -1608,12 +1594,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="shield_prob_up">
 				<mul order="0x30" stat="rShld" val="#rShld" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="shield_prob_up">
 				<mul order="0x30" stat="rShld" val="1.5" />
 			</effect>
 		</enchant1for>
@@ -1631,7 +1617,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="abnormalType" val="attack_time_down" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="hitTime" val="2500" />
@@ -1648,12 +1634,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="attack_time_down">
 				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="2" abnormalType="attack_time_down">
 				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 		</enchant1for>
@@ -1671,7 +1657,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="AVOID_UP" />
+		<set name="abnormalType" val="avoid_up" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="hitTime" val="2500" />
@@ -1688,12 +1674,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="avoid_up">
 				<add order="0x40" stat="rEvas" val="#rEvas" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="avoid_up">
 				<add order="0x40" stat="rEvas" val="4" />
 			</effect>
 		</enchant1for>
@@ -1711,7 +1697,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="abnormalType" val="critical_dmg_up" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="hitTime" val="2500" />
@@ -1728,12 +1714,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="critical_dmg_up">
 				<mul order="0x30" stat="cAtk" val="#cAtk" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="critical_dmg_up">
 				<mul order="0x30" stat="cAtk" val="1.35" />
 			</effect>
 		</enchant1for>
@@ -1795,7 +1781,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_ORC" />
+		<set name="abnormalType" val="life_force_orc" />
 		<set name="affectLimit" val="50-50" />
 		<set name="affectRange" val="900" />
 		<set name="aggroPoints" val="#aggroPoints" />
@@ -1812,11 +1798,13 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hot" />
+			<!-- retail value: "#hot"/sec; stat update every time unit (2/3 sec) -->
+			<!-- Verified by slyce - Interlude - Aug 2007 -->
+			<effect count="15" name="HealOverTime" val="#hot" abnormalLvl="#abnormalLvls" abnormalType="life_force_orc" />
 			<effect name="Heal" noicon="1" val="#amount" />
 		</for>
 		<enchant1for>
-			<effect name="HealOverTime" ticks="1" val="#ench1hot" />
+			<effect count="15" name="HealOverTime" val="#ench1hot" abnormalLvl="#ench1abnormalLvl" abnormalType="life_force_orc" />
 			<effect name="Heal" noicon="1" val="172" />
 		</enchant1for>
 	</skill>
@@ -1832,7 +1820,7 @@
 		<table name="#ench2mpInitialConsume"> 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="DECREASE_WEIGHT_PENALTY" />
+		<set name="abnormalType" val="decrease_weight_penalty" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -1848,12 +1836,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="decrease_weight_penalty">
 				<add order="0x40" stat="weightPenalty" val="#Weight" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="decrease_weight_penalty">
 				<add order="0x40" stat="weightPenalty" val="9000" />
 			</effect>
 		</enchant1for>
@@ -1911,7 +1899,7 @@
 		<table name="#ench3vuln"> 40 41 42 42 43 44 44 45 46 46 47 48 48 49 50 50 51 52 52 53 54 54 55 56 56 57 58 58 59 60 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="RESIST_SHOCK" />
+		<set name="abnormalType" val="resist_shock" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -1927,17 +1915,17 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="resist_shock">
 				<sub order="0x40" stat="stunVuln" val="#vuln" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="4" abnormalType="resist_shock">
 				<sub order="0x40" stat="stunVuln" val="40" />
 			</effect>
 		</enchant1for>
 		<enchant3for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#ench3abnormalLvl" abnormalType="resist_shock">
 				<sub order="0x40" stat="stunVuln" val="#ench3vuln" />
 			</effect>
 		</enchant3for>
@@ -1955,7 +1943,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="AVOID_UP" />
+		<set name="abnormalType" val="avoid_up" />
 		<set name="affectLimit" val="50-50" />
 		<set name="affectRange" val="900" />
 		<set name="aggroPoints" val="#aggroPoints" />
@@ -1973,12 +1961,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="avoid_up">
 				<add order="0x40" stat="rEvas" val="#rEvas" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="avoid_up">
 				<add order="0x40" stat="rEvas" val="4" />
 			</effect>
 		</enchant1for>
@@ -2003,7 +1991,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="BERSERKER" />
+		<set name="abnormalType" val="berserker" />
 		<set name="affectLimit" val="50-50" />
 		<set name="affectRange" val="900" />
 		<set name="aggroPoints" val="#aggroPoints" />
@@ -2021,7 +2009,7 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="berserker">
 				<mul order="0x30" stat="mAtk" val="#mAtk" />
 				<mul order="0x30" stat="pAtk" val="#pAtk" />
 				<mul order="0x30" stat="mDef" val="#mDef" />
@@ -2033,7 +2021,7 @@
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="2" abnormalType="berserker">
 				<mul order="0x30" stat="mAtk" val="1.16" />
 				<mul order="0x30" stat="pAtk" val="1.08" />
 				<mul order="0x30" stat="mDef" val="0.84" />
@@ -2054,15 +2042,16 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="T" />
+		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="0.2">
+			<effect count="0x7fffffff" name="MpConsumePerLevel" abnormalTime="3" val="0.2">
 				<add order="0x40" stat="transDam" val="#power" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="0.2">
+			<effect count="0x7fffffff" name="MpConsumePerLevel" abnormalTime="3" val="0.2">
 				<add order="0x40" stat="transDam" val="#ench1power" />
 			</effect>
 		</enchant1for>
@@ -2082,7 +2071,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="MD_DOWN" />
+		<set name="abnormalType" val="md_down" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="element" val="5" /> <!-- Dark -->
@@ -2099,6 +2088,7 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="5000" />
 		<set name="saveVs" val="MEN" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
@@ -2106,8 +2096,7 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="80" >
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="md_down" effectPower="80" >
 				<mul order="0x30" stat="mDef" val="0.85" />
 				<sub order="0x40" stat="waterRes" val="#vuln" />
 				<sub order="0x40" stat="fireRes" val="#vuln" />
@@ -2118,8 +2107,7 @@
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="#ench1Chance" >
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="md_down" effectPower="#ench1Chance" >
 				<mul order="0x30" stat="mDef" val="0.85" />
 				<sub order="0x40" stat="waterRes" val="#ench1Vuln" />
 				<sub order="0x40" stat="fireRes" val="#ench1Vuln" />
@@ -2130,8 +2118,7 @@
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="80" >
+			<effect name="Debuff" abnormalTime="#ench2Time" val="0" abnormalLvl="3" abnormalType="md_down" effectPower="80" >
 				<mul order="0x30" stat="mDef" val="0.85" />
 				<sub order="0x40" stat="waterRes" val="25" />
 				<sub order="0x40" stat="fireRes" val="25" />
@@ -2161,10 +2148,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1265" levels="14" name="Solar Flare" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<table name="#magicLvl"> 40 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
@@ -2190,6 +2175,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -2198,9 +2184,6 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1266" levels="3" name="Shadow Spark">
 		<table name="#magicLvl"> 25 30 35 </table>
@@ -2221,10 +2204,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1267" levels="14" name="Shadow Flare" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<table name="#magicLvl"> 40 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
@@ -2250,6 +2231,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -2258,9 +2240,6 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1268" levels="4" name="Vampiric Rage" enchantGroup1="1" enchantGroup2="1">
 		<table name="#abnormalLvls"> 1 2 3 4 </table>
@@ -2275,7 +2254,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
+		<set name="abnormalType" val="vampiric_attack" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -2293,12 +2272,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="vampiric_attack">
 				<add order="0x40" stat="absorbDam" val="#absorbDam" /> <!-- absorb HP from damage inflicted on enemies -->
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="4" abnormalType="vampiric_attack">
 				<add order="0x40" stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
 			</effect>
 		</enchant1for>
@@ -2317,7 +2296,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="HEAL_EFFECT_DOWN" />
+		<set name="abnormalType" val="heal_effect_down" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="4000" />
@@ -2342,17 +2321,17 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="heal_effect_down">
 				<mul order="0x30" stat="healEffect" val="0.5" />
 			</effect>
 		</for>
 		<enchant2for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="#ench2Time" val="0" abnormalLvl="1" abnormalType="heal_effect_down">
 				<mul order="0x30" stat="healEffect" val="0.5" />
 			</effect>
 		</enchant2for>
 		<enchant3for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="heal_effect_down">
 				<mul order="0x30" stat="healEffect" val="#ench3Power" />
 			</effect>
 		</enchant3for>
@@ -2389,7 +2368,7 @@
 		<table name="#mpInitialConsume"> 24 26 28 31 32 33 35 36 37 38 39 40 41 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="10" />
-		<set name="abnormalType" val="TURN_FLEE" />
+		<set name="abnormalType" val="turn_flee" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
@@ -2408,7 +2387,7 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
 		<for>
-			<effect name="Fear" val="0" />
+			<effect count="5" name="Fear" abnormalTime="2" val="0" abnormalLvl="1" abnormalType="turn_flee" />
 		</for>
 	</skill>
 	<skill id="1273" levels="13" name="Serenade of Eva">
@@ -2447,10 +2426,8 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1275" levels="14" name="Aura Bolt" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<table name="#magicLvl"> 40 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
@@ -2474,6 +2451,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -2483,9 +2461,6 @@
 		<enchant2 name="power" val="#ench2Power" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="pvpPower" val="#enchDuel" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1276" levels="14" name="Summon Kai the Cat" enchantGroup1="1">
 		<table name="#itemConsumeCount"> 1 1 1 2 2 2 1 1 2 2 1 1 2 2 </table>
@@ -2683,7 +2658,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="SPEED_UP" />
+		<set name="abnormalType" val="speed_up" />
 		<set name="affectLimit" val="50-50" />
 		<set name="affectRange" val="900" />
 		<set name="aggroPoints" val="#aggroPoints" />
@@ -2701,31 +2676,33 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="speed_up">
 				<add order="0x40" stat="runSpd" val="#runSpd" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="2" abnormalType="speed_up">
 				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</enchant1for>
 	</skill>
 	<skill id="1283" levels="13" name="Soul Guard" enchantGroup1="1">
 		<table name="#def"> 293.3 333.2 375.9 421.4 445.2 469.7 494.9 520.1 546 571.9 598.5 625.8 653.1 </table>
-		<table name="#mdot"> 5 6 6 7 8 8 8 8 9 9 9 10 10 </table>
+		<table name="#mdot"> 15 18 18 21 24 24 24 24 27 27 27 30 30 </table>
 		<table name="#mpInitialConsume"> 8 9 10 11 11 11 12 12 13 13 13 14 14 </table>
 		<table name="#ench1def"> 683.76 687.82 691.88 695.94 700 704.06 708.12 712.18 716.24 720.3 724.36 728.42 732.48 736.54 740.6 744.66 748.72 752.78 756.84 760.9 764.96 769.02 773.08 777.14 781.2 785.26 789.32 793.38 797.44 801.5 </table>
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="T" />
+		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ManaDamOverTime" ticks="3" abnormalTime="-1" val="#mdot">
+			<!-- Retail Values CT2.3: 5 6 6 7 8 8 8 8 9 9 9 10 10MP * 3 Sec -->
+			<effect count="0x7fffffff" name="ManaDamOverTime" abnormalTime="3" val="#mdot">
 				<add order="0x40" stat="pDef" val="#def" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="ManaDamOverTime" ticks="3" abnormalTime="-1" val="10">
+			<effect count="0x7fffffff" name="ManaDamOverTime" abnormalTime="3" val="30">
 				<add order="0x40" stat="pDef" val="#ench1def" />
 			</effect>
 		</enchant1for>
@@ -2743,7 +2720,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="DMG_SHIELD" />
+		<set name="abnormalType" val="dmg_shield" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="hitTime" val="2500" />
@@ -2760,12 +2737,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="#power" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="dmg_shield">
 				<add order="0x40" stat="reflectDam" val="20" />
 			</effect>
 		</enchant1for>
@@ -2773,7 +2750,7 @@
 	<skill id="1285" levels="1" name="Seed of Fire">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="600" />
-		<set name="abnormalType" val="HOLY_ATTACK" />
+		<set name="abnormalType" val="holy_attack" />
 		<set name="aggroPoints" val="100" />
 		<set name="element" val="0" /> <!-- Fire -->
 		<set name="hitTime" val="4000" />
@@ -2785,7 +2762,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="holy_attack">
 				<add order="0x40" stat="firePower" val="20" />
 			</effect>
 		</for>
@@ -2793,7 +2770,7 @@
 	<skill id="1286" levels="1" name="Seed of Water">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="600" />
-		<set name="abnormalType" val="HOLY_ATTACK" />
+		<set name="abnormalType" val="holy_attack" />
 		<set name="aggroPoints" val="100" />
 		<set name="element" val="1" /> <!-- Water -->
 		<set name="hitTime" val="4000" />
@@ -2805,7 +2782,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="holy_attack">
 				<add order="0x40" stat="waterPower" val="20" />
 			</effect>
 		</for>
@@ -2813,7 +2790,7 @@
 	<skill id="1287" levels="1" name="Seed of Wind">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="600" />
-		<set name="abnormalType" val="HOLY_ATTACK" />
+		<set name="abnormalType" val="holy_attack" />
 		<set name="aggroPoints" val="100" />
 		<set name="element" val="2" /> <!-- Wind -->
 		<set name="hitTime" val="4000" />
@@ -2825,7 +2802,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="holy_attack">
 				<add order="0x40" stat="windPower" val="20" />
 			</effect>
 		</for>
@@ -2847,6 +2824,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="150" />
 		<set name="reuseDelay" val="300000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -2855,9 +2833,6 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="pvpPower" val="#enchDuel" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1289" levels="1" name="Inferno" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<table name="#ench1Power"> 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 </table>
@@ -2867,7 +2842,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="10" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="DOT_ATTR" />
+		<set name="abnormalType" val="dot_attr" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="element" val="0" /> <!-- Fire -->
@@ -2882,6 +2857,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="150" />
 		<set name="reuseDelay" val="300000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -2891,8 +2867,8 @@
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="1" val="60" effectPower="80" />
+			<!-- Retail Values CT2.3: 60 HP * 1 Sec -->
+			<effect count="15" name="DamOverTime" val="60" abnormalLvl="10" abnormalType="dot_attr" effectPower="80" />
 		</for>
 	</skill>
 	<skill id="1290" levels="1" name="Blizzard" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
@@ -2903,7 +2879,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="SPEED_DOWN" />
+		<set name="abnormalType" val="speed_down" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="element" val="1" /> <!-- Water -->
@@ -2920,6 +2896,7 @@
 		<set name="power" val="150" />
 		<set name="reuseDelay" val="300000" />
 		<set name="saveVs" val="MEN" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -2929,8 +2906,7 @@
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="40">
+			<effect name="Debuff" abnormalTime="30" val="0" effectPower="40" abnormalLvl="3" abnormalType="speed_down">
 				<mul order="0x30" stat="runSpd" val="0.5" />
 			</effect>
 		</for>
@@ -2943,7 +2919,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="HEAL_EFFECT_DOWN" />
+		<set name="abnormalType" val="heal_effect_down" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="element" val="2" /> <!-- Wind -->
@@ -2958,6 +2934,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="150" />
 		<set name="reuseDelay" val="300000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -2967,8 +2944,7 @@
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-			<effect name="Debuff" val="0" effectPower="80" >
+			<effect name="Debuff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="heal_effect_down" effectPower="80" >
 				<mul order="0x30" stat="healEffect" val="0.5" />
 			</effect>
 		</for>
@@ -2991,6 +2967,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="200" />
 		<set name="reuseDelay" val="300000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -2999,9 +2976,6 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="pvpPower" val="#enchDuel" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1293" levels="1" name="Elemental Symphony" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<table name="#ench1Power"> 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 </table>
@@ -3021,6 +2995,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="200" />
 		<set name="reuseDelay" val="300000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -3029,9 +3004,6 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="pvpPower" val="#enchDuel" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1294" levels="1" name="Elemental Storm" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<table name="#ench1Power"> 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 </table>
@@ -3050,6 +3022,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="200" />
 		<set name="reuseDelay" val="300000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -3058,9 +3031,6 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="pvpPower" val="#enchDuel" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1295" levels="9" name="Aqua Splash" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<table name="#magicLvl"> 58 60 62 64 66 68 70 72 74 </table>
@@ -3088,6 +3058,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="5000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -3097,9 +3068,6 @@
 		<enchant2 name="power" val="#ench2Power" />
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1296" levels="9" name="Rain of Fire" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<table name="#magicLvl"> 58 60 62 64 66 68 70 72 74 </table>
@@ -3127,6 +3095,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="5000" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -3136,9 +3105,6 @@
 		<enchant2 name="power" val="#ench2Power" />
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="1297" levels="6" name="Clear Mind">
 		<!-- Confirmed CT2.5 -->
@@ -3167,7 +3133,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="SPEED_DOWN" />
+		<set name="abnormalType" val="speed_down" />
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="castRange" val="500" />
@@ -3191,7 +3157,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="power" val="#ench2power" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="3" abnormalType="speed_down">
 				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
 		</for>
@@ -3212,7 +3178,7 @@
 		<table name="#enchpDef"> 3636 3672 3708 3744 3780 3816 3852 3888 3924 3960 3996 4032 4068 4104 4140 4176 4212 4248 4284 4320 4356 4392 4428 4464 4500 4536 4572 4608 4644 4680 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="abnormalType" val="pd_up_special" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
@@ -3223,27 +3189,27 @@
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="900000" />
 		<set name="skillType" val="BUFF" />
-		<set name="targetType" val="SERVITOR" />
+		<set name="targetType" val="PET" />
 		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2reuseDelay" />
 		<for>
-			<effect name="ImmobilePetBuff" val="0">
+			<effect name="ImmobilePetBuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="pd_up_special">
 				<add order="0x40" stat="pDef" val="#pDef" />
 				<add order="0x40" stat="mDef" val="#mDef" />
 				<sub order="0x40" stat="cancelVuln" val="80" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="ImmobilePetBuff" val="0">
+			<effect name="ImmobilePetBuff" abnormalTime="#ench1time" val="0" abnormalLvl="#enchabnormalLvl" abnormalType="pd_up_special">
 				<add order="0x40" stat="pDef" val="#enchpDef" />
 				<add order="0x40" stat="mDef" val="#enchmDef" />
 				<sub order="0x40" stat="cancelVuln" val="80" />
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect name="ImmobilePetBuff" val="0">
+			<effect name="ImmobilePetBuff" abnormalTime="30" val="0" abnormalLvl="#enchabnormalLvl" abnormalType="pd_up_special">
 				<add order="0x40" stat="pDef" val="#enchpDef" />
 				<add order="0x40" stat="mDef" val="#enchmDef" />
 				<sub order="0x40" stat="cancelVuln" val="80" />
