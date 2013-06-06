@@ -11,7 +11,7 @@
 		<table name="#time"> 120 120 120 150 165 180 195 210 225 240 255 270 285 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="#abnormalTimes" />
-		<set name="abnormalType" val="BUFF_QUEEN_OF_CAT" />
+		<set name="abnormalType" val="buff_queen_of_cat" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#power" />
 		<set name="hitTime" val="4000" />
@@ -23,7 +23,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#time" val="0" abnormalLvl="#abnormalLvls" abnormalType="buff_queen_of_cat">
 				<mul order="0x30" stat="pAtk" val="#pAtk" />
 				<add order="0x40" stat="accCombat" val="#accCombat" />
 			</effect>
@@ -40,7 +40,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
-		<set name="negateAbnormals" val="ATTACK_TIME_UP;HIT_DOWN;PA_DOWN" />
+		<set name="negateAbnormals" val="attack_time_up;hit_down;pa_down" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="PARTY" />
@@ -58,7 +58,7 @@
 		<table name="#time"> 120 120 120 150 165 180 195 210 225 240 255 270 285 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="#abnormalTimes" />
-		<set name="abnormalType" val="BUFF_UNICORN_SERAPHIM" />
+		<set name="abnormalType" val="buff_unicorn_seraphim" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#power" />
 		<set name="hitTime" val="4000" />
@@ -70,7 +70,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#time" val="0" abnormalLvl="#abnormalLvls" abnormalType="buff_unicorn_seraphim">
 				<mul order="0x30" stat="regMp" val="#regMp" />
 			</effect>
 		</for>
@@ -85,7 +85,7 @@
 		<table name="#time"> 120 120 120 150 165 180 195 210 225 240 255 270 285 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="#abnormalTimes" />
-		<set name="abnormalType" val="BUFF_UNICORN_SERAPHIM" />
+		<set name="abnormalType" val="buff_unicorn_seraphim" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#power" />
 		<set name="hitTime" val="4000" />
@@ -97,7 +97,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#time" val="0" abnormalLvl="#abnormalLvls" abnormalType="buff_unicorn_seraphim">
 				<mul order="0x30" stat="mReuse" val="#mReuse" />
 			</effect>
 		</for>
@@ -113,7 +113,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
-		<set name="negateAbnormals" val="SLEEP;ROOT_MAGICALLY;STUN;PARALYZE;SILENCE" />
+		<set name="negateAbnormals" val="sleep;root_magically;stun;paralyze;silence" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="PARTY" />
@@ -132,7 +132,7 @@
 		<table name="#power"> 40 40 40 41 42 43 44 45 46 47 48 49 50 </table> <!-- Base Land Rate -->
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="DEBUFF_NIGHTSHADE" />
+		<set name="abnormalType" val="debuff_nightshade" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
 		<set name="element" val="5" /> <!-- Dark -->
@@ -152,11 +152,11 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="debuff_nightshade">
 				<mul order="0x30" stat="mDef" val="#mpDef" />
 				<mul order="0x30" stat="pDef" val="#mpDef" />
 			</effect>
-			<effect name="TargetMe" noicon="1" val="0" effectPower="80" />
+			<effect name="TargetMe" abnormalTime="30" noicon="1" val="0" effectPower="80" />
 		</for>
 	</skill>
 	<skill id="4706" levels="13" name="Mass Curse of Shade">
@@ -170,7 +170,7 @@
 		<table name="#power"> 40 40 40 41 42 43 44 45 46 47 48 49 50 </table> <!-- Base Land Rate -->
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="DEBUFF_NIGHTSHADE" />
+		<set name="abnormalType" val="debuff_nightshade" />
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="200" />
 		<set name="element" val="5" /> <!-- Dark -->
@@ -191,11 +191,11 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="debuff_nightshade">
 				<mul order="0x30" stat="mDef" val="#mpDef" />
 				<mul order="0x30" stat="pDef" val="#mpDef" />
 			</effect>
-			<effect name="TargetMe" noicon="1" val="0" effectPower="40" />
+			<effect name="TargetMe" abnormalTime="30" noicon="1" val="0" effectPower="40" />
 		</for>
 	</skill>
 	<skill id="4707" levels="13" name="Shade Sacrifice">
@@ -226,7 +226,7 @@
 		<table name="#power"> 1046 1230 1425 1626 1727 1827 1925 2020 2067 2112 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="200" />
 		<set name="hitTime" val="2000" />
@@ -239,11 +239,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="10000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="50" />
+			<effect name="Stun" abnormalTime="9" val="0" abnormalLvl="1" effectPower="50" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4709" levels="10" name="Cursed Blow">
@@ -262,10 +262,8 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="10000" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4710" levels="12" name="Wild Stun">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -273,7 +271,7 @@
 		<table name="#power"> 16 35 73 138 238 375 537 619 697 766 821 864 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="400" />
 		<set name="effectRange" val="200" />
@@ -287,11 +285,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="12000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="15" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="15" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4711" levels="12" name="Wild Defense">
@@ -300,7 +298,7 @@
 		<table name="#mpConsume"> 46 76 104 139 179 220 258 275 288 298 305 309 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="ULTIMATE_BUFF" />
+		<set name="abnormalType" val="ultimate_buff" />
 		<set name="aggroPoints" val="#aggro" />
 		<set name="coolTime" val="400" />
 		<set name="hitTime" val="1100" />
@@ -311,7 +309,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ImmobileBuff" val="0">
+			<effect name="ImmobileBuff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="ultimate_buff">
 				<mul order="0x30" stat="mDef" val="5" />
 				<mul order="0x30" stat="pDef" val="5" />
 				<mul order="0x30" stat="pAtkSpd" val="0.3" />
@@ -333,10 +331,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="MagicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4713" levels="12" name="Bright Heal">
 		<table name="#aggro"> 33 34 35 36 37 38 39 40 41 42 43 44 </table>
@@ -426,10 +422,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4720" levels="12" name="BOSS Strike">
 		<!-- Boss Skill -->
@@ -445,10 +439,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4721" levels="12" name="BOSS Strike">
 		<!-- Boss Skill -->
@@ -464,10 +456,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4722" levels="12" name="BOSS Strike">
 		<!-- Boss Skill -->
@@ -483,10 +473,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4723" levels="12" name="BOSS Strike">
 		<!-- Boss Skill -->
@@ -502,10 +490,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4724" levels="12" name="Stun">
 		<table name="#magicLvl"> 14 24 34 44 54 64 75 79 84 89 94 99 </table>
@@ -513,7 +499,7 @@
 		<table name="#power"> 56 151 417 1089 2816 5504 8522 10060 11622 13182 14784 16398 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -525,11 +511,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4725" levels="12" name="Stun">
@@ -538,7 +524,7 @@
 		<table name="#power"> 48 128 352 920 2377 4645 7195 8490 9855 11350 12936 14430 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -550,11 +536,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4726" levels="12" name="Stun">
@@ -563,7 +549,7 @@
 		<table name="#power"> 26 68 188 491 1268 2479 3834 4519 5242 6037 6889 7675 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -575,11 +561,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4727" levels="12" name="Stun">
@@ -588,7 +574,7 @@
 		<table name="#power"> 24 64 176 461 1189 2326 3598 4245 4928 5682 6461 7215 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -600,11 +586,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4728" levels="12" name="Stun">
@@ -613,7 +599,7 @@
 		<table name="#power"> 23 60 165 429 1109 2172 3362 3971 4614 5313 6047 6756 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -625,11 +611,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4729" levels="12" name="BOSS Mortal Blow">
@@ -648,10 +634,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4730" levels="12" name="BOSS Mortal Blow">
 		<!-- Boss Skill -->
@@ -669,10 +653,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4731" levels="12" name="BOSS Mortal Blow">
 		<!-- Boss Skill -->
@@ -690,10 +672,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4732" levels="12" name="BOSS Mortal Blow">
 		<!-- Boss Skill -->
@@ -711,10 +691,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4733" levels="12" name="BOSS Mortal Blow">
 		<!-- Boss Skill -->
@@ -732,10 +710,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4734" levels="12" name="BOSS Spinning Slash">
 		<!-- Boss Skill -->
@@ -750,10 +726,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4735" levels="12" name="BOSS Spinning Slash">
 		<!-- Boss Skill -->
@@ -768,10 +742,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4736" levels="12" name="BOSS Spinning Slash">
 		<!-- Boss Skill -->
@@ -786,10 +758,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4737" levels="12" name="BOSS Spinning Slash">
 		<!-- Boss Skill -->
@@ -804,10 +774,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4738" levels="12" name="BOSS Spinning Slash">
 		<!-- Boss Skill -->
@@ -822,10 +790,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4739" levels="12" name="BOSS Strike">
 		<!-- Boss Skill -->
@@ -841,10 +807,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4740" levels="12" name="BOSS Strike">
 		<!-- Boss Skill -->
@@ -860,10 +824,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4741" levels="12" name="BOSS Strike">
 		<!-- Boss Skill -->
@@ -879,10 +841,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4742" levels="12" name="BOSS Strike">
 		<!-- Boss Skill -->
@@ -898,10 +858,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4743" levels="12" name="BOSS Strike">
 		<!-- Boss Skill -->
@@ -917,10 +875,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4744" levels="12" name="Stun">
 		<table name="#magicLvl"> 14 24 34 44 54 64 75 79 84 89 94 99 </table>
@@ -928,7 +884,7 @@
 		<table name="#power"> 56 151 417 1089 2816 5504 8522 10060 11622 13182 14784 16398 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -940,11 +896,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4745" levels="12" name="Stun">
@@ -953,7 +909,7 @@
 		<table name="#power"> 48 128 352 920 2377 4645 7195 8490 9855 11350 12936 14430 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -965,11 +921,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4746" levels="12" name="Stun">
@@ -978,7 +934,7 @@
 		<table name="#power"> 26 68 188 491 1268 2479 3834 4519 5242 6037 6889 7675 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -990,11 +946,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4747" levels="12" name="Stun">
@@ -1003,7 +959,7 @@
 		<table name="#power"> 24 64 176 461 1189 2326 3598 4245 4928 5682 6461 7215 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -1015,11 +971,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4748" levels="12" name="Stun">
@@ -1028,7 +984,7 @@
 		<table name="#power"> 23 60 165 429 1109 2172 3362 3971 4614 5313 6047 6756 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectRange" val="200" />
@@ -1040,11 +996,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4749" levels="12" name="BOSS Mortal Blow">
@@ -1063,10 +1019,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4750" levels="12" name="BOSS Mortal Blow">
 		<!-- Boss Skill -->
@@ -1084,10 +1038,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4751" levels="12" name="BOSS Mortal Blow">
 		<!-- Boss Skill -->
@@ -1105,10 +1057,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4752" levels="12" name="BOSS Mortal Blow">
 		<!-- Boss Skill -->
@@ -1126,10 +1076,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4753" levels="12" name="BOSS Mortal Blow">
 		<!-- Boss Skill -->
@@ -1147,10 +1095,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4754" levels="12" name="BOSS Power Shot">
 		<!-- Boss Skill -->
@@ -1165,10 +1111,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4755" levels="12" name="BOSS Power Shot">
 		<!-- Boss Skill -->
@@ -1183,10 +1127,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4756" levels="12" name="BOSS Power Shot">
 		<!-- Boss Skill -->
@@ -1201,10 +1143,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4757" levels="12" name="BOSS Power Shot">
 		<!-- Boss Skill -->
@@ -1219,10 +1159,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4758" levels="12" name="BOSS Power Shot">
 		<!-- Boss Skill -->
@@ -1237,10 +1175,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4759" levels="12" name="Stun">
 		<table name="#magicLvl"> 14 24 34 44 54 64 75 79 84 89 94 99 </table>
@@ -1248,7 +1184,7 @@
 		<table name="#power"> 164 441 1218 3179 8223 16075 24892 29382 33944 38501 43180 47895 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1259,11 +1195,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4760" levels="12" name="Stun">
@@ -1272,7 +1208,7 @@
 		<table name="#power"> 138 372 1029 2687 6943 13568 21015 24795 28785 33149 37783 42148 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1283,11 +1219,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4761" levels="12" name="Stun">
@@ -1296,7 +1232,7 @@
 		<table name="#power"> 74 198 548 1434 3704 7241 11196 13197 15309 17634 20122 22415 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1307,11 +1243,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4762" levels="12" name="Stun">
@@ -1320,7 +1256,7 @@
 		<table name="#power"> 69 186 514 1346 3472 6792 10508 12398 14393 16594 18870 21074 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1331,11 +1267,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4763" levels="12" name="Stun">
@@ -1344,7 +1280,7 @@
 		<table name="#power"> 65 174 481 1253 3240 6344 9819 11599 13476 15516 17661 19733 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1355,11 +1291,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4764" levels="12" name="BOSS Power Shot">
@@ -1375,10 +1311,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4765" levels="12" name="BOSS Power Shot">
 		<!-- Boss Skill -->
@@ -1393,10 +1327,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4766" levels="12" name="BOSS Power Shot">
 		<!-- Boss Skill -->
@@ -1411,10 +1343,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4767" levels="12" name="BOSS Power Shot">
 		<!-- Boss Skill -->
@@ -1429,10 +1359,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4768" levels="12" name="BOSS Power Shot">
 		<!-- Boss Skill -->
@@ -1447,10 +1375,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4769" levels="12" name="Stun">
 		<table name="#magicLvl"> 14 24 34 44 54 64 75 79 84 89 94 99 </table>
@@ -1458,7 +1384,7 @@
 		<table name="#power"> 164 441 1218 3179 8223 16075 24892 29382 33944 38501 43180 47895 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1469,11 +1395,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4770" levels="12" name="Stun">
@@ -1482,7 +1408,7 @@
 		<table name="#power"> 138 372 1029 2687 6943 13568 21015 24795 28785 33149 37783 42148 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1493,11 +1419,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4771" levels="12" name="Stun">
@@ -1506,7 +1432,7 @@
 		<table name="#power"> 74 198 548 1434 3704 7241 11196 13197 15309 17634 20122 22415 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1517,11 +1443,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4772" levels="12" name="Stun">
@@ -1530,7 +1456,7 @@
 		<table name="#power"> 69 186 514 1346 3472 6792 10508 12398 14393 16594 18870 21074 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1541,11 +1467,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4773" levels="12" name="Stun">
@@ -1554,7 +1480,7 @@
 		<table name="#power"> 65 174 481 1253 3240 6344 9819 11599 13476 15516 17661 19733 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4500" />
@@ -1565,11 +1491,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="80" />
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="80" abnormalLvl="1" abnormalType="stun" />
 		</for>
 	</skill>
 	<skill id="4774" levels="12" name="BOSS Spear Attack">
@@ -1585,10 +1511,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4775" levels="12" name="BOSS Spear Attack">
 		<!-- Boss Skill -->
@@ -1603,10 +1527,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4776" levels="12" name="BOSS Spear Attack">
 		<!-- Boss Skill -->
@@ -1621,10 +1543,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4777" levels="12" name="BOSS Spear Attack">
 		<!-- Boss Skill -->
@@ -1639,10 +1559,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4778" levels="12" name="BOSS Spear Attack">
 		<!-- Boss Skill -->
@@ -1657,10 +1575,8 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="4779" levels="12" name="BOSS Heal">
 		<!-- Boss Skill -->
@@ -1755,12 +1671,12 @@
 	<skill id="4784" levels="12" name="BOSS Chant of Life">
 		<!-- Boss Skill -->
 		<table name="#abnormalLvls"> 11 12 13 14 15 16 17 17 18 18 19 19 </table>
-		<table name="#hot"> 167 210 315 507 784 1026 1195 1283 1358 1427 951 940 </table>
+		<table name="#hot"> 118 202 322 473 667 833 919 958 974 968 951 940 </table>
 		<table name="#magicLvl"> 14 24 34 44 54 64 75 79 84 89 94 99 </table>
 		<table name="#mpConsume"> 43 69 99 134 173 207 239 250 258 262 262 263 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
+		<set name="abnormalType" val="life_force_others" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="700" />
 		<set name="effectRange" val="1200" />
@@ -1773,18 +1689,18 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="CLAN_MEMBER" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hot" />
+			<effect count="15" name="HealOverTime" val="#hot" abnormalLvl="#abnormalLvls" abnormalType="life_force_others" />
 		</for>
 	</skill>
 	<skill id="4785" levels="12" name="BOSS Chant of Life">
 		<!-- Boss Skill -->
 		<table name="#abnormalLvls"> 11 12 13 14 15 16 17 17 18 18 19 19 </table>
-		<table name="#hot"> 141 177 266 428 662 866 1009 1083 1152 1229 832 827 </table>
+		<table name="#hot"> 99 171 272 400 563 703 776 809 826 833 832 827 </table>
 		<table name="#magicLvl"> 14 24 34 44 54 64 75 79 84 89 94 99 </table>
 		<table name="#mpConsume"> 43 69 99 134 173 207 239 250 258 262 262 263 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
+		<set name="abnormalType" val="life_force_others" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="700" />
 		<set name="effectRange" val="1200" />
@@ -1797,18 +1713,18 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="CLAN_MEMBER" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hot" />
+			<effect count="15" name="HealOverTime" val="#hot" abnormalLvl="#abnormalLvls" abnormalType="life_force_others" />
 		</for>
 	</skill>
 	<skill id="4786" levels="12" name="BOSS Chant of Life">
 		<!-- Boss Skill -->
 		<table name="#abnormalLvls"> 11 12 13 14 15 16 17 17 18 18 19 19 </table>
-		<table name="#hot"> 75 94 142 229 353 463 538 576 613 654 443 440 </table>
+		<table name="#hot"> 53 91 145 214 301 375 414 431 439 444 443 440 </table>
 		<table name="#magicLvl"> 14 24 34 44 54 64 75 79 84 89 94 99 </table>
 		<table name="#mpConsume"> 43 69 99 134 173 207 239 250 258 262 262 263 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
+		<set name="abnormalType" val="life_force_others" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="700" />
 		<set name="effectRange" val="1200" />
@@ -1821,18 +1737,18 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="CLAN_MEMBER" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hot" />
+			<effect count="15" name="HealOverTime" val="#hot" abnormalLvl="#abnormalLvls" abnormalType="life_force_others" />
 		</for>
 	</skill>
 	<skill id="4787" levels="12" name="BOSS Chant of Life">
 		<!-- Boss Skill -->
 		<table name="#abnormalLvls"> 11 12 13 14 15 16 17 17 18 18 19 19 </table>
-		<table name="#hot"> 71 89 133 215 331 434 505 542 576 615 416 414 </table>
+		<table name="#hot"> 50 86 136 200 282 352 388 405 413 417 416 414 </table>
 		<table name="#magicLvl"> 14 24 34 44 54 64 75 79 84 89 94 99 </table>
 		<table name="#mpConsume"> 43 69 99 134 173 207 239 250 258 262 262 263 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
+		<set name="abnormalType" val="life_force_others" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="700" />
 		<set name="effectRange" val="1200" />
@@ -1845,18 +1761,18 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="CLAN_MEMBER" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hot" />
+			<effect count="15" name="HealOverTime" val="#hot" abnormalLvl="#abnormalLvls" abnormalType="life_force_others" />
 		</for>
 	</skill>
 	<skill id="4788" levels="12" name="BOSS Chant of Life">
 		<!-- Boss Skill -->
 		<table name="#abnormalLvls"> 11 12 13 14 15 16 17 17 18 18 19 19 </table>
-		<table name="#hot"> 66 83 125 200 309 405 472 507 539 576 389 388 </table>
+		<table name="#hot"> 47 80 127 187 263 329 363 379 387 390 389 388 </table>
 		<table name="#magicLvl"> 14 24 34 44 54 64 75 79 84 89 94 99 </table>
 		<table name="#mpConsume"> 43 69 99 134 173 207 239 250 258 262 262 263 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="LIFE_FORCE_OTHERS" />
+		<set name="abnormalType" val="life_force_others" />
 		<set name="aggroPoints" val="100" />
 		<set name="castRange" val="700" />
 		<set name="effectRange" val="1200" />
@@ -1869,7 +1785,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="CLAN_MEMBER" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hot" />
+			<effect count="15" name="HealOverTime" val="#hot" abnormalLvl="#abnormalLvls" abnormalType="life_force_others" />
 		</for>
 	</skill>
 	<skill id="4789" levels="10" name="NPC High Level">

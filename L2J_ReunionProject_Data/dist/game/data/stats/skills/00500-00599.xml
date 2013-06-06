@@ -11,11 +11,12 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="T" />
+		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="0.4">
+			<effect count="0x7fffffff" name="MpConsumePerLevel" abnormalTime="5" val="0.4">
 				<mul order="0x30" stat="pAtk" val="#amount" />
 				<mul order="0x30" stat="pAtkSpd" val="#amount" />
 				<add order="0x40" stat="accCombat" val="#amount2" />
@@ -24,7 +25,7 @@
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="0.4">
+			<effect count="0x7fffffff" name="MpConsumePerLevel" abnormalTime="5" val="0.4">
 				<mul order="0x30" stat="pAtk" val="#ench1Power" />
 				<mul order="0x30" stat="pAtkSpd" val="1.08" />
 				<add order="0x40" stat="accCombat" val="#ench1Power2" />
@@ -33,7 +34,7 @@
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="#ench2Cost">
+			<effect count="0x7fffffff" name="MpConsumePerLevel" abnormalTime="5" val="#ench2Cost">
 				<mul order="0x30" stat="pAtk" val="1.08" />
 				<mul order="0x30" stat="pAtkSpd" val="1.08" />
 				<add order="0x40" stat="accCombat" val="4" />
@@ -52,7 +53,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="PD_DOWN" />
+		<set name="abnormalType" val="pd_down" />
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="1800" />
@@ -72,13 +73,13 @@
 		<enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="pd_down">
 				<mul order="0x30" stat="mAtkSpd" val="0.85" />
 				<mul order="0x30" stat="pDef" val="0.77" />
 			</effect>
 		</for>
 		<enchant2for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="#ench2Time" val="0" abnormalLvl="3" abnormalType="pd_down">
 				<mul order="0x30" stat="mAtkSpd" val="0.85" />
 				<mul order="0x30" stat="pDef" val="0.77" />
 			</effect>
@@ -159,6 +160,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -184,9 +186,6 @@
 		<cond msgId="113" addName="1">
 			<using kind="Rapier" />
 		</cond>
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="505" levels="28" name="Shining Edge" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<!-- Confirmed CT2.5 -->
@@ -213,6 +212,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="BLOW" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -238,9 +238,6 @@
 		<cond msgId="113" addName="1">
 			<using kind="Rapier" />
 		</cond>
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="506" levels="4" name="Checkmate" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
 		<!-- Confirmed CT2.5 -->
@@ -266,6 +263,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -285,9 +283,6 @@
 				<target active_effect_id="1435" />
 			</and>
 		</cond>
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="507" levels="37" name="Twin Shot" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<!-- Confirmed CT2.5 -->
@@ -311,6 +306,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -335,9 +331,6 @@
 		<cond msgId="113" addName="1">
 			<using kind="Crossbow" />
 		</cond>
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="508" levels="31" name="Rising Shot" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<!-- Confirmed CT2.5 -->
@@ -362,6 +355,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
+		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AREA" />
@@ -386,9 +380,6 @@
 		<cond msgId="113" addName="1">
 			<using kind="Crossbow" />
 		</cond>
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="509" levels="34" name="Bleeding Shot" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<!-- Confirmed CT2.5 -->
@@ -402,7 +393,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="20" />
-		<set name="abnormalType" val="BLEEDING" />
+		<set name="abnormalType" val="bleeding" />
 		<set name="castRange" val="900" />
 		<set name="coolTime" val="1000" />
 		<set name="effectRange" val="1400" />
@@ -420,6 +411,7 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -433,12 +425,10 @@
 			<using kind="Crossbow" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed" effectPower="50" />
+			<effect count="20" name="DamOverTime" val="#dot" abnormalLvl="1" abnormalType="bleeding" abnormalVisualEffect="bleed" effectPower="50" />
 		</for>
 		<enchant3for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="3" val="67" abnormalVisualEffect="bleed" effectPower="#ench3Power" />
+			<effect count="20" name="DamOverTime" val="67" abnormalLvl="1" abnormalType="bleeding" abnormalVisualEffect="bleed" effectPower="#ench3Power" />
 		</enchant3for>
 	</skill>
 	<skill id="510" levels="5" name="Deadly Roulette" enchantGroup1="2" enchantGroup2="2">
@@ -474,9 +464,6 @@
 				<player hp="10" />
 			</and>
 		</cond>
-		<for>
-			<effect name="Lethal" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="511" levels="1" name="Temptation">
 		<!-- Confirmed CT2.5 -->
@@ -515,12 +502,15 @@
 	</skill>
 	<skill id="513" levels="1" name="Create Dark Seed">
 		<!-- Confirmed CT2.5 -->
+		<set name="create_item_count" val="1" />
+		<set name="create_item_id" val="10112" />
 		<set name="hitTime" val="3000" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="62" />
 		<set name="mpConsume" val="58" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="150000" />
+		<set name="skillType" val="CREATE_ITEM" />
 		<set name="soulMaxConsumeCount" val="1" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="2195">
@@ -532,11 +522,6 @@
 				<player weight="80" />
 			</and>
 		</cond>
-		<for>
-			<effect name="Restoration" noicon="1" val="0">
-				<param itemId="10112" itemCount="1" />
-			</effect>
-		</for>
 	</skill>
 	<skill id="514" levels="9" name="Fire Trap" enchantGroup1="2" enchantGroup2="2">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
@@ -735,7 +720,7 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="SNIPE" />
+		<set name="abnormalType" val="snipe" />
 		<set name="aggroPoints" val="#aggroPoints" />
 		<set name="hitTime" val="2000" />
 		<set name="magicLvl" val="#magicLvl" />
@@ -751,7 +736,7 @@
 			<using kind="Crossbow" />
 		</cond>
 		<for>
-			<effect name="ImmobileBuff" val="0">
+			<effect name="ImmobileBuff" abnormalTime="120" val="0" abnormalLvl="#abnormalLvls" abnormalType="snipe">
 				<add order="0x40" stat="pAtk" val="#pAtk">
 					<using kind="Crossbow" />
 				</add>
@@ -767,7 +752,7 @@
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="ImmobileBuff" val="0">
+			<effect name="ImmobileBuff" abnormalTime="120" val="0" abnormalLvl="#enchabnormalLvl" abnormalType="snipe">
 				<add order="0x40" stat="pAtk" val="#ench1Power">
 					<using kind="Crossbow" />
 				</add>
@@ -783,7 +768,7 @@
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect name="ImmobileBuff" val="0">
+			<effect name="ImmobileBuff" abnormalTime="#ench2Time" val="0" abnormalLvl="8" abnormalType="snipe">
 				<add order="0x40" stat="pAtk" val="199">
 					<using kind="Crossbow" />
 				</add>
@@ -812,7 +797,7 @@
 		<table name="#enchVuln"> 0.99 0.99 0.99 0.98 0.98 0.98 0.97 0.97 0.97 0.96 0.96 0.96 0.96 0.95 0.95 0.95 0.94 0.94 0.94 0.93 0.93 0.93 0.93 0.92 0.92 0.92 0.91 0.91 0.91 0.9 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="REAL_TARGET" />
+		<set name="abnormalType" val="real_target" />
 		<set name="castRange" val="#castRange" />
 		<set name="effectRange" val="#effectRange" />
 		<set name="hitTime" val="1500" />
@@ -830,34 +815,34 @@
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Debuff" val="0" abnormalVisualEffect="realtarget">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="real_target" abnormalVisualEffect="realtarget">
 				<mul order="0x30" stat="bowWpnVuln" val="#bowWpnVuln" />
 				<mul order="0x30" stat="crossbowWpnVuln" val="#crossbowWpnVuln" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Debuff" val="0" abnormalVisualEffect="realtarget">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="4" abnormalType="real_target" abnormalVisualEffect="realtarget">
 				<mul order="0x30" stat="bowWpnVuln" val="1.24" />
 				<mul order="0x30" stat="crossbowWpnVuln" val="1.4" />
 				<mul order="0x30" stat="pDef" val="#enchVuln" />
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect name="Debuff" val="0" abnormalVisualEffect="realtarget">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="4" abnormalType="real_target" abnormalVisualEffect="realtarget">
 				<mul order="0x30" stat="bowWpnVuln" val="1.24" />
 				<mul order="0x30" stat="crossbowWpnVuln" val="1.4" />
 				<mul order="0x30" stat="pAtk" val="#enchVuln" />
 			</effect>
 		</enchant2for>
 		<enchant3for>
-			<effect name="Debuff" val="0" abnormalVisualEffect="realtarget">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="4" abnormalType="real_target" abnormalVisualEffect="realtarget">
 				<mul order="0x30" stat="bowWpnVuln" val="1.24" />
 				<mul order="0x30" stat="crossbowWpnVuln" val="1.4" />
 				<mul order="0x30" stat="mDef" val="#enchVuln" />
 			</effect>
 		</enchant3for>
 		<enchant4for>
-			<effect name="Debuff" val="0" abnormalVisualEffect="realtarget">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="4" abnormalType="real_target" abnormalVisualEffect="realtarget">
 				<mul order="0x30" stat="bowWpnVuln" val="1.24" />
 				<mul order="0x30" stat="crossbowWpnVuln" val="1.4" />
 				<mul order="0x30" stat="mAtk" val="#enchVuln" />
@@ -866,13 +851,13 @@
 	</skill>
 	<skill id="523" levels="7" name="Imbue Dark Seed">
 		<!-- Confirmed CT2.5 -->
-		<table name="#dot"> 76 76 76 76 83 83 83 </table>
+		<table name="#dot"> 380 380 380 380 415 415 415 </table>
 		<table name="#effectLevel"> 1 2 3 4 5 6 7 </table>
 		<table name="#magicLvl"> 62 64 66 68 70 72 74 </table>
 		<table name="#triggeredLevel"> 1 2 3 4 5 6 7 </table>
 		<set name="abnormalLvl" val="8" />
 		<set name="abnormalTime" val="20" />
-		<set name="abnormalType" val="DARK_SEED" />
+		<set name="abnormalType" val="dark_seed" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="720" />
 		<set name="effectRange" val="400" />
@@ -893,8 +878,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed" />
-			<effect name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_EXIT" triggeredId="5447" triggeredLevel="#triggeredLevel" />
+			<!-- 76 76 76 76 83 83 83 HP * 5 during 20 seconds -->
+			<effect count="4" name="DamOverTime" abnormalTime="5" val="#dot" abnormalLvl="8" abnormalType="dark_seed" abnormalVisualEffect="bleed" />
+			<effect name="ChanceSkillTrigger" abnormalTime="20" noicon="1" val="0" chanceType="ON_EXIT" triggeredId="5447" triggeredLevel="#triggeredLevel" />
 		</for>
 	</skill>
 	<skill id="524" levels="1" name="Cure Dark Seed">
@@ -903,12 +889,12 @@
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="64" />
 		<set name="mpConsume" val="59" />
-		<set name="negateAbnormals" val="DARK_SEED,9" />
+		<set name="negateAbnormals" val="dark_seed,9" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="1000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="DispelBySlot" noicon="1" val="0" />
+			<effect name="Negate" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="525" levels="6" name="Decoy" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
@@ -927,8 +913,11 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
+		<set name="npcId" val="#npcId" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="600000" />
+		<set name="skillType" val="DECOY" />
+		<set name="summonTotalLifeTime" val="20000" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -936,16 +925,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2reuseDelay" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
-		<for>
-			<effect name="SummonNpc" noicon="1" val="0">
-				<param npcId="#npcId" npcCount="1" />
-			</effect>
-		</for>
-		<enchant3for>
-			<effect name="SummonNpc" noicon="1" val="0">
-				<param npcId="#ench3npcId" npcCount="1" />
-			</effect>
-		</enchant3for>
+		<enchant3 name="npcId" val="#ench3npcId" />
 	</skill>
 	<skill id="526" levels="1" name="Enuma Elish" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6">
 		<!-- Confirmed CT2.5 -->
@@ -970,6 +950,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="6060" />
 		<set name="reuseDelay" val="75000" />
+		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
@@ -984,15 +965,12 @@
 		<enchant3 name="mpConsume" val="#enchmpConsume" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<enchant4 name="pvpPower" val="#ench4Duel" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="527" levels="1" name="Iron Shield">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="IRON_SHIELD" />
+		<set name="abnormalType" val="iron_shield" />
 		<set name="aggroPoints" val="673" />
 		<set name="hitTime" val="1000" />
 		<set name="magicLvl" val="79" />
@@ -1002,7 +980,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="30" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5425" />
+			<effect name="ChanceSkillTrigger" abnormalTime="1200" val="0" activationChance="30" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5425" abnormalLvl="1" abnormalType="iron_shield" />
 		</for>
 	</skill>
 	<skill id="528" levels="1" name="Shield of Faith" enchantGroup1="5" enchantGroup2="5" enchantGroup3="5">
@@ -1013,7 +991,7 @@
 		<table name="#ench3Reuse"> 870000 840000 811000 781000 751000 722000 692000 662000 633000 603000 573000 544000 514000 484000 455000 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="TRANSFER_DAMAGE" />
+		<set name="abnormalType" val="transfer_damage" />
 		<set name="affectRange" val="1000" />
 		<set name="hitTime" val="1000" />
 		<set name="mpConsume" val="43" />
@@ -1024,21 +1002,21 @@
 		<enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
 		<enchant3 name="reuseDelay" val="#ench3Reuse" />
 		<for>
-			<effect name="TransferDamage" val="0">
+			<effect name="TransferDamage" abnormalTime="15" val="0" abnormalLvl="1" abnormalType="transfer_damage">
 				<add order="0x40" stat="transDamToPlayer" val="90" />
 				<add order="0x40" stat="pDef" val="3600" />
 				<add order="0x40" stat="mDef" val="2700" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="TransferDamage" val="0">
+			<effect name="TransferDamage" abnormalTime="15" val="0" abnormalLvl="1" abnormalType="transfer_damage">
 				<add order="0x40" stat="transDamToPlayer" val="90" />
 				<add order="0x40" stat="pDef" val="#ench1pDef" />
 				<add order="0x40" stat="mDef" val="#ench1mDef" />
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect name="TransferDamage" val="0">
+			<effect name="TransferDamage" abnormalTime="#ench2Time" val="0" abnormalLvl="1" abnormalType="transfer_damage">
 				<add order="0x40" stat="transDamToPlayer" val="90" />
 				<add order="0x40" stat="pDef" val="3600" />
 				<add order="0x40" stat="mDef" val="2700" />
@@ -1051,7 +1029,7 @@
 		<table name="#ench2mpConsume"> 52 50 48 46 45 43 41 39 38 36 34 32 31 29 27 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="SONG_OF_ELEMENTAL" />
+		<set name="abnormalType" val="song_of_elemental" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="523" />
 		<set name="hitTime" val="2500" />
@@ -1064,7 +1042,7 @@
 		<enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="song_of_elemental">
 				<add order="0x40" stat="fireRes" val="30" />
 				<add order="0x40" stat="waterRes" val="30" />
 				<add order="0x40" stat="earthRes" val="30" />
@@ -1072,7 +1050,7 @@
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1Time" val="0" abnormalLvl="1" abnormalType="song_of_elemental">
 				<add order="0x40" stat="fireRes" val="30" />
 				<add order="0x40" stat="waterRes" val="30" />
 				<add order="0x40" stat="earthRes" val="30" />
@@ -1086,7 +1064,7 @@
 		<table name="#ench2mpConsume"> 52 50 48 46 45 43 41 39 38 36 34 32 31 29 27 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="DANCE_OF_ALIGNMENT" />
+		<set name="abnormalType" val="dance_of_alignment" />
 		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="523" />
 		<set name="hitTime" val="2500" />
@@ -1102,13 +1080,13 @@
 			<using kind="Dual Sword" />
 		</cond>
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="dance_of_alignment">
 				<add order="0x40" stat="darkRes" val="30" />
 				<add order="0x40" stat="holyRes" val="30" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="#ench1Time" val="0" abnormalLvl="1" abnormalType="dance_of_alignment">
 				<add order="0x40" stat="darkRes" val="30" />
 				<add order="0x40" stat="holyRes" val="30" />
 			</effect>
@@ -1117,7 +1095,7 @@
 	<skill id="531" levels="1" name="Critical Wound">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="T_CRT_RATE_UP" />
+		<set name="abnormalType" val="t_crt_rate_up" />
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<set name="hitTime" val="1500" />
@@ -1137,7 +1115,7 @@
 			<using kind="Dagger,Dual Dagger" />
 		</cond>
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="t_crt_rate_up">
 				<mul order="0x30" stat="critVuln" val="1.3" />
 			</effect>
 		</for>
@@ -1148,7 +1126,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="5" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5426" />
+			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="5" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5426" />
 		</for>
 	</skill>
 	<skill id="533" levels="1" name="Counter Rapid Shot">
@@ -1157,7 +1135,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="5" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5427" />
+			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="5" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5427" />
 		</for>
 	</skill>
 	<skill id="534" levels="1" name="Counter Dash">
@@ -1166,7 +1144,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="5" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5428" />
+			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="5" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5428" />
 		</for>
 	</skill>
 	<skill id="535" levels="1" name="Counter Mind">
@@ -1175,13 +1153,14 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ChanceSkillTrigger" val="0" activationChance="5" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5429" />
+			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="5" activationMinDamage="100" chanceType="ON_ATTACKED_HIT" triggeredId="5429" />
 		</for>
 	</skill>
 	<skill id="536" levels="1" name="Over the Body">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="abnormalType" val="multi_buff" />
+		<set name="cpConsume" val="99999" /> <!-- When the skill is used, all of your CP are consumed. -->
 		<set name="hitTime" val="2000" />
 		<set name="mpConsume" val="143" />
 		<set name="operateType" val="A2" />
@@ -1192,8 +1171,7 @@
 			<player cp="80" />
 		</cond>
 		<for>
-			<effect name="CpDamPercent" noicon="1" val="100" />
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="multi_buff">
 				<mul order="0x30" stat="maxHp" val="1.35" />
 				<mul order="0x30" stat="regHp" val="1.15" />
 				<mul order="0x30" stat="pAtk" val="1.25" />
@@ -1207,7 +1185,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="10" />
-		<set name="abnormalType" val="SPOIL_BOMB" />
+		<set name="abnormalType" val="spoil_bomb" />
 		<set name="affectLimit" val="6-12" />
 		<set name="affectRange" val="200" />
 		<set name="castRange" val="40" />
@@ -1226,15 +1204,15 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="AREA" />
 		<for>
-			<effect name="Spoil" val="0" />
-			<effect name="ChanceSkillTrigger" noicon="1" val="0" triggeredId="5430" chanceType="ON_EXIT" />
+			<effect name="Spoil" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="spoil_bomb" />
+			<effect name="ChanceSkillTrigger" abnormalTime="10" noicon="1" val="0" triggeredId="5430" chanceType="ON_EXIT" />
 		</for>
 	</skill>
 	<skill id="538" levels="1" name="Final Form">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="aggroPoints" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="hpConsume" val="200" />
@@ -1245,11 +1223,12 @@
 		<set name="soulMaxConsumeCount" val="20" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="251" />
 		<cond msgId="2195">
 			<player souls="20" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="251">
+			<effect name="Transformation" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 5 minutes -->
 				<mul order="0x30" stat="pAtk" val="2" /> <!-- pAtk +100% -->
 				<mul order="0x30" stat="pDef" val="2" /> <!-- pDef +100% -->
 				<mul order="0x30" stat="mAtk" val="2" /> <!-- mAtk +100% -->
@@ -1277,11 +1256,9 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="2583" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="540" levels="1" name="Wing Assault">
 		<!-- Confirmed CT2.5 -->
@@ -1299,20 +1276,18 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="DA1" />
 		<set name="power" val="2067" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AREA" />
 		<cond msgId="113" addName="1">
 			<target mindistance="200" />
 		</cond>
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="541" levels="1" name="Transform Grail Apostle">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1321,11 +1296,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="201" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="201">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="40" />
 				<set order="0x08" stat="INT" val="21" />
 				<set order="0x08" stat="CON" val="43" />
@@ -1339,7 +1315,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1348,11 +1324,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="202" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="202">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="40" />
 				<set order="0x08" stat="INT" val="21" />
 				<set order="0x08" stat="CON" val="43" />
@@ -1366,7 +1343,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1375,11 +1352,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="203" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="203">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="40" />
 				<set order="0x08" stat="INT" val="21" />
 				<set order="0x08" stat="CON" val="43" />
@@ -1393,7 +1371,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1402,11 +1380,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="204" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="204">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="36" />
 				<set order="0x08" stat="INT" val="23" />
 				<set order="0x08" stat="CON" val="36" />
@@ -1420,7 +1399,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1429,11 +1408,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="205" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="205">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="36" />
 				<set order="0x08" stat="INT" val="23" />
 				<set order="0x08" stat="CON" val="36" />
@@ -1447,7 +1427,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1456,11 +1436,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="206" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="206">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="36" />
 				<set order="0x08" stat="INT" val="23" />
 				<set order="0x08" stat="CON" val="36" />
@@ -1474,7 +1455,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1483,11 +1464,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="207" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="207">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="41" />
 				<set order="0x08" stat="INT" val="25" />
 				<set order="0x08" stat="CON" val="32" />
@@ -1501,7 +1483,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1510,11 +1492,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="208" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="208">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="41" />
 				<set order="0x08" stat="INT" val="25" />
 				<set order="0x08" stat="CON" val="32" />
@@ -1528,7 +1511,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1537,11 +1520,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="209" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="209">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="41" />
 				<set order="0x08" stat="INT" val="25" />
 				<set order="0x08" stat="CON" val="32" />
@@ -1555,7 +1539,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1564,11 +1548,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="210" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="210">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="39" />
 				<set order="0x08" stat="INT" val="20" />
 				<set order="0x08" stat="CON" val="45" />
@@ -1582,7 +1567,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1591,11 +1576,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="211" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="211">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="39" />
 				<set order="0x08" stat="INT" val="20" />
 				<set order="0x08" stat="CON" val="45" />
@@ -1609,7 +1595,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1618,11 +1604,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="212" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="212">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="39" />
 				<set order="0x08" stat="INT" val="20" />
 				<set order="0x08" stat="CON" val="45" />
@@ -1636,7 +1623,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1645,11 +1632,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="213" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="213">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="40" />
 				<set order="0x08" stat="INT" val="18" />
 				<set order="0x08" stat="CON" val="47" />
@@ -1663,7 +1651,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1672,11 +1660,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="214" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="214">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="40" />
 				<set order="0x08" stat="INT" val="18" />
 				<set order="0x08" stat="CON" val="47" />
@@ -1690,7 +1679,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1699,11 +1688,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="215" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="215">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="40" />
 				<set order="0x08" stat="INT" val="18" />
 				<set order="0x08" stat="CON" val="47" />
@@ -1717,7 +1707,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1726,11 +1716,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="216" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="216">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="41" />
 				<set order="0x08" stat="INT" val="29" />
 				<set order="0x08" stat="CON" val="31" />
@@ -1744,7 +1735,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1753,11 +1744,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="217" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="217">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="41" />
 				<set order="0x08" stat="INT" val="29" />
 				<set order="0x08" stat="CON" val="31" />
@@ -1771,7 +1763,7 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
-		<set name="abnormalType" val="TRANSFORM" />
+		<set name="abnormalType" val="transform" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="31" />
@@ -1780,11 +1772,12 @@
 		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
+		<set name="transformId" val="218" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="218">
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
 				<set order="0x08" stat="STR" val="41" />
 				<set order="0x08" stat="INT" val="29" />
 				<set order="0x08" stat="CON" val="31" />
@@ -1802,7 +1795,7 @@
 		<table name="#power"> 900 1013 1129 1248 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="10" />
-		<set name="abnormalType" val="BLEEDING" />
+		<set name="abnormalType" val="bleeding" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="720" />
 		<set name="effectRange" val="400" />
@@ -1818,11 +1811,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="3" val="123" effectPower="50" abnormalVisualEffect="bleed" />
+			<effect count="2" name="DamOverTime" abnormalTime="5" abnormalLvl="#abnormalLvls" val="615" effectPower="50" abnormalVisualEffect="bleed" abnormalType="bleeding" />
 		</for>
 	</skill>
 	<skill id="560" levels="4" name="Power Slash">
@@ -1843,16 +1836,14 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="FRONT_AREA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="561" levels="4" name="Bless of Angel">
 		<table name="#mpConsume"> 61 63 67 70 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="DANCE_OF_WARRIOR" />
+		<set name="abnormalType" val="dance_of_warrior" />
 		<set name="affectRange" val="1000" />
 		<set name="hitTime" val="2500" />
 		<set name="mpConsume" val="#mpConsume" />
@@ -1861,7 +1852,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="dance_of_warrior">
 				<mul order="0x30" stat="pAtk" val="1.12" />
 			</effect>
 		</for>
@@ -1870,7 +1861,7 @@
 		<table name="#mpConsume"> 61 63 67 70 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="SONG_OF_WATER" />
+		<set name="abnormalType" val="song_of_water" />
 		<set name="affectRange" val="1000" />
 		<set name="hitTime" val="2500" />
 		<set name="mpConsume" val="#mpConsume" />
@@ -1879,7 +1870,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="song_of_water">
 				<add order="0x40" stat="rEvas" val="3" />
 			</effect>
 		</for>
@@ -1901,10 +1892,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="564" levels="4" name="Gravity Control">
 		<!-- Confirmed CT2.5 -->
@@ -1914,7 +1903,7 @@
 		<table name="#runSpd"> 0.8 0.7 0.65 0.6 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="SPEED_DOWN" />
+		<set name="abnormalType" val="speed_down" />
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="400" />
 		<set name="hitTime" val="2500" />
@@ -1930,7 +1919,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="15" val="0" abnormalLvl="1" abnormalType="speed_down">
 				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
 				<mul order="0x30" stat="runSpd" val="#runSpd" />
 			</effect>
@@ -1952,10 +1941,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="567" levels="4" name="Light of Heal">
 		<!-- Confirmed CT2.5 -->
@@ -1995,13 +1982,11 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="CHARGEDAM" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
 			<player Charges="2" />
 		</cond>
-		<for>
-			<effect name="EnergyAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="569" levels="4" name="Attack Storm">
 		<!-- Confirmed CT2.5 -->
@@ -2021,13 +2006,11 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
+		<set name="skillType" val="CHARGEDAM" />
 		<set name="targetType" val="AREA" />
 		<cond msgId="113" addName="1">
 			<player Charges="3" />
 		</cond>
-		<for>
-			<effect name="EnergyAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="570" levels="4" name="Attack Rage">
 		<!-- Confirmed CT2.5 -->
@@ -2044,10 +2027,10 @@
 		<set name="operateType" val="A1" />
 		<set name="overHit" val="true" />
 		<set name="power" val="1" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect self="1" name="FocusEnergy" noicon="1" val="#maxCharges" />
+			<effect self="1" count="#maxCharges" name="IncreaseCharges" noicon="1" val="1" />
 		</for>
 	</skill>
 	<skill id="571" levels="4" name="Poison Dust">
@@ -2058,7 +2041,7 @@
 		<table name="#mpInitialConsume"> 5 6 6 7 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="POISON" />
+		<set name="abnormalType" val="poison" />
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="400" />
 		<set name="hitTime" val="3000" />
@@ -2077,7 +2060,7 @@
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="3" val="58" abnormalVisualEffect="poison" />
+			<effect count="10" name="DamOverTime" abnormalTime="3" val="174" abnormalLvl="#abnormalLvls" abnormalType="poison" abnormalVisualEffect="poison" />
 		</for>
 	</skill>
 	<skill id="572" levels="4" name="Double Slasher">
@@ -2094,10 +2077,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="573" levels="4" name="Earthquake">
 		<!-- Confirmed CT2.5 -->
@@ -2105,7 +2086,7 @@
 		<table name="#power"> 625 703 784 867 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
-		<set name="abnormalType" val="STUN" />
+		<set name="abnormalType" val="stun" />
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="250" />
 		<set name="baseCritRate" val="15" />
@@ -2121,11 +2102,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="SHOCK" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="Stun" val="0" effectPower="50" />
+			<effect name="Stun" abnormalTime="5" val="0" abnormalLvl="1" abnormalType="stun" effectPower="50" />
 		</for>
 	</skill>
 	<skill id="574" levels="4" name="Bomb Installation">
@@ -2161,11 +2142,9 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="576" levels="4" name="Paw Strike">
 		<!-- Confirmed CT2.5 -->
@@ -2184,10 +2163,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="577" levels="4" name="Fire Breath">
 		<!-- Confirmed CT2.5 -->
@@ -2210,21 +2187,19 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="30000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="FRONT_AREA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="578" levels="4" name="Blaze Quake">
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvls"> 6 6 7 7 </table>
-		<table name="#dot"> 27 27 31 31 </table>
+		<table name="#dot"> 81 81 93 93 </table>
 		<table name="#magicLvl"> 60 63 66 69 </table>
 		<table name="#mpConsume"> 61 63 67 70 </table>
 		<table name="#power"> 625 703 784 867 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="10" />
-		<set name="abnormalType" val="DOT_ATTR" />
+		<set name="abnormalType" val="dot_attr" />
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="150" />
 		<set name="coolTime" val="720" />
@@ -2240,10 +2215,10 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
 		<set name="saveVs" val="MEN" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="poison" effectPower="60" />
+			<effect count="3" name="DamOverTime" abnormalTime="3" val="#dot" abnormalLvl="#abnormalLvls" abnormalType="dot_attr" abnormalVisualEffect="poison" effectPower="60" />
 		</for>
 	</skill>
 	<skill id="579" levels="4" name="Fire Armor">
@@ -2255,7 +2230,7 @@
 		<table name="#pDef"> 1000 1100 1200 1300 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
-		<set name="abnormalType" val="PD_UP_SPECIAL" />
+		<set name="abnormalType" val="pd_up_special" />
 		<set name="hitTime" val="1000" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
@@ -2264,7 +2239,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ImmobileBuff" val="0" abnormalVisualEffect="invulnerable">
+			<effect name="ImmobileBuff" abnormalTime="30" val="0" abnormalVisualEffect="invulnerable" abnormalLvl="#abnormalLvls" abnormalType="pd_up_special">
 				<add order="0x40" stat="pDef" val="#pDef" />
 				<add order="0x40" stat="mDef" val="#mDef" />
 				<sub order="0x40" stat="cancelVuln" val="80" />
@@ -2291,11 +2266,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="FatalBlow" noicon="1" val="0" />
-			<effect name="Lethal" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="581" levels="4" name="Sand Cloud">
 		<!-- Confirmed CT2.5 -->
@@ -2303,7 +2275,7 @@
 		<table name="#mpConsume"> 61 63 67 70 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
-		<set name="abnormalType" val="HIT_DOWN" />
+		<set name="abnormalType" val="hit_down" />
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="150" />
 		<set name="effectRange" val="360" />
@@ -2319,7 +2291,7 @@
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="AREA" />
 		<for>
-			<effect name="Debuff" val="0">
+			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="hit_down">
 				<sub order="0x40" stat="accCombat" val="#accCombat" />
 			</effect>
 		</for>
@@ -2331,7 +2303,7 @@
 		<table name="#power"> 875 984 1098 1213 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="10" />
-		<set name="abnormalType" val="BLEEDING" />
+		<set name="abnormalType" val="bleeding" />
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="240" />
 		<set name="castRange" val="40" />
@@ -2348,18 +2320,18 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
 		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="FRONT_AREA" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-			<effect name="DamOverTime" ticks="3" val="123" abnormalVisualEffect="bleed" effectPower="50" />
+			<effect count="3" name="DamOverTime" abnormalTime="3" val="369" abnormalLvl="#abnormalLvls" abnormalType="bleeding" abnormalVisualEffect="bleed" effectPower="50" />
 		</for>
 	</skill>
 	<skill id="583" levels="4" name="Assimilation">
 		<table name="#mpConsume"> 61 63 67 70 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="120" />
-		<set name="abnormalType" val="STEALTH" />
+		<set name="abnormalType" val="stealth" />
 		<set name="hitTime" val="2000" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
@@ -2367,7 +2339,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="SilentMove" abnormalVisualEffect="stealth" val="0" />
+			<effect name="SilentMove" abnormalVisualEffect="stealth" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="stealth" />
 		</for>
 	</skill>
 	<skill id="584" levels="1" name="Power Claw">
@@ -2383,17 +2355,15 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="1008" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="585" levels="1" name="Fast Moving">
 		<!-- CT2.2 retail confirmed -->
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="SPEED_UP_SPECIAL" />
+		<set name="abnormalType" val="speed_up_special" />
 		<set name="aggroPoints" val="438" />
 		<set name="hitTime" val="1000" />
 		<set name="mpConsume" val="55" />
@@ -2402,7 +2372,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" val="0">
+			<effect name="Buff" abnormalTime="15" val="0" abnormalLvl="2" abnormalType="speed_up_special">
 				<mul order="0x30" stat="runSpd" val="1.45" />
 			</effect>
 		</for>
@@ -2421,10 +2391,8 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="4000" />
+		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="587" levels="2" name="Earth Storm">
 		<!-- CT2.2 retail confirmed -->
@@ -2440,19 +2408,17 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
-		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
-		</for>
 	</skill>
 	<skill id="588" levels="2" name="Curse of Darkness">
 		<!-- CT2.2 retail confirmed -->
-		<table name="#dmg"> 88 101 </table>
+		<table name="#dmg"> 215 336 </table>
 		<table name="#mpConsume"> 54 58 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="SPEED_DOWN" />
+		<set name="abnormalType" val="speed_down" />
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<set name="hitTime" val="1200" />
@@ -2466,7 +2432,7 @@
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="DamOverTime" ticks="3" val="#dmg" />
+			<effect count="5" name="DamOverTime" abnormalTime="3" val="#dmg" abnormalLvl="1" abnormalType="speed_down" />
 		</for>
 	</skill>
 	<skill id="589" levels="2" name="Darkness Energy Drain">
@@ -2483,7 +2449,7 @@
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="CORPSE_MOB" />
 		<for>
-			<effect name="HpByLevel" noicon="1" val="#drainHp" />
+			<effect self="1" name="HpByLevel" noicon="1" val="#drainHp" />
 			<effect name="ConsumeBody" noicon="1" val="0" />
 		</for>
 	</skill>
