@@ -2405,8 +2405,8 @@ INSERT INTO npcaidata VALUES ('18905', '7', '15', '0', '300', '1', '1', '1', '0'
 INSERT INTO npcaidata VALUES ('18906', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '400', '0', null, '300', null, '0', '0', 'fighter');
 INSERT INTO npcaidata VALUES ('18907', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '400', '0', null, '300', null, '0', '0', 'fighter');
 INSERT INTO npcaidata VALUES ('18908', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', null, '300', null, '0', '0', 'fighter');
-INSERT INTO npcaidata VALUES ('18909', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '200', '0', 'n_solina_clan', '300', 'monastery_scarecrow', '400', '0', 'fighter');
-INSERT INTO npcaidata VALUES ('18910', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '200', '0', 'n_solina_clan', '300', null, '0', '0', 'fighter');
+INSERT INTO npcaidata VALUES ('18909', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'n_solina_clan', '300', 'monastery_scarecrow', '400', '0', 'fighter');
+INSERT INTO npcaidata VALUES ('18910', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'n_solina_clan', '300', null, '0', '0', 'fighter');
 INSERT INTO npcaidata VALUES ('18911', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', null, '300', null, '0', '0', 'fighter');
 INSERT INTO npcaidata VALUES ('18912', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '200', '0', null, '300', 'dummy_clan', '400', '0', 'corpse');
 INSERT INTO npcaidata VALUES ('18913', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', null, '300', null, '0', '0', 'fighter');
@@ -4865,11 +4865,11 @@ INSERT INTO npcaidata VALUES ('22785', '7', '15', '0', '300', '1', '1', '1', '0'
 INSERT INTO npcaidata VALUES ('22786', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'xel_private_clan', '400', null, '0', '0', 'fighter');
 INSERT INTO npcaidata VALUES ('22787', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'xel_private_clan', '400', null, '0', '0', 'fighter');
 INSERT INTO npcaidata VALUES ('22788', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'xel_private_clan', '400', null, '0', '0', 'fighter');
-INSERT INTO npcaidata VALUES ('22789', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '300', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
-INSERT INTO npcaidata VALUES ('22790', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '300', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
-INSERT INTO npcaidata VALUES ('22791', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '300', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
-INSERT INTO npcaidata VALUES ('22792', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '300', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
-INSERT INTO npcaidata VALUES ('22793', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '300', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
+INSERT INTO npcaidata VALUES ('22789', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
+INSERT INTO npcaidata VALUES ('22790', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
+INSERT INTO npcaidata VALUES ('22791', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
+INSERT INTO npcaidata VALUES ('22792', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
+INSERT INTO npcaidata VALUES ('22793', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'solina_n_clan', '300', null, '0', '0', 'balanced');
 INSERT INTO npcaidata VALUES ('22794', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '600', '0', 'divine_n_clan', '300', null, '0', '0', 'balanced');
 INSERT INTO npcaidata VALUES ('22795', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '600', '0', 'divine_n_clan', '300', null, '0', '0', 'balanced');
 INSERT INTO npcaidata VALUES ('22796', '7', '15', '0', '300', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '600', '0', 'divine_n_clan', '300', null, '0', '0', 'balanced');
