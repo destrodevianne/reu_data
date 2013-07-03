@@ -147,6 +147,7 @@
 									<xs:enumeration value="WaterZone" />
 									<xs:enumeration value="ChaoticZone" />
 									<xs:enumeration value="QueenAntZone" />
+									<xs:enumeration value="FlagZone" />
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>
