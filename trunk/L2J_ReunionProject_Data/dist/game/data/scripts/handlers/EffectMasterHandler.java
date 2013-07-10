@@ -104,6 +104,7 @@ import handlers.effecthandlers.SignetNoise;
 import handlers.effecthandlers.SilentMove;
 import handlers.effecthandlers.Sleep;
 import handlers.effecthandlers.Spoil;
+import handlers.effecthandlers.StealAbnormal;
 import handlers.effecthandlers.Stun;
 import handlers.effecthandlers.SummonAgathion;
 import handlers.effecthandlers.SummonPet;
@@ -208,6 +209,7 @@ public final class EffectMasterHandler
 		SilentMove.class,
 		Sleep.class,
 		Spoil.class,
+		StealAbnormal.class,
 		Stun.class,
 		SummonAgathion.class,
 		SummonPet.class,

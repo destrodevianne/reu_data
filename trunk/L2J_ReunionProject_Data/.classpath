@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="/L2J_ReunionProject_Core/dist/libs/mmocore.jar"/>
 	<classpathentry kind="lib" path="/L2J_ReunionProject_Core/dist/libs/netcon-1.7.jar"/>
 	<classpathentry kind="lib" path="/L2J_ReunionProject_Core/dist/libs/trove-3.0.2.jar"/>
+	<classpathentry kind="lib" path="/L2J_ReunionProject_Core/dist/libs/reunion-scripts.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
