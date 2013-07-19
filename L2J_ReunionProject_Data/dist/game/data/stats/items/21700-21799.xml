@@ -1384,8 +1384,11 @@
 		<!-- Description: When used, you acquire a Dynasty Breastplate Armor of Fortune Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
 		<set name="icon" val="icon.etc_equip_item_box_i02" />
 		<set name="material" val="steel" />
+		<set name="immediate_effect" val="1" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="21793,1,1,100;21794,1,1,100;21795,1,1,100;21796,1,1,100;21797,1,1,100;21798,1,1,100" />
 	</item>
 </list>
