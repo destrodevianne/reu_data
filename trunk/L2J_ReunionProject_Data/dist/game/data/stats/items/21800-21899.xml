@@ -86,9 +86,12 @@
 		<!-- Description: When used, you acquire a Dynasty Leather Mail of Fortune Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
 		<set name="icon" val="icon.etc_equip_item_box_i02" />
 		<set name="material" val="steel" />
+		<set name="immediate_effect" val="1" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="21800,1,1,100;21801,1,1,100;21802,1,1,100;21803,1,1,100;21804,1,1,100" />
 	</item>
 	<item id="21806" type="Armor" name="Dynasty Tunic of Fortune - 90-day limited period">
 		<!-- Description: Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute. -->
@@ -199,9 +202,12 @@
 		<!-- Description: When used, you acquire a Dynasty Robe of Fortune Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
 		<set name="icon" val="icon.etc_equip_item_box_i02" />
 		<set name="material" val="steel" />
+		<set name="immediate_effect" val="1" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="21806,1,1,100;21807,1,1,100;21808,1,1,100;21809,1,1,100;21810,1,1,100;21811,1,1,100" />
 	</item>
 	<item id="21813" type="Armor" name="Tateossian Earring of Fortune - 90-day limited period">
 		<!-- Description: The effect is MP +31. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
@@ -311,9 +317,12 @@
 		<!-- Description: When used, you acquire a Dynasty Accessory Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="material" val="steel" />
+		<set name="immediate_effect" val="1" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="capsuled_items" val="21819,2,2,100;21818,1,1,100;21817,2,2,100" />
 	</item>
 	<item id="21821" type="Weapon" name="Arcana Mace of Fortune - 90-day limited period">
 		<!-- Description: Increases Magic Casting Spd. by 15%, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute. -->
