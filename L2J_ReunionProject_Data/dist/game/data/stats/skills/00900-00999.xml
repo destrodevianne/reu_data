@@ -1777,7 +1777,7 @@
 		<set name="skillType" val="AGGDAMAGE" />
 		<set name="targetType" val="AREA" />
 		<for>
-			<effect name="TargetMe" time="5" val="0" abnormalLvl="1" abnormalType="target_lock" effectPower="100" ignoreResists="true"/>
+			<effect name="TargetMe" time="15" val="0" abnormalLvl="1" abnormalType="target_lock" effectPower="100" ignoreResists="true"/>
 			<effect self="1" name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_START" triggeredId="6913" triggeredLevel="1" />
 		</for>
 	</skill>
