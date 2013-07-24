@@ -1763,23 +1763,22 @@
 	</skill>
 	<skill id="985" levels="1" name="Challenge for Fate">
 		<!-- High Five Skill -->
-		<!-- Totally Unconfirmed -->
 		<set name="abnormalTime" val="5" />
 		<set name="affectLimit" val="10-10" />
-		<set name="affectRange" val="100" /> <!-- FIXME: value unconfirmed -->
+		<set name="affectRange" val="100" />
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="1000" />
 		<set name="magicLvl" val="83" />
 		<set name="offensive" val="true" />
-		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
-		<set name="power" val="7987" /> <!-- FIXME: value unconfirmed -->
+		<set name="operateType" val="A1" />
+		<set name="power" val="7987" />
 		<set name="reuseDelay" val="45000" />
 		<set name="skillType" val="AGGDAMAGE" />
 		<set name="targetType" val="AREA" />
 		<for>
-			<effect name="TargetMe" abnormalTime="15" val="0" />
-			<effect self="1" name="ChanceSkillTrigger" noicon="1" abnormalTime="15" val="0" activationChance="30" chanceType="ON_ATTACKED_HIT" triggeredId="6913" />
+			<effect name="TargetMe" time="5" val="0" abnormalLvl="1" abnormalType="target_lock" effectPower="100" ignoreResists="true"/>
+			<effect self="1" name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_START" triggeredId="6913" triggeredLevel="1" />
 		</for>
 	</skill>
 	<skill id="986" levels="25" name="Deadly Strike">
