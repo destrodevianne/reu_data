@@ -717,6 +717,28 @@ for %%i in (..\sql\game\*.sql) do call :dump %%i
 
 echo done...
 echo.
+goto reunion_install
+
+:reunion_install
+cls
+set cmdline=
+if %full% == 1 (
+title L2JDP Installer - Game Server DataBase Installing...
+echo.
+echo Installing new Game Server content.
+echo.
+) else (
+title L2JDP Installer - Game Server DataBase Upgrading...
+echo.
+echo Upgrading Game Server content.
+echo.
+)
+if %logging% == 0 set output=NUL
+set dest=gs
+for %%i in (..\sql\Reunion sql files\*.sql) do call :dump %%i
+
+echo done...
+echo.
 goto custom_ask
 
 :dump
