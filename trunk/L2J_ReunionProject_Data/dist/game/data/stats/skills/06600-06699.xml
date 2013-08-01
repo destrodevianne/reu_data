@@ -614,14 +614,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="transformId" val="126" />
 		<for>
-			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform">
-				<set order="0x08" stat="STR" val="40" />
-				<set order="0x08" stat="DEX" val="30" />
-				<set order="0x08" stat="CON" val="43" />
-				<set order="0x08" stat="INT" val="21" />
-				<set order="0x08" stat="WIT" val="13" />
-				<set order="0x08" stat="MEN" val="23" />
-			</effect>
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform" />
 		</for>
 	</skill>
 	<skill id="6650" levels="1" name="Tacrakahn's Alienation">
