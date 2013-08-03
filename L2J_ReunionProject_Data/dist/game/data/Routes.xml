@@ -1451,4 +1451,48 @@
 		<point X="96506" Y="69958" Z="-3851" delay="0" run="false" />
 		<point X="94265" Y="68391" Z="-3851" delay="0" run="false" />
 	</route>
+	<!-- Prophet Sinister - Giran -->
+	<route name="prophet_giran" repeat="true" repeatStyle="cycle">
+		<target id="4309" spawnX="84984" spawnY="147720" spawnZ="-3430" />
+		<point npcStringId="1010221" X="83537" Y="149603" Z="-3405" delay="5" run="false" />
+		<point  X="83541" Y="147726" Z="-3405" delay="0" run="false" />
+		<point  X="85089" Y="147716" Z="-3405" delay="0" run="false" />
+		<point npcStringId="1010222" X="85086" Y="147760" Z="-3405" delay="0" run="false" />
+		<point  X="83620" Y="147770" Z="-3405" delay="5" run="false" />
+		<point npcStringId="1010223" X="83606" Y="149601" Z="-3405" delay="0" run="false" />
+		<point  X="84408" Y="149634" Z="-3405" delay="1" run="false" />
+	</route>
+	<!-- Prophet Sinister - Aden -->
+	<route name="prophet_aden" repeat="true" repeatStyle="cycle">
+		<target id="4310" spawnX="146328" spawnY="23320" spawnZ="-2038" />
+		<point npcStringId="1010221" X="146361" Y="24224" Z="-2013" delay="10" run="false" />
+		<point  X="146357" Y="25781" Z="-2013" delay="0" run="false" />
+		<point npcStringId="1010222" X="147382" Y="25774" Z="-2013" delay="0" run="false" />
+		<point  X="148538" Y="25779" Z="-2013" delay="0" run="false" />
+		<point npcStringId="1010223" X="148538" Y="24209" Z="-2013" delay="10" run="false" />
+		<point  X="148538" Y="25779" Z="-2013" delay="0" run="false" />
+		<point  X="146357" Y="25781" Z="-2013" delay="0" run="false" />
+	</route> 
+	<!-- Prophet Sinister - Rune -->
+	<route name="prophet_rune" repeat="true" repeatStyle="cycle">
+		<target id="4311" spawnX="43258" spawnY="-47055" spawnZ="-798" />
+		<point npcStringId="1010221" X="43258" Y="-47055" Z="-798" delay="10" run="false" />
+		<point  X="43279" Y="-47872" Z="-798" delay="0" run="false" />
+		<point npcStringId="1010222" X="45220" Y="-47863" Z="-798" delay="0" run="false" />
+		<point  X="45655" Y="-48023" Z="-798" delay="0" run="false" />
+		<point  X="45220" Y="-47863" Z="-798" delay="0" run="false" />
+		<point npcStringId="1010223" X="43279" Y="-47872" Z="-798" delay="0" run="false" />
+	</route> 
+	<!-- Prophet Sinister - Gludio -->
+	<route name="prophet_gludio" repeat="true" repeatStyle="cycle">
+		<target id="4312" spawnX="-12216" spawnY="122264" spawnZ="-3014" />
+		<point npcStringId="1010221" X="-13338" Y="121260" Z="-2990" delay="10" run="false" />
+		<point  X="-14166" Y="121256" Z="-2990" delay="0" run="false" />
+		<point  X="-14136" Y="121915" Z="-2990" delay="0" run="false" />
+		<point  X="-13866" Y="122297" Z="-2990" delay="0" run="false" />
+		<point npcStringId="1010222" X="-13220" Y="122300" Z="-2990" delay="10" run="false" />
+		<point  X="-13866" Y="122297" Z="-2990" delay="0" run="false" />
+		<point  X="-14136" Y="121915" Z="-2990" delay="0" run="false" />
+		<point npcStringId="1010223" X="-14166" Y="121256" Z="-2990" delay="0" run="false" />
+	</route>
 </routes>
