@@ -53,7 +53,7 @@ public class Heal extends L2Effect
 	{
 		L2Character target = getEffected();
 		L2Character activeChar = getEffector();
-		if ((target == null) || target.isDead() || target.isDoor())
+		if ((target == null) || target.isDead() || target.isDoor() || target.isInvul())
 		{
 			return false;
 		}

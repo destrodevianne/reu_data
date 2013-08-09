@@ -47,7 +47,7 @@ public class CpHeal extends L2Effect
 	public boolean onStart()
 	{
 		L2Character target = getEffected();
-		if ((target == null) || target.isDead() || target.isDoor())
+		if ((target == null) || target.isDead() || target.isDoor() || target.isInvul())
 		{
 			return false;
 		}
