@@ -20,7 +20,7 @@ package handlers.effecthandlers;
 
 import l2r.Config;
 import l2r.gameserver.GeoData;
-import l2r.gameserver.ai.CtrlIntention;
+import l2r.gameserver.enums.CtrlIntention;
 import l2r.gameserver.model.Location;
 import l2r.gameserver.model.actor.L2Character;
 import l2r.gameserver.model.effects.EffectTemplate;

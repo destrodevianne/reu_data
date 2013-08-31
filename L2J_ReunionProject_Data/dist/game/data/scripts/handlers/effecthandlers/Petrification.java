@@ -18,7 +18,7 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.ai.CtrlEvent;
+import l2r.gameserver.enums.CtrlEvent;
 import l2r.gameserver.model.effects.AbnormalEffect;
 import l2r.gameserver.model.effects.EffectFlag;
 import l2r.gameserver.model.effects.EffectTemplate;

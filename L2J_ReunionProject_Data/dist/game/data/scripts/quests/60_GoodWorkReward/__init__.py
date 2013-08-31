@@ -3,7 +3,7 @@
 # Visit http://www.l2jdp.com/forum/ for more details.
 
 import sys
-from l2r.gameserver.ai import CtrlIntention
+from l2r.gameserver.enums import CtrlIntention
 from l2r.gameserver.model.quest import State
 from l2r.gameserver.model.quest import QuestState
 from l2r.gameserver.model.quest import Quest as JQuest
