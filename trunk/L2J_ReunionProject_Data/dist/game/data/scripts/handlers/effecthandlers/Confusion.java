@@ -21,8 +21,8 @@ package handlers.effecthandlers;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2r.gameserver.ai.CtrlEvent;
-import l2r.gameserver.ai.CtrlIntention;
+import l2r.gameserver.enums.CtrlEvent;
+import l2r.gameserver.enums.CtrlIntention;
 import l2r.gameserver.model.L2Object;
 import l2r.gameserver.model.actor.L2Character;
 import l2r.gameserver.model.effects.EffectFlag;

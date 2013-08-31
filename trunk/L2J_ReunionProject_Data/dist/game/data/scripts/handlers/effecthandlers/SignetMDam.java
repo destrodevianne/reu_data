@@ -25,10 +25,10 @@ package handlers.effecthandlers;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2r.gameserver.ai.CtrlEvent;
 import l2r.gameserver.datatables.NpcTable;
+import l2r.gameserver.enums.CtrlEvent;
+import l2r.gameserver.enums.ShotType;
 import l2r.gameserver.idfactory.IdFactory;
-import l2r.gameserver.model.ShotType;
 import l2r.gameserver.model.actor.L2Character;
 import l2r.gameserver.model.actor.instance.L2EffectPointInstance;
 import l2r.gameserver.model.actor.instance.L2PcInstance;

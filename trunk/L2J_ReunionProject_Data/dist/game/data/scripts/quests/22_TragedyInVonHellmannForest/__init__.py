@@ -4,7 +4,7 @@ from l2r.gameserver.model.quest import State
 from l2r.gameserver.model.quest import QuestState
 from l2r.gameserver.model.quest import Quest as JQuest
 from l2r.gameserver.network.serverpackets import NpcSay
-from l2r.gameserver.ai import CtrlIntention
+from l2r.gameserver.enums import CtrlIntention
 
 qn = "22_TragedyInVonHellmannForest"
 
