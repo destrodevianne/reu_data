@@ -43,7 +43,7 @@ public class NoblesseBless extends L2Effect
 	@Override
 	public boolean canBeStolen()
 	{
-		return true;
+		return false;
 	}
 	
 	@Override
