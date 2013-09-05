@@ -100,6 +100,16 @@
 		<node X="-237600" Y="221168" />
 		<node X="-253900" Y="204849" />
 	</zone>
+	<zone name="Seed of Infinity" id="60010" type="ScriptZone" shape="NPoly" minZ="-16233" maxZ="-6233">
+		<node X="-182265" Y="204880" />
+		<node X="-171874" Y="204865" />
+		<node X="-171884" Y="220348" />
+		<node X="-188714" Y="220333" />
+		<node X="-188581" Y="204678" />
+		<node X="-184537" Y="204665" />
+		<node X="-184536" Y="206967" />
+		<node X="-182259" Y="206962" />
+	</zone>
 	<!-- Custom zones for Tully Workshop 6th and 8th floors spawn control -->
 	<!-- Tully Workshop 6th floor room 1 -->
 	<zone name="tully_workshop_floor_6th_room_1" id="200012" type="ScriptZone" shape="NPoly" minZ="-13640" maxZ="-13440">
