@@ -494,6 +494,7 @@
 		<table name="#magicLvl"> 75 80 </table>
 		<table name="#mpConsume"> 69 72 </table>
 		<table name="#power"> 186 197 </table>
+		<set name="affectLimit" val="3-6" />
 		<set name="affectRange" val="200" />
 		<set name="castRange" val="700" />
 		<set name="effectRange" val="1200" />
@@ -515,6 +516,7 @@
 		<table name="#magicLvl"> 75 80 </table>
 		<table name="#mpConsume"> 69 72 </table>
 		<table name="#power"> 186 197 </table>
+		<set name="affectLimit" val="3-6" />
 		<set name="affectRange" val="200" />
 		<set name="castRange" val="700" />
 		<set name="effectRange" val="1200" />

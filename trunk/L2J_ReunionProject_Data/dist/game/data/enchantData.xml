@@ -161,7 +161,7 @@
 	</enchant>
 
 	<!-- Weapon enhancing scroll exclusive for PC cafe -->
-	<enchant id="15346" targetGrade="s">
+	<enchant id="15346" targetGrade="s" isBlessed="true">
 		<item id="15313" /> <!-- Player Commendation - Forgotten Blade (Player Recommendation Weapon) -->
 		<item id="15314" /> <!-- Player Commendation - Basalt Battlehammer (Player Recommendation Weapon) -->
 		<item id="15315" /> <!-- Player Commendation - Imperial Staff (Player Recommendation Weapon) -->
@@ -177,7 +177,7 @@
 		<item id="15325" /> <!-- Player Commendation - Sarunga (Player Recommendation Weapon) -->
 		<item id="15326" /> <!-- Player Commendation - Tallum Blade *Dark Legion's Edge (Player Recommendation Weapon) -->
 	</enchant>
-	<enchant id="15347" targetGrade="a">
+	<enchant id="15347" targetGrade="a" isBlessed="true">
 		<item id="13210" /> <!-- Player Commendation - Sirra's Blade (Player Commendation Weapon) -->
 		<item id="13211" /> <!-- Player Commendation - Sword of Ipos (Player Commendation Weapon) -->
 		<item id="13212" /> <!-- Player Commendation - Barakiel's Axe (Player Commendation Weapon) -->
@@ -194,7 +194,7 @@
 		<item id="13223" /> <!-- Player Commendation - Durendal (Player Commendation Weapon) -->
 		<item id="13224" /> <!-- Player Commendation - Screaming Vengeance (Player Commendation Weapon) -->
 	</enchant>
-	<enchant id="15348" targetGrade="b">
+	<enchant id="15348" targetGrade="b" isBlessed="true">
 		<item id="13194" /> <!-- Player Commendation - Damascus Sword (Player Commendation Weapon) -->
 		<item id="13195" /> <!-- Player Commendation - Lance (Player Commendation Weapon) -->
 		<item id="13196" /> <!-- Player Commendation - Deadman's Glory (Player Commendation Weapon) -->
@@ -212,7 +212,7 @@
 		<item id="13208" /> <!-- Player Commendation - Dismantler (Player Commendation Weapon) -->
 		<item id="13209" /> <!-- Player Commendation - Hell Hound (Player Commendation Weapon) -->
 	</enchant>
-	<enchant id="15349" targetGrade="c">
+	<enchant id="15349" targetGrade="c" isBlessed="true">
 		<item id="13178" /> <!-- Player Commendation - Samurai Long Sword (Player Commendation Weapon) -->
 		<item id="13179" /> <!-- Player Commendation - Ghost's Wand (Player Commendation Weapon) -->
 		<item id="13180" /> <!-- Player Commendation - Ghoul's Wand (Player Commendation Weapon) -->
@@ -230,7 +230,7 @@
 		<item id="13192" /> <!-- Player Commendation - Ecliptic Axe (Player Commendation Weapon) -->
 		<item id="13193" /> <!-- Player Commendation - Dwarven Hammer (Player Commendation Weapon) -->
 	</enchant>
-	<enchant id="15350" targetGrade="d">
+	<enchant id="15350" targetGrade="d" isBlessed="true">
 		<item id="13163" /> <!-- Player Commendation - Bastard*Crimson Sword (Player Commendation Weapon) -->
 		<item id="13164" /> <!-- Player Commendation - Claymore (Player Commendation Weapon) -->
 		<item id="13165" /> <!-- Player Commendation - Bonebreaker (Player Commendation Weapon) -->
