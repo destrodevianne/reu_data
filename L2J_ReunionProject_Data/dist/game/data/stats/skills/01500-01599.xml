@@ -1584,7 +1584,7 @@
 		<for>
 			<!-- Note: 0.5 means 50% of owner's patk! -->
 			<effect self="1" name="ServitorShare" abnormalTime="1200" val="0" /> <!-- This effect is used to cancel pet's effect when player's have been canceled. -->
-			<effect name="ServitorShare" abnormalTime="1200" noicon="1" val="0">
+			<effect name="ServitorShare" abnormalTime="1200" val="0">
 				<share order="0x40" stat="pAtk" val="0.5" />
 				<share order="0x40" stat="pDef" val="0.5" />
 				<share order="0x40" stat="mAtk" val="0.25" />
