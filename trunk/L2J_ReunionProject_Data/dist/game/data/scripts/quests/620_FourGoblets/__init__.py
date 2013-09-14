@@ -1,8 +1,8 @@
 import sys
-from com.l2jserver.gameserver.model.quest          import State
-from com.l2jserver.gameserver.model.quest          import QuestState
-from com.l2jserver.gameserver.model.quest.jython   import QuestJython as JQuest
-from com.l2jserver.gameserver.instancemanager      import FourSepulchersManager
+from l2r.gameserver.model.quest          import State
+from l2r.gameserver.model.quest          import QuestState
+from l2r.gameserver.model.quest.jython   import QuestJython as JQuest
+from l2r.gameserver.instancemanager      import FourSepulchersManager
 
 qn = "620_FourGoblets"
 
