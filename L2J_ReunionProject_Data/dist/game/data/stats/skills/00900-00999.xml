@@ -1748,7 +1748,6 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="nextActionAttack" val="true" />
 		<set name="offensive" val="true" />
-		<set name="pvp" val="true" />
 		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
