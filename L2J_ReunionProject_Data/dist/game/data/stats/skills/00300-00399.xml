@@ -1242,6 +1242,7 @@
 		<set name="maxNegated" val="5" />
 		<set name="nextActionAttack" val="true" />
 		<set name="offensive" val="true" />
+		<set name="pvp" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="150000" />
 		<set name="saveVs" val="CON" />

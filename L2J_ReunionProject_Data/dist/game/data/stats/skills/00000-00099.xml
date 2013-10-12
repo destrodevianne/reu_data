@@ -562,6 +562,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="offensive" val="true" />
+		<set name="pvp" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="40000" />
