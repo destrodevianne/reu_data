@@ -914,6 +914,12 @@
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player flyMounted="false" />
+				<target npcId="22349,22350,22351,22352,22353" />
+			</and>
+		</cond>
 	</skill>
 	<skill id="2360" levels="1" name="Water Dragon Claw">
 		<set name="castRange" val="150" />

@@ -66,7 +66,14 @@ public class Paralyze extends L2Effect
 		getEffected().stopAbnormalEffect(AbnormalEffect.HOLD_1);
 		if (!getEffected().isPlayer())
 		{
-			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
+			try
+			{
+				getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
+			}
+			catch (Exception e)
+			{
+				_log.warning("Logger: notifyEvent failed (Paralyze) Report this to team. ");
+			}
 		}
 	}
 	

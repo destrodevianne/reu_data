@@ -96,7 +96,14 @@ public class SignetAntiSummon extends L2Effect
 						
 						getEffector().reduceCurrentMp(mpConsume);
 						owner.getSummon().unSummon(owner);
-						owner.getAI().notifyEvent(CtrlEvent.EVT_ATTACKED, getEffector());
+						try
+						{
+							owner.getAI().notifyEvent(CtrlEvent.EVT_ATTACKED, getEffector());
+						}
+						catch (Exception e)
+						{
+							_log.warning("Logger: notifyEvent failed (SignetAntiSummon) Report this to team. ");
+						}
 					}
 				}
 			}

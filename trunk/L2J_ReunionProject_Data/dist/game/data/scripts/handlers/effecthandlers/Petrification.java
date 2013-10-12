@@ -53,7 +53,14 @@ public class Petrification extends L2Effect
 		getEffected().stopAbnormalEffect(AbnormalEffect.HOLD_2);
 		if (!getEffected().isPlayer())
 		{
-			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
+			try
+			{
+				getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
+			}
+			catch (Exception e)
+			{
+				_log.warning("Logger: notifyEvent failed (Pertification) Report this to team. ");
+			}
 		}
 	}
 	

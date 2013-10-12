@@ -292,6 +292,7 @@ import l2r.gameserver.scripts.handlers.usercommandhandlers.Mount;
 import l2r.gameserver.scripts.handlers.usercommandhandlers.MyBirthday;
 import l2r.gameserver.scripts.handlers.usercommandhandlers.OlympiadStat;
 import l2r.gameserver.scripts.handlers.usercommandhandlers.PartyInfo;
+import l2r.gameserver.scripts.handlers.usercommandhandlers.SiegeStatus;
 import l2r.gameserver.scripts.handlers.usercommandhandlers.Time;
 import l2r.gameserver.scripts.handlers.usercommandhandlers.Unstuck;
 import l2r.gameserver.scripts.handlers.voicedcommandhandlers.AioItemVCmd;
@@ -313,13 +314,13 @@ import l2r.gameserver.scripts.handlers.voicedcommandhandlers.TeleportsVCmd;
 import l2r.gameserver.scripts.handlers.voicedcommandhandlers.VotePanelVCmd;
 import l2r.gameserver.scripts.handlers.voicedcommandhandlers.VoteVCmd;
 import l2r.gameserver.scripts.handlers.voicedcommandhandlers.Wedding;
-import gr.reunion.configs.AioBufferConfigs;
-import gr.reunion.configs.AioItemsConfigs;
-import gr.reunion.configs.AntibotConfigs;
-import gr.reunion.configs.ChaoticZoneConfigs;
-import gr.reunion.configs.CustomServerConfigs;
-import gr.reunion.configs.PremiumServiceConfigs;
-import gr.reunion.configs.VoteSystemConfigs;
+import gr.reunion.configsEngine.AioBufferConfigs;
+import gr.reunion.configsEngine.AioItemsConfigs;
+import gr.reunion.configsEngine.AntibotConfigs;
+import gr.reunion.configsEngine.ChaoticZoneConfigs;
+import gr.reunion.configsEngine.CustomServerConfigs;
+import gr.reunion.configsEngine.PremiumServiceConfigs;
+import gr.reunion.configsEngine.VoteSystemConfigs;
 
 /**
  * Master handler.
@@ -593,6 +594,7 @@ public class MasterHandler
 			ChannelDelete.class,
 			ChannelInfo.class,
 			MyBirthday.class,
+			SiegeStatus.class,
 		},
 		{
 			// Voiced Command Handlers

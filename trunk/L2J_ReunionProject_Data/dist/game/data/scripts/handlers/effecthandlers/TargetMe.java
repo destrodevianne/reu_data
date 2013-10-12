@@ -25,7 +25,6 @@ import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
-import l2r.gameserver.network.serverpackets.MyTargetSelected;
 
 /**
  * @author -Nemesiss-
@@ -61,10 +60,6 @@ public class TargetMe extends L2Effect
 				{
 					// Target is different
 					getEffected().setTarget(getEffector());
-					if (getEffected().isPlayer())
-					{
-						getEffected().sendPacket(new MyTargetSelected(getEffector().getObjectId(), 0));
-					}
 				}
 			}
 			((L2Playable) getEffected()).setLockedTarget(getEffector());
