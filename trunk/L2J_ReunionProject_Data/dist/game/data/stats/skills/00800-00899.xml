@@ -758,12 +758,6 @@
 		</cond>
 		<for>
 			<effect name="Transformation" abnormalTime="-1" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation has unlimited time -->
-				<set order="0x08" stat="STR" val="41" />
-				<set order="0x08" stat="INT" val="29" />
-				<set order="0x08" stat="CON" val="31" />
-				<set order="0x08" stat="DEX" val="33" />
-				<set order="0x08" stat="WIT" val="11" />
-				<set order="0x08" stat="MEN" val="25" />
 				<mul order="0x30" stat="pDef" val="0.7" />
 				<mul order="0x30" stat="mDef" val="0.7" />
 			</effect>
@@ -787,12 +781,6 @@
 		</cond>
 		<for>
 			<effect name="Transformation" abnormalTime="-1" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation has unlimited time -->
-				<set order="0x08" stat="STR" val="41" />
-				<set order="0x08" stat="INT" val="29" />
-				<set order="0x08" stat="CON" val="31" />
-				<set order="0x08" stat="DEX" val="33" />
-				<set order="0x08" stat="WIT" val="11" />
-				<set order="0x08" stat="MEN" val="25" />
 				<mul order="0x30" stat="pDef" val="0.7" />
 				<mul order="0x30" stat="mDef" val="0.7" />
 			</effect>
@@ -816,12 +804,6 @@
 		</cond>
 		<for>
 			<effect name="Transformation" abnormalTime="-1" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation has unlimited time -->
-				<set order="0x08" stat="STR" val="41" />
-				<set order="0x08" stat="INT" val="29" />
-				<set order="0x08" stat="CON" val="31" />
-				<set order="0x08" stat="DEX" val="33" />
-				<set order="0x08" stat="WIT" val="11" />
-				<set order="0x08" stat="MEN" val="25" />
 				<mul order="0x30" stat="pDef" val="0.7" />
 				<mul order="0x30" stat="mDef" val="0.7" />
 			</effect>

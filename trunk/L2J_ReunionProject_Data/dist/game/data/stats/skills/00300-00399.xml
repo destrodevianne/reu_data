@@ -871,7 +871,7 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="15005" />
 		<set name="reuseDelay" val="1000" />
-		<set name="skillType" val="STRSIEGEASSAULT" />
+		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">

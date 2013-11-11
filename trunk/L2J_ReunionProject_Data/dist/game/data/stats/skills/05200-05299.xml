@@ -1254,14 +1254,7 @@
 		<set name="targetType" val="SELF" />
 		<set name="transformId" val="303" />
 		<for>
-			<effect name="Transformation" abnormalTime="7" val="0" abnormalLvl="1" abnormalType="transform">
-				<set order="0x08" stat="STR" val="43" />
-				<set order="0x08" stat="DEX" val="33" />
-				<set order="0x08" stat="CON" val="29" />
-				<set order="0x08" stat="INT" val="29" />
-				<set order="0x08" stat="WIT" val="11" />
-				<set order="0x08" stat="MEN" val="25" />
-			</effect>
+			<effect name="Transformation" abnormalTime="7" val="0" abnormalLvl="1" abnormalType="transform" />
 		</for>
 	</skill>
 	<skill id="5262" levels="12" name="NPC - Rise Shot">

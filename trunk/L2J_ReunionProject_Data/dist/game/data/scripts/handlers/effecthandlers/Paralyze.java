@@ -72,7 +72,7 @@ public class Paralyze extends L2Effect
 			}
 			catch (Exception e)
 			{
-				_log.warning("Logger: notifyEvent failed (Paralyze) Report this to team. ");
+				_log.warn("Logger: notifyEvent failed (Paralyze) Report this to team. ");
 			}
 		}
 	}

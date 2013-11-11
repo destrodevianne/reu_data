@@ -62,7 +62,7 @@ public class RestorationRandom extends L2Effect
 		
 		if (exSkill.getProductItems().isEmpty())
 		{
-			_log.warning("Extractable Skill with no data, probably wrong/empty table in Skill Id: " + getSkill().getId());
+			_log.warn("Extractable Skill with no data, probably wrong/empty table in Skill Id: " + getSkill().getId());
 			return false;
 		}
 		

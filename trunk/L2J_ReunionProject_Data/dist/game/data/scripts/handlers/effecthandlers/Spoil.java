@@ -72,7 +72,7 @@ public class Spoil extends L2Effect
 		}
 		catch (Exception e)
 		{
-			_log.warning("Logger: notifyEvent failed (Spoil) Report this to team. ");
+			_log.warn("Logger: notifyEvent failed (Spoil) Report this to team. ");
 		}
 		return true;
 	}

@@ -18,8 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import java.util.logging.Level;
-
 import l2r.gameserver.datatables.NpcTable;
 import l2r.gameserver.datatables.PetDataTable;
 import l2r.gameserver.model.L2PetData;
@@ -75,14 +73,14 @@ public class SummonPet extends L2Effect
 		final PetItemHolder holder = player.removeScript(PetItemHolder.class);
 		if (holder == null)
 		{
-			_log.log(Level.WARNING, "Summoning pet without attaching PetItemHandler!", new Throwable());
+			_log.warn("Summoning pet without attaching PetItemHandler!", new Throwable());
 			return false;
 		}
 		
 		final L2ItemInstance item = holder.getItem();
 		if (player.getInventory().getItemByObjectId(item.getObjectId()) != item)
 		{
-			_log.log(Level.WARNING, "Player: " + player + " is trying to summon pet from item that he doesn't owns.");
+			_log.warn("Player: " + player + " is trying to summon pet from item that he doesn't owns.");
 			return false;
 		}
 		

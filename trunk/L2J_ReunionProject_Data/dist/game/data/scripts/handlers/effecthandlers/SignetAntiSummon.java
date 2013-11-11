@@ -102,7 +102,7 @@ public class SignetAntiSummon extends L2Effect
 						}
 						catch (Exception e)
 						{
-							_log.warning("Logger: notifyEvent failed (SignetAntiSummon) Report this to team. ");
+							_log.warn("Logger: notifyEvent failed (SignetAntiSummon) Report this to team. ");
 						}
 					}
 				}
