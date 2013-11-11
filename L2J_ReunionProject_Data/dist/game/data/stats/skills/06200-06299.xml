@@ -592,11 +592,28 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6262" levels="1" name="EMP Power">
-		<set name="coolTime" val="500" />
-		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<table name="#magicLvl"> 75 80 85 </table>
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="9" />
+		<set name="abnormalType" val="stun" />
+		<set name="affectRange" val="150" />
+		<set name="mpConsume" val="78" />
+		<set name="coolTime" val="800" />
+		<set name="hitTime" val="1000" />
+		<set name="isDebuff" val="true" />
+		<set name="lvlBonusRate" val="1" />
+		<set name="magicLvl" val="#magicLvl" />
+		<set name="offensive" val="true" />
+		<set name="operateType" val="A2" />
+		<set name="power" val="1046" />
+		<set name="reuseDelay" val="6000" />
+		<set name="saveVs" val="CON" />
+		<set name="skillType" val="PDAM" />
+		<set name="targetType" val="ONE" />
+		<set name="trait" val="SHOCK" />
+		<for>
+			<effect name="Stun" abnormalTime="9" val="0" effectPower="30" abnormalLvl="1" abnormalType="stun" />
+		</for>
 	</skill>
 	<skill id="6263" levels="1" name="EMP Shock">
 		<set name="abnormalLvl" val="1" />

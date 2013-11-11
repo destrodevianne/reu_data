@@ -67,7 +67,7 @@ public class Confusion extends L2Effect
 			}
 			catch (Exception e)
 			{
-				_log.warning("Logger: notifyEvent failed (Confusion) Report this to team. ");
+				_log.warn("Logger: notifyEvent failed (Confusion) Report this to team. ");
 			}
 		}
 	}

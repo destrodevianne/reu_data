@@ -1060,14 +1060,17 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6376" levels="9" name="Sonic Strike">
-		<table name="#abnormalLvls"> 1 2 3 4 5 6 7 8 9 </table>
-		<set name="abnormalLvl" val="#abnormalLvls" />
-		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="max_hp_down" />
-		<set name="isMagic" val="1" /> <!-- Magic Skill -->
-		<set name="operateType" val="A2" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="castRange" val="60" />
+		<set name="coolTime" val="500" />
+		<set name="effectRange" val="500" />
+		<set name="hitTime" val="1500" />
+		<set name="mpConsume" val="121" />
+		<set name="offensive" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="15225" />
+		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="PDAM" />
+		<set name="targetType" val="ONE" />
 	</skill>
 	<skill id="6377" levels="10" name="Assault Boost">
 		<table name="#abnormalLvls"> 1 2 3 4 5 6 7 8 9 10 </table>
@@ -1081,19 +1084,28 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6378" levels="1" name="Earth Shift">
-		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="15" />
-		<set name="abnormalType" val="vibration" />
-		<set name="isMagic" val="1" /> <!-- Magic Skill -->
-		<set name="operateType" val="A2" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="castRange" val="60" />
+		<set name="coolTime" val="500" />
+		<set name="effectRange" val="500" />
+		<set name="hitTime" val="1500" />
+		<set name="mpConsume" val="121" />
+		<set name="offensive" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="5225" />
+		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="PDAM" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="Debuff" abnormalTime="10" val="0" noicon="1" abnormalVisualEffect="earthquake" />
+		</for>
 	</skill>
 	<skill id="6379" levels="1" name="Blood Spurt">
 		<!-- Profuse bleeding causes you to loss 93 HP per second for 15 seconds. -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="15" />
 		<set name="abnormalType" val="bleeding" />
+		<set name="affectLimit" val="3-6" />
+		<set name="affectRange" val="500" />
 		<set name="coolTime" val="500" />
 		<set name="fanRange" val="0,0,150,120" />
 		<set name="lvlBonusRate" val="2" />
@@ -1101,9 +1113,14 @@
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="1000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="NOTDONE" />
+		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="FRONT_AREA" />
 		<set name="trait" val="BLEED" />
+		<for>
+			<effect count="7" name="DamOverTime" abnormalTime="3" val="75" abnormalLvl="1" abnormalType="bleeding" abnormalVisualEffect="bleed">
+				<mul order="0x30" stat="runSpd" val="0.8" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="6380" levels="1" name="Bistakon Roar">
 		<set name="abnormalLvl" val="1" />

@@ -273,9 +273,18 @@
 		</for>
 	</skill>
 	<skill id="5622" levels="7" name="Double Skill Attack">
-		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<table name="#power"> 2888 3541 5225 7512 8951 9125 13688 </table>
+		<set name="castRange" val="60" />
+		<set name="coolTime" val="500" />
+		<set name="effectRange" val="500" />
+		<set name="hitTime" val="1500" />
+		<set name="mpConsume" val="121" />
+		<set name="offensive" val="true" />
+		<set name="operateType" val="A1" />
+		<set name="power" val="#power" />
+		<set name="reuseDelay" val="1000" />
+		<set name="skillType" val="PDAM" />
+		<set name="targetType" val="ONE" />
 	</skill>
 	<skill id="5623" levels="1" name="Weakened Magic Force">
 		<set name="abnormalLvl" val="4" />

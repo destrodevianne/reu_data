@@ -19,10 +19,12 @@
 package handlers;
 
 import java.lang.reflect.Method;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import l2r.gameserver.handler.EffectHandler;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import handlers.effecthandlers.AbortCast;
 import handlers.effecthandlers.Betray;
 import handlers.effecthandlers.BigHead;
@@ -122,7 +124,7 @@ import handlers.effecthandlers.Warp;
  */
 public final class EffectMasterHandler
 {
-	private static final Logger _log = Logger.getLogger(EffectMasterHandler.class.getName());
+	private static Logger _log = LoggerFactory.getLogger(EffectMasterHandler.class);
 	
 	private static final Class<?> _loadInstances = EffectHandler.class;
 	
@@ -234,7 +236,7 @@ public final class EffectMasterHandler
 		}
 		catch (Exception e)
 		{
-			_log.log(Level.WARNING, "Failed invoking getInstance method for handler: " + _loadInstances.getSimpleName(), e);
+			_log.warn("Failed invoking getInstance method for handler: " + _loadInstances.getSimpleName(), e);
 			return;
 		}
 		
@@ -259,7 +261,7 @@ public final class EffectMasterHandler
 			}
 			catch (Exception e)
 			{
-				_log.log(Level.WARNING, "Failed loading effect handler: " + c.getSimpleName(), e);
+				_log.warn("Failed loading effect handler: " + c.getSimpleName(), e);
 				continue;
 			}
 		}
@@ -269,11 +271,11 @@ public final class EffectMasterHandler
 		{
 			method = loadInstance.getClass().getMethod("size");
 			Object returnVal = method.invoke(loadInstance);
-			_log.log(Level.INFO, loadInstance.getClass().getSimpleName() + ": Loaded " + returnVal + " Handlers");
+			_log.info(loadInstance.getClass().getSimpleName() + ": Loaded " + returnVal + " Handlers");
 		}
 		catch (Exception e)
 		{
-			_log.log(Level.WARNING, "Failed invoking size method for handler: " + loadInstance.getClass().getSimpleName(), e);
+			_log.warn("Failed invoking size method for handler: " + loadInstance.getClass().getSimpleName(), e);
 		}
 	}
 }

@@ -29,6 +29,7 @@ import l2r.gameserver.datatables.NpcTable;
 import l2r.gameserver.enums.CtrlEvent;
 import l2r.gameserver.enums.ShotType;
 import l2r.gameserver.idfactory.IdFactory;
+import l2r.gameserver.model.Location;
 import l2r.gameserver.model.actor.L2Character;
 import l2r.gameserver.model.actor.instance.L2EffectPointInstance;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
@@ -42,7 +43,6 @@ import l2r.gameserver.model.stats.Env;
 import l2r.gameserver.model.stats.Formulas;
 import l2r.gameserver.network.SystemMessageId;
 import l2r.gameserver.network.serverpackets.MagicSkillLaunched;
-import l2r.gameserver.util.Point3D;
 
 public class SignetMDam extends L2Effect
 {
@@ -82,7 +82,7 @@ public class SignetMDam extends L2Effect
 		
 		if (getEffector().isPlayer() && (getSkill().getTargetType() == L2TargetType.GROUND))
 		{
-			final Point3D wordPosition = getEffector().getActingPlayer().getCurrentSkillWorldPosition();
+			final Location wordPosition = getEffector().getActingPlayer().getCurrentSkillWorldPosition();
 			
 			if (wordPosition != null)
 			{
@@ -183,7 +183,7 @@ public class SignetMDam extends L2Effect
 				}
 				catch (Exception e)
 				{
-					_log.warning("Logger: notifyEvent failed (SignetMDam) Report this to team. ");
+					_log.warn("Logger: notifyEvent failed (SignetMDam) Report this to team. ");
 				}
 			}
 		}

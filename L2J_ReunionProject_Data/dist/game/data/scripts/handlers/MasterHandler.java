@@ -234,7 +234,6 @@ import l2r.gameserver.scripts.handlers.skillhandlers.RefuelAirShip;
 import l2r.gameserver.scripts.handlers.skillhandlers.Resurrect;
 import l2r.gameserver.scripts.handlers.skillhandlers.ShiftTarget;
 import l2r.gameserver.scripts.handlers.skillhandlers.Sow;
-import l2r.gameserver.scripts.handlers.skillhandlers.StrSiegeAssault;
 import l2r.gameserver.scripts.handlers.skillhandlers.SummonFriend;
 import l2r.gameserver.scripts.handlers.skillhandlers.TakeCastle;
 import l2r.gameserver.scripts.handlers.skillhandlers.TakeFort;
@@ -570,7 +569,6 @@ public class MasterHandler
 			Resurrect.class,
 			ShiftTarget.class,
 			Sow.class,
-			StrSiegeAssault.class,
 			SummonFriend.class,
 			TakeCastle.class,
 			TakeFort.class,

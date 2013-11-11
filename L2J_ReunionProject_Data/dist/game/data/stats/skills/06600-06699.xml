@@ -614,23 +614,34 @@
 		<set name="targetType" val="ONE" />
 		<set name="transformId" val="126" />
 		<for>
-			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform">
-				<set order="0x08" stat="STR" val="40" />
-				<set order="0x08" stat="DEX" val="30" />
-				<set order="0x08" stat="CON" val="43" />
-				<set order="0x08" stat="INT" val="21" />
-				<set order="0x08" stat="WIT" val="13" />
-				<set order="0x08" stat="MEN" val="23" />
-			</effect>
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform" />
 		</for>
 	</skill>
 	<skill id="6650" levels="1" name="Tacrakahn's Alienation">
-		<set name="abnormalLvl" val="99" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalLvl" val="1" />
+		<set name="abnormalTime" val="20" />
 		<set name="abnormalType" val="silence_all" />
+		<set name="affectLimit" val="6-18" />
+		<set name="affectRange" val="300" />
+		<set name="fanRange" val="0,0,200,0" />
+		<set name="hitTime" val="1500" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="lvlBonusRate" val="2" />
+		<set name="magicLvl" val="85" />
+		<set name="mpConsume" val="70" />
 		<set name="operateType" val="A2" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="power" val="80" /> <!-- Base Land Rate -->
+		<set name="pvp" val="true" />
+		<set name="reuseDelay" val="1000" />
+		<set name="saveVs" val="MEN" />
+		<set name="skillType" val="MUTE" />
+		<set name="targetType" val="AURA" />
+		<set name="trait" val="DERANGEMENT" />
+		<for>
+			<effect name="Mute" abnormalTime="20" val="0" abnormalLvl="1" abnormalType="silence_all" />
+			<effect name="PhysicalMute" abnormalTime="20" noicon="1" val="0" abnormalLvl="1" abnormalType="silence_all_two" /> <!-- TODO: This abnormalLvl="1" and abnormalType="silence_all_two" is a TEMP FIX, should be removed when "abnormalType and abnormalLvl" works like main skill attributes and not effect attributes -->
+		</for>
 	</skill>
 	<skill id="6651" levels="1" name="Dopagen's Alienation">
 		<set name="abnormalLvl" val="99" />
@@ -641,19 +652,22 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6652" levels="1" name="Level 85 Raid Boss">
+		<!-- This Skill Is Only For Description In The Client -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="6653" levels="1" name="Level 85 Raid Boss">
+		<!-- This Skill Is Only For Description In The Client -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="6654" levels="1" name="Level 85 Raid Boss">
+		<!-- This Skill Is Only For Description In The Client -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="6655" levels="1" name="Tarsque Carapace">
 		<set name="operateType" val="P" />
@@ -672,24 +686,28 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6658" levels="1" name="Level 84 Raid Boss">
+		<!-- This Skill Is Only For Description In The Client -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="6659" levels="1" name="Level 84 Raid Boss">
+		<!-- This Skill Is Only For Description In The Client -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="6660" levels="1" name="Level 84 Raid Boss">
+		<!-- This Skill Is Only For Description In The Client -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="6661" levels="1" name="Level 85 Raid Boss">
+		<!-- This Skill Is Only For Description In The Client -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="6662" levels="2" name="Pillar of Frozen">
 		<!-- Confirmed CT2.5 -->
@@ -725,14 +743,16 @@
 		</for>
 	</skill>
 	<skill id="6663" levels="1" name="Level 76 Raid Boss">
+		<!-- This Skill Is Only For Description In The Client -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="6664" levels="1" name="Level 84 Raid Boss">
+		<!-- This Skill Is Only For Description In The Client -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="6665" levels="1" name="NPC Hate">
 		<set name="operateType" val="A1" />

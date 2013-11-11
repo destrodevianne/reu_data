@@ -47,6 +47,8 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="br_event_buf2" />
 		<set name="hitTime" val="100" />
+		<set name="itemConsumeId" val="20004" />
+		<set name="itemConsumeCount" val="1" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="2000" />
@@ -872,6 +874,7 @@
 		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="vp_up" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeId" val="20391" />
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="1800000" />

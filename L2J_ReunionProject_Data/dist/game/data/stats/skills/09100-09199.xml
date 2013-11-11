@@ -926,14 +926,7 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
-				<set order="0x08" stat="STR" val="46" />
-				<set order="0x08" stat="DEX" val="30" />
-				<set order="0x08" stat="CON" val="49" />
-				<set order="0x08" stat="INT" val="50" />
-				<set order="0x08" stat="WIT" val="20" />
-				<set order="0x08" stat="MEN" val="45" />
-			</effect>
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform" />
 		</for>
 	</skill>
 	<skill id="9160" levels="1" name="Transformation Scroll - Zaken">
@@ -952,14 +945,7 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform"> <!-- Transformation lasts 30 minutes -->
-				<set order="0x08" stat="STR" val="48" />
-				<set order="0x08" stat="DEX" val="30" />
-				<set order="0x08" stat="CON" val="52" />
-				<set order="0x08" stat="INT" val="45" />
-				<set order="0x08" stat="WIT" val="20" />
-				<set order="0x08" stat="MEN" val="45" />
-			</effect>
+			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform" />
 		</for>
 	</skill>
 	<skill id="9161" levels="1" name="Vesper's Mighty Power">

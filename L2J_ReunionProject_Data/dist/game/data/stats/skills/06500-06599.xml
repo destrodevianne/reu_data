@@ -91,10 +91,13 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6515" levels="28" name="NPC dark attack">
-		<set name="coolTime" val="500" />
-		<set name="operateType" val="A1" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="magicLvl" val="1" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<add order="0x40" stat="darkPower" val="10" />
+			<add order="0x40" stat="darkRes" val="50" />
+		</for>
 	</skill>
 	<skill id="6516" levels="28" name="NPC dark attack">
 		<set name="coolTime" val="500" />

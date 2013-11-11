@@ -18,7 +18,7 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.instancemanager.TransformationManager;
+import l2r.gameserver.datatables.TransformData;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
@@ -37,16 +37,27 @@ public class Transformation extends L2Effect
 		super(env, template);
 	}
 	
-	// Special constructor to steal this effect
 	public Transformation(Env env, L2Effect effect)
 	{
 		super(env, effect);
 	}
 	
 	@Override
+	public boolean canBeStolen()
+	{
+		return false;
+	}
+	
+	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.TRANSFORMATION;
+	}
+	
+	@Override
+	public void onExit()
+	{
+		getEffected().stopTransformation(false);
 	}
 	
 	@Override
@@ -58,41 +69,32 @@ public class Transformation extends L2Effect
 		}
 		
 		L2PcInstance trg = getEffected().getActingPlayer();
-		if (trg == null)
+		if ((trg == null) || trg.isAlikeDead() || trg.isCursedWeaponEquipped())
 		{
 			return false;
 		}
-		
-		if (trg.isAlikeDead() || trg.isCursedWeaponEquipped())
-		{
-			return false;
-		}
-		
-		if (trg.isSitting())
+		else if (trg.isSitting())
 		{
 			trg.sendPacket(SystemMessageId.CANNOT_TRANSFORM_WHILE_SITTING);
 			return false;
 		}
-		
-		if (trg.isTransformed() || trg.isInStance())
+		else if (trg.isTransformed() || trg.isInStance())
 		{
-			trg.sendPacket(SystemMessageId.YOU_ALREADY_POLYMORPHED_AND_CANNOT_POLYMORPH_AGAIN);
+			getEffected().sendPacket(SystemMessageId.YOU_ALREADY_POLYMORPHED_AND_CANNOT_POLYMORPH_AGAIN);
+			return false;
+		}
+		else if (trg.isInWater())
+		{
+			getEffected().sendPacket(SystemMessageId.YOU_CANNOT_POLYMORPH_INTO_THE_DESIRED_FORM_IN_WATER);
+			return false;
+		}
+		else if (trg.isFlyingMounted() || trg.isMounted())
+		{
+			getEffected().sendPacket(SystemMessageId.YOU_CANNOT_POLYMORPH_WHILE_RIDING_A_PET);
 			return false;
 		}
 		
-		if (trg.isInWater())
-		{
-			trg.sendPacket(SystemMessageId.YOU_CANNOT_POLYMORPH_INTO_THE_DESIRED_FORM_IN_WATER);
-			return false;
-		}
-		
-		if (trg.isFlyingMounted() || trg.isMounted() || trg.isRidingStrider())
-		{
-			trg.sendPacket(SystemMessageId.YOU_CANNOT_POLYMORPH_WHILE_RIDING_A_PET);
-			return false;
-		}
-		
-		TransformationManager.getInstance().transformPlayer(getSkill().getTransformId(), trg);
+		TransformData.getInstance().transformPlayer(getSkill().getTransformId(), trg);
 		return true;
 	}
 	
@@ -100,11 +102,5 @@ public class Transformation extends L2Effect
 	public boolean onActionTime()
 	{
 		return false;
-	}
-	
-	@Override
-	public void onExit()
-	{
-		getEffected().stopTransformation(false);
 	}
 }

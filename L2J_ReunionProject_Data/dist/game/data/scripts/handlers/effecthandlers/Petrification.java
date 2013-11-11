@@ -59,7 +59,7 @@ public class Petrification extends L2Effect
 			}
 			catch (Exception e)
 			{
-				_log.warning("Logger: notifyEvent failed (Pertification) Report this to team. ");
+				_log.warn("Logger: notifyEvent failed (Pertification) Report this to team. ");
 			}
 		}
 	}
