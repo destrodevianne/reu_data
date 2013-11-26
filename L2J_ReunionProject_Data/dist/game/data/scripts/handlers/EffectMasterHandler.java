@@ -88,6 +88,8 @@ import handlers.effecthandlers.MpConsumePerLevel;
 import handlers.effecthandlers.Mute;
 import handlers.effecthandlers.Negate;
 import handlers.effecthandlers.NoblesseBless;
+import handlers.effecthandlers.OpenCommonRecipeBook;
+import handlers.effecthandlers.OpenDwarfRecipeBook;
 import handlers.effecthandlers.Paralyze;
 import handlers.effecthandlers.Petrification;
 import handlers.effecthandlers.PhoenixBless;
@@ -121,6 +123,7 @@ import handlers.effecthandlers.ThrowUp;
 import handlers.effecthandlers.TransferDamage;
 import handlers.effecthandlers.Transformation;
 import handlers.effecthandlers.UnsummonAgathion;
+import handlers.effecthandlers.VitalityPointUp;
 import handlers.effecthandlers.Warp;
 
 /**
@@ -199,6 +202,8 @@ public final class EffectMasterHandler
 		Mute.class,
 		Negate.class,
 		NoblesseBless.class,
+		OpenCommonRecipeBook.class,
+		OpenDwarfRecipeBook.class,
 		Paralyze.class,
 		Petrification.class,
 		PhoenixBless.class,
@@ -231,6 +236,7 @@ public final class EffectMasterHandler
 		TransferDamage.class,
 		Transformation.class,
 		UnsummonAgathion.class,
+		VitalityPointUp.class,
 		Warp.class,
 	};
 	

@@ -62,22 +62,30 @@
 	</skill>
 	<skill id="22005" levels="1" name="Energy Red Ginseng">
 		<!-- Confirmed CT2.5 -->
+		<set name="aggroPoints" val="100" />
 		<set name="hitTime" val="100" />
+		<set name="icon" val="BranchSys.icon.etc_ginseng_recovery_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="power" val="600" />
 		<set name="reuseDelay" val="2000" />
-		<set name="skillType" val="GIVE_VITALITY" />
 		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp" noicon="1" val="600" />
+		</for>
 	</skill>
 	<skill id="22006" levels="1" name="Halloween Candy">
 		<!-- Confirmed CT2.5 -->
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="power" val="20000" />
-		<set name="skillType" val="GIVE_VITALITY" />
 		<set name="targetType" val="SELF" />
+		<set name="reuseDelay" val="600000" />
+		<set name="itemConsumeId" val="20034" />
+		<set name="itemConsumeCount" val="1" />
+		<for>
+			<effect name="VitalityPointUp" noicon="1" val="20000" />
+		</for>
 	</skill>
 	<skill id="22007" levels="1" name="Good Luck Lucky Bag">
 		<!-- Confirmed CT2.5 -->
@@ -491,11 +499,15 @@
 	<skill id="22028" levels="1" name="Chocolate Cookie">
 		<!-- Confirmed CT2.5 -->
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
+		<set name="reuseDelay" val="60000" />
+		<set name="itemConsumeId" val="20214" />
 		<set name="itemConsumeCount" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="power" val="20000" />
-		<set name="skillType" val="GIVE_VITALITY" />
 		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp" noicon="1" val="20000" />
+		</for>
 	</skill>
 	<skill id="22029" levels="1" name="Baguette Herb">
 		<set name="abnormalLvl" val="1" />
@@ -887,13 +899,15 @@
 		</for>
 	</skill>
 	<skill id="22055" levels="1" name="Potion of Energy Replenishing">
+		<!-- Confirmed CT2.5 -->
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="power" val="5000" />
-		<set name="reuseDelay" val="1800000" />
-		<set name="skillType" val="GIVE_VITALITY" />
 		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="VitalityPointUp" noicon="1" val="5000" />
+		</for>
 	</skill>
 	<skill id="22056" levels="1" name="Wind Walk">
 		<set name="abnormalLvl" val="26" />
