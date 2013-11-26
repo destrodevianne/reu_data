@@ -754,19 +754,20 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="23179" levels="1" name="Blessing of Vitality">
-		<!-- Your Vitality level is maintained for 2 hours thanks to an old magic unsealed by the Magic Research Institute. -->
-		<set name="abnormalLvl" val="26" />
+		<!-- Confirmed CT2.5 -->
 		<set name="abnormalTime" val="7200" />
-		<set name="abnormalType" val="vp_keep" />
+		<set name="castRange" val="600" />
+		<set name="effectRange" val="600" />
+		<set name="icon" val="BranchSys2.icon.br_vitality_day_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
-		<set name="power" val="20000" />
-		<set name="skillType" val="GIVE_VITALITY" />
-		<set name="targetType" val="ONE" />
+		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="7210" val="0" abnormalLvl="26" abnormalType="vp_keep" abnormalVisualEffect="vitality">
+			<effect name="Buff" abnormalTime="7200" val="0" abnormalLvl="26" abnormalType="vp_keep" abnormalVisualEffect="vitality">
 				<mul order="0x30" stat="vitalityConsumeRate" val="0" />
 			</effect>
+			<effect name="VitalityPointUp" noicon="1" val="20000" />
 		</for>
 	</skill>
 	<skill id="23180" levels="1" name="Joy of Vitality">

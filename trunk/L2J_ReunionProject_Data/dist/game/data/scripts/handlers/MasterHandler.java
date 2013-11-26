@@ -211,11 +211,9 @@ import l2r.gameserver.scripts.handlers.punishmenthandlers.BanHandler;
 import l2r.gameserver.scripts.handlers.punishmenthandlers.ChatBanHandler;
 import l2r.gameserver.scripts.handlers.punishmenthandlers.JailHandler;
 import l2r.gameserver.scripts.handlers.skillhandlers.BallistaBomb;
-import l2r.gameserver.scripts.handlers.skillhandlers.BeastSkills;
 import l2r.gameserver.scripts.handlers.skillhandlers.Blow;
 import l2r.gameserver.scripts.handlers.skillhandlers.Continuous;
 import l2r.gameserver.scripts.handlers.skillhandlers.CpDamPercent;
-import l2r.gameserver.scripts.handlers.skillhandlers.Craft;
 import l2r.gameserver.scripts.handlers.skillhandlers.DeluxeKey;
 import l2r.gameserver.scripts.handlers.skillhandlers.Detection;
 import l2r.gameserver.scripts.handlers.skillhandlers.Disablers;
@@ -224,7 +222,6 @@ import l2r.gameserver.scripts.handlers.skillhandlers.Fishing;
 import l2r.gameserver.scripts.handlers.skillhandlers.FishingSkill;
 import l2r.gameserver.scripts.handlers.skillhandlers.GetPlayer;
 import l2r.gameserver.scripts.handlers.skillhandlers.GiveReco;
-import l2r.gameserver.scripts.handlers.skillhandlers.GiveVitality;
 import l2r.gameserver.scripts.handlers.skillhandlers.InstantJump;
 import l2r.gameserver.scripts.handlers.skillhandlers.Manadam;
 import l2r.gameserver.scripts.handlers.skillhandlers.Mdam;
@@ -545,11 +542,9 @@ public class MasterHandler
 		{
 			// Skill Handlers
 			BallistaBomb.class,
-			BeastSkills.class,
 			Blow.class,
 			Continuous.class,
 			CpDamPercent.class,
-			Craft.class,
 			DeluxeKey.class,
 			Detection.class,
 			Disablers.class,
@@ -558,7 +553,6 @@ public class MasterHandler
 			FishingSkill.class,
 			GetPlayer.class,
 			GiveReco.class,
-			GiveVitality.class,
 			InstantJump.class,
 			Manadam.class,
 			Mdam.class,
