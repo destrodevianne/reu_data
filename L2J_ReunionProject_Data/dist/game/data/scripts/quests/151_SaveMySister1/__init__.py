@@ -30,7 +30,7 @@ class Quest (JQuest) :
    st = player.getQuestState(qn)
    if not st : return htmltext
 
-   npcId = npc.getNpcId()
+   npcId = npc.getId()
    id = st.getState()
    cond = st.getInt("cond")
    sac = st.getQuestItemsCount(POISON_SAC)

@@ -668,14 +668,18 @@
 		<!-- Prevents user from being affected by Freya's Eternal Blizzard. -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="10" />
-		<set name="abnormalType" val="skill_ignore" />
-		<set name="operateType" val="A2" />
+		<set name="abnormalType" val="invincibility" />
+		<set name="itemConsumeCount" val="1" />
 		<set name="reuseDelay" val="1200000" />
-		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="A2" />
+		<set name="skillType" val="BUFF" />
 		<set name="staticReuse" val="true" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
 			<player insideZoneId="90578" />
+			<for>
+				<effect name="Invincible" abnormalTime="10" val="0" special="invincible" abnormalLvl="1" abnormalType="invincibility" />
+			</for>
 		</cond>
 	</skill>
 	<skill id="9058" levels="1" name="Black Freezing Core">

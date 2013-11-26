@@ -230,7 +230,6 @@ import l2r.gameserver.scripts.handlers.skillhandlers.Manadam;
 import l2r.gameserver.scripts.handlers.skillhandlers.Mdam;
 import l2r.gameserver.scripts.handlers.skillhandlers.NornilsPower;
 import l2r.gameserver.scripts.handlers.skillhandlers.Pdam;
-import l2r.gameserver.scripts.handlers.skillhandlers.RefuelAirShip;
 import l2r.gameserver.scripts.handlers.skillhandlers.Resurrect;
 import l2r.gameserver.scripts.handlers.skillhandlers.ShiftTarget;
 import l2r.gameserver.scripts.handlers.skillhandlers.Sow;
@@ -565,7 +564,6 @@ public class MasterHandler
 			Mdam.class,
 			NornilsPower.class,
 			Pdam.class,
-			RefuelAirShip.class,
 			Resurrect.class,
 			ShiftTarget.class,
 			Sow.class,
