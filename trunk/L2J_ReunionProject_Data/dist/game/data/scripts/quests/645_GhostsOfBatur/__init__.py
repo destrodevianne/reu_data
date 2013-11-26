@@ -65,7 +65,7 @@ class Quest (JQuest) :
    htmltext = Quest.getNoQuestMsg(player)
    st = player.getQuestState(qn)
    if not st : return htmltext
-   npcId = npc.getNpcId()
+   npcId = npc.getId()
    id = st.getState()
    cond = st.getInt("cond")
    if cond == 0 :
@@ -88,7 +88,7 @@ class Quest (JQuest) :
     count = st.getQuestItemsCount(CURSED_BURIAL)
     if st.getInt("cond") == 1 :
       chance = DROP_CHANCE
-      if npc.getNpcId() == GHOST_COMMANDER:
+      if npc.getId() == GHOST_COMMANDER:
         chance = DROP_CHANCE_GHOST_COMMANDER
       numItems, chance = divmod(chance,100)
       if self.getRandom(100) < chance :

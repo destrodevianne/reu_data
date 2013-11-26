@@ -53,7 +53,7 @@ public class Bluff extends L2Effect
 			return false;
 		}
 		
-		if ((getEffected() instanceof L2Npc) && (((L2Npc) getEffected()).getNpcId() == 35062))
+		if ((getEffected() instanceof L2Npc) && (((L2Npc) getEffected()).getId() == 35062))
 		{
 			return false;
 		}

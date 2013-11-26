@@ -28,6 +28,9 @@ import org.slf4j.LoggerFactory;
 import handlers.effecthandlers.AbortCast;
 import handlers.effecthandlers.Betray;
 import handlers.effecthandlers.BigHead;
+import handlers.effecthandlers.BlockAction;
+import handlers.effecthandlers.BlockChat;
+import handlers.effecthandlers.BlockParty;
 import handlers.effecthandlers.BlockResurrection;
 import handlers.effecthandlers.Bluff;
 import handlers.effecthandlers.Buff;
@@ -59,6 +62,7 @@ import handlers.effecthandlers.EnemyCharge;
 import handlers.effecthandlers.EnlargeAbnormalSlot;
 import handlers.effecthandlers.FakeDeath;
 import handlers.effecthandlers.Fear;
+import handlers.effecthandlers.Flag;
 import handlers.effecthandlers.FocusSouls;
 import handlers.effecthandlers.Fusion;
 import handlers.effecthandlers.GiveSp;
@@ -94,6 +98,7 @@ import handlers.effecthandlers.RandomizeHate;
 import handlers.effecthandlers.RebalanceHP;
 import handlers.effecthandlers.RecoBonus;
 import handlers.effecthandlers.Recovery;
+import handlers.effecthandlers.RefuelAirship;
 import handlers.effecthandlers.Relax;
 import handlers.effecthandlers.RemoveTarget;
 import handlers.effecthandlers.RestorationRandom;
@@ -134,6 +139,9 @@ public final class EffectMasterHandler
 		RebalanceHP.class,
 		Betray.class,
 		BigHead.class,
+		BlockAction.class,
+		BlockChat.class,
+		BlockParty.class,
 		BlockResurrection.class,
 		Bluff.class,
 		Buff.class,
@@ -164,6 +172,7 @@ public final class EffectMasterHandler
 		EnemyCharge.class,
 		EnlargeAbnormalSlot.class,
 		FakeDeath.class,
+		Flag.class,
 		Fear.class,
 		FocusSouls.class,
 		Fusion.class,
@@ -199,6 +208,7 @@ public final class EffectMasterHandler
 		RandomizeHate.class,
 		RecoBonus.class,
 		Recovery.class,
+		RefuelAirship.class,
 		Relax.class,
 		RemoveTarget.class,
 		RestorationRandom.class,
