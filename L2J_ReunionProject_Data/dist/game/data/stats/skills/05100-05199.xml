@@ -1508,17 +1508,17 @@
 		<set name="targetType" val="AURA" />
 	</skill>
 	<skill id="5179" levels="1" name="Raid Boss - Level 80">
-		<!-- This Skill Is Only For Description In The Client -->
+		<!-- Confirmed CT2.5 -->
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5180" levels="1" name="Raid Boss - Level 80">
-		<!-- This Skill Is Only For Description In The Client -->
+		<!-- Confirmed CT2.5 -->
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5181" levels="1" name="Raid Boss - Level 80">
-		<!-- This Skill Is Only For Description In The Client -->
+		<!-- Confirmed CT2.5 -->
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 	</skill>
