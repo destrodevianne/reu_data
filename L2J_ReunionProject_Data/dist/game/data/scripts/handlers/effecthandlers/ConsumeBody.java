@@ -38,7 +38,7 @@ public class ConsumeBody extends L2Effect
 	@Override
 	public boolean onStart()
 	{
-		if ((getEffector() == null) || (getEffected() == null) || !getEffected().isNpc())
+		if ((getEffector() == null) || (getEffected() == null) || !getEffected().isNpc() || !getEffected().isDead())
 		{
 			return false;
 		}
