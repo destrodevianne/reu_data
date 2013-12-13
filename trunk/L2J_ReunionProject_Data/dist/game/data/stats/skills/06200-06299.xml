@@ -516,9 +516,16 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6251" levels="1" name="Summon Humidity">
+		<!-- Confirmed CT2.5 -->
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="13270" npcCount="1" despawnDelay="7200" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="6252" levels="1" name="Humidity Attack">
 		<set name="operateType" val="A1" />

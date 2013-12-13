@@ -984,15 +984,13 @@
 		<table name="#ench3npcId"> 13257 13257 13257 13258 13258 13258 13259 13259 13259 13260 13260 13260 13261 13261 13261 13262 13262 13262 13263 13263 13263 13264 13264 13264 13265 13265 13266 13266 13266 13267 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="hitTime" val="2000" />
+		<set name="icon" val="icon.skill0525" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="npcId" val="#npcId" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="600000" />
-		<set name="skillType" val="DECOY" />
-		<set name="summonTotalLifeTime" val="20000" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -1000,7 +998,16 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2reuseDelay" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
-		<enchant3 name="npcId" val="#ench3npcId" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="#npcId" npcCount="1" />
+			</effect>
+		</for>
+		<enchant3for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="#ench3npcId" npcCount="1" />
+			</effect>
+		</enchant3for>
 	</skill>
 	<skill id="526" levels="1" name="Enuma Elish" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6">
 		<!-- Confirmed CT2.5 -->

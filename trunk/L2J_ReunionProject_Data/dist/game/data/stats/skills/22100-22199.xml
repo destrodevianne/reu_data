@@ -210,28 +210,60 @@
 		</for>
 	</skill>
 	<skill id="22110" levels="1" name="Lucky Sky Lantern Summon">
+		<!-- Confirmed CT2.5 -->
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20728" />
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="22" npcCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="22111" levels="1" name="Ambient Sky Lantern Summon">
+		<!-- Confirmed CT2.5 -->
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20729" />
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="23" npcCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="22112" levels="1" name="Sway Sky Lantern Summon">
+		<!-- Confirmed CT2.5 -->
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20730" />
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="24" npcCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="22113" levels="1" name="Comfort Sky Lantern Summon">
+		<!-- Confirmed CT2.5 -->
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20731" />
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="25" npcCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="22114" levels="1" name="Morph Scroll Box">
 		<!-- Confirmed CT2.5 -->
@@ -274,10 +306,19 @@
 		</for>
 	</skill>
 	<skill id="22116" levels="1" name="Summon Flames Box">
+		<!-- Confirmed CT2.5 -->
+		<set name="icon" val="BranchSys.icon.br_fire_box_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20788" />
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="29" npcCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="22117" levels="1" name="Flames Box Firework">
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -450,16 +491,19 @@
 		</cond>
 	</skill>
 	<skill id="22127" levels="1" name="Summon Warm Kotatz">
-		<!-- Confirmed CT2.5 -->
-		<set name="despawnDelay" val="7200" /> <!-- FIXME: Custom. -->
+		<!-- Confirmed CT2.5 and Updated to H5 -->
+		<set name="icon" val="BranchSys.icon.br_kotatsu_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
-		<set name="npcId" val="28" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="600000" />
-		<set name="skillType" val="SPAWN" />
 		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="127" npcCount="1" despawnDelay="7200" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="22128" levels="3" name="Rudolph's Joy">
 		<!-- Confirmed CT2.5 -->
