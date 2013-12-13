@@ -157,7 +157,7 @@
 			</and>
 		</cond>
 		<cond msgId="113">
-			<player npcIdRadius="32529,300" />
+			<player npcIdRadius="32529,300,true" />
 		</cond>
 	</skill>
 	<skill id="2616" levels="1" name="Bond Sealant">
