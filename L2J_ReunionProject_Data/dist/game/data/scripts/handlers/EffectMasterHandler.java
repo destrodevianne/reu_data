@@ -130,6 +130,7 @@ public final class EffectMasterHandler
 		StealAbnormal.class,
 		Stun.class,
 		SummonAgathion.class,
+		SummonNpc.class,
 		SummonPet.class,
 		SummonTrap.class,
 		Sweeper.class,
