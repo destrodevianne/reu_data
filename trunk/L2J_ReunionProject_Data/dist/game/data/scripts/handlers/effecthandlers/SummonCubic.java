@@ -89,10 +89,16 @@ public class SummonCubic extends L2Effect
 		else
 		{
 			final L2Effect cubicMastery = player.getFirstPassiveEffect(L2EffectType.CUBIC_MASTERY);
-			final int cubicCount = (int) (cubicMastery != null ? (cubicMastery.calc() - 1) : 0); // Fixed but not correct
-			if (player.getCubics().size() > cubicCount)
+			final int cubicCount = (int) (cubicMastery != null ? cubicMastery.calc() : 0);
+			final int currectCubicCount = player.getCubics().size();
+			
+			if (currectCubicCount >= cubicCount)
 			{
-				player.getCubics().remove(Rnd.get(player.getCubics().size()));
+				final int removedCubicId = (int) player.getCubics().keySet().toArray()[Rnd.get(currectCubicCount)];
+				final L2CubicInstance removedCubic = player.getCubicById(removedCubicId);
+				removedCubic.stopAction();
+				removedCubic.cancelDisappear();
+				player.getCubics().remove(removedCubic.getId());
 			}
 		}
 		player.addCubic(_npcId, _cubicSkillLevel, _cubicPower, _cubicDelay, _cubicSkillChance, _cubicMaxCount, _cubicDuration, getEffected() != getEffector());
