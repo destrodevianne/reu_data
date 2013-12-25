@@ -996,11 +996,16 @@
 		</for>
 	</skill>
 	<skill id="143" levels="2" name="Cubic Mastery">
+		<!-- Confirmed CT2.5 -->
+		<table name="#cubicCount"> 2 3 </table>
 		<table name="#magicLvl"> 43 55 </table>
+		<set name="icon" val="icon.skill0143" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="P" />
-		<set name="skillType" val="COREDONE" />
 		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="CubicMastery" val="#cubicCount" />
+		</for>
 	</skill>
 	<skill id="144" levels="37" name="Dual Weapon Mastery" enchantGroup1="1" enchantGroup2="1">
 		<table name="#magicLvl"> 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
