@@ -228,7 +228,7 @@ class Quest (JQuest) :
      npc.showChatWindow(player)
    return htmltext
 
- def onKill(self,npc,player,isPet):
+ def onKill(npc,player,isPet):
    if Config.DISABLE_TUTORIAL :
      return
    st = player.getQuestState(qn)
