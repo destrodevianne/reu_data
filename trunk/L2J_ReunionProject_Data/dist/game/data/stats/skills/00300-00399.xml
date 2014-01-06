@@ -27,6 +27,9 @@
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="expPenalty" val="#ench1expPenalty" />
 		<enchant1 name="npcId" val="#enchNpcIds" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="302" levels="9" name="Spoil Festival" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<!-- Confirmed CT2.5 -->

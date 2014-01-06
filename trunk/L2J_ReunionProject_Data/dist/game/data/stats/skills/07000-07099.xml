@@ -266,6 +266,9 @@
 		<set name="targetType" val="SELF" />
 		<!-- Summon-specific -->
 		<set name="npcId" val="20150" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="7031" levels="1" name="Summon Skeleton Royal Guard">
 		<set name="hitTime" val="4000" />
@@ -283,6 +286,9 @@
 		<set name="targetType" val="SELF" />
 		<!-- Summon-specific -->
 		<set name="npcId" val="20169" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="7032" levels="1" name="Summon Hunter Gargoyle">
 		<set name="hitTime" val="4000" />
@@ -300,6 +306,9 @@
 		<set name="targetType" val="SELF" />
 		<!-- Summon-specific -->
 		<set name="npcId" val="20241" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="7033" levels="1" name="not_used">
 		<set name="operateType" val="P" />

@@ -219,6 +219,9 @@
 		<enchant1 name="mpConsume" val="116" />
 		<enchant1 name="mpInitialConsume" val="29" />
 		<enchant1 name="npcId" val="#ench1npcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1407" levels="1" name="Summon Magnus the Unicorn" enchantGroup1="5">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
@@ -248,6 +251,9 @@
 		<enchant1 name="mpConsume" val="116" />
 		<enchant1 name="mpInitialConsume" val="29" />
 		<enchant1 name="npcId" val="#ench1npcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1408" levels="1" name="Summon Spectral Lord" enchantGroup1="5">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
@@ -277,6 +283,9 @@
 		<enchant1 name="mpConsume" val="116" />
 		<enchant1 name="mpInitialConsume" val="29" />
 		<enchant1 name="npcId" val="#ench1npcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1409" levels="1" name="Cleanse">
 		<set name="castRange" val="600" />

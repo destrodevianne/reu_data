@@ -621,6 +621,9 @@
 		<set name="expPenalty" val="0.9" /> <!-- Consumes 90 percent of acquired Exp -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1226" levels="18" name="Summon Boxer the Unicorn" enchantGroup1="1">
 		<table name="#enchNpcId"> 14313 14314 14315 14316 14317 14318 14319 14320 14321 14322 14323 14324 14325 14326 14327 14328 14329 14330 14331 14332 14333 14334 14335 14336 14337 14338 14339 14340 14341 14342 </table>
@@ -655,6 +658,9 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1227" levels="18" name="Summon Mirage the Unicorn" enchantGroup1="1">
 		<table name="#enchNpcId"> 14361 14362 14363 14364 14365 14366 14367 14368 14369 14370 14371 14372 14373 14374 14375 14376 14377 14378 14379 14380 14381 14382 14383 14384 14385 14386 14387 14388 14389 14390 </table>
@@ -685,6 +691,9 @@
 		<set name="expPenalty" val="0.9" /> <!-- Consumes 90 percent of acquired Exp. -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1228" levels="18" name="Summon Silhouette" enchantGroup1="1">
 		<table name="#enchNpcId"> 14545 14546 14547 14548 14549 14550 14551 14552 14553 14554 14555 14556 14557 14558 14559 14560 14561 14562 14563 14564 14565 14566 14567 14568 14569 14570 14571 14572 14573 14574 </table>
@@ -715,6 +724,9 @@
 		<set name="expPenalty" val="0.9" /> <!-- 90 percent of acquired Exp is consumed. -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1229" levels="18" name="Chant of Life" enchantGroup1="2" enchantGroup2="2">
 		<table name="#abnormalLvls"> 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 </table>
@@ -2491,6 +2503,9 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1277" levels="14" name="Summon Merrow the Unicorn" enchantGroup1="1">
 		<table name="#itemConsumeCount"> 1 1 1 2 2 2 1 1 2 2 1 1 2 2 </table>
@@ -2521,6 +2536,9 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1278" levels="14" name="Summon Soulless" enchantGroup1="1">
 		<table name="#itemConsumeCount"> 1 1 1 2 2 2 1 1 2 2 1 1 2 2 </table>
@@ -2551,6 +2569,9 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1279" levels="9" name="Summon Binding Cubic" enchantGroup1="2">
 		<!-- Confirmed CT2.5 -->

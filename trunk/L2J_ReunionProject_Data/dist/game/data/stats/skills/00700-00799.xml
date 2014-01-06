@@ -273,6 +273,9 @@
 		<set name="summonTimeLostIdle" val="500" />
 		<set name="summonTotalLifeTime" val="3600000" />
 		<set name="targetType" val="SELF" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="711" levels="1" name="Divine Summoner Transfer Pain">
 		<set name="mpInitialConsume" val="72" />
