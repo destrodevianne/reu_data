@@ -2263,6 +2263,9 @@
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="expPenalty" val="#ench1expPenalty" />
 		<enchant1 name="npcId" val="#enchNpcIds" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="284" levels="40" name="Hurricane Assault" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<table name="#magicLvl"> 34 35 36 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
@@ -2689,5 +2692,8 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="14768" />
 		<enchant1 name="npcId" val="#enchNpcIds" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 </list>

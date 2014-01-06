@@ -1651,6 +1651,9 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="14839" />
 		<enchant1 name="npcId" val="#ench1npcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="449" levels="4" name="Summon Attractive Cubic" enchantGroup1="2">
 		<!-- Confirmed CT2.5 -->

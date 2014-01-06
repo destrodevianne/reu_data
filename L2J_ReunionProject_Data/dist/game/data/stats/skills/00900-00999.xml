@@ -291,6 +291,9 @@
 		<set name="targetType" val="SELF" />
 		<!-- Summon-specific -->
 		<set name="npcId" val="14918" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="913" levels="1" name="Deflect Magic">
 		<set name="abnormalLvl" val="1" />

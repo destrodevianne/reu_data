@@ -798,6 +798,9 @@
 		<!-- Summon-specific -->
 		<table name="#npcIds"> 14916 14917 </table>
 		<set name="npcId" val="#npcIds" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="8251" levels="1" name="Collection Agathion Release Seal">
 		<!-- Confirmed CT2.5 -->
