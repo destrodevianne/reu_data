@@ -754,6 +754,9 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1332" levels="10" name="Summon Unicorn Seraphim" enchantGroup1="1">
 		<table name="#itemConsumeCount"> 1 1 2 2 4 1 1 4 1 2 </table>
@@ -785,6 +788,9 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1333" levels="10" name="Summon Nightshade" enchantGroup1="1">
 		<table name="#itemConsumeCount"> 1 1 2 2 4 1 1 4 1 2 </table>
@@ -816,6 +822,9 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1334" levels="7" name="Summon Cursed Man" enchantGroup1="1">
 		<table name="#itemConsumeCount"> 3 5 12 1 2 3 4 </table>
@@ -848,6 +857,9 @@
 		<!-- Summon-specific -->
 		<set name="npcId" val="#npcIds" />
 		<enchant1 name="npcId" val="#enchNpcId" />
+		<cond>
+			<player canSummon="true" />
+		</cond>
 	</skill>
 	<skill id="1335" levels="1" name="Balance Life">
 		<!-- Confirmed CT2.5 -->
