@@ -19,6 +19,7 @@
 package handlers.effecthandlers;
 
 import l2r.gameserver.RecipeController;
+import l2r.gameserver.enums.PrivateStoreType;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
@@ -48,7 +49,7 @@ public class OpenDwarfRecipeBook extends L2Effect
 		}
 		
 		L2PcInstance player = getEffector().getActingPlayer();
-		if (player.getPrivateStoreType() != L2PcInstance.STORE_PRIVATE_NONE)
+		if (player.getPrivateStoreType() != PrivateStoreType.NONE)
 		{
 			player.sendPacket(SystemMessageId.CANNOT_CREATED_WHILE_ENGAGED_IN_TRADING);
 			return false;

@@ -752,20 +752,24 @@
 	</skill>
 	<skill id="22298" levels="1" name="Refined Red Dragon Blood">
 		<!-- There is no available description. -->
-		<set name="reuseDelay" val="300000"/>
-		<set name="magicLevel" val="85"/>
-		<set name="power" val="4500"/>
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21903" />
 		<set name="targetType" val="PARTY"/>
-		<set name="skillRadius" val="1000"/>
-		<set name="operateType" val="P" />
+		<set name="operateType" val="A1" />
+		<for>
+			<effect name="Heal" val="1000" /> <!-- TODO: Custom. -->
+		</for>
 	</skill>
 	<skill id="22299" levels="1" name="Refined Blue Dragon Blood">
 		<!-- There is no available description. -->
-		<set name="reuseDelay" val="300000"/>
-		<set name="magicLevel" val="85"/>
-		<set name="power" val="3500"/>
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="21904" />
 		<set name="targetType" val="PARTY"/>
-		<set name="skillRadius" val="1000"/>
-		<set name="operateType" val="P" />
+		<set name="operateType" val="A1" />
+		<for>
+			<effect name="Heal" val="1000" /> <!-- TODO: Custom. -->
+		</for>
 	</skill>
 </list>

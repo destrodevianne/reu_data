@@ -100,7 +100,6 @@
 			<set order="0x50" stat="pAtkSpd" val="800" />
 			<set order="0x50" stat="pAtk" val="400" />
 			<set order="0x50" stat="atkCountMax" val="3" />
-			<set order="0x50" stat="pAtkAngle" val="360" />
 			<add order="0x50" stat="pAtkRange" val="80" />
 		</for>
 	</skill>
@@ -205,7 +204,6 @@
 			<set order="0x50" stat="pAtkSpd" val="800" />
 			<set order="0x50" stat="pAtk" val="400" />
 			<set order="0x50" stat="atkCountMax" val="3" />
-			<set order="0x50" stat="pAtkAngle" val="360" />
 			<add order="0x50" stat="pAtkRange" val="80" />
 		</for>
 	</skill>
