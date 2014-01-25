@@ -113,15 +113,11 @@ public class ManaHealByLevel extends L2Effect
 			su.addAttribute(StatusUpdate.CUR_MP, (int) target.getCurrentMp());
 			target.sendPacket(su);
 		}
-		SystemMessage sm;
+		
+		final SystemMessage sm = SystemMessage.getSystemMessage(getEffector().getObjectId() != target.getObjectId() ? SystemMessageId.S2_MP_RESTORED_BY_C1 : SystemMessageId.S1_MP_RESTORED);
 		if (getEffector().getObjectId() != target.getObjectId())
 		{
-			sm = SystemMessage.getSystemMessage(SystemMessageId.S2_MP_RESTORED_BY_C1);
 			sm.addCharName(getEffector());
-		}
-		else
-		{
-			sm = SystemMessage.getSystemMessage(SystemMessageId.S1_MP_RESTORED);
 		}
 		sm.addNumber((int) amount);
 		target.sendPacket(sm);

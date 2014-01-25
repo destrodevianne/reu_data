@@ -89,7 +89,7 @@ public class SummonCubic extends L2Effect
 		else
 		{
 			final L2Effect cubicMastery = player.getFirstPassiveEffect(L2EffectType.CUBIC_MASTERY);
-			final int cubicCount = (int) (cubicMastery != null ? cubicMastery.calc() : 0);
+			final int cubicCount = (int) (cubicMastery != null ? cubicMastery.calc() : 1);
 			final int currectCubicCount = player.getCubics().size();
 			
 			if (currectCubicCount >= cubicCount)
