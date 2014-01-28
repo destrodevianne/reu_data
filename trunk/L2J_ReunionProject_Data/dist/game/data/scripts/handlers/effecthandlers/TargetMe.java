@@ -65,7 +65,7 @@ public class TargetMe extends L2Effect
 			((L2Playable) getEffected()).setLockedTarget(getEffector());
 			return true;
 		}
-		else if (getEffected().isL2Attackable() && !getEffected().isRaid())
+		else if (getEffected().isAttackable() && !getEffected().isRaid())
 		{
 			return true;
 		}

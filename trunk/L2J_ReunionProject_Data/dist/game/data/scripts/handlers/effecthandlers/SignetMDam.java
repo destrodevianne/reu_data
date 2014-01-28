@@ -124,7 +124,7 @@ public class SignetMDam extends L2Effect
 				continue;
 			}
 			
-			if (cha.isL2Attackable() || cha.isPlayable())
+			if (cha.isAttackable() || cha.isPlayable())
 			{
 				if (cha.isAlikeDead())
 				{

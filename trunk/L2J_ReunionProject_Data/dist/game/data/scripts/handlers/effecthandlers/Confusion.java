@@ -79,7 +79,7 @@ public class Confusion extends L2Effect
 		// Getting the possible targets
 		for (L2Object obj : getEffected().getKnownList().getKnownObjects().values())
 		{
-			if (((getEffected().isMonster() && obj.isL2Attackable()) || (obj instanceof L2Character)) && (obj != getEffected()))
+			if (((getEffected().isMonster() && obj.isAttackable()) || (obj instanceof L2Character)) && (obj != getEffected()))
 			{
 				targetList.add((L2Character) obj);
 			}

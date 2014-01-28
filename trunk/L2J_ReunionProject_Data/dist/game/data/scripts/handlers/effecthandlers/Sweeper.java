@@ -42,7 +42,7 @@ public class Sweeper extends L2Effect
 	@Override
 	public boolean onStart()
 	{
-		if ((getEffector() == null) || (getEffected() == null) || !getEffector().isPlayer() || !getEffected().isL2Attackable())
+		if ((getEffector() == null) || (getEffected() == null) || !getEffector().isPlayer() || !getEffected().isAttackable())
 		{
 			return false;
 		}

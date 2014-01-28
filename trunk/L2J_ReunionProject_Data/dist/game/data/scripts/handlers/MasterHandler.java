@@ -220,7 +220,6 @@ import l2r.gameserver.scripts.handlers.skillhandlers.Disablers;
 import l2r.gameserver.scripts.handlers.skillhandlers.Dummy;
 import l2r.gameserver.scripts.handlers.skillhandlers.Fishing;
 import l2r.gameserver.scripts.handlers.skillhandlers.FishingSkill;
-import l2r.gameserver.scripts.handlers.skillhandlers.GetPlayer;
 import l2r.gameserver.scripts.handlers.skillhandlers.GiveReco;
 import l2r.gameserver.scripts.handlers.skillhandlers.InstantJump;
 import l2r.gameserver.scripts.handlers.skillhandlers.Manadam;
@@ -551,7 +550,6 @@ public class MasterHandler
 			Dummy.class,
 			Fishing.class,
 			FishingSkill.class,
-			GetPlayer.class,
 			GiveReco.class,
 			InstantJump.class,
 			Manadam.class,
