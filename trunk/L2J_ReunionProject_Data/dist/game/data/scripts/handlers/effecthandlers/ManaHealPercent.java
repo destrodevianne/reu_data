@@ -76,7 +76,7 @@ public class ManaHealPercent extends L2Effect
 		{
 			sm = SystemMessage.getSystemMessage(SystemMessageId.S1_MP_RESTORED);
 		}
-		sm.addNumber((int) amount);
+		sm.addInt((int) amount);
 		target.sendPacket(sm);
 		return true;
 	}

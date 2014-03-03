@@ -55,7 +55,7 @@ public class HpByLevel extends L2Effect
 		getEffected().sendPacket(su);
 		// System message
 		final SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.S1_HP_RESTORED);
-		sm.addNumber(restored);
+		sm.addInt(restored);
 		getEffected().sendPacket(sm);
 		return true;
 	}

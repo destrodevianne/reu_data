@@ -106,7 +106,7 @@ public class ConvertItem extends L2Effect
 			if (item.getEnchantLevel() > 0)
 			{
 				sm = SystemMessage.getSystemMessage(SystemMessageId.EQUIPMENT_S1_S2_REMOVED);
-				sm.addNumber(item.getEnchantLevel());
+				sm.addInt(item.getEnchantLevel());
 				sm.addItemName(item);
 			}
 			else
@@ -145,7 +145,7 @@ public class ConvertItem extends L2Effect
 		if (newItem.getEnchantLevel() > 0)
 		{
 			msg = SystemMessage.getSystemMessage(SystemMessageId.S1_S2_EQUIPPED);
-			msg.addNumber(newItem.getEnchantLevel());
+			msg.addInt(newItem.getEnchantLevel());
 			msg.addItemName(newItem);
 		}
 		else

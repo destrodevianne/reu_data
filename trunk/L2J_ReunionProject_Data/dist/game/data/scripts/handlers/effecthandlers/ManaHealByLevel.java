@@ -119,7 +119,7 @@ public class ManaHealByLevel extends L2Effect
 		{
 			sm.addCharName(getEffector());
 		}
-		sm.addNumber((int) amount);
+		sm.addInt((int) amount);
 		target.sendPacket(sm);
 		return true;
 	}
