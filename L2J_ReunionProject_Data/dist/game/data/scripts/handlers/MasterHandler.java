@@ -210,7 +210,6 @@ import l2r.gameserver.scripts.handlers.itemhandlers.TeleportBookmark;
 import l2r.gameserver.scripts.handlers.punishmenthandlers.BanHandler;
 import l2r.gameserver.scripts.handlers.punishmenthandlers.ChatBanHandler;
 import l2r.gameserver.scripts.handlers.punishmenthandlers.JailHandler;
-import l2r.gameserver.scripts.handlers.skillhandlers.BallistaBomb;
 import l2r.gameserver.scripts.handlers.skillhandlers.Blow;
 import l2r.gameserver.scripts.handlers.skillhandlers.Continuous;
 import l2r.gameserver.scripts.handlers.skillhandlers.CpDamPercent;
@@ -540,7 +539,6 @@ public class MasterHandler
 		},
 		{
 			// Skill Handlers
-			BallistaBomb.class,
 			Blow.class,
 			Continuous.class,
 			CpDamPercent.class,

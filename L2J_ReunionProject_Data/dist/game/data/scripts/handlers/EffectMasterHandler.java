@@ -116,6 +116,7 @@ public final class EffectMasterHandler
 		Recovery.class,
 		RefuelAirship.class,
 		Relax.class,
+		ResistSkill.class,
 		RemoveTarget.class,
 		RestorationRandom.class,
 		Root.class,

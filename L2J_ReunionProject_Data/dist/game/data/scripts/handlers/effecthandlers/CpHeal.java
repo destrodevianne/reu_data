@@ -64,7 +64,7 @@ public class CpHeal extends L2Effect
 			target.sendPacket(su);
 		}
 		SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.S1_CP_WILL_BE_RESTORED);
-		sm.addNumber((int) amount);
+		sm.addInt((int) amount);
 		target.sendPacket(sm);
 		return true;
 	}
