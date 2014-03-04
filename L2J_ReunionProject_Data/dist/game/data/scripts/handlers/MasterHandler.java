@@ -132,7 +132,6 @@ import l2r.gameserver.scripts.handlers.bypasshandlers.BuyShadowItem;
 import l2r.gameserver.scripts.handlers.bypasshandlers.ChatLink;
 import l2r.gameserver.scripts.handlers.bypasshandlers.ClanWarehouse;
 import l2r.gameserver.scripts.handlers.bypasshandlers.Festival;
-import l2r.gameserver.scripts.handlers.bypasshandlers.FortSiege;
 import l2r.gameserver.scripts.handlers.bypasshandlers.Freight;
 import l2r.gameserver.scripts.handlers.bypasshandlers.Henna;
 import l2r.gameserver.scripts.handlers.bypasshandlers.ItemAuctionLink;
@@ -449,7 +448,6 @@ public class MasterHandler
 			ChatLink.class,
 			ClanWarehouse.class,
 			Festival.class,
-			FortSiege.class,
 			Freight.class,
 			Henna.class,
 			ItemAuctionLink.class,

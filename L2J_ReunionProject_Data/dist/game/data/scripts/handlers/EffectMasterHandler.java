@@ -135,6 +135,7 @@ public final class EffectMasterHandler
 		SummonNpc.class,
 		SummonPet.class,
 		SummonTrap.class,
+		ResistSkill.class,
 		Sweeper.class,
 		TargetMe.class,
 		ThrowUp.class,
