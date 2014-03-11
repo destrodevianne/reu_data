@@ -19,7 +19,7 @@
 package handlers.effecthandlers;
 
 import javolution.util.FastList;
-import l2r.gameserver.datatables.SkillTable;
+import l2r.gameserver.datatables.SkillData;
 import l2r.gameserver.enums.ZoneIdType;
 import l2r.gameserver.model.actor.L2Character;
 import l2r.gameserver.model.actor.instance.L2EffectPointInstance;
@@ -58,11 +58,11 @@ public class Signet extends L2Effect
 	{
 		if (getSkill() instanceof L2SkillSignet)
 		{
-			_skill = SkillTable.getInstance().getInfo(getSkill().getEffectId(), getLevel());
+			_skill = SkillData.getInstance().getInfo(getSkill().getEffectId(), getLevel());
 		}
 		else if (getSkill() instanceof L2SkillSignetCasttime)
 		{
-			_skill = SkillTable.getInstance().getInfo(getSkill().getEffectId(), getLevel());
+			_skill = SkillData.getInstance().getInfo(getSkill().getEffectId(), getLevel());
 		}
 		_actor = (L2EffectPointInstance) getEffected();
 		_srcInArena = (getEffector().isInsideZone(ZoneIdType.PVP) && !getEffector().isInsideZone(ZoneIdType.SIEGE));
