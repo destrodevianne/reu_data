@@ -1586,7 +1586,7 @@
 		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="144">
-			<target race_id="1" /> <!-- Undead -->
+			<target npcRace="UNDEAD" />
 		</cond>
 	</skill>
 	<skill id="694" levels="1" name="Divine Wizard Holy Curtain">

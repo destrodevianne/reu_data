@@ -613,7 +613,7 @@
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="144">
-			<target race_id="1" /> <!-- Undead -->
+			<target npcRace="UNDEAD" />
 		</cond>
 	</skill>
 	<skill id="1031" levels="8" name="Disrupt Undead">
@@ -637,7 +637,7 @@
 		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="144">
-			<target race_id="1" /> <!-- Undead -->
+			<target npcRace="UNDEAD" />
 		</cond>
 	</skill>
 	<skill id="1032" levels="3" name="Invigor" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
@@ -762,7 +762,7 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<cond msgId="144">
-			<target race_id="1" /> <!-- Undead -->
+			<target npcRace="UNDEAD" />
 		</cond>
 	</skill>
 	<skill id="1035" levels="4" name="Mental Shield" enchantGroup1="1" enchantGroup2="1">
@@ -930,7 +930,7 @@
 		<enchant3 name="power" val="#ench3Attack" />
 		<enchant3 name="skillType" val="MDAM" />
 		<cond msgId="144">
-			<target race_id="1" /> <!-- Undead -->
+			<target npcRace="UNDEAD" />
 		</cond>
 		<for>
 			<effect name="Paralyze" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="paralyze" />
@@ -1166,7 +1166,7 @@
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="DERANGEMENT" />
 		<cond msgId="144">
-			<target race_id="1" /> <!-- Undead -->
+			<target npcRace="UNDEAD" />
 		</cond>
 		<for>
 			<effect name="Debuff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="turn_passive">

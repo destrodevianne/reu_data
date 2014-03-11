@@ -46,7 +46,7 @@
 		<enchant4 name="elementPower" val="#ench4HolyAttack" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="144">
-			<target race_id="1" /> <!-- Undead -->
+			<target npcRace="UNDEAD" />
 		</cond>
 		<for>
 			<effect count="10" name="Fear" abnormalTime="2" val="0" />

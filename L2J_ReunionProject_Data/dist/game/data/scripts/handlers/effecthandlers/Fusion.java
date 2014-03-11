@@ -18,7 +18,7 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.datatables.SkillTable;
+import l2r.gameserver.datatables.SkillData;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.effects.L2EffectType;
@@ -36,7 +36,7 @@ public class Fusion extends L2Effect
 	{
 		super(env, template);
 		_effect = getSkill().getLevel();
-		_maxEffect = SkillTable.getInstance().getMaxLevel(getSkill().getId());
+		_maxEffect = SkillData.getInstance().getMaxLevel(getSkill().getId());
 	}
 	
 	@Override
@@ -78,6 +78,6 @@ public class Fusion extends L2Effect
 	private void updateBuff()
 	{
 		exit();
-		SkillTable.getInstance().getInfo(getSkill().getId(), _effect).getEffects(getEffector(), getEffected());
+		SkillData.getInstance().getInfo(getSkill().getId(), _effect).getEffects(getEffector(), getEffected());
 	}
 }
