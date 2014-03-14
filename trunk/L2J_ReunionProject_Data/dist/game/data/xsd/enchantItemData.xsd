@@ -19,9 +19,6 @@
 							</xs:element>
 						</xs:sequence>
 						<xs:attribute name="id" type="xs:positiveInteger" use="required" />
-						<xs:attribute name="isBlessed" type="xs:boolean" />
-						<xs:attribute name="isSafe" type="xs:boolean" />
-						<xs:attribute name="isWeapon" type="xs:boolean" />
 						<xs:attribute name="maxEnchant">
 							<xs:simpleType>
 								<xs:restriction base="xs:positiveInteger">
@@ -30,7 +27,7 @@
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>
-						<xs:attribute name="successRate">
+						<xs:attribute name="bonusRate">
 							<xs:simpleType>
 								<xs:restriction base="xs:decimal">
 									<xs:minInclusive value="1.0" />
@@ -49,12 +46,12 @@
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>
+						<xs:attribute name="scrollGroupId" type="xs:int" use="optional" />
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="support" minOccurs="1" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:attribute name="id" type="xs:positiveInteger" use="required" />
-						<xs:attribute name="isWeapon" type="xs:boolean" />
 						<xs:attribute name="maxEnchant" use="required">
 							<xs:simpleType>
 								<xs:restriction base="xs:positiveInteger">
@@ -63,14 +60,7 @@
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>
-						<xs:attribute name="successRate" use="required">
-							<xs:simpleType>
-								<xs:restriction base="xs:decimal">
-									<xs:minInclusive value="1.0" />
-									<xs:maxInclusive value="2.0" />
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:attribute>
+						<xs:attribute name="bonusRate" type="xs:double" use="required" />
 						<xs:attribute name="targetGrade" use="required">
 							<xs:simpleType>
 								<xs:restriction base="xs:token">
