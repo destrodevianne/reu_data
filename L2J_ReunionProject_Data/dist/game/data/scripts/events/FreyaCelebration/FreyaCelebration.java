@@ -22,7 +22,7 @@ import l2r.gameserver.model.L2Object;
 import l2r.gameserver.model.actor.L2Npc;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.event.LongTimeEvent;
-import l2r.gameserver.model.itemcontainer.PcInventory;
+import l2r.gameserver.model.itemcontainer.Inventory;
 import l2r.gameserver.model.quest.QuestState;
 import l2r.gameserver.model.quest.State;
 import l2r.gameserver.model.skills.L2Skill;
@@ -78,7 +78,7 @@ public class FreyaCelebration extends LongTimeEvent
 		
 		if (event.equalsIgnoreCase("give_potion"))
 		{
-			if (st.getQuestItemsCount(PcInventory.ADENA_ID) > 1)
+			if (st.getQuestItemsCount(Inventory.ADENA_ID) > 1)
 			{
 				long _curr_time = System.currentTimeMillis();
 				String value = loadGlobalQuestVar(player.getAccountName());
@@ -87,7 +87,7 @@ public class FreyaCelebration extends LongTimeEvent
 				if (_curr_time > _reuse_time)
 				{
 					st.setState(State.STARTED);
-					st.takeItems(PcInventory.ADENA_ID, 1);
+					st.takeItems(Inventory.ADENA_ID, 1);
 					st.giveItems(FREYA_POTION, 1);
 					saveGlobalQuestVar(player.getAccountName(), Long.toString(System.currentTimeMillis() + (HOURS * 3600000)));
 				}
@@ -106,7 +106,7 @@ public class FreyaCelebration extends LongTimeEvent
 			else
 			{
 				SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.S2_UNIT_OF_THE_ITEM_S1_REQUIRED);
-				sm.addItemName(PcInventory.ADENA_ID);
+				sm.addItemName(Inventory.ADENA_ID);
 				sm.addInt(1);
 				player.sendPacket(sm);
 			}
