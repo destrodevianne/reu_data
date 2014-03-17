@@ -26,7 +26,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -147,7 +147,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -195,7 +195,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -216,7 +216,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -270,7 +270,7 @@
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="12000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
@@ -487,7 +487,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
@@ -511,7 +511,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
@@ -670,7 +670,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -690,7 +690,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -712,7 +712,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -734,7 +734,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -835,7 +835,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
@@ -857,7 +857,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
@@ -970,7 +970,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1037,7 +1037,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="DERANGEMENT" />
@@ -1059,7 +1059,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="PARALYZE" />
@@ -1109,7 +1109,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="DERANGEMENT" />
@@ -1132,7 +1132,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="PARALYZE" />
@@ -1204,7 +1204,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="triggeredId" val="5166" />
@@ -1222,7 +1222,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="triggeredId" val="5167" />
@@ -1240,7 +1240,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="SHOCK" />
@@ -1259,7 +1259,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="HOLD" />
@@ -1278,7 +1278,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="SLEEP" />
@@ -1297,7 +1297,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="PARALYZE" />
@@ -1322,7 +1322,7 @@
 		<set name="power" val="40" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1341,7 +1341,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="DERANGEMENT" />
@@ -1361,7 +1361,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="POISON" />
@@ -1382,7 +1382,7 @@
 		<set name="nextActionAttack" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="BLEED" />
@@ -1401,7 +1401,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="DERANGEMENT" />
@@ -1420,7 +1420,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="DERANGEMENT" />
@@ -1454,7 +1454,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="triggeredId" val="5166" />
@@ -1472,7 +1472,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="triggeredId" val="5167" />
@@ -1490,7 +1490,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="SHOCK" />
@@ -1509,7 +1509,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="30000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="HOLD" />

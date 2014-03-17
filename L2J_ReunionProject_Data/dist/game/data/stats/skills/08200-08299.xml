@@ -663,7 +663,7 @@
 		<set name="mpConsume" val="149" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="20000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 		<set name="trait" val="SHOCK" />
@@ -1082,7 +1082,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="5000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="FRONT_AREA" />
 		<set name="trait" val="SHOCK" />

@@ -213,7 +213,7 @@
 		<set name="power" val="40" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="5000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="ROOT" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="HOLD" />
@@ -403,7 +403,7 @@
 		<set name="power" val="95" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="2000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="ROOT" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="HOLD" />
@@ -673,7 +673,7 @@
 		<set name="power" val="60" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="2000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="AURA" />
 		<for>
@@ -721,7 +721,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="1479" />
 		<set name="reuseDelay" val="3000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -797,7 +797,7 @@
 		<set name="power" val="100" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="2000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -905,7 +905,7 @@
 		<set name="power" val="70" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="3000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
@@ -1042,7 +1042,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#dmg" />
 		<set name="reuseDelay" val="15000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
@@ -1091,7 +1091,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#dmg" />
 		<set name="reuseDelay" val="3000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -1165,7 +1165,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -1357,7 +1357,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="8409" />
 		<set name="reuseDelay" val="10000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AURA" />
@@ -1393,7 +1393,7 @@
 		<set name="power" val="80" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="75000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
@@ -1652,7 +1652,7 @@
 		<set name="power" val="70" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="75000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
@@ -1681,7 +1681,7 @@
 		<set name="power" val="70" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="15000" />
-		<set name="saveVs" val="STR" />
+		<set name="basicProperty" val="STR" />
 		<set name="skillType" val="DISARM" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
@@ -1715,7 +1715,7 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="4500" />
 		<set name="reuseDelay" val="15000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="CHARGEDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -2077,7 +2077,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="69" />
 		<set name="reuseDelay" val="5000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
@@ -2108,7 +2108,7 @@
 		<set name="power" val="70" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="11000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -2142,7 +2142,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="DA2" />
 		<set name="power" val="4040" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
@@ -2199,7 +2199,7 @@
 		<set name="power" val="70" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="150000" />
-		<set name="saveVs" val="STR" />
+		<set name="basicProperty" val="STR" />
 		<set name="skillType" val="DISARM" />
 		<set name="targetType" val="AURA" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -2278,7 +2278,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="1689" />
 		<set name="reuseDelay" val="3000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />

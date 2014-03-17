@@ -148,7 +148,7 @@
 		<set name="power" val="#power" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="8000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -186,7 +186,7 @@
 		<set name="power" val="#power" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="8000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="AURA" />
@@ -238,7 +238,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="10000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -284,7 +284,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="12000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -510,7 +510,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -535,7 +535,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -560,7 +560,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -585,7 +585,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -610,7 +610,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -895,7 +895,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -920,7 +920,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -945,7 +945,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -970,7 +970,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -995,7 +995,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1194,7 +1194,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1218,7 +1218,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1242,7 +1242,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1266,7 +1266,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1290,7 +1290,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1394,7 +1394,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1418,7 +1418,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1442,7 +1442,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1466,7 +1466,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -1490,7 +1490,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />

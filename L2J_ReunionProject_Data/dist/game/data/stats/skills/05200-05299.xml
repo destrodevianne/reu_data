@@ -70,7 +70,7 @@
 		<set name="power" val="50" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="SHOCK" />
@@ -96,7 +96,7 @@
 		<set name="power" val="50" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
@@ -138,7 +138,7 @@
 		<set name="power" val="80" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="8000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -165,7 +165,7 @@
 		<set name="power" val="80" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="8000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -382,7 +382,7 @@
 		<set name="power" val="50" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="SHOCK" />
@@ -408,7 +408,7 @@
 		<set name="power" val="50" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="DERANGEMENT" />
@@ -563,7 +563,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="4640" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
@@ -587,7 +587,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="2784" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="SHOCK" />
@@ -610,7 +610,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="5704" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="SHOCK" />
@@ -633,7 +633,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="11407" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="SHOCK" />
@@ -740,7 +740,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="298" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="FRONT_AREA" />
 		<for>
@@ -782,7 +782,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="6723" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="FRONT_AREA" />
 		<set name="trait" val="SHOCK" />
@@ -806,7 +806,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="11205" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="SHOCK" />
@@ -829,7 +829,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" />
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -847,7 +847,7 @@
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="targetType" val="ONE" />
 	</skill>
 	<skill id="5244" levels="1" name="Physical Up">
@@ -928,7 +928,7 @@
 		<set name="power" val="100" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="BLEED" />
@@ -993,7 +993,7 @@
 		<set name="power" val="80" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="SHOCK" />
@@ -1022,7 +1022,7 @@
 		<set name="power" val="70" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
@@ -1048,7 +1048,7 @@
 		<set name="power" val="100" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="8000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="PARALYZE" />
@@ -1079,7 +1079,7 @@
 		<set name="power" val="100" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -1111,7 +1111,7 @@
 		<set name="power" val="90" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1150,7 +1150,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1209,7 +1209,7 @@
 		<set name="power" val="40" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="6000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
@@ -1234,7 +1234,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="70" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="STR" />
+		<set name="basicProperty" val="STR" />
 		<set name="skillType" val="DISARM" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1319,7 +1319,7 @@
 		<set name="power" val="70" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="9000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1369,7 +1369,7 @@
 		<set name="operateType" val="A2" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="15000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="SELF" />
 		<for>
@@ -1410,7 +1410,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="POISON" />
@@ -1432,7 +1432,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" />
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="AURA" />
 		<for>
@@ -1457,7 +1457,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" />
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="SHOCK" />
@@ -1482,7 +1482,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="ROOT" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="#traits" />

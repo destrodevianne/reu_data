@@ -10,7 +10,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="FRONT_AREA" />
 		<set name="trait" val="DERANGEMENT" />
@@ -25,7 +25,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 		<set name="trait" val="DERANGEMENT" />
@@ -59,7 +59,7 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="70" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="STR" />
+		<set name="basicProperty" val="STR" />
 		<set name="skillType" val="DISARM" />
 		<set name="soulMaxConsumeCount" val="1" />
 		<set name="targetType" val="FRONT_AREA" />
@@ -98,7 +98,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 		<set name="trait" val="DERANGEMENT" />
@@ -120,7 +120,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 	</skill>
@@ -134,7 +134,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 	</skill>
@@ -174,7 +174,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 		<set name="trait" val="DERANGEMENT" />
@@ -191,7 +191,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 		<set name="trait" val="DERANGEMENT" />
@@ -294,7 +294,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="121" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DRAIN" />
 		<set name="targetType" val="FRONT_AREA" />
 		<for>
@@ -327,7 +327,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="121" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
 		<for>
@@ -723,7 +723,7 @@
 		<set name="abnormalType" val="poison" />
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 		<set name="trait" val="POISON" />
@@ -736,7 +736,7 @@
 		<set name="hitTime" val="4000" />
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 		<set name="trait" val="SHOCK" />
@@ -781,7 +781,7 @@
 		<set name="lvlBonusRate" val="2" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="40000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="NONE" />
@@ -808,7 +808,7 @@
 		<set name="operateType" val="A3" />
 		<set name="overHit" val="true" />
 		<set name="reuseDelay" val="120000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 	</skill>
@@ -986,7 +986,7 @@
 		<set name="abnormalType" val="md_down" />
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 	</skill>
@@ -1106,7 +1106,7 @@
 		<set name="abnormalType" val="lock" />
 		<set name="lvlBonusRate" val="2" />
 		<set name="operateType" val="A2" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="NOTDONE" />
 		<set name="targetType" val="NONE" />
 	</skill>
@@ -1127,7 +1127,7 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="171" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
