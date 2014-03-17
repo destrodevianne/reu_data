@@ -1644,7 +1644,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="material" val="dyestuff" />
 		<set name="weight" val="4200" />
@@ -1658,7 +1658,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="276" />
 		<set name="crystal_type" val="d" />
@@ -1675,7 +1675,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="276" />
 		<set name="crystal_type" val="d" />
@@ -1692,7 +1692,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="462" />
 		<set name="crystal_type" val="b" />
@@ -1709,7 +1709,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="428" />
 		<set name="crystal_type" val="c" />
@@ -1726,7 +1726,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="277" />
 		<set name="crystal_type" val="a" />
@@ -1743,7 +1743,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="422" />
 		<set name="crystal_type" val="a" />
@@ -1760,7 +1760,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="181" />
 		<set name="crystal_type" val="d" />
@@ -1777,7 +1777,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="208" />
 		<set name="crystal_type" val="b" />
@@ -1794,7 +1794,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="321" />
 		<set name="crystal_type" val="b" />
@@ -1811,7 +1811,7 @@
 		<set name="icon" val="icon.item_normal03" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="208" />
 		<set name="crystal_type" val="b" />
@@ -1828,7 +1828,7 @@
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="321" />
 		<set name="crystal_type" val="b" />
