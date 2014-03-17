@@ -214,7 +214,7 @@
 		<set name="icon" val="icon.armor_mithril_banded_mail_i00" />
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="light" />
-		<set name="bodypart" val="chest" />
+		<set name="bodypart" val="underwear" />
 		<set name="immediate_effect" val="1" />
 		<set name="crystal_count" val="422" />
 		<set name="crystal_type" val="a" />
