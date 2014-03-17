@@ -9,7 +9,7 @@
 		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
 		<set name="power" val="50" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -178,7 +178,7 @@
 		<set name="power" val="40" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="10000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -203,7 +203,7 @@
 		<set name="power" val="40" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="10000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
@@ -228,7 +228,7 @@
 		<set name="power" val="40" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="10000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="DERANGEMENT" />
@@ -254,7 +254,7 @@
 		<set name="power" val="40" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="10000" />
-		<set name="saveVs" val="MEN" />
+		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -281,7 +281,7 @@
 		<set name="power" val="40" />
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="10000" />
-		<set name="saveVs" val="CON" />
+		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
