@@ -328,8 +328,10 @@
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="PetFood" />
 		<set name="item_skill" val="2361-1" />
-		<set name="use_condition" val="{{uc_category;{@upgrade_baby_pet_group}}}" />
 		<set name="for_npc" val="true" />
+		<cond msgId="113" addName="1">
+			<player categoryType="UPGRADE_BABY_PET_GROUP" />
+		</cond>
 	</item>
 	<item id="10426" type="EtcItem" name="Fenrir Necklace">
 		<set name="icon" val="icon.etc_summon_wolf_r_01" />
@@ -1835,9 +1837,8 @@
 		<set name="price" val="25255000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<set name="equip_condition" val="{{ec_category;{@force_master}}}" />
 		<cond msgId="1518">
-			<player class_id_restriction="88, 114" />
+			<player categoryType="FORCE_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="170" />
@@ -1857,9 +1858,8 @@
 		<set name="price" val="25255000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<set name="equip_condition" val="{{ec_category;{@weapon_master}}}" />
 		<cond msgId="1518">
-			<player class_id_restriction="89, 113, 117, 118, 131, 132, 133" />
+			<player categoryType="WEAPON_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="170" />
@@ -1879,9 +1879,8 @@
 		<set name="price" val="25255000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<set name="equip_condition" val="{{ec_category;{@buff_master}}}" />
 		<cond msgId="1518">
-			<player class_id_restriction="98, 115, 116, 136" />
+			<player categoryType="BUFF_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="170" />
@@ -1901,9 +1900,8 @@
 		<set name="price" val="25255000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<set name="equip_condition" val="{{ec_category;{@summon_master}}}" />
 		<cond msgId="1518">
-			<player class_id_restriction="96, 104, 111" />
+			<player categoryType="SUMMON_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="170" />
