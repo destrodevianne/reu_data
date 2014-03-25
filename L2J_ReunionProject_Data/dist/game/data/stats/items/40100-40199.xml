@@ -2,9 +2,9 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
 	<item id="40103" type="EtcItem" name="Vote Scroll: Enchant Weapon (S-Grade)">
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i01" />
-		<set name="default_action" val="skill_reduce" />
+		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="1" />
-		<set name="material" val="paper" />
+		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="EnchantScrolls" />
@@ -12,9 +12,9 @@
 	</item>
 	<item id="40104" type="EtcItem" name="Safe Scroll: Enchant Weapon (S-Grade)">
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i01" />
-		<set name="default_action" val="skill_reduce" />
+		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="1" />
-		<set name="material" val="paper" />
+		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="EnchantScrolls" />
@@ -22,9 +22,9 @@
 	</item>
 	<item id="40108" type="EtcItem" name="Vote Scroll: Enchant Armor (S-Grade)">
 		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i01" />
-		<set name="default_action" val="skill_reduce" />
+		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="1" />
-		<set name="material" val="paper" />
+		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="EnchantScrolls" />
@@ -32,9 +32,9 @@
 	</item>
 	<item id="40109" type="EtcItem" name="Safe Scroll: Enchant Armor (S-Grade)">
 		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i01" />
-		<set name="default_action" val="skill_reduce" />
+		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="1" />
-		<set name="material" val="paper" />
+		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="EnchantScrolls" />

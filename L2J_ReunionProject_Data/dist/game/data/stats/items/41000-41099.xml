@@ -3,7 +3,7 @@
 	<item id="41005" type="EtcItem" name="Deck">
 		<set name="icon" val="icon.etc_spell_books_red_i00" />
 		<set name="immediate_effect" val="1" />
-		<set name="material" val="silver" />
+		<set name="material" val="SILVER" />
 		<set name="is_tradable" val="false" />
 		<set name="handler" val="AioItemNpcs" />
 		<set name="is_dropable" val="false" />
@@ -14,7 +14,7 @@
 	<item id="41006" type="EtcItem" name="Raid's Skull">
 		<set name="icon" val="icon.etc_skull_white_i00" />
 		<set name="immediate_effect" val="1" />
-		<set name="material" val="bone" />
+		<set name="material" val="BONE" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -25,7 +25,7 @@
 	<item id="41007" type="EtcItem" name="Raid's Treasure Box">
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="immediate_effect" val="1" />
-		<set name="material" val="gold" />
+		<set name="material" val="GOLD" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -34,10 +34,10 @@
 	</item>
 	<item id="41008" type="Armor" name="The GM's Crown">
 		<set name="icon" val="icon.accessory_crown_i00" />
-		<set name="default_action" val="equip" />
+		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
 		<set name="immediate_effect" val="1" />
-		<set name="material" val="wood" />
+		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
