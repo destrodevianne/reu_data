@@ -15,6 +15,21 @@ Spawn NPC / Mobb by ID: <font color="LEVEL">[*]</font> Normal or Once<br1>
 <td width=30><button value="x1" action="bypass -h admin_spawn_once $id $qty" width=30 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
 </tr>
 </table><br>
+Spawn Mobs / For Farm Areas etc<br1>
+<table width=260 bgcolor="666666">
+<tr>
+<td align=center width=60>ID</td>
+<td align=center width=15>Count</td>
+<td align=center width=15>Time</td>
+<td align=center width=50><button value="x1" action="bypass -h admin_spawn_monster $id_spawn 1 $time_spawn" width=50 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td width=60><edit var="id_spawn" width=55 height=15></td>
+<td width=15><edit var="time_spawn" width=55 height=15></td>
+<td width=15><edit var="qty_spawn" width=55 height=15></td>
+<td width=50><button value="Spawn" action="bypass -h admin_spawn_monster $id_spawn $qty_spawn $time_spawn" width=50 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table><br>
 Spawn by Level:<br1>
 <table width=260 bgcolor="666666">
 <tr>
