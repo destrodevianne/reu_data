@@ -313,7 +313,7 @@
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="archer_special">
 				<mul order="0x30" stat="pAtkSpd" val="1.15">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</mul>
 			</effect>
 		</for>
@@ -1025,7 +1025,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="pAtkSpd" val="0.5">
-				<using kind="Bow,Crossbow" />
+				<using kind="BOW,CROSSBOW" />
 			</mul>
 		</for>
 	</skill>

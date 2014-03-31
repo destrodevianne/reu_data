@@ -927,7 +927,7 @@
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="10" abnormalType="signal_b">
 				<add order="0x40" stat="pAtkRange" val="50">
-					<using kind="Bow, Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</add>
 			</effect>
 		</for>

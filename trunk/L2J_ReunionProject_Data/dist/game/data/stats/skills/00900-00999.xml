@@ -352,7 +352,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="PARTY" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="dance_of_berserker">
@@ -384,7 +384,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Shield" />
+			<using kind="SHIELD" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="8" val="0" abnormalLvl="1" abnormalType="reflect_magic_dd">
@@ -423,7 +423,7 @@
 		<set name="reuseDelay" val="75000" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<cond msgId="324">
 			<not>
@@ -445,7 +445,7 @@
 		<set name="reuseDelay" val="75000" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<cond msgId="324">
 			<not>
@@ -478,7 +478,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Pole" />
+			<using kind="POLE" />
 		</cond>
 	</skill>
 	<skill id="921" levels="1" name="Cursed Pierce">
@@ -501,7 +501,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Pole" />
+			<using kind="POLE" />
 		</cond>
 	</skill>
 	<skill id="922" levels="1" name="Hide">
@@ -532,7 +532,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<add order="0x40" stat="pAtk" val="87.5">
-				<using kind="Dual Dagger" />
+				<using kind="DUALDAGGER" />
 			</add>
 			<mul order="0x30" stat="blowRate" val="1.05" />
 		</for>
@@ -554,7 +554,7 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 	</skill>
 	<skill id="925" levels="1" name="Sigil Mastery">
@@ -564,10 +564,10 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="mAtk" val="1.05">
-				<using kind="Sigil" />
+				<using kind="SIGIL" />
 			</mul>
 			<mul order="0x30" stat="regMp" val="1.17">
-				<using kind="Sigil" />
+				<using kind="SIGIL" />
 			</mul>
 		</for>
 	</skill>
@@ -578,10 +578,10 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<add order="0x40" stat="healEffect" val="30">
-				<using kind="Sigil" />
+				<using kind="SIGIL" />
 			</add>
 			<mul order="0x30" stat="regMp" val="1.17">
-				<using kind="Sigil" />
+				<using kind="SIGIL" />
 			</mul>
 		</for>
 	</skill>
@@ -619,7 +619,7 @@
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
 		<cond msgId="113" addName="1">
-			<using kind="Sword,Big Sword,Blunt,Big Blunt,Dual Sword,Dual Fist,Dagger,Dual Dagger,Pole,Ancient,Rapier" />
+			<using kind="SWORD,BLUNT,DUAL,DUALFIST,DAGGER,DUALDAGGER,POLE,ANCIENTSWORD,RAPIER" />
 		</cond>
 		<for>
 			<effect count="10" name="DamOverTime" val="#dot" abnormalLvl="#abnormalLvls" abnormalType="dot_attr" abnormalVisualEffect="flame" effectPower="50" />
@@ -647,7 +647,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="DEATH" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Dagger" />
+			<using kind="DUALDAGGER" />
 		</cond>
 	</skill>
 	<skill id="929" levels="1" name="Spirit of the Cat">
@@ -757,10 +757,10 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="maxMp" val="1.05">
-				<using kind="Sigil" />
+				<using kind="SIGIL" />
 			</mul>
 			<mul order="0x30" stat="regMp" val="1.17">
-				<using kind="Sigil" />
+				<using kind="SIGIL" />
 			</mul>
 		</for>
 	</skill>
@@ -769,10 +769,10 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="maxMp" val="1.05">
-				<using kind="Sigil" />
+				<using kind="SIGIL" />
 			</mul>
 			<mul order="0x30" stat="regMp" val="1.17">
-				<using kind="Sigil" />
+				<using kind="SIGIL" />
 			</mul>
 		</for>
 	</skill>
@@ -814,7 +814,7 @@
 			<add order="0x40" stat="mDef" val="#mDef" />
 			<add order="0x40" stat="pAtk" val="#pAtk" />
 			<add order="0x40" stat="pAtkRange" val="200">
-				<using kind="Bow" />
+				<using kind="BOW" />
 			</add>
 			<add order="0x40" stat="pDef" val="#pDef" />
 			<add order="0x40" stat="darkRes" val="50" />
@@ -939,7 +939,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AREA" />
 		<cond msgId="113" addName="1">
-			<using kind="Sword,Big Sword,Blunt,Big Blunt" />
+			<using kind="SWORD,BLUNT" />
 		</cond>
 		<for>
 			<effect name="Spoil" val="0" />
@@ -990,7 +990,7 @@
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="SHOCK" />
 		<cond msgId="113" addName="1">
-			<using kind="Blunt,Big Blunt" />
+			<using kind="BLUNT" />
 		</cond>
 		<for>
 			<effect count="15" name="DamOverTime" val="92" abnormalLvl="9" abnormalType="dot_attr" abnormalVisualEffect="flame" />
@@ -1053,7 +1053,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<add order="0x40" stat="pAtk" val="#pAtk">
-				<using kind="Sword,Big Sword,Blunt,Big Blunt" />
+				<using kind="SWORD,BLUNT" />
 			</add>
 			<mul order="0x30" stat="rShld" val="#rShld" />
 			<!-- FIXME: activationChance value unconfirmed -->
@@ -1144,13 +1144,13 @@
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="possession">
 				<add order="0x40" stat="accCombat" val="#accCombat">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Dual Sword" />
+					<using kind="SWORD,BLUNT,DUAL" />
 				</add>
 				<add order="0x40" stat="rCrit" val="#rCrit">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Dual Sword" />
+					<using kind="SWORD,BLUNT,DUAL" />
 				</add>
 				<mul order="0x30" stat="cAtk" val="#cAtk">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Dual Sword" />
+					<using kind="SWORD,BLUNT,DUAL" />
 				</mul>
 			</effect>
 		</for>
@@ -1179,7 +1179,10 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Big Sword,Big Blunt" />
+			<and>
+				<using kind="SWORD,BLUNT" />
+				<using slot="lrhand" />
+			</and>
 		</cond>
 	</skill>
 	<skill id="958" levels="37" name="Triple Blade Slash">
@@ -1206,7 +1209,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 	</skill>
 	<skill id="959" levels="1" name="Frog Jump">
@@ -1428,16 +1431,16 @@
 		<for>
 			<effect name="ImmobileBuff" abnormalTime="120" val="0" abnormalLvl="8" abnormalType="snipe">
 				<add order="0x40" stat="pAtk" val="199">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<add order="0x40" stat="accCombat" val="6">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<basemul order="0x30" stat="rCrit" val="0.2">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</basemul>
 				<add order="0x40" stat="pAtkRange" val="200">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 			</effect>
 		</for>
@@ -1740,7 +1743,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Shield" />
+			<using kind="SHIELD" />
 		</cond>
 		<for>
 			<effect name="TargetMe" abnormalTime="3" val="0" abnormalLvl="1" abnormalType="lock" />
@@ -1788,7 +1791,7 @@
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
 			<not>
-				<using kind="Fist,Dual Fist,Bow,Crossbow" />
+				<using kind="FIST,DUALFIST,BOW,CROSSBOW" />
 			</not>
 		</cond>
 	</skill>
@@ -1811,7 +1814,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow,Crossbow" />
+			<using kind="BOW,CROSSBOW" />
 		</cond>
 	</skill>
 	<skill id="988" levels="3" name="Battle Whisper">
@@ -1874,7 +1877,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow,Crossbow" />
+			<using kind="BOW,CROSSBOW" />
 		</cond>
 	</skill>
 	<skill id="991" levels="1" name="Throwing Dagger">
@@ -1897,7 +1900,7 @@
 		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 		<for>
 			<effect name="Debuff" abnormalTime="10" val="0" effectPower="80" abnormalLvl="4" abnormalType="speed_down">
@@ -1918,15 +1921,15 @@
 		<set name="triggeredLevel" val="#triggeredLevel" /> <!-- TODO: Remove when support for effects using conditions is done -->
 		<!-- TODO: Remove when support for effects using conditions is done -->
 		<cond>
-			<using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" />
+			<using kind="DUAL,SWORD,BLUNT" />
 		</cond>
 		<!-- TODO: Require support for effects using conditions -->
 		<!-- <for> -->
 		<!-- <effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="15" chanceType="ON_HIT" triggeredId="6813" triggeredLevel="#triggeredLevel"> -->
-		<!-- <using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" /> -->
+		<!-- <using kind="DUAL,SWORD,BLUNT" /> -->
 		<!-- </effect> -->
 		<!-- <effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="30" chanceType="ON_CRIT" triggeredId="6813" triggeredLevel="#triggeredLevel"> -->
-		<!-- <using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" /> -->
+		<!-- <using kind="DUAL,SWORD,BLUNT" /> -->
 		<!-- </effect> -->
 		<!-- </for> -->
 	</skill>
@@ -1943,15 +1946,15 @@
 		<set name="triggeredLevel" val="#triggeredLevel" /> <!-- TODO: Remove when support for effects using conditions is done -->
 		<!-- TODO: Remove when support for effects using conditions is done -->
 		<cond>
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<!-- TODO: Require support for effects using conditions -->
 		<!-- <for> -->
 		<!-- <effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="15" chanceType="ON_HIT" triggeredId="6814" triggeredLevel="#triggeredLevel"> -->
-		<!-- <using kind="Dual Fist" /> -->
+		<!-- <using kind="DUALFIST" /> -->
 		<!-- </effect> -->
 		<!-- <effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="30" chanceType="ON_CRIT" triggeredId="6814" triggeredLevel="#triggeredLevel"> -->
-		<!-- <using kind="Dual Fist" /> -->
+		<!-- <using kind="DUALFIST" /> -->
 		<!-- </effect> -->
 		<!-- </for> -->
 	</skill>
@@ -1973,7 +1976,7 @@
 			<and>
 				<target mindistance="200" />
 				<not>
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</not>
 			</and>
 		</cond>
@@ -2011,7 +2014,7 @@
 			<and>
 				<target mindistance="200" />
 				<not>
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</not>
 			</and>
 		</cond>
@@ -2063,7 +2066,7 @@
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Sword,Big Sword,Blunt,Big Blunt" />
+			<using kind="SWORD,BLUNT" />
 		</cond>
 		<for>
 			<effect name="Debuff" abnormalTime="3" val="0" effectPower="80" abnormalLvl="4" abnormalType="defense_down">
@@ -2089,7 +2092,7 @@
 			<and>
 				<target mindistance="200" />
 				<not>
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</not>
 			</and>
 		</cond>

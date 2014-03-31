@@ -22,9 +22,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="swordWpnVuln" val="#vuln" />
-			<mul order="0x30" stat="bigSwordWpnVuln" val="#vuln" />
 			<mul order="0x30" stat="bluntWpnVuln" val="#vuln" />
-			<mul order="0x30" stat="bigBluntWpnVuln" val="#vuln" />
 			<mul order="0x30" stat="daggerWpnVuln" val="#vuln" />
 			<mul order="0x30" stat="dualDaggerWpnVuln" val="#vuln" />
 			<mul order="0x30" stat="poleWpnVuln" val="#vuln" />
@@ -109,10 +107,10 @@
 		<for>
 			<effect name="Buff" abnormalTime="5" val="0" abnormalLvl="1" abnormalType="apella">
 				<mul order="0x30" stat="mDef" val="1.05"> <!-- magic defense power is increased by 5% -->
-					<using kind="Heavy" />
+					<using kind="HEAVY" />
 				</mul>
 				<sub order="0x40" stat="critAddVuln" val="3"> <!-- critical damage is decreased by 3 -->
-					<using kind="Heavy" />
+					<using kind="HEAVY" />
 				</sub>
 				<add order="0x40" stat="rCrit" val="#rCrit" />
 			</effect>
@@ -135,10 +133,10 @@
 		<for>
 			<effect name="Buff" abnormalTime="5" val="0" abnormalLvl="1" abnormalType="apella">
 				<add order="0x40" stat="rEvas" val="2"> <!-- evasion is increased by 2 -->
-					<using kind="Light" />
+					<using kind="LIGHT" />
 				</add>
 				<sub order="0x40" stat="critAddVuln" val="86"> <!-- critical damage is decreased by 86 -->
-					<using kind="Light" />
+					<using kind="LIGHT" />
 				</sub>
 				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
 			</effect>
@@ -161,7 +159,7 @@
 		<for>
 			<effect name="Buff" abnormalTime="5" val="0" abnormalLvl="1" abnormalType="apella">
 				<mul order="0x30" stat="pDef" val="1.05"> <!-- defense power is increased by 5% -->
-					<using kind="Magic" />
+					<using kind="MAGIC" />
 				</mul>
 				<add order="0x40" stat="runSpd" val="10" /> <!-- Speed is increased by 10 -->
 				<mul order="0x30" stat="mAtk" val="#mAtk" />
@@ -246,9 +244,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="swordWpnVuln" val="#vuln" />
-			<mul order="0x30" stat="bigSwordWpnVuln" val="#vuln" />
 			<mul order="0x30" stat="bluntWpnVuln" val="#vuln" />
-			<mul order="0x30" stat="bigBluntWpnVuln" val="#vuln" />
 			<mul order="0x30" stat="daggerWpnVuln" val="#vuln" />
 			<mul order="0x30" stat="dualDaggerWpnVuln" val="#vuln" />
 			<mul order="0x30" stat="poleWpnVuln" val="#vuln" />
@@ -1490,7 +1486,7 @@
 		<for>
 			<effect name="Debuff" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="pvp_weapon_debuff">
 				<sub order="0x40" stat="pAtkRange" val="200">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</sub>
 			</effect>
 		</for>

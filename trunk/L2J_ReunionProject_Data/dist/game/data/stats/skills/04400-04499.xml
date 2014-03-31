@@ -259,9 +259,7 @@
 			<mul order="0x30" stat="pDef-insects" val="#pDefBugs" />
 			<mul order="0x30" stat="bowWpnVuln" val="#pDefBows" />
 			<mul order="0x30" stat="bluntWpnVuln" val="#pDefBlunts" />
-			<mul order="0x30" stat="bigBluntWpnVuln" val="#pDefBlunts" />
 			<mul order="0x30" stat="swordWpnVuln" val="#pDefSwords" />
-			<mul order="0x30" stat="bigSwordWpnVuln" val="#pDefSwords" />
 			<mul order="0x30" stat="dualWpnVuln" val="#pDefDuals" />
 			<sub order="0x40" stat="stunVuln" val="#pDefShocks" />
 		</for>
@@ -282,7 +280,6 @@
 		<for>
 			<mul order="0x30" stat="bowWpnVuln" val="#pDefBows" />
 			<mul order="0x30" stat="bluntWpnVuln" val="#pDefBlunts" />
-			<mul order="0x30" stat="bigBluntWpnVuln" val="#pDefBlunts" />
 			<mul order="0x30" stat="daggerWpnVuln" val="#pDefDagger" />
 			<mul order="0x30" stat="dualDaggerWpnVuln" val="#pDefDualDagger" />
 			<sub order="0x40" stat="poisonVuln" val="#pDefPoison" />
@@ -375,7 +372,6 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="bluntWpnVuln" val="#vuln" />
-			<mul order="0x30" stat="bigBluntWpnVuln" val="#vuln" />
 		</for>
 	</skill>
 	<skill id="4426" levels="5" name="Resist Dual-Sword Weapons">
@@ -396,7 +392,6 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="swordWpnVuln" val="#vuln" />
-			<mul order="0x30" stat="bigSwordWpnVuln" val="#vuln" />
 		</for>
 	</skill>
 	<skill id="4428" levels="5" name="Resist Two-handed Weapons">
@@ -553,7 +548,6 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="bluntWpnVuln" val="#vuln" />
-			<mul order="0x30" stat="bigBluntWpnVuln" val="#vuln" />
 		</for>
 	</skill>
 	<skill id="4444" levels="5" name="Higher Resist Bow/Crossbow Weapons">
@@ -595,7 +589,6 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="swordWpnVuln" val="#vuln" />
-			<mul order="0x30" stat="bigSwordWpnVuln" val="#vuln" />
 		</for>
 	</skill>
 	<skill id="4448" levels="5" name="Greater Resist Daggers">
@@ -724,7 +717,6 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<mul order="0x30" stat="swordWpnVuln" val="#vuln" />
-			<mul order="0x30" stat="bigSwordWpnVuln" val="#vuln" />
 		</for>
 	</skill>
 	<skill id="4461" levels="5" name="Dagger Weak Point">

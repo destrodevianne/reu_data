@@ -444,10 +444,8 @@
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="pd_up">
 				<mul order="0x30" stat="pDef" val="1.15" />
 				<mul order="0x30" stat="swordWpnVuln" val="0.75" />
-				<mul order="0x30" stat="bigSwordWpnVuln" val="0.75" />
 				<mul order="0x30" stat="poleWpnVuln" val="0.75" />
 				<mul order="0x30" stat="bluntWpnVuln" val="0.75" />
-				<mul order="0x30" stat="bigBluntWpnVuln" val="0.75" />
 				<mul order="0x30" stat="daggerWpnVuln" val="0.75" />
 				<mul order="0x30" stat="fistWpnVuln" val="0.75" />
 				<mul order="0x30" stat="dualWpnVuln" val="0.75" />

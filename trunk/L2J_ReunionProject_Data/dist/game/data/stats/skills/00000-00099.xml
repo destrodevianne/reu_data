@@ -45,7 +45,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 	</skill>
 	<skill id="2" levels="19" name="Confusion">
@@ -91,7 +91,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Sword,Big Sword,Blunt,Big Blunt" />
+			<using kind="SWORD,BLUNT" />
 		</cond>
 	</skill>
 	<skill id="4" levels="2" name="Dash">
@@ -163,7 +163,7 @@
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Sword" /> <!-- Requires a dualsword weapon -->
+				<using kind="DUAL" /> <!-- Requires a dualsword weapon -->
 				<player Charges="3" /> <!-- whose 3rd energy stage has been recharged -->
 			</and>
 		</cond>
@@ -213,7 +213,7 @@
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" /> <!-- Requires a dualsword, sword or blunt weapon weapon -->
+				<using kind="DUAL,SWORD,BLUNT" /> <!-- Requires a dualsword, sword or blunt weapon weapon -->
 				<player Charges="2" /> <!-- whose 2nd energy stage has been recharged -->
 			</and>
 		</cond>
@@ -265,7 +265,7 @@
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" /> <!-- Requires a sword, blunt weapon or dualsword weapon -->
+				<using kind="DUAL,SWORD,BLUNT" /> <!-- Requires a sword, blunt weapon or dualsword weapon -->
 				<player Charges="2" /> <!-- whose 2nd energy stage has been recharged -->
 			</and>
 		</cond>
@@ -282,7 +282,7 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" />
+			<using kind="DUAL,SWORD,BLUNT" />
 		</cond>
 		<cond msgId="324">
 			<not>
@@ -344,7 +344,7 @@
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" /> <!-- Requires a sword, blunt weapon or dualsword weapon -->
+				<using kind="DUAL,SWORD,BLUNT" /> <!-- Requires a sword, blunt weapon or dualsword weapon -->
 				<player Charges="2" /> <!-- whose 2nd energy stage has been recharged -->
 			</and>
 		</cond>
@@ -490,7 +490,7 @@
 		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger" />
+			<using kind="DAGGER" />
 		</cond>
 	</skill>
 	<skill id="17" levels="34" name="Force Burst" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
@@ -544,7 +544,7 @@
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Fist" /> <!-- Requires a hand-to-hand weapon -->
+				<using kind="DUALFIST" /> <!-- Requires a hand-to-hand weapon -->
 				<player Charges="1" /> <!-- whose 1st energy stage has been recharged -->
 			</and>
 		</cond>
@@ -634,7 +634,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 	</skill>
 	<skill id="21" levels="3" name="Poison Recovery">
@@ -721,7 +721,7 @@
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 	</skill>
 	<skill id="25" levels="9" name="Summon Mechanic Golem" enchantGroup1="1">
@@ -836,7 +836,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 	</skill>
 	<skill id="30" levels="37" name="Backstab" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
@@ -889,7 +889,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 	</skill>
 	<skill id="33" levels="8" name="Summon Phantom Cubic" enchantGroup1="2">
@@ -991,7 +991,7 @@
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Fist" /> <!-- Requires a hand-to-hand weapon -->
+				<using kind="DUALFIST" /> <!-- Requires a hand-to-hand weapon -->
 				<player Charges="1" /> <!-- whose 1st energy stage has been recharged -->
 			</and>
 		</cond>
@@ -1039,7 +1039,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Pole" />
+			<using kind="POLE" />
 		</cond>
 	</skill>
 	<skill id="42" levels="1" name="Sweeper" enchantGroup1="2" enchantGroup2="2">
@@ -1183,7 +1183,7 @@
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<enchant2 name="power" val="#ench2Power" />
 		<cond msgId="113" addName="1">
-			<using kind="Pole" />
+			<using kind="POLE" />
 		</cond>
 		<for>
 			<effect name="Stun" abnormalTime="9" val="0" abnormalLvl="1" abnormalType="stun" effectPower="50" />
@@ -1240,7 +1240,7 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<cond msgId="324">
 			<not>
@@ -1319,7 +1319,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 	</skill>
 	<skill id="56" levels="24" name="Power Shot">
@@ -1341,7 +1341,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 	</skill>
 	<skill id="58" levels="55" name="Elemental Heal" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
@@ -1626,15 +1626,15 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="possession">
 				<mul order="0x30" stat="pAtk" val="1.2">
-					<using kind="Dual Fist" />
+					<using kind="DUALFIST" />
 				</mul>
 				<mul order="0x30" stat="cAtk" val="1.2">
-					<using kind="Dual Fist" />
+					<using kind="DUALFIST" />
 				</mul>
 				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
@@ -1744,7 +1744,7 @@
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 	</skill>
 	<skill id="82" levels="3" name="Majesty" enchantGroup1="1" enchantGroup2="1">
@@ -1805,15 +1805,15 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="possession">
 				<mul order="0x30" stat="runSpd" val="1.2">
-					<using kind="Dual Fist" />
+					<using kind="DUALFIST" />
 				</mul>
 				<add order="0x40" stat="accCombat" val="3">
-					<using kind="Dual Fist" />
+					<using kind="DUALFIST" />
 				</add>
 			</effect>
 		</for>
@@ -1852,7 +1852,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<!-- Retail Values CT2.3: 38 44 48HP * 3 sec -->
@@ -2017,7 +2017,7 @@
 		<enchant6 name="elementPower" val="20" />
 		<enchant6 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Shield" />
+			<using kind="SHIELD" />
 		</cond>
 		<for>
 			<effect name="Stun" abnormalTime="9" val="0" abnormalLvl="1" abnormalType="stun" />
@@ -2071,13 +2071,19 @@
 			<effect name="Buff" abnormalTime="90" val="0" abnormalLvl="#abnormalLvls" abnormalType="pa_up_special">
 				<mul order="0x30" stat="pAtk" val="1.2" />
 				<mul order="0x30" stat="pAtk" val="#swordbluntpole">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Pole" />
+					<using kind="SWORD,BLUNT,POLE" />
 				</mul>
 				<mul order="0x30" stat="pAtk" val="#twohands">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</mul>
 				<add order="0x40" stat="accCombat" val="#accCombat">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 				<mul order="0x30" stat="pDef" val="0.8" />
 				<sub order="0x40" stat="rEvas" val="3" />
@@ -2087,13 +2093,19 @@
 			<effect name="Buff" abnormalTime="90" val="0" abnormalLvl="2" abnormalType="pa_up_special">
 				<mul order="0x30" stat="pAtk" val="1.2" />
 				<mul order="0x30" stat="pAtk" val="#ench1atk">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Pole" />
+					<using kind="SWORD,BLUNT,POLE" />
 				</mul>
 				<mul order="0x30" stat="pAtk" val="1.06">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</mul>
 				<add order="0x40" stat="accCombat" val="4">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 				<mul order="0x30" stat="pDef" val="0.8" />
 				<sub order="0x40" stat="rEvas" val="3" />
@@ -2103,13 +2115,19 @@
 			<effect name="Buff" abnormalTime="90" val="0" abnormalLvl="2" abnormalType="pa_up_special">
 				<mul order="0x30" stat="pAtk" val="1.2" />
 				<mul order="0x30" stat="pAtk" val="1.29">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Pole" />
+					<using kind="SWORD,BLUNT,POLE" />
 				</mul>
 				<mul order="0x30" stat="pAtk" val="#ench2atk">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</mul>
 				<add order="0x40" stat="accCombat" val="4">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 				<mul order="0x30" stat="pDef" val="0.8" />
 				<sub order="0x40" stat="rEvas" val="3" />
@@ -2149,7 +2167,7 @@
 		<enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="#abnormalLvls" abnormalType="speed_down">
@@ -2198,7 +2216,7 @@
 		<enchant2 name="skillType" val="DRAIN" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 		<for>
 			<!-- Retail Values CT2.3: 25 34 44 52 62 67HP * 3 Sec -->
@@ -2331,14 +2349,14 @@
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="attack_speed_up_bow">
 				<mul order="0x30" stat="pAtkSpd" val="#rate">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</mul>
 			</effect>
 		</for>
 		<enchant1for>
 			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="2" abnormalType="attack_speed_up_bow">
 				<mul order="0x30" stat="pAtkSpd" val="1.12">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</mul>
 			</effect>
 		</enchant1for>
