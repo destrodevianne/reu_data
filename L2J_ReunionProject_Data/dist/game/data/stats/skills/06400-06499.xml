@@ -547,7 +547,7 @@
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="signal_a">
 				<mul order="0x30" stat="pAtk" val="1.15">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</mul>
 				<mul order="0x30" stat="regHp" val="5" />
 			</effect>
@@ -666,10 +666,10 @@
 		<for>
 			<effect count="5" name="DamOverTimePercent" val="#dot" abnormalLvl="#abnormalLvls" abnormalType="multi_debuff">
 				<basemul order="0x30" stat="rCrit" val="#rCrit">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</basemul>
 				<mul order="0x30" stat="cAtk" val="#cAtk">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</mul>
 			</effect>
 		</for>
@@ -692,10 +692,10 @@
 		<for>
 			<effect count="3" name="DamOverTimePercent" abnormalTime="5" val="0.05" abnormalLvl="10" abnormalType="multi_debuff">
 				<basemul order="0x30" stat="rCrit" val="0.9">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</basemul>
 				<mul order="0x30" stat="cAtk" val="1.5">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</mul>
 			</effect>
 		</for>

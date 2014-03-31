@@ -1138,9 +1138,7 @@
 		<for>
 			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="stigma_of_silen" special="stigmashilien">
 				<mul order="0x30" stat="swordWpnVuln" val="#vuln" />
-				<mul order="0x30" stat="bigSwordWpnVuln" val="#vuln" />
 				<mul order="0x30" stat="bluntWpnVuln" val="#vuln" />
-				<mul order="0x30" stat="bigBluntWpnVuln" val="#vuln" />
 				<mul order="0x30" stat="daggerWpnVuln" val="#vuln" />
 				<mul order="0x30" stat="dualDaggerWpnVuln" val="#vuln" />
 				<mul order="0x30" stat="poleWpnVuln" val="#vuln" />
@@ -1155,9 +1153,7 @@
 		<enchant1for>
 			<effect name="Debuff" abnormalTime="#ench1time" val="0" abnormalLvl="4" abnormalType="stigma_of_silen" special="stigmashilien">
 				<mul order="0x30" stat="swordWpnVuln" val="1.4" />
-				<mul order="0x30" stat="bigSwordWpnVuln" val="1.4" />
 				<mul order="0x30" stat="bluntWpnVuln" val="1.4" />
-				<mul order="0x30" stat="bigBluntWpnVuln" val="1.4" />
 				<mul order="0x30" stat="daggerWpnVuln" val="1.4" />
 				<mul order="0x30" stat="dualDaggerWpnVuln" val="1.4" />
 				<mul order="0x30" stat="poleWpnVuln" val="1.4" />
@@ -1631,10 +1627,10 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<basemul order="0x30" stat="rCrit" val="#rCrit">
-				<using kind="Dagger,Dual Dagger,Light" />
+				<using kind="DAGGER,DUALDAGGER,LIGHT" />
 			</basemul>
 			<add order="0x40" stat="cAtkAdd" val="#cAtkAdd">
-				<using kind="Dagger,Dual Dagger,Light" />
+				<using kind="DAGGER,DUALDAGGER,LIGHT" />
 			</add>
 		</for>
 	</skill>
@@ -1661,7 +1657,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="DEATH" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Dagger" />
+			<using kind="DUALDAGGER" />
 		</cond>
 		<for>
 			<effect name="Spoil" noicon="1" val="0" />

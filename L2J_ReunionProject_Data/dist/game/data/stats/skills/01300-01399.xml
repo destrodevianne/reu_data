@@ -390,7 +390,7 @@
 		<set name="targetType" val="SELF" />
 		<!-- TODO: Missing condition for "op_fishing_cast" -->
 		<cond msgId="113" addName="1">
-			<using kind="Rod" />
+			<using kind="FISHINGROD" />
 		</cond>
 	</skill>
 	<skill id="1313" levels="27" name="Pumping">
@@ -406,7 +406,7 @@
 		<set name="targetType" val="SELF" />
 		<!-- TODO: Missing condition for "op_fishing_pumping" -->
 		<cond msgId="113" addName="1">
-			<using kind="Rod" />
+			<using kind="FISHINGROD" />
 		</cond>
 	</skill>
 	<skill id="1314" levels="27" name="Reeling">
@@ -422,7 +422,7 @@
 		<set name="targetType" val="SELF" />
 		<!-- TODO: Missing condition for "op_fishing_reeling" -->
 		<cond msgId="113" addName="1">
-			<using kind="Rod" />
+			<using kind="FISHINGROD" />
 		</cond>
 	</skill>
 	<skill id="1315" levels="27" name="Fishing Expertise">

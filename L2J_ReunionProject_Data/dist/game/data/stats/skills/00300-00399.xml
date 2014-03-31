@@ -259,7 +259,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="dance_of_aqua_guard">
@@ -332,7 +332,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="dance_of_earth_guard">
@@ -368,7 +368,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="dance_of_vampire">
@@ -406,7 +406,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="dance_of_protection">
@@ -481,53 +481,53 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 		<for>
 			<effect name="ImmobileBuff" abnormalTime="120" val="0" abnormalLvl="#abnormalLvls" abnormalType="snipe">
 				<add order="0x40" stat="pAtk" val="#pAtk">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<add order="0x40" stat="accCombat" val="#accCombat">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<basemul order="0x30" stat="rCrit" val="0.2">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</basemul>
 				<add order="0x40" stat="pAtkRange" val="#pAtkRange">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 			</effect>
 		</for>
 		<enchant1for>
 			<effect name="ImmobileBuff" abnormalTime="120" val="0" abnormalLvl="#ench1abnormalLvl" abnormalType="snipe">
 				<add order="0x40" stat="pAtk" val="#ench1pAtk">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<add order="0x40" stat="accCombat" val="6">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<basemul order="0x30" stat="rCrit" val="0.2">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</basemul>
 				<add order="0x40" stat="pAtkRange" val="200">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 			</effect>
 		</enchant1for>
 		<enchant2for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="8" abnormalType="snipe">
 				<add order="0x40" stat="pAtk" val="199">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<add order="0x40" stat="accCombat" val="6">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<basemul order="0x30" stat="rCrit" val="0.2">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</basemul>
 				<add order="0x40" stat="pAtkRange" val="200">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<mul order="0x30" stat="runSpd" val="#ench2decreasePenalty" />
 			</effect>
@@ -574,7 +574,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 	</skill>
 	<skill id="315" levels="16" name="Crush of Doom" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
@@ -622,7 +622,10 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Big Sword,Big Blunt" />
+			<and>
+				<using kind="SWORD,BLUNT" />
+				<using slot="lrhand" />
+			</and>
 		</cond>
 	</skill>
 	<skill id="316" levels="1" name="Aegis">
@@ -645,13 +648,13 @@
 		<for>
 			<effect count="0x7fffffff" name="ManaDamOverTime" abnormalTime="3" val="0">
 				<mul order="0x30" stat="cAtk" val="#cAtk">
-					<using kind="Pole" />
+					<using kind="POLE" />
 				</mul>
 				<add order="0x40" stat="accCombat" val="#accCombat">
-					<using kind="Pole" />
+					<using kind="POLE" />
 				</add>
 				<set order="0x40" stat="atkCountMax" val="1">
-					<using kind="Pole" />
+					<using kind="POLE" />
 				</set>
 			</effect>
 		</for>
@@ -687,26 +690,26 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<add order="0x40" stat="runSpd" val="#runSpd">
-				<using kind="Light" />
+				<using kind="LIGHT" />
 			</add>
 			<add order="0x40" stat="accCombat" val="#accCombat">
-				<using kind="Light" />
+				<using kind="LIGHT" />
 			</add>
 		</for>
 		<enchant1for>
 			<add order="0x40" stat="runSpd" val="#ench1runSpd">
-				<using kind="Light" />
+				<using kind="LIGHT" />
 			</add>
 			<add order="0x40" stat="accCombat" val="3">
-				<using kind="Light" />
+				<using kind="LIGHT" />
 			</add>
 		</enchant1for>
 		<enchant2for>
 			<add order="0x40" stat="runSpd" val="10">
-				<using kind="Light" />
+				<using kind="LIGHT" />
 			</add>
 			<add order="0x40" stat="accCombat" val="#ench2acc">
-				<using kind="Light" />
+				<using kind="LIGHT" />
 			</add>
 		</enchant2for>
 	</skill>
@@ -737,7 +740,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Pole" />
+			<using kind="POLE" />
 		</cond>
 	</skill>
 	<skill id="321" levels="10" name="Blinding Blow" enchantGroup1="2" enchantGroup2="2">
@@ -772,7 +775,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 		<for>
 			<effect self="1" name="Buff" abnormalTime="15" val="0" abnormalLvl="1" abnormalType="speed_up_special">
@@ -1315,7 +1318,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#ench7Duel" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 	</skill>
 	<skill id="344" levels="1" name="Lethal Blow" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6" enchantGroup5="6" enchantGroup6="6" enchantGroup7="6">
@@ -1363,7 +1366,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#ench7Duel" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 	</skill>
 	<skill id="345" levels="1" name="Sonic Rage">
@@ -1383,7 +1386,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect self="1" count="8" name="IncreaseCharges" noicon="1" val="1" />
@@ -1406,7 +1409,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect self="1" count="8" name="IncreaseCharges" noicon="1" val="1" />
@@ -1446,7 +1449,7 @@
 		<enchant3 name="elementPower" val="#ench3elementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Pole" />
+			<using kind="POLE" />
 		</cond>
 		<for>
 			<effect name="RemoveTarget" noicon="1" val="0" />
@@ -1470,7 +1473,7 @@
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Sword,Big Sword,Blunt,Big Blunt" />
+			<using kind="SWORD,BLUNT" />
 		</cond>
 		<for>
 			<effect name="Spoil" val="0" />
@@ -1531,15 +1534,15 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Shield" />
+			<using kind="SHIELD" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="reflect_abnormal">
 				<add order="0x40" stat="reflectSkillPhysic" val="30">
-					<using kind="Shield" />
+					<using kind="SHIELD" />
 				</add>
 				<add order="0x40" stat="reflectSkillMagic" val="10">
-					<using kind="Shield" />
+					<using kind="SHIELD" />
 				</add>
 			</effect>
 		</for>
@@ -1557,15 +1560,15 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Shield" />
+			<using kind="SHIELD" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="reflect_abnormal">
 				<add order="0x40" stat="reflectSkillPhysic" val="10">
-					<using kind="Shield" />
+					<using kind="SHIELD" />
 				</add>
 				<add order="0x40" stat="reflectSkillMagic" val="30">
-					<using kind="Shield" />
+					<using kind="SHIELD" />
 				</add>
 			</effect>
 		</for>
@@ -1600,7 +1603,7 @@
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<enchant5 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Shield" />
+			<using kind="SHIELD" />
 		</cond>
 		<for>
 			<effect name="Stun" abnormalTime="2" val="0" abnormalLvl="1" abnormalType="stun" />
@@ -1659,7 +1662,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Shield" />
+			<using kind="SHIELD" />
 		</cond>
 		<for>
 			<effect name="PhysicalMute" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="silence_physical" />
@@ -1706,7 +1709,7 @@
 		<enchant1 name="power" val="#ench1Power" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 		<for>
 			<effect name="Debuff" abnormalTime="60" val="0" effectPower="40" abnormalLvl="3" abnormalType="speed_down">
@@ -1737,7 +1740,7 @@
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="focus_dagger">
@@ -1794,7 +1797,7 @@
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="focus_dagger">
@@ -1863,7 +1866,7 @@
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="focus_dagger">
@@ -1938,7 +1941,7 @@
 		<set name="trait" val="DERANGEMENT" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 		<for>
 			<effect name="Stun" abnormalTime="9" val="0" effectPower="40" abnormalLvl="1" abnormalType="stun" />
@@ -2075,7 +2078,7 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Pole" />
+			<using kind="POLE" />
 		</cond>
 		<for>
 			<effect name="Stun" abnormalTime="8" val="0" effectPower="40" abnormalLvl="2" abnormalType="stun">
@@ -2130,7 +2133,7 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Blunt,Big Blunt,Sword,Big Sword" />
+			<using kind="BLUNT,SWORD" />
 		</cond>
 		<for>
 			<effect name="Stun" abnormalTime="9" val="0" effectPower="40" abnormalLvl="2" abnormalType="stun">
@@ -2240,7 +2243,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="dance_of_siren">
@@ -2276,7 +2279,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="SilentMove" abnormalTime="120" abnormalVisualEffect="stealth" val="0" abnormalLvl="1" abnormalType="dance_of_shadow">
@@ -2321,7 +2324,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="power" val="#ench2Power" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="Petrification" abnormalTime="10" val="0" abnormalLvl="2" abnormalType="turn_stone" />
@@ -2355,7 +2358,7 @@
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="reuseDelay" val="#ench3Reuse" />
 		<cond msgId="113" addName="1">
-			<using kind="Shield" />
+			<using kind="SHIELD" />
 		</cond>
 		<for>
 			<effect self="1" name="ImmobileBuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="pd_up_special">
@@ -2418,7 +2421,7 @@
 		<enchant8 name="magicLvl" val="#enchMagicLvl" />
 		<enchant8 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 		<for>
 			<effect self="1" name="Buff" abnormalTime="30" val="0" abnormalLvl="2" abnormalType="speed_up_special">

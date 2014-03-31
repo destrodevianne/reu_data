@@ -573,7 +573,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<add order="0x40" stat="pAtkRange" val="100">
-				<using kind="Bow" />
+				<using kind="BOW" />
 			</add>
 		</for>
 	</skill>
@@ -624,7 +624,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<add order="0x40" stat="pAtkRange" val="100">
-				<using kind="Crossbow" />
+				<using kind="CROSSBOW" />
 			</add>
 		</for>
 	</skill>
