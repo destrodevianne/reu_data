@@ -599,7 +599,6 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="0" />
-		<set name="reuseDelay" val="2500" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AREA" />
 	</skill>
