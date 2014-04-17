@@ -26,8 +26,6 @@ import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
-import l2r.gameserver.network.serverpackets.DeleteObject;
-import l2r.gameserver.network.serverpackets.L2GameServerPacket;
 
 /**
  * @author ZaKaX, nBd
@@ -56,7 +54,7 @@ public class Hide extends L2Effect
 		if (getEffected().isPlayer())
 		{
 			L2PcInstance activeChar = getEffected().getActingPlayer();
-			activeChar.getAppearance().setInvisible();
+			activeChar.setInvisible(true);
 			activeChar.startAbnormalEffect(AbnormalEffect.STEALTH);
 			
 			if ((activeChar.getAI().getNextIntention() != null) && (activeChar.getAI().getNextIntention().getCtrlIntention() == CtrlIntention.AI_INTENTION_ATTACK))
@@ -64,26 +62,14 @@ public class Hide extends L2Effect
 				activeChar.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
 			}
 			
-			L2GameServerPacket del = new DeleteObject(activeChar);
 			for (L2Character target : activeChar.getKnownList().getKnownCharacters())
 			{
-				try
+				if ((target != null) && (target.getTarget() == activeChar))
 				{
-					if (target.getTarget() == activeChar)
-					{
-						target.setTarget(null);
-						target.abortAttack();
-						target.abortCast();
-						target.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
-					}
-					
-					if (target.isPlayer())
-					{
-						target.sendPacket(del);
-					}
-				}
-				catch (NullPointerException e)
-				{
+					target.setTarget(null);
+					target.abortAttack();
+					target.abortCast();
+					target.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
 				}
 			}
 		}
@@ -98,7 +84,7 @@ public class Hide extends L2Effect
 			L2PcInstance activeChar = getEffected().getActingPlayer();
 			if (!activeChar.inObserverMode())
 			{
-				activeChar.getAppearance().setVisible();
+				activeChar.setInvisible(false);
 			}
 			activeChar.stopAbnormalEffect(AbnormalEffect.STEALTH);
 		}
