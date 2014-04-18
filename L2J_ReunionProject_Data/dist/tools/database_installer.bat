@@ -1,10 +1,8 @@
 @echo off
-REM ##############################################
-REM ## L2JDP Database Installer - (by DrLecter) ##
-REM ##############################################
-REM ## Interactive script setup -  (by TanelTM) ##
-REM ##############################################
-REM Copyright (C) 2004-2013 L2J DataPack
+REM #######################################################
+REM ## L2J REUNION DP Database Installer - (by DrLecter) ##
+REM #######################################################
+REM Copyright (C) 2004-2014 L2jReunion DataPack
 REM
 REM This file is part of L2J DataPack.
 REM
@@ -38,12 +36,12 @@ set fresh_setup=0
 
 :loadconfig
 cls
-title L2JDP Installer - Reading Configuration from File...
+title L2jReunion Database Installer - Reading Configuration from File...
 if not exist %config_file% goto configure
 ren %config_file% vars.bat
 call vars.bat
 ren vars.bat %config_file%
-call :colors 17
+call :colors 0B
 if /i %config_version% == 2 goto ls_backup
 set upgrade_mode=2
 echo It seems to be the first time you run this version of
@@ -78,80 +76,93 @@ goto loadconfig
 
 :colors
 if /i "%cmode%"=="n" (
-if not "%1"=="17" (	color F	) else ( color )
+if not "%1"=="0B" (	color F	) else ( color )
 ) else ( color %1 )
 goto :eof
 
 :configure
 cls
-call :colors 17
-title L2JDP Installer - Setup
+call :colors 0B
+title L2jReuion Database Installer - Setup
 set config_version=2
 if NOT %upgrade_mode% == 2 (
 set fresh_setup=1
 set mysqlBinPath=%ProgramFiles%\MySQL\MySQL Server 5.6\bin
 set lsuser=root
 set lspass=
-set lsdb=l2jls
+set lsdb=l2reunionls
 set lshost=localhost
-set cbuser=root
-set cbpass=
-set cbdb=l2jcs
-set cbhost=localhost
 set gsuser=root
 set gspass=
-set gsdb=l2jgs
+set gsdb=l2reuniongs
 set gshost=localhost
 set cmode=c
 set backup=.
 set logdir=.
 )
 set mysqlPath=%mysqlBinPath%\mysql.exe
-echo New settings will be created for this tool to run in
-echo your computer, so I need to ask you some questions.
-echo.
-echo 1-MySql Binaries
-echo --------------------
-echo In order to perform my tasks, I need the path for commands
-echo such as 'mysql' and 'mysqldump'. Both executables are
-echo usually stored in the same place.
-echo.
-if "%mysqlBinPath%" == "" (
-set mysqlBinPath=use path
-echo I can't determine if the binaries are available with your
-echo default settings.
-) else (
-echo I can try to find out if the current setting actually works...
-echo.
-echo %mysqlPath%
-)
-if not "%mysqlBinPath%" == "use path" call :binaryfind
-echo.
-path|find "MySQL">NUL
-if %errorlevel% == 0 (
-echo I found MySQL is in your PATH, this will be used by default.
-echo If you want to use something different, change 'use path' for
-echo something else.
-set mysqlBinPath=use path
-) else (
-echo Look, I can't find "MYSQL" in your PATH environment variable.
-echo It would be good if you go and find out where "mysql.exe" and
-echo "mysqldump.exe" are.
-echo.
-echo If you have no idea about the meaning of words such as MYSQL
-echo or PATH, you'd better close this window, and consider googling
-echo and reading about it. Setup and host an L2J server requires a
-echo minimum of technical skills.
-)
-echo.
-echo Write the path to your MySQL binaries (no trailing slash needed):
-set /P mysqlBinPath="(default %mysqlBinPath%): "
+echo. 
+echo. 
+echo.                  .:: Welcome to L2jReunion Database installer ::.
+echo. 
+echo.    It seems that is the first time you are trying to run database
+echo.    installer from l2jreunion to this computer so we will need some information
+echo.    for this procedure. In the next 4 steps apply the requested paths and
+echo.    settings.
+echo. 
+echo. 
+echo.                            For more information or help:
+echo. 
+echo.                   1) visit our website: http://www.l2reunion.eu/
+echo.                      2) Or contact NeverMore , GodFather
+echo. 
+echo. 
+echo.                                  L2J Reunion Team
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+pause
 cls
 echo.
-echo 2-Login Server settings
-echo -----------------------
-echo I order to connect to the MySQL Server, you should
-echo specify the Login Server DataBase parameters here.
+echo Step 1- MySql Binaries
+echo ------------------------------------------------------------------------------
+echo In order to go to the next step you will need to import here your MYSQL path.
+echo Path is the destination where your MYSQL files are installed.
+echo Default destination is %mysqlBinPath%
+echo.
+if "%mysqlBinPath%" == "" ( set mysqlBinPath = empty)
+if NOT EXIST "%mysqlBinPath%" (
+echo !SYSTEM MESSAGE! Error. Default path is wrong try to reconfigure it
+set /P mysqlBinPath="(default %mysqlBinPath%): "
+) else (
+echo Trying to found path with default settings ......
+call :binaryfind
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo. 
+echo Now you can procced to the next step. 
+pause )
+cls
+echo.
+echo Step 2 - Login Server settings
+echo ------------------------------------------------------------------------------
+echo I order to connect to the MySQL Server, you should echo specify the
+echo Login Server DataBase parameters here.
 echo.
 set /P lsuser="MySQL Username (default is '%lsuser%'): "
 set /P lspass="Password (default is '%lspass%'): "
@@ -160,22 +171,10 @@ set /P lshost="Host (default is '%lshost%'): "
 echo.
 cls
 echo.
-echo 3-Community Server settings
-echo ---------------------------
-echo I order to connect to the MySQL Server, you should
-echo specify the Community Server DataBase parameters here.
-echo.
-set /P cbuser="MySQL Username (default is '%cbuser%'): "
-set /P cbpass="Password (default is '%cbpass%'): "
-set /P cbdb="Database (default is '%cbdb%'): "
-set /P cbhost="Host (default is '%cbhost%'): "
-echo.
-cls
-echo.
-echo 4-Game Server settings
-echo ----------------------
-echo I order to connect to the MySQL Server, you should
-echo specify the Game Server DataBase parameters here.
+echo Step 3 - Game Server settings
+echo ------------------------------------------------------------------------------
+echo I order to connect to the MySQL Server, you should echo specify the 
+echo Game Server DataBase parameters here.
 echo.
 set /P gsuser="User (default is '%gsuser%'): "
 set /P gspass="Pass (default is '%gspass%'): "
@@ -184,8 +183,8 @@ set /P gshost="Host (default is '%gshost%'): "
 echo.
 cls
 echo.
-echo 5-Misc. settings
-echo --------------------
+echo Step 4 - Configuration
+echo ------------------------------------------------------------------------------
 set /P cmode="Color mode (c)olor or (n)on-color, default %cmode% : "
 set /P backup="Path for your backups (default '%backup%'): "
 set /P logdir="Path for your logs (default '%logdir%'): "
@@ -230,19 +229,37 @@ echo set gshost=%gshost%>> %config_file%
 echo set logdir=%logdir%>> %config_file%
 echo set backup=%backup%>> %config_file%
 echo.
-echo Script setup complete, your settings were saved in the
-echo '%config_file%' file. Remember: your passwords are stored
-echo as clear text.
+echo   You finished with settings and paths. Script setup is completed successfully.
+echo   Your settings were saved in the'%config_file%' file and remember tha your
+echo   passwords are stored with clear text.
 echo.
+echo.
+echo.
+echo.
+echo.
+echo.                                 L2J Reunion Team
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.Now continue with the database's install
 pause
 goto loadconfig
 
 :ls_backup
 cls
-call :colors 17
+call :colors 0B
 set cmdline=
 set stage=1
-title L2JDP Installer - Login Server DataBase Backup
+title L2jReunion Database Installer - Login Server DataBase Backup
 echo.
 echo Trying to make a backup of your Login Server DataBase.
 set cmdline="%mysqldumpPath%" --add-drop-table -h %lshost% -u %lsuser% --password=%lspass% %lsdb% ^> "%backup%\ls_backup.sql" 2^> NUL
@@ -253,14 +270,13 @@ if %ERRORLEVEL% == 0 goto ls_db_ok
 cls
 set lsdbprompt=y
 call :colors 47
-title L2JDP Installer - Login Server DataBase Backup ERROR!
+title L2jReunion Database Installer - Login Server DataBase Backup ERROR!
 echo.
-echo Backup attempt failed! A possible reason for this to
-echo happen, is that your DB doesn't exist yet. I could
-echo try to create %lsdb% for you, or maybe you prefer to
-echo contunue with the Community Server part of this tool.
+echo   Installing attempt failed! A possible reason for this to be happen, is that 
+echo   %lsdb% DB doesn't exist yet. I could try to create %lsdb% for you, or maybe 
+echo   you prefer to contunue with the Custom Tables Server part of this tool.
 echo.
-echo ATTEMPT TO CREATE LOGINSERVER DATABASE:
+echo ATTEMPT TO CREATE LOGINSERVER DATABASE?
 echo.
 echo (y) Yes
 echo.
@@ -272,17 +288,17 @@ echo (q) Quit
 echo.
 set /p lsdbprompt=Choose (default yes):
 if /i %lsdbprompt%==y goto ls_db_create
-if /i %lsdbprompt%==n goto cs_backup
+if /i %lsdbprompt%==n goto gs_backup
 if /i %lsdbprompt%==r goto configure
 if /i %lsdbprompt%==q goto end
 goto ls_err1
 
 :ls_db_create
 cls
-call :colors 17
+call :colors 0B
 set cmdline=
 set stage=2
-title L2JDP Installer - Login Server DataBase Creation
+title L2jReunion Database Installer - Login Server DataBase Creation
 echo.
 echo Trying to create a Login Server DataBase.
 set cmdline="%mysqlPath%" -h %lshost% -u %lsuser% --password=%lspass% -e "CREATE DATABASE %lsdb%" 2^> NUL
@@ -294,7 +310,7 @@ if %safe_mode% == 1 goto omfg
 cls
 set omfgprompt=q
 call :colors 47
-title L2JDP Installer - Login Server DataBase Creation ERROR!
+title L2jReunion Database Installer - Login Server DataBase Creation ERROR!
 echo.
 echo An error occured while trying to create a database for
 echo your login server.
@@ -316,7 +332,7 @@ echo.
 echo (q) Quit now
 echo.
 set /p omfgprompt=Choose (default quit):
-if /i %omfgprompt%==c goto cs_backup
+if /i %omfgprompt%==c goto gs_backup
 if /i %omfgprompt%==r goto configure
 if /i %omfgprompt%==q goto end
 goto ls_err2
@@ -324,8 +340,8 @@ goto ls_err2
 :ls_db_ok
 cls
 set loginprompt=u
-call :colors 17
-title L2JDP Installer - Login Server DataBase WARNING!
+call :colors 0B
+title L2jReunion Database Installer - Login Server DataBase WARNING!
 echo.
 echo LOGINSERVER DATABASE install type:
 echo.
@@ -346,15 +362,15 @@ echo.
 set /p loginprompt=Choose (default upgrade):
 if /i %loginprompt%==f goto ls_cleanup
 if /i %loginprompt%==u goto ls_upgrade
-if /i %loginprompt%==s goto cs_backup
+if /i %loginprompt%==s goto gs_backup
 if /i %loginprompt%==r goto configure
 if /i %loginprompt%==q goto end
 goto ls_db_ok
 
 :ls_cleanup
-call :colors 17
+call :colors 0B
 set cmdline=
-title L2JDP Installer - Login Server DataBase Full Install
+title L2jReunion Database Installer - Login Server DataBase Full Install
 echo.
 echo Deleting Login Server tables for new content.
 set cmdline="%mysqlPath%" -h %lshost% -u %lsuser% --password=%lspass% -D %lsdb% ^< ls_cleanup.sql 2^> NUL
@@ -382,12 +398,12 @@ goto ls_install
 cls
 set cmdline=
 if %full% == 1 (
-title L2JDP Installer - Login Server DataBase Installing...
+title L2jReunion Database Installer - Login Server DataBase Installing...
 echo.
 echo Installing new Login Server content.
 echo.
 ) else (
-title L2JDP Installer - Login Server DataBase Upgrading...
+title L2jReunion Database Installer - Login Server DataBase Upgrading...
 echo.
 echo Upgrading Login Server content.
 echo.
@@ -398,178 +414,14 @@ for %%i in (..\sql\login\*.sql) do call :dump %%i
 
 echo done...
 echo.
-goto cs_backup
-
-:cs_backup
-cls
-call :colors 17
-set cmdline=
-set stage=3
-title L2JDP Installer - Community Server DataBase Backup
-echo.
-echo Trying to make a backup of your Comunity Server DataBase.
-set cmdline="%mysqldumpPath%" --add-drop-table -h %cbhost% -u %cbuser% --password=%cbpass% %cbdb% ^> "%backup%\cs_backup.sql" 2^> NUL
-%cmdline%
-if %ERRORLEVEL% == 0 goto cs_db_ok
-
-:cs_err1
-cls
-set cbdbprompt=y
-call :colors 47
-title L2JDP Installer - Community Server DataBase Backup ERROR!
-echo.
-echo Backup attempt failed! A possible reason for this to
-echo happen, is that your DB doesn't exist yet. I could
-echo try to create %cbdb% for you, or maybe you prefer to
-echo continue with the GameServer part of this tool.
-echo.
-echo ATTEMPT TO CREATE COMMUNITY SERVER DATABASE:
-echo.
-echo (y) Yes
-echo.
-echo (n) No
-echo.
-echo (r) Reconfigure
-echo.
-echo (q) Quit
-echo.
-set /p cbdbprompt=Choose (default yes):
-if /i %cbdbprompt%==y goto cs_db_create
-if /i %cbdbprompt%==n goto gs_backup
-if /i %cbdbprompt%==r goto configure
-if /i %cbdbprompt%==q goto end
-goto cs_err1
-
-:cs_db_create
-cls
-call :colors 17
-set cmdline=
-set stage=4
-title L2JDP Installer - Community Server DataBase Creation
-echo.
-echo Trying to create a Community Server DataBase...
-set cmdline="%mysqlPath%" -h %cbhost% -u %cbuser% --password=%cbpass% -e "CREATE DATABASE %cbdb%" 2^> NUL
-%cmdline%
-if %ERRORLEVEL% == 0 goto cs_db_ok
-if %safe_mode% == 1 goto omfg
-
-:cs_err2
-cls
-set omfgprompt=q
-call :colors 47
-title L2JDP Installer - Community Server DataBase Creation ERROR!
-echo.
-echo An error occured while trying to create a database for
-echo your Community Server.
-echo.
-echo Possible reasons:
-echo 1-You provided innacurate info , check user, password, etc.
-echo 2-User %cbuser% don't have enough privileges for
-echo database creation. Check your MySQL privileges.
-echo 3-Database exists already...?
-echo.
-echo Unless you're sure that the pending actions of this tool
-echo could work, i'd suggest you to look for correct values
-echo and try this script again later.
-echo.
-echo (c) Continue running
-echo.
-echo (r) Reconfigure
-echo.
-echo (q) Quit now
-echo.
-set /p omfgprompt=Choose (default quit):
-if /i %omfgprompt%==c goto gs_backup
-if /i %omfgprompt%==r goto configure
-if /i %omfgprompt%==q goto end
-goto cs_err2
-
-:cs_db_ok
-cls
-set communityprompt=u
-call :colors 17
-title L2JDP Installer - Community Server DataBase WARNING!
-echo.
-echo COMMUNITY SERVER DATABASE install type:
-echo.
-echo (f) Full: WARNING! I'll destroy ALL of your existing community
-echo     data (i really mean it: mail, forum, memo.. ALL)
-echo.
-echo (u) Upgrade: I'll do my best to preserve all of your community
-echo     data.
-echo.
-echo (s) Skip: I'll take you to the gameserver database
-echo     installation and upgrade options.
-echo.
-echo (r) Reconfigure: You'll be able to redefine MySQL path,
-echo     user and database information and start over with
-echo     those fresh values.
-echo.
-echo (q) Quit
-echo.
-set /p communityprompt=Choose (default upgrade):
-if /i %communityprompt%==f goto cs_cleanup
-if /i %communityprompt%==u goto cs_upgrade
-if /i %communityprompt%==s goto gs_backup
-if /i %communityprompt%==r goto configure
-if /i %communityprompt%==q goto end
-goto cs_db_ok
-
-:cs_cleanup
-call :colors 17
-set cmdline=
-title L2JDP Installer - Community Server DataBase Full Install
-echo.
-echo Deleting Community Server tables for new content.
-set cmdline="%mysqlPath%" -h %cbhost% -u %cbuser% --password=%cbpass% -D %cbdb% ^< cs_cleanup.sql 2^> NUL
-%cmdline%
-if not %ERRORLEVEL% == 0 goto omfg
-set full=1
-echo.
-echo Community Server tables has been deleted.
-goto cs_install
-
-:cs_upgrade
-cls
-echo.
-echo Upgrading structure of Community Server tables.
-echo.
-echo @echo off> temp.bat
-if exist cs_errors.log del cs_errors.log
-for %%i in (..\sql\community\updates\*.sql) do echo "%mysqlPath%" -h %cbhost% -u %cbuser% --password=%cbpass% -D %cbdb% --force ^< %%i 2^>^> cs_errors.log >> temp.bat
-call temp.bat> nul
-del temp.bat
-move cs_errors.log %workdir%
-goto cs_install
-
-:cs_install
-cls
-set cmdline=
-if %full% == 1 (
-title L2JDP Installer - Community Server DataBase Installing...
-echo.
-echo Installing new Community Server content.
-echo.
-) else (
-title L2JDP Installer - Community Server DataBase Upgrading...
-echo.
-echo Upgrading Community Server content.
-echo.
-)
-if %logging% == 0 set output=NUL
-set dest=cb
-for %%i in (..\sql\community\*.sql) do call :dump %%i
-
-echo done...
-echo.
 goto gs_backup
 
 :gs_backup
 cls
-call :colors 17
+call :colors 0B
 set cmdline=
 set stage=5
-title L2JDP Installer - Game Server DataBase Backup
+title L2jReunion Database Installer - Game Server DataBase Backup
 echo.
 echo Trying to make a backup of your Game Server DataBase.
 set cmdline="%mysqldumpPath%" --add-drop-table -h %gshost% -u %gsuser% --password=%gspass% %gsdb% ^> "%backup%\gs_backup.sql" 2^> NUL
@@ -580,12 +432,11 @@ if %ERRORLEVEL% == 0 goto gs_db_ok
 cls
 set gsdbprompt=y
 call :colors 47
-title L2JDP Installer - Game Server DataBase Backup ERROR!
+title L2jReunion Database Installer - Game Server DataBase Backup ERROR!
 echo.
-echo Backup attempt failed! A possible reason for this to
-echo happen, is that your DB doesn't exist yet. I could
-echo try to create %gsdb% for you, but maybe you prefer to
-echo continue with last part of the script.
+echo   Installing attempt failed! A possible reason for this to be happen, is that 
+echo   %gsdb% DB doesn't exist yet. I could try to create %gsdb% for you, or maybe 
+echo   you prefer to contunue with the Game Server part of this tool.
 echo.
 echo ATTEMPT TO CREATE GAME SERVER DATABASE?
 echo.
@@ -599,17 +450,17 @@ echo (q) Quit
 echo.
 set /p gsdbprompt=Choose (default yes):
 if /i %gsdbprompt%==y goto gs_db_create
-if /i %gsdbprompt%==n goto eof
+if /i %gsdbprompt%==n goto custom_ask
 if /i %gsdbprompt%==r goto configure
 if /i %gsdbprompt%==q goto end
 goto gs_err1
 
 :gs_db_create
 cls
-call :colors 17
+call :colors 0B
 set stage=6
 set cmdline=
-title L2JDP Installer - Game Server DataBase Creation
+title L2jReunion Database Installer - Game Server DataBase Creation
 echo.
 echo Trying to create a Game Server DataBase...
 set cmdline="%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -e "CREATE DATABASE %gsdb%" 2^> NUL
@@ -621,7 +472,7 @@ if %safe_mode% == 1 goto omfg
 cls
 set omfgprompt=q
 call :colors 47
-title L2JDP Installer - Game Server DataBase Creation ERROR!
+title L2jReunion Database Installer - Game Server DataBase Creation ERROR!
 echo.
 echo An error occured while trying to create a database for
 echo your Game Server.
@@ -647,8 +498,8 @@ goto gs_err2
 :gs_db_ok
 cls
 set installtype=u
-call :colors 17
-title L2JDP Installer - Game Server DataBase WARNING!
+call :colors 0B
+title L2jReunion Database Installer - Game Server DataBase WARNING!
 echo.
 echo GAME SERVER DATABASE install:
 echo.
@@ -671,9 +522,9 @@ if /i %installtype%==q goto end
 goto gs_db_ok
 
 :gs_cleanup
-call :colors 17
+call :colors 0B
 set cmdline=
-title L2JDP Installer - Game Server DataBase Full Install
+title L2jReunion Database Installer - Game Server DataBase Full Install
 echo.
 echo Deleting all Game Server tables for new content.
 set cmdline="%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< gs_cleanup.sql 2^> NUL
@@ -701,12 +552,12 @@ goto gs_install
 cls
 set cmdline=
 if %full% == 1 (
-title L2JDP Installer - Game Server DataBase Installing...
+title L2jReunion Database Installer - Game Server DataBase Installing...
 echo.
 echo Installing new Game Server content.
 echo.
 ) else (
-title L2JDP Installer - Game Server DataBase Upgrading...
+title L2jReunion Database Installer - Game Server DataBase Upgrading...
 echo.
 echo Upgrading Game Server content.
 echo.
@@ -721,18 +572,10 @@ goto reunion_install
 
 :reunion_install
 cls
-set cmdline=
-if %full% == 1 (
 title L2JReunion sql Files Installer - Game Server DataBase Installing...
 echo.
-echo Installing new Game Server content.
+echo Installing Custom L2jReunion content.
 echo.
-) else (
-title L2JReunion sql Files Installer - Game Server DataBase Upgrading...
-echo.
-echo Upgrading Game Server content.
-echo.
-)
 if %logging% == 0 set output=NUL
 set dest=gs
 for %%i in (..\sql\Reunion_sql_files\*.sql) do call :dump %%i
@@ -757,7 +600,7 @@ goto :eof
 cls
 set ntpebcak=c
 call :colors 47
-title L2JDP Installer - Potential DataBase Issue at stage %stage%
+title L2jReunion Database Installer - Potential DataBase Issue at stage %stage%
 echo.
 echo Something caused an error while executing instruction :
 echo %mysqlPath% -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb%
@@ -779,7 +622,7 @@ echo.
 echo (q) Quit now
 echo.
 set /p ntpebcak=Choose (default continue):
-if /i %ntpebcak%==c (call :colors 17 & goto :eof)
+if /i %ntpebcak%==c (call :colors 0B & goto :eof)
 if /i %ntpebcak%==l (call :logginon %1 & goto :eof)
 if /i %ntpebcak%==r (call :configure & exit)
 if /i %ntpebcak%==q (call :end)
@@ -787,8 +630,8 @@ goto omfg2
 
 :logginon
 cls
-call :colors 17
-title L2JDP Installer - Game Server Logging Options turned on
+call :colors 0B
+title L2jReunion Database Installer - Game Server Logging Options turned on
 set logging=1
 if %full% == 1 (
   set output=%logdir%\install-%~nx1.log
@@ -810,25 +653,51 @@ date /t >"%output%"
 time /t >>"%output%"
 %cmdline%
 echo Log file created, resuming normal operations...
-call :colors 17
+call :colors 0B
 set logging=0
 set output=NUL
 goto :eof
 
 :custom_ask
-title L2JDP Installer - Custom Server Tables
+call :colors 0B
+title L2jReunion Database Installer - Custom Server Tables
 cls
 set cstprompt=n
 echo.
-echo L2J provides some "Custom Server Tables" for non-retail modifications
-echo in order to avoid override the original Server Tables.
+echo L2jReunion provides some "Custom Server Tables" and "Custom Overwrites" 
+echo of them for non-retail and extra modifications.
 echo.
-echo Remember that in order to get these additions actually working
-echo you need to edit your configuration files.
+echo Remember that in order to get some of these additions actually working you  
+echo need to edit your configuration files. (custom_tables)
 echo.
-set /p cstprompt=Install Custom Server Tables: (y) yes or (n) no (default no):
-if /i %cstprompt%==y goto custom_install
-if /i %cstprompt%==n goto mod_ask
+echo CUSTOM TABLES install:
+echo.
+echo.
+echo (f) Full: WARNING! It may cause unbalance to your server. There will be 
+echo     custom spawns you might dont need. Non recommended for low rate servers.
+echo.
+echo (n) Non - full: It will install only custom server tables and mods.
+echo.    
+echo (s) Skip: Continue running the script
+echo.
+set /p installtype=Choose (default Non - full):
+if /i %installtype%==f goto custom_install_full
+if /i %installtype%==n goto custom_install
+if /i %installtype%==s goto end
+
+:custom_install_full
+cls
+echo.
+echo Installing Custom content.
+echo @echo off> temp.bat
+if exist custom_errors_full.log del custom_errors_full.log
+for %%i in (..\sql\game\custom\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
+for %%i in (..\sql\game\mods\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
+for %%i in (..\sql\Reunion_sql_files\custom\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
+call temp.bat> nul
+del temp.bat
+move custom_errors_full.log %workdir%
+goto end
 
 :custom_install
 cls
@@ -837,46 +706,17 @@ echo Installing Custom content.
 echo @echo off> temp.bat
 if exist custom_errors.log del custom_errors.log
 for %%i in (..\sql\game\custom\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
+for %%i in (..\sql\game\mods\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
 call temp.bat> nul
 del temp.bat
 move custom_errors.log %workdir%
-goto mod_ask
-
-:mod_ask
-title L2JDP Installer - Mod Server Tables
-cls
-set cstprompt=n
-echo.
-echo L2J provides a basic infraestructure for some non-retail features
-echo (aka L2J mods) to get enabled with a minimum of changes.
-echo.
-echo Some of these mods would require extra tables in order to work
-echo and those tables could be created now if you wanted to.
-echo.
-echo Remember that in order to get these additions actually working
-echo you need to edit your configuration files.
-echo.
-set /p cstprompt=Install Mod Server Tables: (y) yes or (n) no (default no):
-if /i %cstprompt%==y goto mod_install
-if /i %cstprompt%==n goto end
-
-:mod_install
-cls
-echo.
-echo Installing Mods content.
-echo @echo off> temp.bat
-if exist mods_errors.log del mods_errors.log
-for %%i in (..\sql\game\mods\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> mods_errors.log >> temp.bat
-call temp.bat> nul
-del temp.bat
-move mods_errors.log %workdir%
 goto end
 
 :omfg
 set omfgprompt=q
 call :colors 57
 cls
-title L2JDP Installer - Potential PICNIC detected at stage %stage%
+title L2jReunion Database Installer - Potential PICNIC detected at stage %stage%
 echo.
 echo There was some problem while executing:
 echo.
@@ -904,18 +744,29 @@ if /i %omfgprompt%==q goto end
 goto omfg
 
 :binaryfind
-if EXIST "%mysqlBinPath%" (echo Found) else (echo Not Found)
+if EXIST "%mysqlBinPath%" (echo Result: Found) else (echo Result: Not Found)
 goto :eof
 
 :end
-call :colors 17
-title L2JDP Installer - Script Execution Finished
+call :colors 0B
+title L2jReunion Database Installer - Script Execution Finished
 cls
 echo.
-echo L2JDP Database Installer
+echo           L2jReunion Database Installer finished succesfully.
 echo.
-echo Thanks for using our software.
-echo visit http://www.l2jdp.com for more info about
-echo the L2J DataPack Project.
+echo.
+echo.
+echo.
+echo.
+echo.                           L2jReunion
+echo.
+echo.
+echo Thanks for using our files.
+echo Visit http://www.l2reunion.eu for more info about l2jreunion.
+echo.
+echo.
+echo.
+echo.
+echo.
 echo.
 pause
