@@ -32,8 +32,6 @@ import l2r.gameserver.model.stats.Env;
  */
 public class Sweeper extends L2Effect
 {
-	private static final int MAX_SWEEPER_TIME = 15000;
-	
 	public Sweeper(Env env, EffectTemplate template)
 	{
 		super(env, template);
@@ -50,11 +48,6 @@ public class Sweeper extends L2Effect
 		final L2PcInstance player = getEffector().getActingPlayer();
 		final L2Attackable monster = (L2Attackable) getEffected();
 		if (!monster.checkSpoilOwner(player, false))
-		{
-			return false;
-		}
-		
-		if (monster.isOldCorpse(player, MAX_SWEEPER_TIME, false))
 		{
 			return false;
 		}
