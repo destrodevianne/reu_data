@@ -986,18 +986,14 @@
 		<set name="magicLvl" val="77" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
-		<for>
-			<add order="0x40" stat="skillMastery" val="2" /> <!-- FIXME: wrong values ? -->
-		</for>
+		<!-- FIXME: effect hardcoded inside formula -->
 	</skill>
 	<skill id="331" levels="1" name="Skill Mastery">
 		<!-- Masters excellence in skills. Low possibility of being able to re-use skills without delay or doubles the duration. Influenced by INT. -->
 		<set name="magicLvl" val="77" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
-		<for>
-			<add order="0x40" stat="skillMastery" val="2" /> <!-- FIXME: wrong values ? -->
-		</for>
+		<!-- FIXME: effect hardcoded inside formula -->
 	</skill>
 	<skill id="332" levels="1" name="Extra Inventory">
 		<!-- Confirmed CT2.5 -->
@@ -1019,7 +1015,7 @@
 		</for>
 	</skill>
 	<skill id="334" levels="1" name="Focus Skill Mastery">
-		<!-- Skill for Daggers and Archers -->
+		<!-- Confirmed CT2.5 -->
 		<set name="magicLvl" val="78" />
 		<set name="mpConsume" val="36" />
 		<set name="operateType" val="T" />
@@ -1027,7 +1023,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect count="0x7fffffff" name="MpConsumePerLevel" abnormalTime="3" val="1">
-				<mul order="0x30" stat="skillMastery" val="2" />
+				<mul order="0x30" stat="skillMastery" val="11" />
 			</effect>
 		</for>
 	</skill>
