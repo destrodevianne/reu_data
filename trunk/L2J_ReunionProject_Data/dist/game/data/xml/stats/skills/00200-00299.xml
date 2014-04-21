@@ -874,8 +874,13 @@
 		<set name="mpInitialConsume" val="50" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="5000" />
-		<set name="skillType" val="TAKECASTLE" />
 		<set name="targetType" val="HOLY" />
+		<cond>
+			<player canTakeCastle="true" />
+		</cond>
+		<for>
+			<effect name="TakeCastle" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="247" levels="1" name="Build Headquarters">
 		<set name="hitTime" val="4000" />
