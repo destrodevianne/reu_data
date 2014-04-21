@@ -537,6 +537,7 @@
 		<for>
 			<mul order="0x30" stat="pvpPhysDef" val="#pvp" />
 			<mul order="0x30" stat="pvpMagicalDef" val="#pvp" />
+			<mul order="0x30" stat="pvpPhysSkillsDef" val="#pvp" />
 		</for>
 	</skill>
 	<skill id="8345" levels="4" name="Low-grade Magic Ornament Mithril Belt">
@@ -569,6 +570,7 @@
 		<for>
 			<mul order="0x30" stat="pvpPhysDef" val="#pvp" />
 			<mul order="0x30" stat="pvpMagicalDef" val="#pvp" />
+			<mul order="0x30" stat="pvpPhysSkillsDef" val="#pvp" />
 		</for>
 	</skill>
 	<skill id="8348" levels="2" name="Royal Guard Earring - Gludio">
