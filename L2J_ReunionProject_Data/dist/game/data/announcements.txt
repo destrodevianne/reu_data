@@ -1,4 +1,6 @@
-Welcome to L2JReunion
-Report us bugs and problems to fix them (at forum)
-Thanks for Joining L2JReunion
-Have Fun!
+------------------------------------
+Welcome to L2JReunion.
+Report us bugs and problems to fix
+them (at forum)
+Thanks for using Joining L2JReunion
+------------------------------------
