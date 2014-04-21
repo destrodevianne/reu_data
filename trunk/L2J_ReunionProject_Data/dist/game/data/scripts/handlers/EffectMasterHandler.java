@@ -104,6 +104,7 @@ public final class EffectMasterHandler
 		Mute.class,
 		Negate.class,
 		NoblesseBless.class,
+		OpenChest.class,
 		OpenCommonRecipeBook.class,
 		OpenDwarfRecipeBook.class,
 		OutpostCreate.class,
