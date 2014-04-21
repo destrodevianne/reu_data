@@ -212,7 +212,6 @@ import l2r.gameserver.scripts.handlers.punishmenthandlers.JailHandler;
 import l2r.gameserver.scripts.handlers.skillhandlers.Blow;
 import l2r.gameserver.scripts.handlers.skillhandlers.Continuous;
 import l2r.gameserver.scripts.handlers.skillhandlers.CpDamPercent;
-import l2r.gameserver.scripts.handlers.skillhandlers.DeluxeKey;
 import l2r.gameserver.scripts.handlers.skillhandlers.Detection;
 import l2r.gameserver.scripts.handlers.skillhandlers.Disablers;
 import l2r.gameserver.scripts.handlers.skillhandlers.Dummy;
@@ -538,7 +537,6 @@ public class MasterHandler
 			Blow.class,
 			Continuous.class,
 			CpDamPercent.class,
-			DeluxeKey.class,
 			Detection.class,
 			Disablers.class,
 			Dummy.class,
