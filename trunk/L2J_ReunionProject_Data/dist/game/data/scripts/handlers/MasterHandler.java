@@ -308,8 +308,10 @@ import gr.reunion.configsEngine.AioItemsConfigs;
 import gr.reunion.configsEngine.AntibotConfigs;
 import gr.reunion.configsEngine.ChaoticZoneConfigs;
 import gr.reunion.configsEngine.CustomServerConfigs;
+import gr.reunion.configsEngine.GetRewardVoteSystemConfigs;
+import gr.reunion.configsEngine.IndividualVoteSystemConfigs;
 import gr.reunion.configsEngine.PremiumServiceConfigs;
-import gr.reunion.configsEngine.VoteSystemConfigs;
+import gr.reunion.voteEngine.RewardVote;
 
 /**
  * Master handler.
@@ -585,7 +587,8 @@ public class MasterHandler
 			(AntibotConfigs.ENABLE_ANTIBOT_SYSTEMS ? Antibot.class : null),
 			(ChaoticZoneConfigs.ENABLE_CHAOTIC_ZONE ? PvpZoneVCmd.class : null),
 			(AioBufferConfigs.ENABLE_AIO_BUFFER && PremiumServiceConfigs.USE_PREMIUM_SERVICE ? ItemBufferVCmd.class : null),
-			(VoteSystemConfigs.ENABLE_VOTE_SYSTEM ? VotePanelVCmd.class : null),
+			(IndividualVoteSystemConfigs.ENABLE_VOTE_SYSTEM ? VotePanelVCmd.class : null),
+			(GetRewardVoteSystemConfigs.ENABLE_VOTE_SYSTEM ? RewardVote.class : null),
 			(CustomServerConfigs.ALLOW_ONLINE_COMMAND ? OnlineVCmd.class : null),
 			(CustomServerConfigs.ALLOW_REPAIR_COMMAND ? RepairVCmd.class : null),
 			(CustomServerConfigs.ALLOW_TELEPORTS_COMMAND ? TeleportsVCmd.class : null),
