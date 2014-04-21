@@ -445,7 +445,10 @@
 		<set name="summonTotalLifeTime" val="1200000" />
 		<enchant1 name="npcId" val="#enchNpcId" />
 		<cond>
-			<player canSummon="true" />
+			<and>
+				<player canSummon="true" />
+				<player canSummonSiegeGolem="true" />
+			</and>
 		</cond>
 	</skill>
 	<skill id="15" levels="52" name="Charm">

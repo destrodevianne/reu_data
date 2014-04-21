@@ -153,6 +153,12 @@
 		<set name="targetConsumeCount" val="1" />
 		<set name="targetConsumeId" val="8615" />
 		<set name="targetType" val="PARTY_MEMBER" />
+		<cond>
+			<and>
+				<target myPartyExceptMe="true" />
+				<player callPc="true" />
+			</and>
+		</cond>
 		<cond msgId="113" addName="1">
 			<not>
 				<player insideZoneId="10501, 10502, 10503, 10504, 10505, 10506, 10507, 10508" />
@@ -174,6 +180,12 @@
 		<set name="targetConsumeCount" val="1" />
 		<set name="targetConsumeId" val="8615" />
 		<set name="targetType" val="PARTY" />
+		<cond>
+			<and>
+				<target myPartyExceptMe="true" />
+				<player callPc="true" />
+			</and>
+		</cond>
 		<cond msgId="113" addName="1">
 			<not>
 				<player insideZoneId="10501, 10502, 10503, 10504, 10505, 10506, 10507, 10508" />
@@ -893,6 +905,9 @@
 		<set name="skillType" val="SUMMON_FRIEND" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="PARTY" />
+		<cond>
+			<player callPc="true" />
+		</cond>
 		<cond msgId="113" addName="1">
 			<not>
 				<player insideZoneId="10501, 10502, 10503" />
