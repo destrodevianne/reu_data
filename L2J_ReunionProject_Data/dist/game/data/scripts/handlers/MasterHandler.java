@@ -228,8 +228,6 @@ import l2r.gameserver.scripts.handlers.skillhandlers.Resurrect;
 import l2r.gameserver.scripts.handlers.skillhandlers.ShiftTarget;
 import l2r.gameserver.scripts.handlers.skillhandlers.Sow;
 import l2r.gameserver.scripts.handlers.skillhandlers.SummonFriend;
-import l2r.gameserver.scripts.handlers.skillhandlers.TakeCastle;
-import l2r.gameserver.scripts.handlers.skillhandlers.TakeFort;
 import l2r.gameserver.scripts.handlers.skillhandlers.TransformDispel;
 import l2r.gameserver.scripts.handlers.skillhandlers.Trap;
 import l2r.gameserver.scripts.handlers.skillhandlers.Unlock;
@@ -556,8 +554,6 @@ public class MasterHandler
 			ShiftTarget.class,
 			Sow.class,
 			SummonFriend.class,
-			TakeCastle.class,
-			TakeFort.class,
 			TransformDispel.class,
 			Trap.class,
 			Unlock.class,
