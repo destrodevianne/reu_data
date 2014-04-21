@@ -1640,7 +1640,10 @@
 		<set name="npcId" val="14839" />
 		<enchant1 name="npcId" val="#ench1npcId" />
 		<cond>
-			<player canSummon="true" />
+			<and>
+				<player canSummon="true" />
+				<player canSummonSiegeGolem="true" />
+			</and>
 		</cond>
 	</skill>
 	<skill id="449" levels="4" name="Summon Attractive Cubic" enchantGroup1="2">
@@ -2610,6 +2613,9 @@
 		<set name="skillType" val="SHIFT_TARGET" />
 		<set name="targetType" val="PARTY_MEMBER" />
 		<set name="trait" val="DERANGEMENT" />
+		<cond>
+			<target myPartyExceptMe="true" />
+		</cond>
 		<cond msgId="113" addName="1">
 			<using kind="CROSSBOW" />
 		</cond>
