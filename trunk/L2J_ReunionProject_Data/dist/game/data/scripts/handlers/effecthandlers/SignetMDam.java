@@ -25,7 +25,7 @@ package handlers.effecthandlers;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2r.gameserver.datatables.NpcTable;
+import l2r.gameserver.datatables.sql.NpcTable;
 import l2r.gameserver.enums.CtrlEvent;
 import l2r.gameserver.enums.ShotType;
 import l2r.gameserver.idfactory.IdFactory;

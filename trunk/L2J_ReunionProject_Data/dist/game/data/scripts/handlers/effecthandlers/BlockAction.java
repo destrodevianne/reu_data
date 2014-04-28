@@ -20,7 +20,7 @@ package handlers.effecthandlers;
 
 import java.util.ArrayList;
 
-import l2r.gameserver.datatables.BotReportTable;
+import l2r.gameserver.datatables.sql.BotReportTable;
 import l2r.gameserver.instancemanager.PunishmentManager;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
