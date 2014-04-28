@@ -28,7 +28,6 @@ import l2r.gameserver.model.actor.L2Character;
 import l2r.gameserver.model.effects.EffectFlag;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
-import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
 import l2r.util.Rnd;
 
@@ -41,12 +40,6 @@ public class Confusion extends L2Effect
 	public Confusion(Env env, EffectTemplate template)
 	{
 		super(env, template);
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.NONE;
 	}
 	
 	@Override

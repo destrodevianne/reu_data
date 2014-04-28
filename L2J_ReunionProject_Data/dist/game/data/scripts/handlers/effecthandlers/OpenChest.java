@@ -23,7 +23,6 @@ import l2r.gameserver.model.actor.instance.L2ChestInstance;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
-import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
 
 /**
@@ -72,11 +71,5 @@ public final class OpenChest extends L2Effect
 			chest.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, player);
 		}
 		return true;
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.NONE;
 	}
 }

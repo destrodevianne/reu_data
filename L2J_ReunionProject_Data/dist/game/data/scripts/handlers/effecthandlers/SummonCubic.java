@@ -48,12 +48,6 @@ public class SummonCubic extends L2Effect
 	}
 	
 	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.NONE;
-	}
-	
-	@Override
 	public boolean onStart()
 	{
 		if ((getEffected() == null) || !getEffected().isPlayer() || getEffected().isAlikeDead() || getEffected().getActingPlayer().inObserverMode())
