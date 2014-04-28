@@ -144,6 +144,7 @@ public final class EffectMasterHandler
 		TakeCastle.class,
 		TakeFort.class,
 		TakeFortStart.class,
+		TakeTerritoryFlag.class,
 		TargetMe.class,
 		ThrowUp.class,
 		TransferDamage.class,
