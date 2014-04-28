@@ -18,7 +18,7 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.datatables.TransformData;
+import l2r.gameserver.datatables.xml.TransformData;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;

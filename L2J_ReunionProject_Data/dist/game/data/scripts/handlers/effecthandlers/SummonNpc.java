@@ -18,7 +18,7 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.datatables.NpcTable;
+import l2r.gameserver.datatables.sql.NpcTable;
 import l2r.gameserver.idfactory.IdFactory;
 import l2r.gameserver.model.L2Spawn;
 import l2r.gameserver.model.Location;

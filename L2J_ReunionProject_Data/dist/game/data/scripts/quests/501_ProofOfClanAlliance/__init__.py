@@ -3,7 +3,7 @@
 # v0.1.r0 2005.12.05
 # v1.1.r0 2008.03.27: Update/Rewrite by Emperorc
 import sys
-from l2r.gameserver.datatables         			import SkillData
+from l2r.gameserver.datatables.xml         			import SkillData
 from l2r.gameserver.network.serverpackets      	import NpcSay 
 from l2r.gameserver.network.serverpackets      	import MagicSkillUse
 from l2r.gameserver.model.quest        			import State
