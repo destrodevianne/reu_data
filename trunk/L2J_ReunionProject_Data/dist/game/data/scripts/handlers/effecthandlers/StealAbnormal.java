@@ -22,7 +22,6 @@ import java.util.List;
 
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
-import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
 import l2r.gameserver.model.stats.Formulas;
 import l2r.gameserver.network.SystemMessageId;
@@ -49,12 +48,6 @@ public class StealAbnormal extends L2Effect
 	public boolean canBeStolen()
 	{
 		return false;
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.NONE;
 	}
 	
 	@Override

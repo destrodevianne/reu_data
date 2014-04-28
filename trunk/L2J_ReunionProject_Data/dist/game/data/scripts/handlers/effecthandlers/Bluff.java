@@ -23,7 +23,6 @@ import l2r.gameserver.model.actor.instance.L2NpcInstance;
 import l2r.gameserver.model.actor.instance.L2SiegeSummonInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
-import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
 import l2r.gameserver.network.serverpackets.StartRotation;
 import l2r.gameserver.network.serverpackets.StopRotation;
@@ -37,12 +36,6 @@ public class Bluff extends L2Effect
 	public Bluff(Env env, EffectTemplate template)
 	{
 		super(env, template);
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.NONE;
 	}
 	
 	@Override

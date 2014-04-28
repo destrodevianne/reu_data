@@ -20,7 +20,6 @@ package handlers.effecthandlers;
 
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
-import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
 
 public class AbortCast extends L2Effect
@@ -28,12 +27,6 @@ public class AbortCast extends L2Effect
 	public AbortCast(Env env, EffectTemplate template)
 	{
 		super(env, template);
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.NONE;
 	}
 	
 	@Override

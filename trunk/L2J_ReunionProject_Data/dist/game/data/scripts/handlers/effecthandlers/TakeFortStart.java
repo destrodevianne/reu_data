@@ -23,7 +23,6 @@ import l2r.gameserver.model.L2Clan;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
-import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.entity.Fort;
 import l2r.gameserver.model.stats.Env;
 import l2r.gameserver.network.SystemMessageId;
@@ -62,11 +61,5 @@ public final class TakeFortStart extends L2Effect
 			fort.getSiege().announceToPlayer(SystemMessage.getSystemMessage(SystemMessageId.S1_TRYING_RAISE_FLAG), clan.getName());
 		}
 		return true;
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.NONE;
 	}
 }
