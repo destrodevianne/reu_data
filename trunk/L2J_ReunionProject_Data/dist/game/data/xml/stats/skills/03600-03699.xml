@@ -1107,7 +1107,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="1.02" />
+			<mul order="0x30" stat="magicSuccRes" val="1.02" />
 		</for>
 	</skill>
 	<skill id="3682" levels="1" name="Avadon Gloves">
@@ -1156,7 +1156,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="1.01" />
+			<mul order="0x30" stat="magicSuccRes" val="1.01" />
 		</for>
 	</skill>
 	<skill id="3688" levels="1" name="Avadon Circlet">

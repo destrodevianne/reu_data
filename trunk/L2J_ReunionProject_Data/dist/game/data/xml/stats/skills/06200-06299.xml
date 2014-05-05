@@ -198,7 +198,6 @@
 	</skill>
 	<skill id="6209" levels="4" name="Weapon Grade Penalty">
 		<table name="#cAtk"> 0.9 0.8 0.7 0.6 </table>
-		<table name="#magicFailureRate"> 2000 4000 6000 8000 </table> <!-- FIXME: values unconfirmed -->
 		<table name="#rCrit"> -0.1 -0.2 -0.3 -0.4 </table>
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
@@ -210,7 +209,6 @@
 			<mul order="0x30" stat="cAtk" val="#cAtk" />
 			<mul order="0x30" stat="pAtkSpd" val="0.9" />
 			<mul order="0x30" stat="pAtk" val="0.9" />
-			<add order="0x40" stat="magicFailureRate" val="#magicFailureRate" />
 		</for>
 	</skill>
 	<skill id="6213" levels="4" name="Armor Grade Penalty">
@@ -920,7 +918,7 @@
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="3" abnormalType="pa_up">
 				<mul order="0x30" stat="pDef" val="1.15" />
 				<mul order="0x30" stat="pAtk" val="1.15" />
-				<mul order="0x30" stat="runSpd" val="1.15" />
+				<mul order="0x30" stat="pAtkSpd" val="1.15" />
 			</effect>
 		</for>
 	</skill>

@@ -356,7 +356,7 @@
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_hit_defence_crt_rate_up">
 				<add order="0x40" stat="accCombat" val="4" />
-				<mul order="0x30" stat="critDamEvas" val="1.3" />
+				<mul order="0x30" stat="defCritRate" val="0.7" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="hit_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -537,7 +537,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="3600" val="0" triggeredId="6059" chanceType="ON_ATTACKED_HIT" activationChance="80" activationMinDamage="300" abnormalLvl="1" abnormalType="counter_critical">
-				<mul order="0x30" stat="critVuln" val="0.7" />
+				<mul order="0x30" stat="defCritDamage" val="0.7" />
 			</effect>
 		</for>
 	</skill>
@@ -1214,7 +1214,7 @@
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_hit_defence_crt_rate_up">
 				<add order="0x40" stat="accCombat" val="4" />
-				<mul order="0x30" stat="critDamEvas" val="1.3" />
+				<mul order="0x30" stat="defCritRate" val="0.7" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="hit_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1386,7 +1386,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="3600" val="0" triggeredId="6059" chanceType="ON_ATTACKED_HIT" activationChance="80" activationMinDamage="300" abnormalLvl="1" abnormalType="counter_critical">
-				<mul order="0x30" stat="critVuln" val="0.7" />
+				<mul order="0x30" stat="defCritDamage" val="0.7" />
 			</effect>
 		</for>
 	</skill>

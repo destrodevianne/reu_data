@@ -149,7 +149,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="critDamEvas" val="1.03" />
+			<mul order="0x30" stat="defCritRate" val="0.97" />
 		</for>
 	</skill>
 	<skill id="3317" levels="1" name="Yellow Talisman of Critical Reduction">
@@ -158,7 +158,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="critAddVuln" val="100" />
+			<sub order="0x40" stat="defCritDamageAdd" val="100" />
 		</for>
 	</skill>
 	<skill id="3318" levels="1" name="Flag Display">
@@ -217,7 +217,7 @@
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
 				<add order="0x40" stat="rEvas" val="2" />
-				<mul order="0x30" stat="critDamEvas" val="1.05" />
+				<mul order="0x30" stat="defCritRate" val="0.95" />
 			</effect>
 		</for>
 	</skill>

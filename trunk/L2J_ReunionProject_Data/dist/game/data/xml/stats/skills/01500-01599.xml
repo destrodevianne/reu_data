@@ -1231,7 +1231,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="1200" val="0" activationChance="80" activationMinDamage="300" chanceType="ON_ATTACKED_HIT" triggeredId="6059" abnormalLvl="1" abnormalType="counter_critical">
-				<mul order="0x30" stat="critVuln" val="0.7" />
+				<mul order="0x30" stat="defCritDamage" val="0.7" />
 			</effect>
 		</for>
 	</skill>
