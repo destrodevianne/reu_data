@@ -236,7 +236,7 @@
 		<set name="trait" val="SHOCK" />
 		<for>
 			<effect name="Stun" val="0" abnormalTime="20" effectPower="98" abnormalLvl="1" abnormalType="stun">
-				<mul order="0x30" stat="critDamEvas" val="1.5" />
+				<mul order="0x30" stat="defCritRate" val="0.5" />
 			</effect>
 		</for>
 	</skill>

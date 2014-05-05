@@ -143,7 +143,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="1.01" />
+			<mul order="0x30" stat="magicSuccRes" val="1.01" />
 		</for>
 	</skill>
 	<skill id="3816" levels="1" name="Majestic Necklace">
@@ -151,7 +151,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="1.01" />
+			<mul order="0x30" stat="magicSuccRes" val="1.01" />
 		</for>
 	</skill>
 	<skill id="3817" levels="1" name="Majestic Ring">

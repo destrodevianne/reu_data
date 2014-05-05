@@ -5,7 +5,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="1.02" />
+			<mul order="0x30" stat="magicSuccRes" val="1.02" />
 		</for>
 	</skill>
 	<skill id="3701" levels="1" name="Leather Armor of Doom">
@@ -281,7 +281,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="1.02" />
+			<mul order="0x30" stat="magicSuccRes" val="1.02" />
 		</for>
 	</skill>
 	<skill id="3730" levels="1" name="Dark Crystal Leather Armor">
@@ -767,7 +767,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="1.02" />
+			<mul order="0x30" stat="magicSuccRes" val="1.02" />
 		</for>
 	</skill>
 	<skill id="3775" levels="1" name="Draconic Leather Gloves">
@@ -905,7 +905,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="1.02" />
+			<mul order="0x30" stat="magicSuccRes" val="1.02" />
 		</for>
 	</skill>
 	<skill id="3787" levels="1" name="Imperial Crusader Helmet">
@@ -977,7 +977,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="1.02" />
+			<mul order="0x30" stat="magicSuccRes" val="1.02" />
 		</for>
 	</skill>
 	<skill id="3794" levels="1" name="Dynasty Helmet">

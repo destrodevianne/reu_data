@@ -52,8 +52,8 @@
 			<set order="0x40" stat="cancelVuln" val="2" />
 			<set order="0x40" stat="derangementVuln" val="2" />
 			<set order="0x40" stat="debuffVuln" val="2" />
-			<set order="0x40" stat="critVuln" val="1" />
-			<set order="0x40" stat="magicDamVul" val="1" />
+			<set order="0x40" stat="defCritDamage" val="1" />
+			<set order="0x40" stat="magicSuccRes" val="1" />
 			
 			<set order="0x40" stat="aggressionProf" val="2" />
 			<set order="0x40" stat="bleedProf" val="2" />
@@ -62,10 +62,8 @@
 			<set order="0x40" stat="paralyzeProf" val="2" />
 			<set order="0x40" stat="rootProf" val="2" />
 			<set order="0x40" stat="sleepProf" val="2" />
-			<set order="0x40" stat="movementProf" val="2" />
 			<set order="0x40" stat="cancelProf" val="2" />
 			<set order="0x40" stat="derangementProf" val="2" />
-			<set order="0x40" stat="debuffProf" val="2" />
 			<set order="0x40" stat="critProf" val="1" />
 			
 			<set order="0x40" stat="BowMpConsumeRate" val="0" />

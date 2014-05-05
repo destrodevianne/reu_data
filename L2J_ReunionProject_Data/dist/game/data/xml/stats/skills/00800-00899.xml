@@ -28,7 +28,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="magicDamVul" val="0.95" />
+			<mul order="0x30" stat="magicSuccRes" val="1.05" />
 		</for>
 	</skill>
 	<skill id="803" levels="1" name="Healer Ability - Divine Protection">
@@ -49,7 +49,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="critVuln" val="0.95" />
+			<mul order="0x30" stat="defCritDamage" val="0.95" />
 		</for>
 	</skill>
 	<skill id="805" levels="1" name="not used">

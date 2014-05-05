@@ -2089,12 +2089,12 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="1" abnormalType="t_crt_dmg_down">
-				<mul order="0x30" stat="critVuln" val="0.7" />
+				<mul order="0x30" stat="defCritDamage" val="0.7" />
 			</effect>
 		</for>
 		<enchant1for>
 			<effect name="Buff" abnormalTime="#ench1Time" val="0" abnormalLvl="1" abnormalType="t_crt_dmg_down">
-				<mul order="0x30" stat="critVuln" val="0.7" />
+				<mul order="0x30" stat="defCritDamage" val="0.7" />
 			</effect>
 		</enchant1for>
 	</skill>
