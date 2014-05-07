@@ -1,1 +1,0 @@
-UPDATE npc SET type = "L2Npc" WHERE id = "30098";

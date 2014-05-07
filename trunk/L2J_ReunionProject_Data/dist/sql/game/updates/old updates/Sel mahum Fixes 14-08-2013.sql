@@ -1,1 +1,0 @@
-DELETE FROM spawnlist WHERE npc_templateid="18908";
