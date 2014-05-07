@@ -262,7 +262,7 @@ clear
 echo ""
 echo "Upgrading structure of Login Server tables."
 echo ""
-for file in $(ls ../sql/login/updates/*.sql);do
+for file in $(ls sql/login/updates/*.sql);do
 	$MYL --force < $file 2>> ls_error.log
 done
 ls_install
@@ -279,7 +279,7 @@ echo ""
 echo "Upgrading Login Server content."
 echo ""
 fi
-for login in $(ls ../sql/login/*.sql);do
+for login in $(ls sql/login/*.sql);do
 	echo "Installing loginserver table : $login"
 	$MYL < $login
 done
@@ -349,7 +349,7 @@ clear
 echo ""
 echo "Upgrading structure of Community Server tables."
 echo ""
-for file in $(ls ../sql/community/updates/*sql);do
+for file in $(ls sql/community/updates/*sql);do
 	$MYC --force < $file 2>> cs_error.log
 done
 cs_install
@@ -366,7 +366,7 @@ echo ""
 echo "Upgrading Community Server content."
 echo ""
 fi
-for cb in $(ls ../sql/community/*.sql);do
+for cb in $(ls sql/community/*.sql);do
 	echo "Installing Communityserver table : $cb"
 	$MYC < $cb
 done
@@ -436,7 +436,7 @@ clear
 echo ""
 echo "Upgrading structure of Game Server tables (this could take awhile, be patient)"
 echo ""
-for file in $(ls ../sql/game/updates/*.sql);do
+for file in $(ls sql/game/updates/*.sql);do
 	$MYG --force < $file 2>> gs_error.log
 done
 gs_install
@@ -453,7 +453,7 @@ echo ""
 echo "Upgrading Game Server content."
 echo ""
 fi
-for gs in $(ls ../sql/game/*.sql);do
+for gs in $(ls sql/game/*.sql);do
 	echo "Installing GameServer table : $gs"
 	$MYG < $gs
 done
@@ -482,7 +482,7 @@ custom_install(){
 clear
 echo ""
 echo "Installing Custom content."
-for custom in $(ls ../sql/game/custom/*.sql);do 
+for custom in $(ls sql/game/custom/*.sql);do 
 	echo "Installing custom table: $custom"
 	$MYG < $custom
 done
@@ -515,7 +515,7 @@ mod_install(){
 clear
 echo ""
 echo "Installing Mods content."
-for mod in $(ls ../sql/game/mods/*.sql);do
+for mod in $(ls sql/game/mods/*.sql);do
 	echo "Installing custom mod table : $mod"
 	$MYG < $mod
 done

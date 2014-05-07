@@ -388,7 +388,7 @@ echo Upgrading structure of Login Server tables.
 echo.
 echo @echo off> temp.bat
 if exist ls_errors.log del ls_errors.log
-for %%i in (..\sql\login\updates\*.sql) do echo "%mysqlPath%" -h %lshost% -u %lsuser% --password=%lspass% -D %lsdb% --force ^< %%i 2^>^> ls_errors.log >> temp.bat
+for %%i in (sql\login\updates\*.sql) do echo "%mysqlPath%" -h %lshost% -u %lsuser% --password=%lspass% -D %lsdb% --force ^< %%i 2^>^> ls_errors.log >> temp.bat
 call temp.bat> nul
 del temp.bat
 move ls_errors.log %workdir%
@@ -410,7 +410,7 @@ echo.
 )
 if %logging% == 0 set output=NUL
 set dest=ls
-for %%i in (..\sql\login\*.sql) do call :dump %%i
+for %%i in (sql\login\*.sql) do call :dump %%i
 
 echo done...
 echo.
@@ -542,7 +542,7 @@ echo Upgrading structure of Game Server tables (this could take awhile, be patie
 echo.
 echo @echo off> temp.bat
 if exist gs_errors.log del gs_errors.log
-for %%i in (..\sql\game\updates\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% --force ^< %%i 2^>^> gs_errors.log >> temp.bat
+for %%i in (sql\game\updates\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% --force ^< %%i 2^>^> gs_errors.log >> temp.bat
 call temp.bat> nul
 del temp.bat
 move gs_errors.log %workdir%
@@ -564,7 +564,7 @@ echo.
 )
 if %logging% == 0 set output=NUL
 set dest=gs
-for %%i in (..\sql\game\*.sql) do call :dump %%i
+for %%i in (sql\game\*.sql) do call :dump %%i
 
 echo done...
 echo.
@@ -578,7 +578,7 @@ echo Installing Custom L2jReunion content.
 echo.
 if %logging% == 0 set output=NUL
 set dest=gs
-for %%i in (..\sql\Reunion_sql_files\*.sql) do call :dump %%i
+for %%i in (sql\Reunion_sql_files\*.sql) do call :dump %%i
 
 echo done...
 echo.
@@ -648,7 +648,7 @@ echo go now and read it or back it up, because it's not going to be rotated
 echo or anything, instead i'll just overwrite it.
 echo.
 pause
-set cmdline="%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^<..\sql\%1 2^>^>"%output%"
+set cmdline="%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^<sql\%1 2^>^>"%output%"
 date /t >"%output%"
 time /t >>"%output%"
 %cmdline%
@@ -691,9 +691,9 @@ echo.
 echo Installing Custom content.
 echo @echo off> temp.bat
 if exist custom_errors_full.log del custom_errors_full.log
-for %%i in (..\sql\game\custom\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
-for %%i in (..\sql\game\mods\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
-for %%i in (..\sql\Reunion_sql_files\custom\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
+for %%i in (sql\game\custom\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
+for %%i in (sql\game\mods\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
+for %%i in (sql\Reunion_sql_files\custom\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
 call temp.bat> nul
 del temp.bat
 move custom_errors_full.log %workdir%
@@ -705,8 +705,8 @@ echo.
 echo Installing Custom content.
 echo @echo off> temp.bat
 if exist custom_errors.log del custom_errors.log
-for %%i in (..\sql\game\custom\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
-for %%i in (..\sql\game\mods\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
+for %%i in (sql\game\custom\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
+for %%i in (sql\game\mods\*.sql) do echo "%mysqlPath%" -h %gshost% -u %gsuser% --password=%gspass% -D %gsdb% ^< %%i 2^>^> custom_errors.log >> temp.bat
 call temp.bat> nul
 del temp.bat
 move custom_errors.log %workdir%
