@@ -1482,8 +1482,8 @@
 	<skill id="1553" levels="1" name="Chain Heal">
 		<!-- High Five Skill -->
 		<set name="affectLimit" val="7-12" />
-		<set name="affectRange" val="600" />
-		<set name="aggroPoints" val="398" /> <!-- FIXME: value unconfirmed -->
+		<set name="affectRange" val="350" />
+		<set name="aggroPoints" val="398" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="3000" />
@@ -1493,12 +1493,11 @@
 		<set name="magicLvl" val="83" />
 		<set name="mpConsume" val="156" />
 		<set name="mpInitialConsume" val="38" />
-		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
+		<set name="operateType" val="A1" />
+		<set name="power" val="30"/>
 		<set name="reuseDelay" val="5000" />
+		<set name="skillType" val="CHAIN_HEAL" />
 		<set name="targetType" val="AREA_FRIENDLY" />
-		<for>
-			<effect name="HealPercent" noicon="1" val="30" />
-		</for>
 	</skill>
 	<skill id="1554" levels="1" name="Aura Blast">
 		<!-- High Five Skill -->
