@@ -80,7 +80,7 @@
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="pa_up" />
 		<set name="affectLimit" val="50-50" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggro" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -121,7 +121,7 @@
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="casting_time_down" />
 		<set name="affectLimit" val="50-50" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggro" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -162,7 +162,7 @@
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="pd_up" />
 		<set name="affectLimit" val="50-50" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggro" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -283,7 +283,7 @@
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="md_up" />
 		<set name="affectLimit" val="50-50" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="#aggro" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
