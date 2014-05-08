@@ -450,7 +450,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="multi_buff" />
 		<set name="affectLimit" val="50-100" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="669" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -529,7 +529,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="resist_debuff_dispel" />
 		<set name="affectLimit" val="50-100" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="aggroPoints" val="666" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -563,7 +563,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="cp_up" />
 		<set name="affectLimit" val="50-100" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="itemConsumeCount" val="20" />
