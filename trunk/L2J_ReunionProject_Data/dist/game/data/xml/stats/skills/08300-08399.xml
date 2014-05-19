@@ -340,7 +340,7 @@
 		<set name="mpInitialConsume" val="10" />
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="360000" />
 		<set name="targetType" val="AURA" />
 		<for>
@@ -358,7 +358,7 @@
 		<set name="mpConsume" val="40" />
 		<set name="mpInitialConsume" val="10" />
 		<set name="operateType" val="A1" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="360000" />
 		<set name="targetType" val="ONE" />
 		<for>

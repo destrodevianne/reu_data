@@ -768,7 +768,7 @@
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A3" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="CONFUSION" />
 		<set name="targetType" val="AREA" />
 		<for>
@@ -786,7 +786,7 @@
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="70" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="AGGREDUCE_CHAR" />
 		<set name="targetType" val="ONE" />
 	</skill>

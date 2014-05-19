@@ -1251,7 +1251,7 @@
 		<set name="maxNegated" val="5" />
 		<set name="nextActionAttack" val="true" />
 		<set name="offensive" val="true" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="150000" />
 		<set name="basicProperty" val="CON" />
@@ -1593,7 +1593,7 @@
 		<set name="nextActionAttack" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="3000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
@@ -1654,7 +1654,7 @@
 		<set name="nextActionAttack" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
@@ -1936,7 +1936,7 @@
 		<set name="mpConsume" val="35" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="AGGREDUCE_CHAR" />
@@ -2316,7 +2316,7 @@
 		<set name="mpConsume" val="53" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="15000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PARALYZE" />
@@ -2351,7 +2351,7 @@
 		<set name="mpConsume" val="35" />
 		<set name="operateType" val="A3" />
 		<set name="power" val="7987" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="900000" />
 		<set name="skillType" val="AGGDEBUFF" />
 		<set name="targetType" val="AURA" />
