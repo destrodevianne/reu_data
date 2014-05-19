@@ -1436,7 +1436,7 @@
 		<set name="magicLvl" val="81" />
 		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
 		<set name="power" val="50" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="ONE" />
@@ -1453,7 +1453,7 @@
 		<set name="magicLvl" val="81" />
 		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
 		<set name="power" val="50" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="ONE" />

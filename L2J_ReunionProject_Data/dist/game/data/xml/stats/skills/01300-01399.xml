@@ -898,7 +898,7 @@
 		<set name="mpInitialConsume" val="14" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="30000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
@@ -940,7 +940,7 @@
 		<set name="mpInitialConsume" val="15" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="30000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -994,7 +994,7 @@
 		<set name="mpInitialConsume" val="15" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="15000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MDOT" />
@@ -1295,13 +1295,14 @@
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
+		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="77" />
 		<set name="mpConsume" val="84" />
 		<set name="mpInitialConsume" val="21" />
 		<set name="negateAbnormals" val="attack_time_down;speed_up;improve_speed_avoid_up;improve_vampiric_haste" />
 		<set name="operateType" val="A1" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="AURA" />
 		<for>
@@ -1313,13 +1314,14 @@
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="4000" />
+		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="78" />
 		<set name="mpConsume" val="85" />
 		<set name="mpInitialConsume" val="22" />
 		<set name="negateAbnormals" val="ma_up;casting_time_down;improve_ma_md_up" />
 		<set name="operateType" val="A1" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="AURA" />
 		<for>
@@ -1540,13 +1542,14 @@
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="4000" />
+		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="76" />
 		<set name="mpConsume" val="56" />
 		<set name="mpInitialConsume" val="14" />
 		<set name="negateAbnormals" val="attack_time_down;speed_up;improve_speed_avoid_up;improve_vampiric_haste" />
 		<set name="operateType" val="A1" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1558,13 +1561,14 @@
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="4000" />
+		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="77" />
 		<set name="mpConsume" val="56" />
 		<set name="mpInitialConsume" val="14" />
 		<set name="negateAbnormals" val="ma_up;casting_time_down;improve_ma_md_up" />
 		<set name="operateType" val="A1" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1937,7 +1941,7 @@
 		<set name="negateAbnormals" val="pd_up;improve_pa_pd_up" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -1988,7 +1992,7 @@
 		<set name="negateAbnormals" val="improve_speed_avoid_up;speed_up" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -2038,7 +2042,7 @@
 		<set name="negateAbnormals" val="improve_pa_pd_up;pd_up" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="30000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -2080,7 +2084,7 @@
 		<set name="negateAbnormals" val="improve_speed_avoid_up;speed_up" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="30000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -2327,7 +2331,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="30000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -2373,7 +2377,7 @@
 		<set name="mpInitialConsume" val="21" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="15000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -2485,7 +2489,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="900000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
@@ -2522,7 +2526,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="900000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
@@ -2575,7 +2579,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="3000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="BETRAY" />
@@ -2611,7 +2615,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="75000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
@@ -2722,7 +2726,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -2772,7 +2776,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -2822,7 +2826,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -2868,7 +2872,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="4000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -3183,7 +3187,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="SLEEP" />
@@ -3253,7 +3257,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="4000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -3358,10 +3362,10 @@
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4000" />
+		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="offensive" val="true" />
-		<set name="pvp" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
@@ -3381,10 +3385,10 @@
 		<set name="affectLimit" val="10-10" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="6000" />
+		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="offensive" val="true" />
-		<set name="pvp" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />

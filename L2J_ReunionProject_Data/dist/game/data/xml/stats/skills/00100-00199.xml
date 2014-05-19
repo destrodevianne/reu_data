@@ -124,7 +124,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="2000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -170,7 +170,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="35" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="5000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
@@ -295,7 +295,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="5000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="ROOT" />
@@ -531,7 +531,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="2000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -578,7 +578,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="2000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -704,7 +704,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="2000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -796,7 +796,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="2000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -836,7 +836,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="70" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="2000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />

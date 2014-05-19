@@ -146,7 +146,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -184,7 +184,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />

@@ -34,7 +34,7 @@
 		<set name="mpConsume" val="66" />
 		<set name="mpInitialConsume" val="17" />
 		<set name="operateType" val="A2" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="MDOT" />
 		<set name="targetType" val="AURA" />
 		<for>
@@ -99,7 +99,7 @@
 		<set name="mpConsume" val="121" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="4000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
@@ -145,7 +145,7 @@
 		<set name="nextActionAttack" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="4000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
@@ -233,7 +233,7 @@
 		<set name="mpInitialConsume" val="15" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="2000" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
@@ -444,7 +444,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="3000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -652,7 +652,7 @@
 		<set name="magicLvl" val="84" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -676,7 +676,7 @@
 		<set name="magicLvl" val="84" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -1136,7 +1136,7 @@
 		<set name="mpConsume" val="70" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
@@ -1162,7 +1162,7 @@
 		<set name="mpConsume" val="70" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
@@ -1188,7 +1188,7 @@
 		<set name="nextActionAttack" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
@@ -1213,7 +1213,7 @@
 		<set name="mpConsume" val="70" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
@@ -1254,7 +1254,7 @@
 		<set name="nextActionAttack" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
@@ -1336,7 +1336,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1359,7 +1359,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="2000" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="AURA" />
@@ -1408,7 +1408,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="60" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -1461,7 +1461,7 @@
 		<set name="nextActionAttack" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
@@ -1487,7 +1487,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
@@ -1536,7 +1536,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />

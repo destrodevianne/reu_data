@@ -2361,7 +2361,7 @@
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="4000" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="AURA" />

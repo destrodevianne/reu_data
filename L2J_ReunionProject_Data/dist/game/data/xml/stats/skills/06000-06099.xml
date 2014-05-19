@@ -902,7 +902,7 @@
 		<set name="nextActionAttack" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="PARALYZE" />
@@ -920,7 +920,7 @@
 		<set name="isTriggeredSkill" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="PARALYZE" />
@@ -940,7 +940,7 @@
 		<set name="magicLvl" val="81" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="targetType" val="ONE" />
@@ -980,7 +980,7 @@
 		<set name="maxNegated" val="2" />
 		<set name="mpConsume" val="42" />
 		<set name="operateType" val="A1" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="60000" />
 		<set name="targetType" val="ONE" />
 		<for>

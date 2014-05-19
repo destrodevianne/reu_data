@@ -15,7 +15,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="90" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
@@ -40,7 +40,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="70" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="SLEEP" />
 		<set name="targetType" val="ONE" />
@@ -64,7 +64,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="70" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="ROOT" />
 		<set name="targetType" val="ONE" />
@@ -90,7 +90,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="50" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
@@ -117,7 +117,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="90" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
@@ -141,7 +141,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
@@ -167,7 +167,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="90" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
@@ -356,7 +356,7 @@
 		<set name="isDebuff" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="MUTE" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -424,7 +424,7 @@
 		<set name="magicLvl" val="60" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="95" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="ROOT" />
 		<set name="targetType" val="ONE" />
@@ -722,7 +722,7 @@
 		<set name="magicLvl" val="70" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="75000" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="AURA" />
@@ -803,7 +803,7 @@
 		<set name="magicLvl" val="70" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1078,7 +1078,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1107,7 +1107,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="35" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="8000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
@@ -1270,7 +1270,7 @@
 		<!-- Freya retail confirmed -->
 		<set name="operateType" val="P" />
 		<set name="power" val="0" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="stayAfterDeath" val="true" />
 		<set name="targetType" val="SELF" />
@@ -1294,7 +1294,7 @@
 		<table name="#rateSpd"> 1 0.5 0.5 0 </table>
 		<set name="operateType" val="P" />
 		<set name="power" val="0" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="stayAfterDeath" val="true" />
 		<set name="targetType" val="SELF" />

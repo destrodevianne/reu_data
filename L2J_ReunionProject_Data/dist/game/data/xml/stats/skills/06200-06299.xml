@@ -158,7 +158,7 @@
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="5000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="FEAR" />
@@ -357,7 +357,7 @@
 		<set name="magicLvl" val="84" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="AURA" />
@@ -845,7 +845,7 @@
 		<set name="mpConsume" val="85" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />

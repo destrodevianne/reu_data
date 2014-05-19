@@ -14,7 +14,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="2000" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
@@ -54,7 +54,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
@@ -123,7 +123,7 @@
 		<set name="mpInitialConsume" val="14" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="DEBUFF" />
@@ -145,7 +145,7 @@
 		<set name="isDebuff" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="MUTE" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -165,7 +165,7 @@
 		<set name="mpInitialConsume" val="15" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="-1" /> <!-- Land Always -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="stayAfterDeath" val="true" />
 		<set name="targetType" val="ONE" />
@@ -317,7 +317,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="POISON" />
@@ -343,7 +343,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="POISON" />
@@ -369,7 +369,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="1000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="POISON" />
@@ -521,7 +521,7 @@
 		<set name="mpInitialConsume" val="22" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="ROOT" />
 		<set name="targetType" val="ONE" />
@@ -659,7 +659,7 @@
 		<set name="magicLvl" val="84" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
@@ -685,7 +685,7 @@
 		<set name="magicLvl" val="84" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
@@ -712,7 +712,7 @@
 		<set name="magicLvl" val="84" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="80" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />

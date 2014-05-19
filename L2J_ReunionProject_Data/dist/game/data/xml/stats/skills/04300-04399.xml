@@ -109,7 +109,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="70" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="ROOT" />
 		<set name="targetType" val="AREA" />
@@ -194,7 +194,7 @@
 		<set name="magicLvl" val="60" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="30" /> <!-- Freya retail 0, no level depend, possibly done differently -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="PARALYZE" />
@@ -217,7 +217,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
@@ -239,7 +239,7 @@
 		<set name="magicLvl" val="60" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1022,7 +1022,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1049,7 +1049,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1072,7 +1072,7 @@
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="DEBUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
@@ -1394,7 +1394,7 @@
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A3" />
 		<set name="power" val="100" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="skillType" val="AGGDEBUFF" />
 		<set name="targetType" val="AURA" />
 		<for>

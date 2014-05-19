@@ -25,7 +25,7 @@
 		<set name="magicLvl" val="40" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
@@ -146,7 +146,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
 		<set name="targetType" val="ONE" />
@@ -194,7 +194,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
@@ -215,7 +215,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
@@ -268,7 +268,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="12000" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
@@ -486,7 +486,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
@@ -510,7 +510,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
@@ -669,7 +669,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
@@ -689,7 +689,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
@@ -711,7 +711,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
@@ -733,7 +733,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="ONE" />
@@ -834,7 +834,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
@@ -856,7 +856,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="POISON" />
 		<set name="targetType" val="ONE" />
@@ -969,7 +969,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="CON" />
 		<set name="skillType" val="STUN" />
 		<set name="targetType" val="ONE" />
@@ -1036,7 +1036,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
 		<set name="targetType" val="ONE" />
@@ -1058,7 +1058,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
@@ -1108,7 +1108,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="MUTE" />
 		<set name="targetType" val="ONE" />
@@ -1131,7 +1131,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PARALYZE" />
 		<set name="targetType" val="ONE" />
@@ -1320,7 +1320,7 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="40" /> <!-- Base Land Rate -->
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="reuseDelay" val="30000" />
 		<set name="basicProperty" val="MEN" />
 		<set name="skillType" val="PARALYZE" />

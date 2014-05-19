@@ -12,7 +12,7 @@
 		<set name="magicLvl" val="99" />
 		<set name="maxNegated" val="20" />
 		<set name="operateType" val="A1" />
-		<set name="pvp" val="true" />
+		<set name="offensive" val="true" />
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Cancel" noicon="1" val="0" effectPower="100" />
