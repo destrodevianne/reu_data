@@ -396,7 +396,6 @@
 		<set name="coolTime" val="300" />
 		<set name="effectRange" val="600" />
 		<set name="hitTime" val="1500" />
-		<set name="isDebuff" val="true" />
 		<set name="lvlBonusRate" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />

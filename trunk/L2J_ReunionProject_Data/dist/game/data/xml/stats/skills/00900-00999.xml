@@ -667,6 +667,7 @@
 		<set name="targetType" val="SELF" />
 		<set name="transformId" val="219" />
 		<for>
+			<effect name="MySummonKill" noicon="1" abnormalTime="1" val="0"/>
 			<effect name="Transformation" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="transform">
 				<mul order="0x30" stat="pAtk" val="1.4" />
 				<mul order="0x30" stat="mAtk" val="1.4" />
@@ -692,6 +693,7 @@
 		<set name="targetType" val="SELF" />
 		<set name="transformId" val="221" />
 		<for>
+			<effect name="MySummonKill" noicon="1" abnormalTime="1" val="0"/>
 			<effect name="Transformation" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="transform">
 				<mul order="0x30" stat="pAtk" val="1.4" />
 				<mul order="0x30" stat="mAtk" val="1.4" />
@@ -717,6 +719,7 @@
 		<set name="targetType" val="SELF" />
 		<set name="transformId" val="220" />
 		<for>
+			<effect name="MySummonKill" noicon="1" abnormalTime="1" val="0"/>
 			<effect name="Transformation" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="transform">
 				<mul order="0x30" stat="pAtk" val="1.4" />
 				<mul order="0x30" stat="mAtk" val="1.4" />
@@ -974,7 +977,6 @@
 		<set name="element" val="0" /> <!-- Fire -->
 		<set name="elementPower" val="20" />
 		<set name="hitTime" val="1080" />
-		<set name="isDebuff" val="true" />
 		<set name="lvlBonusRate" val="1" />
 		<set name="magicLvl" val="81" />
 		<set name="mpConsume" val="35" />
@@ -1757,6 +1759,7 @@
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
 		<set name="hitTime" val="1000" />
+		<set name="isDebuff" val="true" />
 		<set name="magicLvl" val="83" />
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
@@ -1888,7 +1891,6 @@
 		<set name="condition" val="16" /> <!-- Crit -->
 		<set name="effectRange" val="800" />
 		<set name="hitTime" val="1080" />
-		<set name="isDebuff" val="true" />
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume" val="82" />
 		<set name="nextActionAttack" val="true" />

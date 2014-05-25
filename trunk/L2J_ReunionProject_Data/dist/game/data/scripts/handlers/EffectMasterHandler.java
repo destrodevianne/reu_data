@@ -102,6 +102,7 @@ public final class EffectMasterHandler
 		ManaHealPercent.class,
 		MpConsumePerLevel.class,
 		Mute.class,
+		MySummonKill.class,
 		Negate.class,
 		NoblesseBless.class,
 		OpenChest.class,
