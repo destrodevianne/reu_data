@@ -1155,7 +1155,6 @@
 		<set name="elementPower" val="20" />
 		<set name="fanRange" val="0,0,200,180" />
 		<set name="hitTime" val="1800" />
-		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="lvlBonusRate" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
