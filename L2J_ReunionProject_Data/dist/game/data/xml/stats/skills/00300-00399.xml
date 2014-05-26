@@ -1695,7 +1695,6 @@
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
 		<set name="hitTime" val="4000" />
-		<set name="isDebuff" val="true" />
 		<set name="lvlBonusRate" val="1" />
 		<set name="magicLvl" val="77" />
 		<set name="mpConsume" val="78" />
