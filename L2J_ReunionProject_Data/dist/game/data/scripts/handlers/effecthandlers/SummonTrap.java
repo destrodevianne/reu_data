@@ -19,6 +19,7 @@
 package handlers.effecthandlers;
 
 import l2r.gameserver.datatables.sql.NpcTable;
+import l2r.gameserver.enums.ZoneIdType;
 import l2r.gameserver.idfactory.IdFactory;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.actor.instance.L2TrapInstance;
@@ -26,6 +27,7 @@ import l2r.gameserver.model.actor.templates.L2NpcTemplate;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.stats.Env;
+import l2r.gameserver.network.SystemMessageId;
 
 public class SummonTrap extends L2Effect
 {
@@ -59,9 +61,10 @@ public class SummonTrap extends L2Effect
 			return false;
 		}
 		
-		if (player.getTrap() != null)
+		if (player.isInsideZone(ZoneIdType.PEACE))
 		{
-			player.getTrap().unSummon();
+			player.sendPacket(SystemMessageId.A_MALICIOUS_SKILL_CANNOT_BE_USED_IN_PEACE_ZONE);
+			return false;
 		}
 		
 		final L2NpcTemplate npcTemplate = NpcTable.getInstance().getTemplate(_npcId);
@@ -71,13 +74,19 @@ public class SummonTrap extends L2Effect
 			return false;
 		}
 		
-		final L2TrapInstance trap = new L2TrapInstance(IdFactory.getInstance().getNextId(), npcTemplate, player, _despawnTime);
+		if (player.getTrapsCount() >= 5)
+		{
+			player.destroyFirstTrap();
+		}
+		
+		int npcId = IdFactory.getInstance().getNextId();
+		final L2TrapInstance trap = new L2TrapInstance(npcId, npcTemplate, player, _despawnTime);
 		trap.setCurrentHp(trap.getMaxHp());
 		trap.setCurrentMp(trap.getMaxMp());
 		trap.setIsInvul(true);
 		trap.setHeading(player.getHeading());
 		trap.spawnMe(player.getX(), player.getY(), player.getZ());
-		player.setTrap(trap);
+		player.addTrap(npcId, npcTemplate, _despawnTime);
 		return true;
 	}
 }
