@@ -1482,7 +1482,7 @@
 	<skill id="1553" levels="1" name="Chain Heal">
 		<!-- High Five Skill -->
 		<set name="affectLimit" val="7-12" />
-		<set name="affectRange" val="350" />
+		<set name="affectRange" val="900" />
 		<set name="aggroPoints" val="398" />
 		<set name="castRange" val="900" />
 		<set name="effectRange" val="1400" />
