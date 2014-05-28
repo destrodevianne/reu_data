@@ -1748,7 +1748,7 @@
 			<using kind="SHIELD" />
 		</cond>
 		<for>
-			<effect name="TargetMe" abnormalTime="3" val="0" abnormalLvl="1" abnormalType="lock" />
+			<effect name="GetAgro" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="985" levels="1" name="Challenge for Fate">

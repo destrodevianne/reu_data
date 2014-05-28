@@ -81,6 +81,7 @@ public final class EffectMasterHandler
 		Fear.class,
 		FocusSouls.class,
 		Fusion.class,
+		GetAgro.class,
 		GiveSp.class,
 		Grow.class,
 		Harvesting.class,
