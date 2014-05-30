@@ -392,11 +392,12 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
+		<set name="affectRange" val="200" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="CONT" />
-		<set name="targetType" val="ONE" />
+		<set name="targetType" val="AREA_FRIENDLY" />
 		<for>
 			<effect name="Buff" abnormalTime="7" val="0" abnormalLvl="1" abnormalType="combination">
 				<add order="0x40" stat="pDef" val="1000" />
@@ -408,19 +409,21 @@
 	<skill id="5124" levels="1" name="Anti-Music">
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
+		<set name="affectRange" val="200" />
 		<set name="operateType" val="A1" />
 		<set name="skillType" val="CONT" />
-		<set name="targetType" val="ONE" />
+		<set name="targetType" val="AREA_FRIENDLY" />
 	</skill>
 	<skill id="5125" levels="1" name="Maximum Resist Status">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
+		<set name="affectRange" val="200" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="CONT" />
-		<set name="targetType" val="ONE" />
+		<set name="targetType" val="AREA_FRIENDLY" />
 		<for>
 			<effect name="Buff" abnormalTime="7" val="0" abnormalLvl="1" abnormalType="combination">
 				<sub order="0x40" stat="debuffVuln" val="60" />
@@ -431,11 +434,12 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
+		<set name="affectRange" val="200" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="CONT" />
-		<set name="targetType" val="ONE" />
+		<set name="targetType" val="AREA_FRIENDLY" />
 		<for>
 			<effect name="Buff" abnormalTime="7" val="0" abnormalLvl="1" abnormalType="combination">
 				<mul order="0x30" stat="regHp" val="1.4" />
@@ -452,7 +456,7 @@
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="CONT" /> <!-- FIXME: This is not retail like -->
-		<set name="targetType" val="AURA" /> <!-- FIXME: Aura Friendly ? -->
+		<set name="targetType" val="AREA_FRIENDLY" />
 		<for>
 			<effect name="Buff" abnormalTime="7" val="0" abnormalLvl="1" abnormalType="combination">
 				<mul order="0x30" stat="pAtk" val="1.2" />
@@ -464,11 +468,12 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
+		<set name="affectRange" val="200" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="CONT" />
-		<set name="targetType" val="ONE" />
+		<set name="targetType" val="AREA_FRIENDLY" />
 		<for>
 			<effect name="Buff" abnormalTime="7" val="0" abnormalLvl="1" abnormalType="combination">
 				<mul order="0x30" stat="pAtk" val="1.2">
