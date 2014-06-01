@@ -161,6 +161,7 @@ public class QuestMasterHandler
 		Q00196_SevenSignsSealOfTheEmperor.class,
 		Q00197_SevenSignsTheSacredBookOfSeal.class,
 		Q00198_SevenSignsEmbryo.class,
+		Q00212_TrialOfDuty.class,
 		Q00230_TestOfSummoner.class,
 		Q00234_FatesWhisper.class,
 		Q00235_MimirsElixir.class,
