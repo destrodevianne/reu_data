@@ -32,10 +32,4 @@ public class MySummonKill extends L2Effect
 		}
 		return true;
 	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
-	}
 }
