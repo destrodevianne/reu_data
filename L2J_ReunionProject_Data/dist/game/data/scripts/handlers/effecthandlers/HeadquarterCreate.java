@@ -44,7 +44,7 @@ public final class HeadquarterCreate extends L2Effect
 	public HeadquarterCreate(Env env, EffectTemplate template)
 	{
 		super(env, template);
-
+		
 		if (template.getParameters() != null)
 		{
 			_isAdvanced = template.getParameters().getBool("isAdvanced", false);
