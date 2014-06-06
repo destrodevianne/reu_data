@@ -3,10 +3,10 @@
 <!-- Created with Lineage II - Multisell Manager -->
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
   <!-- Mithril Breastplate -->
-  <item id="1">
+  <item>
     <ingredient id="57" count="1000000"/>
     <production id="58" count="1"/>
     <production id="59" count="1"/>
@@ -15,7 +15,7 @@
   </item>
 
   <!-- Brigandine Tunic -->
-  <item id="2">
+  <item>
     <ingredient id="57" count="1000000"/>
     <production id="352" count="1"/>
     <production id="2378" count="1"/>
@@ -26,7 +26,7 @@
   </item>
 
   <!-- Reinforced Leather Shirt -->
-  <item id="3">
+  <item>
     <ingredient id="57" count="1000000"/>
     <production id="394" count="1"/>
     <production id="416" count="1"/>
@@ -35,7 +35,7 @@
   </item>
 
   <!-- Manticore Skin Shirt -->
-  <item id="4">
+  <item>
     <ingredient id="57" count="1000000"/>
     <production id="395" count="1"/>
     <production id="417" count="1"/>
@@ -44,7 +44,7 @@
   </item>
 
   <!-- Tunic of Knowledge -->
-  <item id="5">
+  <item>
     <ingredient id="57" count="1000000"/>
     <production id="436" count="1"/>
     <production id="469" count="1"/>
@@ -52,7 +52,7 @@
   </item>
 
   <!-- Mithril Tunic -->
-  <item id="6">
+  <item>
     <ingredient id="57" count="1000000"/>
     <production id="437" count="1"/>
     <production id="470" count="1"/>
@@ -60,7 +60,7 @@
   </item>
 
   <!-- Clan Oath Armor -->
-  <item id="7">
+  <item>
     <ingredient id="57" count="3000000"/>
     <production id="7851" count="1"/>
     <production id="7853" count="1"/>
@@ -69,7 +69,7 @@
   </item>
 
   <!-- Clan Oath Brigandine -->
-  <item id="8">
+  <item>
     <ingredient id="57" count="3000000"/>
     <production id="7854" count="1"/>
     <production id="7856" count="1"/>
@@ -78,7 +78,7 @@
   </item>
 
   <!-- Clan Oath Aketon -->
-  <item id="9">
+  <item>
     <ingredient id="57" count="3000000"/>
     <production id="7857" count="1"/>
     <production id="7858" count="1"/>

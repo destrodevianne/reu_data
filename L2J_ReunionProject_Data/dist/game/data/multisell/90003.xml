@@ -3,10 +3,10 @@
 <!-- Created with Lineage II - Multisell Manager -->
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
   <!-- Chain Mail Shirt -->
-  <item id="1">
+  <item>
     <ingredient id="57" count="6000000"/>
     <production id="354" count="1"/>
     <production id="381" count="1"/>
@@ -17,7 +17,7 @@
   </item>
 
   <!-- Composite Armor -->
-  <item id="2">
+  <item>
     <ingredient id="57" count="6000000"/>
     <production id="60" count="1"/>
     <production id="517" count="1"/>
@@ -26,7 +26,7 @@
   </item>
 
   <!-- Full Plate Armor -->
-  <item id="3">
+  <item>
     <ingredient id="57" count="7000000"/>
     <production id="356" count="1"/>
     <production id="2414" count="1"/>
@@ -36,7 +36,7 @@
   </item>
 
   <!-- Mithril Shirt -->
-  <item id="4">
+  <item>
     <ingredient id="57" count="6000000"/>
     <production id="397" count="1"/>
     <production id="2387" count="1"/>
@@ -44,7 +44,7 @@
   </item>
 
   <!-- Plated Leather -->
-  <item id="5">
+  <item>
     <ingredient id="57" count="6000000"/>
     <production id="398" count="1"/>
     <production id="418" count="1"/>
@@ -53,7 +53,7 @@
   </item>
 
   <!-- Theca Leather Armor -->
-  <item id="6">
+  <item>
     <ingredient id="57" count="6000000"/>
     <production id="400" count="1"/>
     <production id="420" count="1"/>
@@ -62,7 +62,7 @@
   </item>
 
   <!-- Drake Leather Armor -->
-  <item id="7">
+  <item>
     <ingredient id="57" count="6000000"/>
     <production id="401" count="1"/>
     <production id="2437" count="1"/>
@@ -70,7 +70,7 @@
   </item>
 
   <!-- Karmian Tunic -->
-  <item id="8">
+  <item>
     <ingredient id="57" count="6000000"/>
     <production id="439" count="1"/>
     <production id="471" count="1"/>
@@ -79,7 +79,7 @@
   </item>
 
   <!-- Demon's Tunic -->
-  <item id="9">
+  <item>
     <ingredient id="57" count="6000000"/>
     <production id="441" count="1"/>
     <production id="472" count="1"/>
@@ -88,7 +88,7 @@
   </item>
 
   <!-- Divine Tunic -->
-  <item id="10">
+  <item>
     <ingredient id="57" count="6000000"/>
     <production id="442" count="1"/>
     <production id="473" count="1"/>

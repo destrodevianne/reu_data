@@ -1,64 +1,64 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
 
-  <item id="1">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="14521" count="1"/>
   </item> 
 
- <item id="1">
+ <item>
     <ingredient id="40002" count="60"/>
     <production id="13433" count="1"/>
   </item>
 
-  <item id="2">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="13442" count="1"/>
   </item>
 
-  <item id="3">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="13138" count="1"/>
   </item>
 
-  <item id="4">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="13441" count="1"/>
   </item>
 
-  <item id="5">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="13443" count="1"/>
   </item>
 
 
- <item id="1">
+ <item>
     <ingredient id="40002" count="60"/>
     <production id="14524" count="1"/>
   </item> 
-  <item id="20">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="13436" count="1"/>
   </item>
 
 
- <item id="26">
+ <item>
     <ingredient id="40002" count="60"/>
     <production id="13452" count="1"/>
   </item>
-<item id="17">
+<item>
     <ingredient id="40002" count="60"/>
     <production id="13141" count="1"/>
   </item>
-<item id="23">
+<item>
     <ingredient id="40002" count="60"/>
     <production id="13451" count="1"/>
   </item>
 
-  <item id="29">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="13453" count="1"/>
   </item>

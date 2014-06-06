@@ -3,10 +3,10 @@
 <!-- S-84 Armor -->
 <!-- © 2011 by NeverMore -->
 
-<list maintainEnchantment="true">
+<list maintainEnchantment="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
   <!-- Elegia Heavy -->
-  <item id="1">
+  <item>
   <ingredient id="3483" count="50000"/>
     <production id="15575" count="1"/>
     <production id="15572" count="1"/>
@@ -17,7 +17,7 @@
   </item>
 
   <!-- Elegia Leather -->
-  <item id="2">
+  <item>
   <ingredient id="3483" count="50000"/>
     <production id="15576" count="1"/>
     <production id="15573" count="1"/>
@@ -27,7 +27,7 @@
   </item>
 
   <!-- Elegia Robe -->
-  <item id="3">
+  <item>
     <ingredient id="3483" count="50000"/>
     <production id="15577" count="1"/>
 	<production id="15574" count="1"/>
@@ -37,19 +37,19 @@
   </item>
 
   <!-- Elegia Shield -->
-  <item id="16">
+  <item>
     <ingredient id="3483" count="10000"/>
     <production id="15587" count="1"/>
   </item>
 
   <!-- Elegia Sigil -->
-  <item id="17">
+  <item>
   <ingredient id="3483" count="10000"/>
     <production id="15588" count="1"/>
   </item>
 
   <!-- Vorpal Heavy -->
-  <item id="1">
+  <item>
     <ingredient id="3483" count="50000"/>
     <production id="15592" count="1"/>
     <production id="15589" count="1"/>
@@ -59,7 +59,7 @@
   </item>
 
   <!-- Vorpal Leather -->
-  <item id="2">
+  <item>
   <ingredient id="3483" count="50000"/>
     <production id="15593" count="1"/>
     <production id="15590" count="1"/>
@@ -69,7 +69,7 @@
   </item>
 
   <!-- Vorpal Robe -->
-  <item id="3">
+  <item>
   <ingredient id="3483" count="50000"/>
     <production id="15594" count="1"/>
     <production id="15591" count="1"/>
@@ -79,19 +79,19 @@
   </item>
 
   <!-- Vorpal Shield -->
-  <item id="16">
+  <item>
   <ingredient id="3483" count="10000"/>
     <production id="15604" count="1"/>
   </item>
 
   <!-- Vorpal Sigil -->
-  <item id="17">
+  <item>
     <ingredient id="3483" count="10000"/>
     <production id="15605" count="1"/>
   </item>
 
   <!-- Moirai Heavy -->
-  <item id="1">
+  <item>
   <ingredient id="3483" count="50000"/>
      <production id="15609" count="1"/>
     <production id="15606" count="1"/>
@@ -101,7 +101,7 @@
   </item>
 
   <!-- Moirai Leather -->
-  <item id="2">
+  <item>
     <ingredient id="3483" count="50000"/>
      <production id="15610" count="1"/>
     <production id="15607" count="1"/>
@@ -111,7 +111,7 @@
   </item>
 
   <!-- Moirai Robe -->
-  <item id="3">
+  <item>
     <ingredient id="3483" count="10000"/>
     <production id="15611" count="1"/>
     <production id="15608" count="1"/>
@@ -121,13 +121,13 @@
   </item>
 
   <!-- Moirai Shield -->
-  <item id="16">
+  <item>
     <ingredient id="3483" count="10000"/>
     <production id="15621" count="1"/>
   </item>
 
   <!-- Moirai Sigil -->
-  <item id="17">
+  <item>
       <ingredient id="3483" count="10000"/>
     <production id="15622" count="1"/>
   </item>

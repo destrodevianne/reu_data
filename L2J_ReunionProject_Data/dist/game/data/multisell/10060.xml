@@ -3,15 +3,15 @@
 <!-- safe scrols -->
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
   <!-- safe armor -->
-  <item id="1">
+  <item>
     <ingredient id="40000" count="2"/>
     <production id="40109" count="1"/>
   </item>
  <!-- safe weapon -->
-  <item id="6">
+  <item>
     <ingredient id="40000" count="4"/>
     <production id="40104" count="1"/>
   </item>

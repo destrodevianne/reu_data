@@ -3,10 +3,10 @@
 <!-- Created with Lineage II - Multisell Manager -->
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
   <!-- Necklace of Black Ore -->
-  <item id="1">
+  <item>
     <ingredient id="57" count="8000000"/>
     <production id="926" count="1"/>
     <production id="864" count="1"/>
@@ -16,7 +16,7 @@
   </item>
 
   <!-- Adamantite Necklace -->
-  <item id="2">
+  <item>
     <ingredient id="57" count="8000000"/>
     <production id="918" count="1"/>
     <production id="856" count="1"/>
@@ -26,7 +26,7 @@
   </item>
 
   <!-- Necklace of Aid -->
-  <item id="3">
+  <item>
     <ingredient id="57" count="8000000"/>
     <production id="935" count="1"/>
     <production id="873" count="1"/>
@@ -36,7 +36,7 @@
   </item>
 
   <!-- Necklace of Mana -->
-  <item id="4">
+  <item>
     <ingredient id="57" count="8000000"/>
     <production id="921" count="1"/>
     <production id="859" count="1"/>
@@ -46,7 +46,7 @@
   </item>
 
   <!-- Necklace of Summoning -->
-  <item id="5">
+  <item>
     <ingredient id="57" count="8000000"/>
     <production id="927" count="1"/>
     <production id="865" count="1"/>

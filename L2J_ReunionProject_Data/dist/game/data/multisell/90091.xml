@@ -3,49 +3,49 @@
 <!-- Talisman -->
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
-<item id="1">
+<item>
 		<ingredient id="57" count="12000" />
 		<production id="10533" count="1" />
 	</item>
-	<item id="2">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10534" count="1" />
 	</item>
-	<item id="3">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10535" count="1" />
 	</item>
-	<item id="4">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10536" count="1" />
 	</item>
-	<item id="5">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10537" count="1" />
 	</item>
-	<item id="6">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10538" count="1" />
 	</item>
-	<item id="7">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10539" count="1" />
 	</item>
-	<item id="8">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10540" count="1" />
 	</item>
-	<item id="9">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10541" count="1" />
 	</item>
-	<item id="10">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10542" count="1" />
 	</item>
-	<item id="11">
+	<item>
 		<ingredient id="57" count="12000" />
 		<production id="10543" count="1" />
 	</item>
