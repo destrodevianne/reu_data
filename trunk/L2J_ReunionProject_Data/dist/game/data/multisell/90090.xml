@@ -3,36 +3,36 @@
 <!-- special cloak -->
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
 <!-- soul cloak zaken -->
-  <item id="1">
+  <item>
     <ingredient id="40002" count="300000"/>
     <production id="21719" count="1"/>
   </item>
   <!-- soul cloak freya -->
-  <item id="13">
+  <item>
     <ingredient id="40002" count="300000"/>
     <production id="21720" count="1"/>
   </item>
   <!-- soul cloak tezza -->
-  <item id="14">
+  <item>
     <ingredient id="40002" count="300000"/>
     <production id="21721" count="1"/>
   </item>
 
 <!--  cloak zaken -->
-  <item id="1">
+  <item>
     <ingredient id="40002" count="150000"/>
     <production id="21716" count="1"/>
   </item>
   <!--  cloak freya -->
-  <item id="13">
+  <item>
     <ingredient id="40002" count="150000"/>
     <production id="21717" count="1"/>
   </item>
   <!--  cloak tezza -->
-  <item id="14">
+  <item>
     <ingredient id="40002" count="150000"/>
     <production id="21718" count="1"/>
   </item>

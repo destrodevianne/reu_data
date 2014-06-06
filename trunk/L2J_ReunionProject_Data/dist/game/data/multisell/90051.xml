@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
 <!-- Dynasty Helmet -->
-  <item id="16">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9422" count="1"/>
   </item>
 
   <!-- Dynasty Gauntlet -->
-  <item id="17">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9423" count="1"/>
   </item>
 
   <!-- Dynasty Boots -->
-  <item id="18">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9424" count="1"/>
   </item>
 
   <!-- Dynasty Gaiter -->
-  <item id="31">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9421" count="1"/>
   </item>
@@ -30,37 +30,37 @@
 
 
   <!-- Dynasty Breast Plate -->
-  <item id="26">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9416" count="1"/>
   </item>
 
   <!-- Dynasty Breast Plate - Bard -->
-  <item id="27">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9420" count="1"/>
   </item>
 
   <!-- Dynasty Breast Plate - Force Master -->
-  <item id="28">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9419" count="1"/>
   </item>
 
   <!-- Dynasty Breast Plate - Shield Master -->
-  <item id="29">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9417" count="1"/>
   </item>
 
   <!-- Dynasty Breast Plate - Weapon Master -->
-  <item id="30">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9418" count="1"/>
   </item>
 
 <!-- Dynasty Shield -->
-  <item id="25">
+  <item>
     <ingredient id="40002" count="40"/>
     <production id="9441" count="1"/>
   </item>

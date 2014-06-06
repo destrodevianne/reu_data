@@ -3,41 +3,41 @@
 <!-- Quest -->
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
   
   <!-- Hellfire Oil
    -->
-  <item id="2">
+  <item>
     <ingredient id="40002" count="2000"/>
     <production id="6033" count="1"/>
   </item>
   
   <!-- Lunargent -->
-  <item id="3">
+  <item>
     <ingredient id="40002" count="2000"/>
     <production id="6029" count="1"/>
   </item>
 
    <!-- Baium-->
-  <item id="4">
+  <item>
     <ingredient id="40002" count="2000"/>
     <production id="4295" count="1"/>
   </item>
 
    <!-- Antharas -->
-  <item id="5">
+  <item>
     <ingredient id="40002" count="2000"/>
     <production id="3865" count="1"/>
   </item>
   
   <!-- Valakas -->
-  <item id="6">
+  <item>
     <ingredient id="40002" count="2000"/>
     <production id="7267" count="1"/>
   </item>
   
   <!-- Frintezza -->
-  <item id="7">
+  <item>
     <ingredient id="40002" count="6000"/>
     <production id="7256" count="1"/>
 	<production id="7257" count="1"/>

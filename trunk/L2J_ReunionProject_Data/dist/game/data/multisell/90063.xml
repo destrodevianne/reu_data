@@ -1,42 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
 
-<item id="1">
+<item>
     <ingredient id="40002" count="80"/>
     <production id="16171" count="1"/>
   </item>
 
 
- <item id="1">
+ <item>
     <ingredient id="40002" count="80"/>
     <production id="15592" count="1"/>
   </item>
 
-  <item id="2">
+  <item>
     <ingredient id="40002" count="80"/>
     <production id="15589" count="1"/>
   </item>
 
-  <item id="3">
+  <item>
     <ingredient id="40002" count="80"/>
     <production id="15595" count="1"/>
   </item>
 
-  <item id="4">
+  <item>
     <ingredient id="40002" count="80"/>
     <production id="15598" count="1"/>
   </item>
 
-  <item id="5">
+  <item>
     <ingredient id="40002" count="80"/>
     <production id="15601" count="1"/>
   </item>
 
    <!-- Vorpal Shield -->
-  <item id="16">
+  <item>
   <ingredient id="40002" count="80"/>
     <production id="15604" count="1"/>
   </item>

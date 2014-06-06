@@ -3,231 +3,231 @@
 <!-- S-80 Weapon -->
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
   <!-- Dynasty Phantom - Acumen -->
-  <item id="1">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10771" count="1"/>
   </item>
 
   <!-- Dynasty Phantom - Conversion -->
-  <item id="2">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10772" count="1"/>
   </item>
 
   <!-- Dynasty Phantom - Mana Up -->
-  <item id="3">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10773" count="1"/>
   </item>
 
   <!-- Dynasty Sword - Focus -->
-  <item id="4">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10750" count="1"/>
   </item>
 
   <!-- Dynasty Sword - Health -->
-  <item id="5">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10751" count="1"/>
   </item>
 
   <!-- Dynasty Sword - Light -->
-  <item id="6">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10752" count="1"/>
   </item>
 
   <!-- Dynasty Rapier - Focus -->
-  <item id="7">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10783" count="1"/>
   </item>
 
   <!-- Dynasty Rapier - Health -->
-  <item id="8">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10784" count="1"/>
   </item>
 
   <!-- Dynasty Rapier - Light -->
-  <item id="9">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10785" count="1"/>
   </item>
 
   <!-- Dynasty Halberd - Anger -->
-  <item id="10">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10765" count="1"/>
   </item>
 
   <!-- Dynasty Halberd - Critical Stun -->
-  <item id="11">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10766" count="1"/>
   </item>
 
   <!-- Dynasty Halberd - Light -->
-  <item id="12">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10767" count="1"/>
   </item>
 
   <!-- Dynasty Bagh-Nakh - Haste -->
-  <item id="13">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10768" count="1"/>
   </item>
 
   <!-- Dynasty Bagh-Nakh - Rsk. Evasion -->
-  <item id="14">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10769" count="1"/>
   </item>
 
   <!-- Dynasty Bagh-Nakh - Rsk. Haste -->
-  <item id="15">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10770" count="1"/>
   </item>
 
   <!-- Dynasty Knife - Critical Damage -->
-  <item id="16">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10762" count="1"/>
   </item>
 
   <!-- Dynasty Knife - Evasion -->
-  <item id="17">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10763" count="1"/>
   </item>
 
   <!-- Dynasty Knife - Focus -->
-  <item id="18">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10764" count="1"/>
   </item>
 
   <!-- Dynasty Crossbow - Cheap Shot -->
-  <item id="19">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10789" count="1"/>
   </item>
 
   <!-- Dynasty Crossbow - Focus -->
-  <item id="20">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10790" count="1"/>
   </item>
 
   <!-- Dynasty Crossbow - Guidance -->
-  <item id="21">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10791" count="1"/>
   </item>
 
   <!-- Dynasty Bow - Cheap Shot -->
-  <item id="22">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10781" count="1"/>
   </item>
 
   <!-- Dynasty Bow - Focus -->
-  <item id="23">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10780" count="1"/>
   </item>
   
   <!-- Dynasty Bow - Focus -->
-  <item id="23">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10782" count="1"/>
   </item>
 
   <!-- Dynasty Cudgel - Anger -->
-  <item id="24">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10756" count="1"/>
   </item>
 
   <!-- Dynasty Cudgel - Health -->
-  <item id="25">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10757" count="1"/>
   </item>
 
   <!-- Dynasty Cudgel - Rsk. Focus -->
-  <item id="26">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10758" count="1"/>
   </item>
 
   <!-- Dynasty Blade - Focus -->
-  <item id="27">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10754" count="1"/>
   </item>
 
   <!-- Dynasty Blade - Health -->
-  <item id="28">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10753" count="1"/>
   </item>
 
   <!-- Dynasty Blade - Light -->
-  <item id="29">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10755" count="1"/>
   </item>
 
   <!-- Dynasty Staff - Acumen -->
-  <item id="31">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10777" count="1"/>
   </item>
 
   <!-- Dynasty Staff - Conversion -->
-  <item id="32">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10778" count="1"/>
   </item>
 
   <!-- Dynasty Staff - Mana Up -->
-  <item id="33">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10779" count="1"/>
   </item>
 
   <!-- Dynasty Crusher - Anger -->
-  <item id="34">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10759" count="1"/>
   </item>
 
   <!-- Dynasty Crusher - Health -->
-  <item id="35">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10760" count="1"/>
   </item>
 
   <!-- Dynasty Crusher - Rsk. Focus -->
-  <item id="36">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10761" count="1"/>
   </item>
   <!-- dynasty dual sword -->
-  <item id="36">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="10792" count="1"/>
 </item>
 
   <!-- Dynasty dual dagger -->
-  <item id="36">
+  <item>
     <ingredient id="40002" count="60"/>
     <production id="14558" count="1"/>
   </item>

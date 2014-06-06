@@ -3,10 +3,10 @@
 <!-- Created with Lineage II - Multisell Manager -->
 
 
-<list maintainEnchantment="false">
+<list maintainEnchantment="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
   <!-- Zubei's Breastplate -->
-  <item id="1">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="357" count="1"/>
     <production id="383" count="1"/>
@@ -17,7 +17,7 @@
   </item>
 
   <!-- Zubei's Leather Shirt -->
-  <item id="2">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2384" count="1"/>
     <production id="2388" count="1"/>
@@ -27,7 +27,7 @@
   </item>
 
   <!-- Tunic of Zubei -->
-  <item id="3">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2397" count="1"/>
     <production id="2402" count="1"/>
@@ -37,7 +37,7 @@
   </item>
 
   <!-- Avadon Breastplate -->
-  <item id="4">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2376" count="1"/>
     <production id="2379" count="1"/>
@@ -48,7 +48,7 @@
   </item>
 
   <!-- Avadon Leather Armor -->
-  <item id="5">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2390" count="1"/>
     <production id="5715" count="1"/>
@@ -57,7 +57,7 @@
   </item>
 
   <!-- Avadon Robe -->
-  <item id="6">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2406" count="1"/>
     <production id="5716" count="1"/>
@@ -66,7 +66,7 @@
   </item>
 
   <!-- Blue Wolf Breastplate -->
-  <item id="7">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="358" count="1"/>
     <production id="2380" count="1"/>
@@ -76,7 +76,7 @@
   </item>
 
   <!-- Blue Wolf Leather Armor -->
-  <item id="8">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2391" count="1"/>
     <production id="5719" count="1"/>
@@ -85,7 +85,7 @@
   </item>
 
   <!-- Blue Wolf Tunic -->
-  <item id="9">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2398" count="1"/>
     <production id="2403" count="1"/>
@@ -95,7 +95,7 @@
   </item>
 
   <!-- Doom Plate Armor -->
-  <item id="10">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2381" count="1"/>
     <production id="5722" count="1"/>
@@ -105,7 +105,7 @@
   </item>
 
   <!-- Leather Armor of Doom -->
-  <item id="11">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2392" count="1"/>
     <production id="5723" count="1"/>
@@ -114,7 +114,7 @@
   </item>
 
   <!-- Tunic of Doom -->
-  <item id="12">
+  <item>
     <ingredient id="57" count="30000000"/>
     <production id="2399" count="1"/>
     <production id="2404" count="1"/>

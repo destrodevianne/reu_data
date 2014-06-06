@@ -1,192 +1,192 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 
-<list maintainEnchantment="true">
+<list maintainEnchantment="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
 
 
-  <item id="1">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="14521" count="1" enchantmentLevel="25"/>
   </item> 
 
- <item id="1">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="13433" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="2">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13442" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="3">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13138" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="4">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13441" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="5">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13443" count="1" enchantmentLevel="25"/>
   </item>
 
 
- <item id="1">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="14524" count="1" enchantmentLevel="25"/>
   </item> 
-  <item id="20">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13436" count="1" enchantmentLevel="25"/>
   </item>
 
 
- <item id="26">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="13452" count="1" enchantmentLevel="25"/>
   </item>
-<item id="17">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="13141" count="1" enchantmentLevel="25"/>
   </item>
-<item id="23">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="13451" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="29">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13453" count="1" enchantmentLevel="25"/>
   </item>
- <item id="18">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="14522" count="1" enchantmentLevel="25"/>
   </item>
-<item id="1">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="13434" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="2">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13444" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="3">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13446" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="4">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13445" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="5">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13139" count="1" enchantmentLevel="25"/>
   </item>
  
 
 
-<item id="18">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="14525" count="1" enchantmentLevel="25"/>
   </item>
 
- <item id="21">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="13437" count="1" enchantmentLevel="25"/>
   </item>
 
 
-  <item id="24">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13454" count="1" enchantmentLevel="25"/>
   </item>
 
 
-<item id="30">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="13456" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="27">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13455" count="1" enchantmentLevel="25"/>
   </item>
 
-<item id="18">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="13142" count="1" enchantmentLevel="25"/>
   </item>
 
 
-<item id="19">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="14520" count="1" enchantmentLevel="25"/>
   </item>
 
- <item id="1">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="13432" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="2">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13438" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="3">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13439" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="4">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13137" count="1" enchantmentLevel="25"/>
   </item>
 
-  <item id="5">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="13440" count="1" enchantmentLevel="25"/>
   </item>
 
-<item id="19">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="14523" count="1" enchantmentLevel="25"/>
   </item>
 
- <item id="19">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="13435" count="1" enchantmentLevel="25"/>
   </item>
 
-<item id="22">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="13448" count="1" enchantmentLevel="25"/>
   </item>
- <item id="25">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="13449" count="1" enchantmentLevel="25"/>
   </item>
- <item id="16">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="13140" count="1" enchantmentLevel="25"/>
   </item>
- <item id="28">
+ <item>
     <ingredient id="40000" count="8"/>
     <production id="13450" count="1" enchantmentLevel="25"/>
   </item>
-<item id="31">
+<item>
     <ingredient id="40000" count="8"/>
     <production id="13471" count="1" enchantmentLevel="25"/>
   </item>
-  <item id="32">
+  <item>
     <ingredient id="40000" count="8"/>
     <production id="12813" count="1" enchantmentLevel="25"/>
   </item>
