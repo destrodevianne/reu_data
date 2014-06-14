@@ -37,13 +37,13 @@ public class RebalanceHP extends L2Effect
 	{
 		super(env, template);
 	}
-	
+
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.REBALANCE_HP;
 	}
-	
+
 	@Override
 	public boolean onStart()
 	{
@@ -51,7 +51,7 @@ public class RebalanceHP extends L2Effect
 		{
 			return false;
 		}
-		
+
 		double fullHP = 0;
 		double currentHPs = 0;
 		final L2Party party = getEffector().getParty();
@@ -61,11 +61,17 @@ public class RebalanceHP extends L2Effect
 			{
 				continue;
 			}
-			
+
+			if (member.hasSummon())
+			{
+				fullHP += member.getSummon().getMaxHp();
+				currentHPs += member.getSummon().getCurrentHp();
+			}
+
 			fullHP += member.getMaxHp();
 			currentHPs += member.getCurrentHp();
 		}
-		
+
 		double percentHP = currentHPs / fullHP;
 		for (L2PcInstance member : party.getMembers())
 		{
@@ -73,7 +79,29 @@ public class RebalanceHP extends L2Effect
 			{
 				continue;
 			}
-			
+
+			if (member.hasSummon())
+			{
+				double newHP = member.getSummon().getMaxHp() * percentHP;
+				if (newHP > member.getSummon().getCurrentHp()) // The target gets healed
+				{
+					// The heal will be blocked if the current hp passes the limit
+					if (member.getSummon().getCurrentHp() > member.getSummon().getMaxRecoverableHp())
+					{
+						newHP = member.getSummon().getCurrentHp();
+					}
+					else if (newHP > member.getSummon().getMaxRecoverableHp())
+					{
+						newHP = member.getSummon().getMaxRecoverableHp();
+					}
+				}
+
+				member.getSummon().setCurrentHp(newHP);
+				StatusUpdate su = new StatusUpdate(member.getSummon());
+				su.addAttribute(StatusUpdate.CUR_HP, (int) member.getSummon().getCurrentHp());
+				member.getSummon().sendPacket(su);
+			}
+
 			double newHP = member.getMaxHp() * percentHP;
 			if (newHP > member.getCurrentHp()) // The target gets healed
 			{
@@ -87,7 +115,7 @@ public class RebalanceHP extends L2Effect
 					newHP = member.getMaxRecoverableHp();
 				}
 			}
-			
+
 			member.setCurrentHp(newHP);
 			StatusUpdate su = new StatusUpdate(member);
 			su.addAttribute(StatusUpdate.CUR_HP, (int) member.getCurrentHp());
