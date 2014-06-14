@@ -1,18 +1,18 @@
 /*
  * Copyright (C) 2004-2014 L2J DataPack
- * 
+ *
  * This file is part of L2J DataPack.
- * 
+ *
  * L2J DataPack is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * L2J DataPack is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -29,7 +29,7 @@ import l2r.gameserver.scripts.quests.*;
 public class QuestMasterHandler
 {
 	private static final Logger _log = Logger.getLogger(QuestMasterHandler.class.getName());
-	
+
 	private static final Class<?>[] QUESTS =
 	{
 		Q00001_LettersOfLove.class,
@@ -161,6 +161,7 @@ public class QuestMasterHandler
 		Q00196_SevenSignsSealOfTheEmperor.class,
 		Q00197_SevenSignsTheSacredBookOfSeal.class,
 		Q00198_SevenSignsEmbryo.class,
+		Q00211_TrialOfTheChallenger.class,
 		Q00212_TrialOfDuty.class,
 		Q00230_TestOfSummoner.class,
 		Q00234_FatesWhisper.class,
@@ -214,7 +215,10 @@ public class QuestMasterHandler
 		Q00292_BrigandsSweep.class,
 		Q00293_TheHiddenVeins.class,
 		Q00294_CovertBusiness.class,
+		Q00295_DreamingOfTheSkies.class,
+		Q00296_TarantulasSpiderSilk.class,
 		Q00297_GatekeepersFavor.class,
+		Q00298_LizardmensConspiracy.class,
 		Q00300_HuntingLetoLizardman.class,
 		Q00303_CollectArrowheads.class,
 		Q00306_CrystalOfFireAndIce.class,
@@ -403,7 +407,7 @@ public class QuestMasterHandler
 		Q10504_JewelOfAntharas.class,
 		Q10505_JewelOfValakas.class
 	};
-	
+
 	public static void main(String[] args)
 	{
 		for (Class<?> quest : QUESTS)
