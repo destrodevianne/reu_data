@@ -855,6 +855,7 @@
 		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="invincibility" />
 		<set name="affectRange" val="900" />
+		<set name="affectLimit" val="5-12" />
 		<set name="hitTime" val="5000" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="itemConsumeCount" val="1" />
