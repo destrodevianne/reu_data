@@ -393,6 +393,7 @@
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
 		<set name="affectRange" val="200" />
+		<set name="affectLimit" val="5-12" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
@@ -410,6 +411,7 @@
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="affectRange" val="200" />
+		<set name="affectLimit" val="5-12" />
 		<set name="operateType" val="A1" />
 		<set name="skillType" val="CONT" />
 		<set name="targetType" val="AREA_FRIENDLY" />
@@ -419,6 +421,7 @@
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
 		<set name="affectRange" val="200" />
+		<set name="affectLimit" val="5-12" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
@@ -435,6 +438,7 @@
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
 		<set name="affectRange" val="200" />
+		<set name="affectLimit" val="5-12" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
@@ -452,6 +456,7 @@
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
 		<set name="affectRange" val="200" />
+		<set name="affectLimit" val="5-12" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
@@ -469,6 +474,7 @@
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
 		<set name="affectRange" val="200" />
+		<set name="affectLimit" val="5-12" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
@@ -489,11 +495,13 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="7" />
 		<set name="abnormalType" val="combination" />
+		<set name="affectRange" val="200" />
+		<set name="affectLimit" val="5-12" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="80" />
 		<set name="operateType" val="A2" />
 		<set name="skillType" val="CONT" />
-		<set name="targetType" val="ONE" />
+		<set name="targetType" val="AREA_FRIENDLY" />
 		<for>
 			<effect name="Buff" abnormalTime="7" val="0" abnormalLvl="1" abnormalType="combination">
 				<add order="0x40" stat="rEvas" val="15" />
