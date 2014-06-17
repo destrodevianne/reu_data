@@ -1,18 +1,18 @@
 /*
  * Copyright (C) 2004-2013 L2J DataPack
- * 
+ *
  * This file is part of L2J DataPack.
- * 
+ *
  * L2J DataPack is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * L2J DataPack is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -34,9 +34,9 @@ import handlers.effecthandlers.*;
 public final class EffectMasterHandler
 {
 	private static Logger _log = LoggerFactory.getLogger(EffectMasterHandler.class);
-	
+
 	private static final Class<?> _loadInstances = EffectHandler.class;
-	
+
 	private static final Class<?>[] _effects =
 	{
 		AbortCast.class,
@@ -73,6 +73,7 @@ public final class EffectMasterHandler
 		DamOverTimePercent.class,
 		Debuff.class,
 		DispelBySlot.class,
+		DispelOnlyOne.class,
 		Disarm.class,
 		EnemyCharge.class,
 		EnlargeAbnormalSlot.class,
@@ -155,12 +156,12 @@ public final class EffectMasterHandler
 		VitalityPointUp.class,
 		Warp.class,
 	};
-	
+
 	public static void main(String[] args)
 	{
 		Object loadInstance = null;
 		Method method = null;
-		
+
 		try
 		{
 			method = _loadInstances.getMethod("getInstance");
@@ -171,25 +172,25 @@ public final class EffectMasterHandler
 			_log.warn("Failed invoking getInstance method for handler: " + _loadInstances.getSimpleName(), e);
 			return;
 		}
-		
+
 		method = null; // Releasing variable for next method
-		
+
 		for (Class<?> c : _effects)
 		{
 			if (c == null)
 			{
 				continue; // Disabled handler
 			}
-			
+
 			try
 			{
 				if (method == null)
 				{
 					method = loadInstance.getClass().getMethod("registerHandler", Class.class);
 				}
-				
+
 				method.invoke(loadInstance, c);
-				
+
 			}
 			catch (Exception e)
 			{
@@ -197,7 +198,7 @@ public final class EffectMasterHandler
 				continue;
 			}
 		}
-		
+
 		// And lets try get size
 		try
 		{
