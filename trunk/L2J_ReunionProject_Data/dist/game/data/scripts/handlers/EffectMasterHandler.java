@@ -34,9 +34,9 @@ import handlers.effecthandlers.*;
 public final class EffectMasterHandler
 {
 	private static Logger _log = LoggerFactory.getLogger(EffectMasterHandler.class);
-
+	
 	private static final Class<?> _loadInstances = EffectHandler.class;
-
+	
 	private static final Class<?>[] _effects =
 	{
 		AbortCast.class,
@@ -134,6 +134,7 @@ public final class EffectMasterHandler
 		SignetNoise.class,
 		SilentMove.class,
 		Sleep.class,
+		SoulEating.class,
 		Spoil.class,
 		StealAbnormal.class,
 		Stun.class,
@@ -156,12 +157,12 @@ public final class EffectMasterHandler
 		VitalityPointUp.class,
 		Warp.class,
 	};
-
+	
 	public static void main(String[] args)
 	{
 		Object loadInstance = null;
 		Method method = null;
-
+		
 		try
 		{
 			method = _loadInstances.getMethod("getInstance");
@@ -172,25 +173,25 @@ public final class EffectMasterHandler
 			_log.warn("Failed invoking getInstance method for handler: " + _loadInstances.getSimpleName(), e);
 			return;
 		}
-
+		
 		method = null; // Releasing variable for next method
-
+		
 		for (Class<?> c : _effects)
 		{
 			if (c == null)
 			{
 				continue; // Disabled handler
 			}
-
+			
 			try
 			{
 				if (method == null)
 				{
 					method = loadInstance.getClass().getMethod("registerHandler", Class.class);
 				}
-
+				
 				method.invoke(loadInstance, c);
-
+				
 			}
 			catch (Exception e)
 			{
@@ -198,7 +199,7 @@ public final class EffectMasterHandler
 				continue;
 			}
 		}
-
+		
 		// And lets try get size
 		try
 		{

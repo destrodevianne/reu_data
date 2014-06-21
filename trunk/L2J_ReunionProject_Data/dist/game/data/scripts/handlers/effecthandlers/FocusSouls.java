@@ -22,8 +22,8 @@ import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.effects.L2EffectType;
-import l2r.gameserver.model.skills.L2Skill;
 import l2r.gameserver.model.stats.Env;
+import l2r.gameserver.model.stats.Stats;
 import l2r.gameserver.network.SystemMessageId;
 
 /**
@@ -36,13 +36,13 @@ public class FocusSouls extends L2Effect
 	{
 		super(env, template);
 	}
-	
+
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.FOCUS_SOULS;
 	}
-	
+
 	@Override
 	public boolean onStart()
 	{
@@ -50,16 +50,15 @@ public class FocusSouls extends L2Effect
 		{
 			return false;
 		}
-		
-		L2PcInstance target = getEffected().getActingPlayer();
-		final L2Skill soulmastery = target.getSkills().get(467);
-		
-		if ((soulmastery != null))
+
+		final L2PcInstance target = getEffected().getActingPlayer();
+		final int maxSouls = (int) target.calcStat(Stats.MAX_SOULS, 0, null, null);
+		if (maxSouls > 0)
 		{
 			int amount = (int) calc();
-			if ((target.getChargedSouls() < soulmastery.getNumSouls()))
+			if ((target.getChargedSouls() < maxSouls))
 			{
-				int count = ((target.getChargedSouls() + amount) <= soulmastery.getNumSouls()) ? amount : (soulmastery.getNumSouls() - target.getChargedSouls());
+				int count = ((target.getChargedSouls() + amount) <= maxSouls) ? amount : (maxSouls - target.getChargedSouls());
 				target.increaseSouls(count);
 			}
 			else
