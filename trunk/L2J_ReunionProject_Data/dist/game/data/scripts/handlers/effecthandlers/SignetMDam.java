@@ -1,18 +1,18 @@
 /*
  * Copyright (C) 2004-2013 L2J DataPack
- * 
+ *
  * This file is part of L2J DataPack.
- * 
+ *
  * L2J DataPack is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * L2J DataPack is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -28,6 +28,7 @@ import java.util.List;
 import l2r.gameserver.datatables.sql.NpcTable;
 import l2r.gameserver.enums.CtrlEvent;
 import l2r.gameserver.enums.ShotType;
+import l2r.gameserver.enums.ZoneIdType;
 import l2r.gameserver.idfactory.IdFactory;
 import l2r.gameserver.model.Location;
 import l2r.gameserver.model.actor.L2Character;
@@ -37,6 +38,7 @@ import l2r.gameserver.model.actor.templates.L2NpcTemplate;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.effects.L2EffectType;
+import l2r.gameserver.model.skills.L2Skill;
 import l2r.gameserver.model.skills.l2skills.L2SkillSignetCasttime;
 import l2r.gameserver.model.skills.targets.L2TargetType;
 import l2r.gameserver.model.stats.Env;
@@ -47,6 +49,7 @@ import l2r.gameserver.network.serverpackets.MagicSkillLaunched;
 public class SignetMDam extends L2Effect
 {
 	private L2EffectPointInstance _actor;
+	private boolean _srcInArena;
 	
 	public SignetMDam(Env env, EffectTemplate template)
 	{
@@ -95,6 +98,7 @@ public class SignetMDam extends L2Effect
 		effectPoint.spawnMe(x, y, z);
 		
 		_actor = effectPoint;
+		_srcInArena = (getEffector().isInsideZone(ZoneIdType.PVP) && !getEffector().isInsideZone(ZoneIdType.SIEGE));
 		return true;
 		
 	}
@@ -127,6 +131,11 @@ public class SignetMDam extends L2Effect
 			if (cha.isAttackable() || cha.isPlayable())
 			{
 				if (cha.isAlikeDead())
+				{
+					continue;
+				}
+				
+				if (getSkill().isOffensive() && !L2Skill.checkForAreaOffensiveSkills(getEffector(), cha, getSkill(), _srcInArena))
 				{
 					continue;
 				}
