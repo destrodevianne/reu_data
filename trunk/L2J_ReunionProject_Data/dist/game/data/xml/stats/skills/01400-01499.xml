@@ -662,7 +662,7 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="skillType" val="SIGNET_CASTTIME" />
 		<set name="staticReuse" val="true" />
-		<set name="targetType" val="AURA" />
+		<set name="targetType" val="GROUND" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
@@ -691,7 +691,7 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="skillType" val="SIGNET_CASTTIME" />
 		<set name="staticReuse" val="true" />
-		<set name="targetType" val="AURA" />
+		<set name="targetType" val="GROUND" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
@@ -720,7 +720,7 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="skillType" val="SIGNET_CASTTIME" />
 		<set name="staticReuse" val="true" />
-		<set name="targetType" val="AURA" />
+		<set name="targetType" val="GROUND" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
@@ -745,7 +745,7 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="skillType" val="SIGNET" />
 		<set name="staticReuse" val="true" />
-		<set name="targetType" val="AURA" />
+		<set name="targetType" val="GROUND" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
@@ -774,7 +774,7 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="skillType" val="SIGNET_CASTTIME" />
 		<set name="staticReuse" val="true" />
-		<set name="targetType" val="AURA" />
+		<set name="targetType" val="GROUND" />
 		<cond msgId="1509">
 			<player olympiad="false" />
 		</cond>
