@@ -36,24 +36,25 @@ public class Stun extends L2Effect
 	{
 		super(env, template);
 	}
-	
+
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.STUN;
 	}
-	
+
 	@Override
 	public boolean onStart()
 	{
 		// We will remove stun effect in case it exists and we will add it again!
-		getEffected().stopStunning(true);
+		// System.out.println("Stopping Effects");
+		// getEffected().stopEffects(L2EffectType.STUN);
 		getEffected().startAbnormalEffect(AbnormalEffect.STUN);
 		getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE, getEffector());
 		getEffected().startStunning();
 		return super.onStart();
 	}
-	
+
 	@Override
 	public void onExit()
 	{
@@ -70,7 +71,7 @@ public class Stun extends L2Effect
 			}
 		}
 	}
-	
+
 	@Override
 	public int getEffectFlags()
 	{
