@@ -1073,12 +1073,16 @@
 	</skill>
 	<skill id="21088" levels="1" name="Summon Friend">
 		<!-- Summons your friend. -->
+		<set name="castRange" val="-2" />
+		<set name="effectPoint" val="1000" />
+		<set name="effectRange" val="-2" />
 		<set name="hitTime" val="10000" />
+		<set name="icon" val="icon.skill_agathion_special" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="3600000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="ONE" />
 		<cond>
 			<and>
 				<target myPartyExceptMe="true" />
@@ -1090,6 +1094,11 @@
 				<player insideZoneId="10501, 10502, 10503, 10504, 10505, 10506, 10507, 10508" />
 			</not>
 		</cond>
+		<for>
+			<effect name="CallPc" noicon="1" val="0">
+				<param itemId="0" itemCount="0" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="21089" levels="1" name="Dance of Shadows">
 		<!-- Receives the soul's help, and for 2 minutes, decreases one's own moving speed by 50% and invokes the ability not to receive the preemptive attack of monsters. -->
@@ -1166,12 +1175,16 @@
 	</skill>
 	<skill id="21097" levels="1" name="Summon Friend">
 		<!-- Summons your friend. -->
+		<set name="castRange" val="-2" />
+		<set name="effectPoint" val="1000" />
+		<set name="effectRange" val="-2" />
 		<set name="hitTime" val="10000" />
+		<set name="icon" val="icon.skill_agathion_special" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="3600000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="ONE" />
 		<cond>
 			<and>
 				<target myPartyExceptMe="true" />
@@ -1183,6 +1196,11 @@
 				<player insideZoneId="10501, 10502, 10503, 10504, 10505, 10506, 10507, 10508" />
 			</not>
 		</cond>
+		<for>
+			<effect name="CallPc" noicon="1" val="0">
+				<param itemId="0" itemCount="0" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="21098" levels="1" name="Great Adventurer's Soul Power : Endless">
 		<!-- For five minutes, the Great Spirit increases maximum HP by 20%, maximum MP by 20%, moving speed by 20%, and resistance against debuff by 10%. -->

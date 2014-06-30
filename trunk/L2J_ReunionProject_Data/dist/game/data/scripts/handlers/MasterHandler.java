@@ -1,18 +1,18 @@
 /*
  * Copyright (C) 2004-2013 L2J DataPack
- * 
+ *
  * This file is part of L2J DataPack.
- * 
+ *
  * L2J DataPack is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * L2J DataPack is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -225,7 +225,6 @@ import l2r.gameserver.scripts.handlers.skillhandlers.Pdam;
 import l2r.gameserver.scripts.handlers.skillhandlers.Resurrect;
 import l2r.gameserver.scripts.handlers.skillhandlers.ShiftTarget;
 import l2r.gameserver.scripts.handlers.skillhandlers.Sow;
-import l2r.gameserver.scripts.handlers.skillhandlers.SummonFriend;
 import l2r.gameserver.scripts.handlers.skillhandlers.TransformDispel;
 import l2r.gameserver.scripts.handlers.skillhandlers.Trap;
 import l2r.gameserver.scripts.handlers.skillhandlers.Unlock;
@@ -319,7 +318,7 @@ import gr.reunion.voteEngine.RewardVote;
 public class MasterHandler
 {
 	private static final Logger _log = Logger.getLogger(MasterHandler.class.getName());
-	
+
 	private static final Class<?>[] _loadInstances =
 	{
 		ActionHandler.class,
@@ -335,7 +334,7 @@ public class MasterHandler
 		TargetHandler.class,
 		TelnetHandler.class,
 	};
-	
+
 	private static final Class<?>[][] _handlers =
 	{
 		{
@@ -551,7 +550,6 @@ public class MasterHandler
 			Resurrect.class,
 			ShiftTarget.class,
 			Sow.class,
-			SummonFriend.class,
 			TransformDispel.class,
 			Trap.class,
 			Unlock.class,
@@ -646,19 +644,19 @@ public class MasterHandler
 			ThreadHandler.class,
 		},
 	};
-	
+
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args)
 	{
 		_log.log(Level.INFO, "Loading Handlers...");
-		
+
 		Object loadInstance = null;
 		Method method = null;
 		Class<?>[] interfaces = null;
 		Object handler = null;
-		
+
 		for (int i = 0; i < _loadInstances.length; i++)
 		{
 			try
@@ -671,31 +669,31 @@ public class MasterHandler
 				_log.log(Level.WARNING, "Failed invoking getInstance method for handler: " + _loadInstances[i].getSimpleName(), e);
 				continue;
 			}
-			
+
 			method = null;
-			
+
 			for (Class<?> c : _handlers[i])
 			{
 				if (c == null)
 				{
 					continue; // Disabled handler
 				}
-				
+
 				try
 				{
 					// Don't wtf some classes extending another like ItemHandler, Elixir, etc.. and we need to find where the hell is interface xD
 					interfaces = c.getInterfaces().length > 0 ? // Standardly handler has implementation
-					c.getInterfaces() : c.getSuperclass().getInterfaces().length > 0 ? // No? then it extends another handler like (ItemSkills->ItemSkillsTemplate)
-					c.getSuperclass().getInterfaces() : c.getSuperclass().getSuperclass().getInterfaces(); // O noh that's Elixir->ItemSkills->ItemSkillsTemplate
-					if (method == null)
-					{
-						method = loadInstance.getClass().getMethod("registerHandler", interfaces);
-					}
-					handler = c.newInstance();
-					if (method.getParameterTypes()[0].isInstance(handler))
-					{
-						method.invoke(loadInstance, handler);
-					}
+						c.getInterfaces() : c.getSuperclass().getInterfaces().length > 0 ? // No? then it extends another handler like (ItemSkills->ItemSkillsTemplate)
+							c.getSuperclass().getInterfaces() : c.getSuperclass().getSuperclass().getInterfaces(); // O noh that's Elixir->ItemSkills->ItemSkillsTemplate
+							if (method == null)
+							{
+								method = loadInstance.getClass().getMethod("registerHandler", interfaces);
+							}
+							handler = c.newInstance();
+							if (method.getParameterTypes()[0].isInstance(handler))
+							{
+								method.invoke(loadInstance, handler);
+							}
 				}
 				catch (Exception e)
 				{
@@ -716,7 +714,7 @@ public class MasterHandler
 				continue;
 			}
 		}
-		
+
 		_log.log(Level.INFO, "Handlers Loaded...");
 	}
 }

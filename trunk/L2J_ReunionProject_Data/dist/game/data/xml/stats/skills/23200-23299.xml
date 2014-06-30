@@ -583,9 +583,11 @@
 		<set name="castRange" val="2000" />
 		<set name="effectRange" val="2500" />
 		<set name="hitTime" val="500" />
-		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
-		<set name="skillType" val="SUMMON_FRIEND" />
-		<set name="targetType" val="ONE" />
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="CallParty" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="23250" levels="1" name="Kau Agathion Cute Trick">
 		<!-- You can see the summoned spirit's cute tricks. -->
