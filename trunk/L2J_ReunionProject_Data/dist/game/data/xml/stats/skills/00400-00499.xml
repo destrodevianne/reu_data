@@ -1841,7 +1841,7 @@
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume" val="44" />
 		<set name="mpInitialConsume" val="36" />
-		<set name="npcId" val="13025" />
+		<set name="npcId" val="13019" />
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="200" />
@@ -1865,7 +1865,7 @@
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume" val="44" />
 		<set name="mpInitialConsume" val="36" />
-		<set name="npcId" val="13018" />
+		<set name="npcId" val="13020" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="200" />
 		<set name="reuseDelay" val="1800000" />
@@ -1888,7 +1888,7 @@
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume" val="44" />
 		<set name="mpInitialConsume" val="36" />
-		<set name="npcId" val="13018" />
+		<set name="npcId" val="13021" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="200" />
 		<set name="reuseDelay" val="1800000" />
@@ -1911,7 +1911,7 @@
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume" val="44" />
 		<set name="mpInitialConsume" val="36" />
-		<set name="npcId" val="13018" />
+		<set name="npcId" val="13022" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="200" />
 		<set name="reuseDelay" val="1800000" />
@@ -1934,7 +1934,7 @@
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume" val="44" />
 		<set name="mpInitialConsume" val="36" />
-		<set name="npcId" val="13018" />
+		<set name="npcId" val="13023" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="200" />
 		<set name="reuseDelay" val="1800000" />
@@ -1957,7 +1957,7 @@
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume" val="44" />
 		<set name="mpInitialConsume" val="36" />
-		<set name="npcId" val="13018" />
+		<set name="npcId" val="13024" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="200" />
 		<set name="reuseDelay" val="1800000" />
