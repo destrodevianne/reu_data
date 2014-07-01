@@ -46,13 +46,14 @@ public class Stun extends L2Effect
 	@Override
 	public boolean onStart()
 	{
-		// We will remove stun effect in case it exists and we will add it again!
-		// System.out.println("Stopping Effects");
-		// getEffected().stopEffects(L2EffectType.STUN);
-		getEffected().startAbnormalEffect(AbnormalEffect.STUN);
-		getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE, getEffector());
-		getEffected().startStunning();
-		return super.onStart();
+		if (!getEffected().isStunned())
+		{
+			getEffected().startAbnormalEffect(AbnormalEffect.STUN);
+			getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE, getEffector());
+			getEffected().startStunning();
+			return super.onStart();
+		}
+		return true;
 	}
 
 	@Override
