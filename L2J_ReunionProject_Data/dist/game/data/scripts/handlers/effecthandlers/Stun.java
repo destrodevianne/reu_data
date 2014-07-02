@@ -36,7 +36,18 @@ public class Stun extends L2Effect
 	{
 		super(env, template);
 	}
+	
+	public Stun(Env env, L2Effect effect)
+	{
+		super(env, effect);
+	}
 
+	@Override
+	public int getEffectFlags()
+	{
+		return EffectFlag.STUNNED.getMask();
+	}
+	
 	@Override
 	public L2EffectType getEffectType()
 	{
@@ -46,14 +57,10 @@ public class Stun extends L2Effect
 	@Override
 	public boolean onStart()
 	{
-		if (!getEffected().isStunned())
-		{
-			getEffected().startAbnormalEffect(AbnormalEffect.STUN);
-			getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE, getEffector());
-			getEffected().startStunning();
-			return super.onStart();
-		}
-		return true;
+		getEffected().startAbnormalEffect(AbnormalEffect.STUN);
+		getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE, getEffector());
+		getEffected().startStunning();
+		return super.onStart();
 	}
 
 	@Override
@@ -62,20 +69,7 @@ public class Stun extends L2Effect
 		getEffected().stopAbnormalEffect(AbnormalEffect.STUN);
 		if (!getEffected().isPlayer())
 		{
-			try
-			{
-				getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
-			}
-			catch (Exception e)
-			{
-				_log.warn("Logger: notifyEvent failed (Stun) Report this to team. ");
-			}
+			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
 		}
-	}
-
-	@Override
-	public int getEffectFlags()
-	{
-		return EffectFlag.STUNNED.getMask();
 	}
 }
