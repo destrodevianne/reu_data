@@ -18,9 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.enums.CtrlEvent;
-import l2r.gameserver.enums.CtrlIntention;
-import l2r.gameserver.model.effects.AbnormalEffect;
 import l2r.gameserver.model.effects.EffectFlag;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
@@ -55,21 +52,15 @@ public class Stun extends L2Effect
 	}
 
 	@Override
-	public boolean onStart()
+	public void onExit()
 	{
-		getEffected().startAbnormalEffect(AbnormalEffect.STUN);
-		getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE, getEffector());
-		getEffected().startStunning();
-		return super.onStart();
+		getEffected().stopStunning(false);
 	}
 
 	@Override
-	public void onExit()
+	public boolean onStart()
 	{
-		getEffected().stopAbnormalEffect(AbnormalEffect.STUN);
-		if (!getEffected().isPlayer())
-		{
-			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
-		}
+		getEffected().startStunning();
+		return true;
 	}
 }
