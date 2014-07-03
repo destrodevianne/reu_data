@@ -643,7 +643,7 @@
 		<set name="mpConsume" val="33" />
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
-		<set name="power" val="15000" />
+		<set name="power" val="80" />
 		<set name="reuseDelay" val="3000" />
 		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
