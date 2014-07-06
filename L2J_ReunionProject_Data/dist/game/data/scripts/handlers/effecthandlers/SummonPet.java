@@ -42,13 +42,13 @@ public class SummonPet extends L2Effect
 	{
 		super(env, template);
 	}
-
+	
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.SUMMON_PET;
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{
@@ -56,43 +56,43 @@ public class SummonPet extends L2Effect
 		{
 			return false;
 		}
-
+		
 		final L2PcInstance player = getEffector().getActingPlayer();
 		if (player.isInOlympiadMode())
 		{
 			player.sendPacket(SystemMessageId.THIS_SKILL_IS_NOT_AVAILABLE_FOR_THE_OLYMPIAD_EVENT);
 			return false;
 		}
-
+		
 		if ((player.hasSummon() || player.isMounted()))
 		{
 			player.sendPacket(SystemMessageId.YOU_ALREADY_HAVE_A_PET);
 			return false;
 		}
-
+		
 		final PetItemHolder holder = player.removeScript(PetItemHolder.class);
 		if (holder == null)
 		{
 			_log.warn("Summoning pet without attaching PetItemHandler!", new Throwable());
 			return false;
 		}
-
+		
 		final L2ItemInstance item = holder.getItem();
 		if (player.getInventory().getItemByObjectId(item.getObjectId()) != item)
 		{
 			_log.warn("Player: " + player + " is trying to summon pet from item that he doesn't owns.");
 			return false;
 		}
-
+		
 		final L2PetData petData = PetData.getInstance().getPetDataByItemId(item.getId());
 		if ((petData == null) || (petData.getNpcId() == -1))
 		{
 			return false;
 		}
-
+		
 		final L2NpcTemplate npcTemplate = NpcTable.getInstance().getTemplate(petData.getNpcId());
 		final L2PetInstance pet = L2PetInstance.spawnPet(npcTemplate, player, item);
-
+		
 		pet.setShowSummonAnimation(true);
 		if (!pet.isRespawned())
 		{
@@ -101,17 +101,16 @@ public class SummonPet extends L2Effect
 			pet.getStat().setExp(pet.getExpForThisLevel());
 			pet.setCurrentFed(pet.getMaxFed());
 		}
-
+		
 		pet.setRunning();
-
+		
 		if (!pet.isRespawned())
 		{
 			pet.store();
 		}
-
+		
 		item.setEnchantLevel(pet.getLevel());
 		player.setPet(pet);
-
 		pet.spawnMe(player.getX() + 50, player.getY() + 100, player.getZ());
 		pet.startFeed();
 		pet.setFollowStatus(true);
