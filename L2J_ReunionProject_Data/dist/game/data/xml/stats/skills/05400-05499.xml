@@ -402,7 +402,7 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="GUST" />
 		<for>
-			<effect name="Stun" val="0" effectPower="90" abnormalLvl="1" abnormalType="stun" />
+			<effect name="Stun" abnormalTime="1" val="0" effectPower="90" abnormalLvl="1" abnormalType="stun" />
 			<effect name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_EXIT" triggeredId="5494" />
 		</for>
 	</skill>
@@ -425,7 +425,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="GUST" />
 		<for>
-			<effect name="Stun" val="0" effectPower="90" abnormalLvl="1" abnormalType="stun" />
+			<effect name="Stun" abnormalTime="1" val="0" effectPower="90" abnormalLvl="1" abnormalType="stun" />
 			<effect name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_EXIT" triggeredId="5494" />
 		</for>
 	</skill>
