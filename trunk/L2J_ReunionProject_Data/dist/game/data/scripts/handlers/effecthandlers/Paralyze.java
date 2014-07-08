@@ -32,55 +32,53 @@ import l2r.gameserver.model.stats.Env;
  */
 public class Paralyze extends L2Effect
 {
+	private boolean _mustCleanFreezingEffect;
+
 	public Paralyze(Env env, EffectTemplate template)
 	{
 		super(env, template);
+		_mustCleanFreezingEffect = false;
+		if (template.hasParameters())
+		{
+			_mustCleanFreezingEffect = template.getParameters().getBool("mustCleanFreezingEffect", false);
+		}
 	}
-	
-	public Paralyze(Env env, L2Effect effect)
-	{
-		super(env, effect);
-	}
-	
+
 	@Override
 	public boolean canBeStolen()
 	{
 		return true;
 	}
-	
+
 	@Override
 	public int getEffectFlags()
 	{
 		return EffectFlag.PARALYZED.getMask();
 	}
-	
+
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.PARALYZE;
 	}
-	
+
 	@Override
 	public void onExit()
 	{
-		getEffected().stopAbnormalEffect(AbnormalEffect.HOLD_1);
 		if (!getEffected().isPlayer())
 		{
-			try
-			{
-				getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
-			}
-			catch (Exception e)
-			{
-				_log.warn("Logger: notifyEvent failed (Paralyze) Report this to team. ");
-			}
+			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
+		}
+		
+		if (_mustCleanFreezingEffect)
+		{
+			getEffected().stopSpecialEffect(AbnormalEffect.S_FREEZING);
 		}
 	}
-	
+
 	@Override
 	public boolean onStart()
 	{
-		getEffected().startAbnormalEffect(AbnormalEffect.HOLD_1);
 		getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE, getEffector());
 		getEffected().startParalyze();
 		return super.onStart();
