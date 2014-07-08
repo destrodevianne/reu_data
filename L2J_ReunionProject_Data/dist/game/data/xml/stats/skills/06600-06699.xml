@@ -735,7 +735,9 @@
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Paralyze" abnormalTime="#time2" val="0" special="freezing" abnormalLvl="#abnormalLvls" abnormalType="freezing" />
+			<effect name="Paralyze" abnormalTime="#time2" val="0" special="freezing" abnormalLvl="#abnormalLvls" abnormalType="freezing">
+				<param mustCleanFreezingEffect="true" />
+			</effect>
 			<!-- Level 1: 115HP * 1 during 7 seconds -->
 			<!-- Level 2: 115HP * 5 during 15 seconds -->
 			<effect count="#count" name="DamOverTime" abnormalTime="#time" noicon="1" val="#dot" />
@@ -1243,7 +1245,9 @@
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect name="Paralyze" abnormalTime="15" val="0" special="freezing" abnormalLvl="3" abnormalType="freezing" />
+			<effect name="Paralyze" abnormalTime="15" val="0" special="freezing" abnormalLvl="3" abnormalType="freezing">
+				<param mustCleanFreezingEffect="true" />
+			</effect>
 			<!-- 115HP * 5 during 15 seconds -->
 			<effect count="3" name="DamOverTime" abnormalTime="5" noicon="1" val="575" />
 			<!-- 5MP * 5 during 15 seconds -->
