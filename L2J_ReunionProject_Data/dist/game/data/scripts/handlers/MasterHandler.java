@@ -210,7 +210,6 @@ import l2r.gameserver.scripts.handlers.punishmenthandlers.ChatBanHandler;
 import l2r.gameserver.scripts.handlers.punishmenthandlers.JailHandler;
 import l2r.gameserver.scripts.handlers.skillhandlers.Blow;
 import l2r.gameserver.scripts.handlers.skillhandlers.Continuous;
-import l2r.gameserver.scripts.handlers.skillhandlers.CpDamPercent;
 import l2r.gameserver.scripts.handlers.skillhandlers.Detection;
 import l2r.gameserver.scripts.handlers.skillhandlers.Disablers;
 import l2r.gameserver.scripts.handlers.skillhandlers.Dummy;
@@ -318,7 +317,7 @@ import gr.reunion.voteEngine.RewardVote;
 public class MasterHandler
 {
 	private static final Logger _log = Logger.getLogger(MasterHandler.class.getName());
-
+	
 	private static final Class<?>[] _loadInstances =
 	{
 		ActionHandler.class,
@@ -334,7 +333,7 @@ public class MasterHandler
 		TargetHandler.class,
 		TelnetHandler.class,
 	};
-
+	
 	private static final Class<?>[][] _handlers =
 	{
 		{
@@ -535,7 +534,6 @@ public class MasterHandler
 			// Skill Handlers
 			Blow.class,
 			Continuous.class,
-			CpDamPercent.class,
 			Detection.class,
 			Disablers.class,
 			Dummy.class,
@@ -644,19 +642,19 @@ public class MasterHandler
 			ThreadHandler.class,
 		},
 	};
-
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args)
 	{
 		_log.log(Level.INFO, "Loading Handlers...");
-
+		
 		Object loadInstance = null;
 		Method method = null;
 		Class<?>[] interfaces = null;
 		Object handler = null;
-
+		
 		for (int i = 0; i < _loadInstances.length; i++)
 		{
 			try
@@ -669,31 +667,31 @@ public class MasterHandler
 				_log.log(Level.WARNING, "Failed invoking getInstance method for handler: " + _loadInstances[i].getSimpleName(), e);
 				continue;
 			}
-
+			
 			method = null;
-
+			
 			for (Class<?> c : _handlers[i])
 			{
 				if (c == null)
 				{
 					continue; // Disabled handler
 				}
-
+				
 				try
 				{
 					// Don't wtf some classes extending another like ItemHandler, Elixir, etc.. and we need to find where the hell is interface xD
 					interfaces = c.getInterfaces().length > 0 ? // Standardly handler has implementation
-						c.getInterfaces() : c.getSuperclass().getInterfaces().length > 0 ? // No? then it extends another handler like (ItemSkills->ItemSkillsTemplate)
-							c.getSuperclass().getInterfaces() : c.getSuperclass().getSuperclass().getInterfaces(); // O noh that's Elixir->ItemSkills->ItemSkillsTemplate
-							if (method == null)
-							{
-								method = loadInstance.getClass().getMethod("registerHandler", interfaces);
-							}
-							handler = c.newInstance();
-							if (method.getParameterTypes()[0].isInstance(handler))
-							{
-								method.invoke(loadInstance, handler);
-							}
+					c.getInterfaces() : c.getSuperclass().getInterfaces().length > 0 ? // No? then it extends another handler like (ItemSkills->ItemSkillsTemplate)
+					c.getSuperclass().getInterfaces() : c.getSuperclass().getSuperclass().getInterfaces(); // O noh that's Elixir->ItemSkills->ItemSkillsTemplate
+					if (method == null)
+					{
+						method = loadInstance.getClass().getMethod("registerHandler", interfaces);
+					}
+					handler = c.newInstance();
+					if (method.getParameterTypes()[0].isInstance(handler))
+					{
+						method.invoke(loadInstance, handler);
+					}
 				}
 				catch (Exception e)
 				{
@@ -714,7 +712,7 @@ public class MasterHandler
 				continue;
 			}
 		}
-
+		
 		_log.log(Level.INFO, "Handlers Loaded...");
 	}
 }

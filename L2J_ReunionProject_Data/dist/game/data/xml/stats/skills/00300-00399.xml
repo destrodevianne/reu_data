@@ -733,7 +733,6 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="CPDAMPERCENT" />
 		<set name="targetType" val="FRONT_AREA" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -742,6 +741,11 @@
 		<cond msgId="113" addName="1">
 			<using kind="POLE" />
 		</cond>
+		<for>
+			<effect name="CpDamPercent" noicon="1" val="0" >
+				<param power="#power" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="321" levels="10" name="Blinding Blow" enchantGroup1="2" enchantGroup2="2">
 		<table name="#magicLvl"> 65 66 67 68 69 70 71 72 73 74 </table>
@@ -1255,7 +1259,6 @@
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="150000" />
 		<set name="basicProperty" val="CON" />
-		<set name="skillType" val="CPDAMPERCENT" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="DEATH" />
 		<enchant1 name="hpConsume" val="#ench1hpConsume" />
@@ -1268,7 +1271,9 @@
 				<mul order="0x30" stat="healEffect" val="0.7" />
 			</effect>
 			<effect name="Cancel" noicon="1" val="0" effectPower="25" />
-			<effect name="CpDamPercent" noicon="1" val="0" effectPower="90" />
+			<effect name="CpDamPercent" noicon="1" val="0" >
+				<param power="90" />
+			</effect>
 		</for>
 		<enchant2for>
 			<effect name="Debuff" abnormalTime="120" val="0" effectPower="#ench2effectPower" abnormalLvl="1" abnormalType="touch_of_death">
@@ -1277,7 +1282,9 @@
 				<mul order="0x30" stat="healEffect" val="0.7" />
 			</effect>
 			<effect name="Cancel" noicon="1" val="0" effectPower="25" />
-			<effect name="CpDamPercent" noicon="1" val="0" effectPower="90" />
+			<effect name="CpDamPercent" noicon="1" val="0" >
+				<param power="90" />
+			</effect>
 		</enchant2for>
 	</skill>
 	<skill id="343" levels="1" name="Lethal Shot" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6" enchantGroup5="6" enchantGroup6="6" enchantGroup7="6">
