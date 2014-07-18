@@ -12,19 +12,13 @@ public class RecoBonus extends L2Effect
 	{
 		super(env, template);
 	}
-	
-	@Override
-	public boolean canBeStolen()
-	{
-		return false;
-	}
-	
+
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.BUFF;
 	}
-	
+
 	@Override
 	public boolean onStart()
 	{
@@ -32,11 +26,11 @@ public class RecoBonus extends L2Effect
 		{
 			return false;
 		}
-		
+
 		((L2PcInstance) getEffected()).setRecomBonusType(1).setRecoBonusActive(true);
 		return true;
 	}
-	
+
 	@Override
 	public void onExit()
 	{

@@ -29,7 +29,7 @@ import l2r.gameserver.scripts.quests.*;
 public class QuestMasterHandler
 {
 	private static final Logger _log = Logger.getLogger(QuestMasterHandler.class.getName());
-
+	
 	private static final Class<?>[] QUESTS =
 	{
 		Q00001_LettersOfLove.class,
@@ -267,6 +267,7 @@ public class QuestMasterHandler
 		Q00382_KailsMagicCoin.class,
 		Q00385_YokeOfThePast.class,
 		Q00401_PathToWarrior.class,
+		Q00407_PathOfTheElvenScout.class,
 		Q00416_PathOfTheOrcShaman.class,
 		Q00420_LittleWing.class,
 		Q00421_LittleWingsBigAdventure.class,
@@ -323,6 +324,7 @@ public class QuestMasterHandler
 		Q00629_CleanUpTheSwampOfScreams.class,
 		Q00631_DeliciousTopChoiceMeat.class,
 		Q00633_InTheForgottenVillage.class,
+		Q00634_InSearchOfFragmentsOfDimension.class,
 		Q00635_IntoTheDimensionalRift.class,
 		Q00636_TruthBeyond.class,
 		Q00637_ThroughOnceMore.class,
@@ -407,7 +409,7 @@ public class QuestMasterHandler
 		Q10504_JewelOfAntharas.class,
 		Q10505_JewelOfValakas.class
 	};
-
+	
 	public static void main(String[] args)
 	{
 		for (Class<?> quest : QUESTS)

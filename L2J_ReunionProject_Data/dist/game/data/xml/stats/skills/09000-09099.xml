@@ -710,7 +710,10 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="COMMAND_CHANNEL" />
 		<cond msgId="113" addName="1">
-			<player insideZoneId="90578" />
+			<or>
+				<player instanceId="139" />
+				<player instanceId="144" />
+			</or>
 		</cond>
 		<for>
 			<effect name="ResistSkill" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="skill_ignore">
@@ -730,7 +733,10 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="COMMAND_CHANNEL" />
 		<cond msgId="113" addName="1">
-			<player insideZoneId="90578" />
+			<or>
+				<player instanceId="139" />
+				<player instanceId="144" />
+			</or>
 		</cond>
 		<for>
 			<effect name="ResistSkill" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="skill_ignore">
