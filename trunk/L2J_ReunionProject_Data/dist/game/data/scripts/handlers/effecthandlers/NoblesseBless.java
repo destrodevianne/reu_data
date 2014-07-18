@@ -34,30 +34,24 @@ public class NoblesseBless extends L2Effect
 	{
 		super(env, template);
 	}
-	
+
 	public NoblesseBless(Env env, L2Effect effect)
 	{
 		super(env, effect);
 	}
-	
-	@Override
-	public boolean canBeStolen()
-	{
-		return false;
-	}
-	
+
 	@Override
 	public int getEffectFlags()
 	{
 		return EffectFlag.NOBLESS_BLESSING.getMask();
 	}
-	
+
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.NOBLESSE_BLESSING;
 	}
-	
+
 	@Override
 	public boolean onStart()
 	{

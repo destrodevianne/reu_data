@@ -37,13 +37,7 @@ public class StealAbnormal extends L2Effect
 	{
 		super(env, template);
 	}
-	
-	@Override
-	public boolean canBeStolen()
-	{
-		return false;
-	}
-	
+
 	@Override
 	public boolean onStart()
 	{
