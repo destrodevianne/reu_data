@@ -33,7 +33,7 @@ import l2r.gameserver.model.stats.Env;
 public class Paralyze extends L2Effect
 {
 	private boolean _mustCleanFreezingEffect;
-
+	
 	public Paralyze(Env env, EffectTemplate template)
 	{
 		super(env, template);
@@ -43,25 +43,25 @@ public class Paralyze extends L2Effect
 			_mustCleanFreezingEffect = template.getParameters().getBool("mustCleanFreezingEffect", false);
 		}
 	}
-
+	
 	@Override
 	public boolean canBeStolen()
 	{
 		return true;
 	}
-
+	
 	@Override
 	public int getEffectFlags()
 	{
 		return EffectFlag.PARALYZED.getMask();
 	}
-
+	
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.PARALYZE;
 	}
-
+	
 	@Override
 	public void onExit()
 	{
@@ -69,13 +69,13 @@ public class Paralyze extends L2Effect
 		{
 			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
 		}
-		
+
 		if (_mustCleanFreezingEffect)
 		{
-			getEffected().stopSpecialEffect(AbnormalEffect.S_FREEZING);
+			getEffected().stopSpecialEffect(AbnormalEffect.S_FREEZING.getMask());
 		}
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{
