@@ -33,33 +33,38 @@ public class Stun extends L2Effect
 	{
 		super(env, template);
 	}
-	
+
 	public Stun(Env env, L2Effect effect)
 	{
 		super(env, effect);
 	}
-
+	
 	@Override
 	public int getEffectFlags()
 	{
 		return EffectFlag.STUNNED.getMask();
 	}
-	
+
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.STUN;
 	}
-
+	
 	@Override
 	public void onExit()
 	{
 		getEffected().stopStunning(false);
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{
+		if (getEffected().isTempStunned())
+		{
+			return false;
+		}
+
 		getEffected().startStunning();
 		return true;
 	}
