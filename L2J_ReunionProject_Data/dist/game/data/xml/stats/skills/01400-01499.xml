@@ -1088,7 +1088,7 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="power" val="#ench2Power" />
 		<for>
-			<effect count="6" name="DamOverTime" abnormalTime="5" val="#dmg" abnormalLvl="#abnormalLvls" abnormalType="death_mark" abnormalVisualEffect="deathmark">
+			<effect count="6" name="DamOverTime" abnormalTime="30" val="#dmg" abnormalLvl="#abnormalLvls" abnormalType="death_mark" abnormalVisualEffect="deathmark">
 				<mul order="0x30" stat="pDef" val="#amount" />
 				<mul order="0x30" stat="mDef" val="#amount" />
 			</effect>
