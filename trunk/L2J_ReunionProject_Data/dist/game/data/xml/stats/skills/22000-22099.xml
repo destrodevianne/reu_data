@@ -907,7 +907,7 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="VitalityPointUp" noicon="1" val="5000" />
+			<effect name="VitalityPointUp" noicon="1" val="20000" />
 		</for>
 	</skill>
 	<skill id="22056" levels="1" name="Wind Walk">

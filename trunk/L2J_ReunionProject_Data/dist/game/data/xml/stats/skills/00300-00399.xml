@@ -1095,13 +1095,13 @@
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<for>
 			<!-- Retail Values CT2.3: 50HP * 3 Sec -->
-			<effect count="0x7fffffff" name="DamOverTime" abnormalTime="3" val="150">
+			<effect count="0x7fffffff" name="DamOverTime" abnormalTime="3" val="50">
 				<mul order="0x30" stat="MagicalMpConsumeRate" val="1.1" />
 				<mul order="0x30" stat="mAtk" val="1.3" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect count="0x7fffffff" name="DamOverTime" abnormalTime="3" val="150">
+			<effect count="0x7fffffff" name="DamOverTime" abnormalTime="3" val="50">
 				<mul order="0x30" stat="MagicalMpConsumeRate" val="1.1" />
 				<mul order="0x30" stat="mAtk" val="#ench1mAtk" />
 			</effect>

@@ -1685,6 +1685,11 @@
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
+		<cond msgId="2163">
+			<not>
+				<player souls="40" /> <!-- Max Amount of Souls -->
+			</not>
+		</cond>
 		<for>
 			<effect name="FocusSouls" noicon="1" val="5" />
 		</for>
