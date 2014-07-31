@@ -986,7 +986,7 @@
 	<item id="15346" type="EtcItem" name="Scroll: Enchant Weapon (Grade S) - Exclusive to PC weapons">
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i05" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="etcitem_type" val="SCRL_ENCHANT_WP" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="immediate_effect" val="1" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -1002,7 +1002,7 @@
 	<item id="15347" type="EtcItem" name="Scroll: Enchant Weapon (Grade A) - Exclusive to PC weapons">
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="etcitem_type" val="SCRL_ENCHANT_WP" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="immediate_effect" val="1" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -1012,13 +1012,13 @@
 		<set name="is_depositable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
-		<set name="handler" val="ItemSkills" />
+		<set name="handler" val="EnchantScrolls" />
 		<set name="item_skill" val="2998-1" />
 	</item>
 	<item id="15348" type="EtcItem" name="Scroll: Enchant Weapon (Grade B) - Exclusive to PC weapons">
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i03" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="etcitem_type" val="SCRL_ENCHANT_WP" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="immediate_effect" val="1" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -1034,7 +1034,7 @@
 	<item id="15349" type="EtcItem" name="Scroll: Enchant Weapon (Grade C) - Exclusive to PC weapons">
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i02" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="etcitem_type" val="SCRL_ENCHANT_WP" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="immediate_effect" val="1" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -1050,7 +1050,7 @@
 	<item id="15350" type="EtcItem" name="Scroll: Enchant Weapon (Grade D) - Exclusive to PC weapons">
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="etcitem_type" val="SCRL_ENCHANT_WP" />
+		<set name="etcitem_type" val="BLESS_SCRL_ENCHANT_WP" />
 		<set name="immediate_effect" val="1" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
