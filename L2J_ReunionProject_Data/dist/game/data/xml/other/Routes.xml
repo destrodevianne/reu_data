@@ -8,7 +8,7 @@
 <!-- npcString = to use String Variables from NpcStringId.java -->
 <!-- npcStringId = to use String IDs from client NpcString-e.dat -->
 <!-- string = to use any custom text, example: string="Hello World" -->
-<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/Routes.xsd">
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/Routes.xsd">
 	<!-- Just test route - Giran town square -->
 	<route name="test_route" repeat="true" repeatStyle="cycle">
 		<point X="80863" Y="148339" Z="-3469" delay="0" run="true" />
