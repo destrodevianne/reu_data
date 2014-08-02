@@ -60,14 +60,14 @@ public class DamOverTime extends L2Effect
 				// Fix for players dying by DOTs if HP < 1 since reduceCurrentHP method will kill them
 				if (getEffected().getCurrentHp() <= 1)
 				{
-					return getSkill().isToggle();
+					return true;
 				}
 				
 				damage = getEffected().getCurrentHp() - 1;
 			}
 		}
 		getEffected().reduceCurrentHpByDOT(damage, getEffector(), getSkill());
-		
-		return getSkill().isToggle();
+
+		return true;
 	}
 }
