@@ -4,7 +4,7 @@
 		<set name="icon" val="icon.accessary_dynasty_ring_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="190" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="GOLD" />
@@ -22,7 +22,7 @@
 		<set name="icon" val="icon.accessary_dynasty_earing_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="285" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="SILVER" />
@@ -40,7 +40,7 @@
 		<set name="icon" val="icon.accessary_dynasty_necklace_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="258" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="SILVER" />
@@ -56,7 +56,7 @@
 		<set name="icon" val="icon.accessary_dynasty_ring_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="129" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="GOLD" />
@@ -72,7 +72,7 @@
 		<set name="icon" val="icon.accessary_dynasty_earing_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="194" />
 		<set name="crystal_type" val="S" />
 		<set name="material" val="SILVER" />
@@ -92,7 +92,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -116,7 +116,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="500" />
 		<set name="damage_range" val="0;0;10;0" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -143,7 +143,7 @@
 		<set name="random_damage" val="40" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -172,7 +172,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;32;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -196,7 +196,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -220,7 +220,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;46;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="BONE" />
@@ -245,7 +245,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -269,7 +269,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -293,7 +293,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="CHRYSOLITE" />
@@ -317,7 +317,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -341,7 +341,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -365,7 +365,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -389,7 +389,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -413,7 +413,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -437,7 +437,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="PAPER" />
@@ -461,7 +461,7 @@
 		<set name="random_damage" val="15" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -489,7 +489,7 @@
 		<set name="random_damage" val="15" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -517,7 +517,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="80" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="BRONZE" />
@@ -542,7 +542,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -566,7 +566,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="400" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -595,7 +595,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -619,7 +619,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="32" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -643,7 +643,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -668,7 +668,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -692,7 +692,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="500" />
 		<set name="damage_range" val="0;0;10;0" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -719,7 +719,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -744,7 +744,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="80" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -769,7 +769,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="500" />
 		<set name="damage_range" val="0;0;10;0" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -796,7 +796,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;46;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="WOOD" />
@@ -821,7 +821,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;46;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="WOOD" />
@@ -846,7 +846,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;42;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -870,7 +870,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="BONE" />
@@ -894,7 +894,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -918,7 +918,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -943,7 +943,7 @@
 		<set name="random_damage" val="15" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -970,7 +970,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="500" />
 		<set name="damage_range" val="0;0;10;0" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="MITHRIL" />
@@ -997,7 +997,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1022,7 +1022,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;32;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1046,7 +1046,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1070,7 +1070,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;46;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="ORIHARUKON" />
@@ -1095,7 +1095,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="BRONZE" />
@@ -1119,7 +1119,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1143,7 +1143,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="80" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1168,7 +1168,7 @@
 		<set name="random_damage" val="40" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1197,7 +1197,7 @@
 		<set name="random_damage" val="40" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1226,7 +1226,7 @@
 		<set name="random_damage" val="40" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1255,7 +1255,7 @@
 		<set name="random_damage" val="40" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1284,7 +1284,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="400" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1313,7 +1313,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="400" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1342,7 +1342,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="400" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="48" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1371,7 +1371,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="53" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="BRONZE" />
@@ -1395,7 +1395,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="53" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1419,7 +1419,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="53" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1443,7 +1443,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="63" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1466,7 +1466,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="500" />
 		<set name="damage_range" val="0;0;10;0" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1493,7 +1493,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="BRONZE" />
@@ -1518,7 +1518,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="80" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1543,7 +1543,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1568,7 +1568,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;46;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="WOOD" />
@@ -1593,7 +1593,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1618,7 +1618,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;32;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1642,7 +1642,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1666,7 +1666,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1690,7 +1690,7 @@
 		<set name="random_damage" val="40" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1719,7 +1719,7 @@
 		<set name="random_damage" val="40" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1748,7 +1748,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="MITHRIL" />
@@ -1772,7 +1772,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="80" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1797,7 +1797,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1822,7 +1822,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1846,7 +1846,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="400" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1875,7 +1875,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1899,7 +1899,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1923,7 +1923,7 @@
 		<set name="random_damage" val="15" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1951,7 +1951,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -1975,7 +1975,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="75" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -1998,7 +1998,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="75" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2021,7 +2021,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="75" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2044,7 +2044,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="75" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2067,7 +2067,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="500" />
 		<set name="damage_range" val="0;0;10;0" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2094,7 +2094,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2117,7 +2117,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2141,7 +2141,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -2165,7 +2165,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2188,7 +2188,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2211,7 +2211,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2234,7 +2234,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2257,7 +2257,7 @@
 		<set name="random_damage" val="5" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;32;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2281,7 +2281,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="STEEL" />
@@ -2306,7 +2306,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;46;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="WOOD" />
@@ -2331,7 +2331,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2354,7 +2354,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2377,7 +2377,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2401,7 +2401,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2425,7 +2425,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />
@@ -2448,7 +2448,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="96" />
 		<set name="crystal_type" val="D" />
 		<set name="material" val="FINE_STEEL" />

@@ -4,7 +4,7 @@
 		<set name="icon" val="icon.accessory_black_feather_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="10" />
 		<set name="price" val="6000000" />
@@ -13,7 +13,7 @@
 		<set name="icon" val="icon.accessory_archer_hat2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="6000000" />
@@ -22,7 +22,7 @@
 		<set name="icon" val="icon.accessory_carnival_circlet2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="10" />
 		<set name="price" val="6000000" />
@@ -31,7 +31,7 @@
 		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="6000000" />
@@ -40,7 +40,7 @@
 		<set name="icon" val="icon.accessory_dandy_cap2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="6000000" />
@@ -49,7 +49,7 @@
 		<set name="icon" val="icon.accessory_fish_cap2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="6000000" />
@@ -58,7 +58,7 @@
 		<set name="icon" val="icon.accessory_pig_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="is_tradable" val="false" />
@@ -69,7 +69,7 @@
 		<set name="icon" val="icon.accessory_flame_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -78,7 +78,7 @@
 		<set name="icon" val="icon.accessory_ice_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -87,7 +87,7 @@
 		<set name="icon" val="icon.accessory_storm_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -96,7 +96,7 @@
 		<set name="icon" val="icon.accessory_earthquake_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -105,7 +105,7 @@
 		<set name="icon" val="icon.accessory_darkness_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -114,7 +114,7 @@
 		<set name="icon" val="icon.accessory_shining_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -123,7 +123,7 @@
 		<set name="icon" val="icon.accessory_mining_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -132,7 +132,7 @@
 		<set name="icon" val="icon.accessory_advence_mining_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -141,7 +141,7 @@
 		<set name="icon" val="icon.accessory_mine_search_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -150,7 +150,7 @@
 		<set name="icon" val="icon.accessory_advence_mine_search_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -159,7 +159,7 @@
 		<set name="icon" val="icon.accessory_raccoon_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -171,7 +171,7 @@
 		<set name="icon" val="icon.accessory_magicial_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -183,7 +183,7 @@
 		<set name="icon" val="icon.accessory_jjoro_masj_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -195,7 +195,7 @@
 		<set name="icon" val="icon.accessory_jindo_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -207,7 +207,7 @@
 		<set name="icon" val="icon.accessory_sapsal_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -219,7 +219,7 @@
 		<set name="icon" val="icon.accessory_dragonfly_goggle_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -231,7 +231,7 @@
 		<set name="icon" val="icon.accessory_5th_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="10" />
 		<set name="price" val="2000000" />
@@ -248,7 +248,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="1500" />
 		<set name="price" val="105000" />
@@ -268,7 +268,7 @@
 		<set name="icon" val="icon.shield_mon_gracia_soldier_shield_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lhand" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="BRONZE" />
 		<set name="weight" val="1300" />
 		<set name="price" val="16900" />
@@ -287,7 +287,7 @@
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="bodypart" val="waist" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="4830" />
 		<set name="price" val="113" />
@@ -299,7 +299,7 @@
 		<set name="icon" val="icon.armor_back01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="260" />
 		<set name="price" val="37" />
@@ -315,7 +315,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;44;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="500" />
 		<set name="price" val="3340000" />
@@ -335,7 +335,7 @@
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="SIGIL" />
 		<set name="bodypart" val="lhand" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="1430" />
 		<cond msgId="1518">
@@ -354,7 +354,7 @@
 		<set name="weapon_type" val="FLAG" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -377,7 +377,7 @@
 		<set name="weapon_type" val="FLAG" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -400,7 +400,7 @@
 		<set name="weapon_type" val="FLAG" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -423,7 +423,7 @@
 		<set name="weapon_type" val="FLAG" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -446,7 +446,7 @@
 		<set name="weapon_type" val="FLAG" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -469,7 +469,7 @@
 		<set name="weapon_type" val="FLAG" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -492,7 +492,7 @@
 		<set name="weapon_type" val="FLAG" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -515,7 +515,7 @@
 		<set name="weapon_type" val="FLAG" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -538,7 +538,7 @@
 		<set name="weapon_type" val="FLAG" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -563,7 +563,7 @@
 		<set name="random_damage" val="20" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;46;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="enchant_enabled" val="1" />
@@ -585,7 +585,7 @@
 		<set name="icon" val="icon.yogi_scroll_of_enchant_weapon_grade_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCRL_ENCHANT_WP" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -594,7 +594,7 @@
 	</item>
 	<item id="13541" type="EtcItem" name="Yogi's Enchanted Treasure Box">
 		<set name="icon" val="icon.etc_jewel_box_i00" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="20" />
 		<set name="price" val="10" />
@@ -605,7 +605,7 @@
 	</item>
 	<item id="13542" type="EtcItem" name="Yogi's Enchanted Reward Cube">
 		<set name="icon" val="icon.cube_event_i00" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="20" />
 		<set name="price" val="10" />
@@ -618,7 +618,7 @@
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="SILVER" />
 		<set name="weight" val="150" />
 		<set name="price" val="7000000" />
@@ -632,7 +632,7 @@
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="SILVER" />
 		<set name="weight" val="150" />
 		<set name="price" val="7000000" />
@@ -647,7 +647,7 @@
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="SILVER" />
 		<set name="weight" val="150" />
 		<set name="price" val="7000000" />
@@ -662,7 +662,7 @@
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rbracelet" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="76" />
 		<set name="material" val="SILVER" />
 		<set name="weight" val="150" />
@@ -677,7 +677,7 @@
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rbracelet" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="76" />
 		<set name="material" val="SILVER" />
 		<set name="weight" val="150" />
@@ -810,7 +810,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="is_dropable" val="false" />
 		<for>
@@ -828,7 +828,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="is_dropable" val="false" />
 		<for>
@@ -846,7 +846,7 @@
 		<set name="random_damage" val="10" />
 		<set name="attack_range" val="40" />
 		<set name="damage_range" val="0;0;40;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="is_dropable" val="false" />
 		<for>
@@ -858,7 +858,7 @@
 	</item>
 	<item id="13559" type="EtcItem" name="Airship Summon License">
 		<set name="icon" val="icon.etc_scroll_white_i00" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
 		<set name="weight" val="20" />
 		<set name="is_tradable" val="false" />
@@ -874,7 +874,7 @@
 		<set name="weapon_type" val="OWNTHING" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -899,7 +899,7 @@
 		<set name="weapon_type" val="OWNTHING" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -924,7 +924,7 @@
 		<set name="weapon_type" val="OWNTHING" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -949,7 +949,7 @@
 		<set name="weapon_type" val="OWNTHING" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -974,7 +974,7 @@
 		<set name="weapon_type" val="OWNTHING" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -999,7 +999,7 @@
 		<set name="weapon_type" val="OWNTHING" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -1024,7 +1024,7 @@
 		<set name="weapon_type" val="OWNTHING" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -1049,7 +1049,7 @@
 		<set name="weapon_type" val="OWNTHING" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
@@ -1074,7 +1074,7 @@
 		<set name="weapon_type" val="OWNTHING" />
 		<set name="bodypart" val="lrhand" />
 		<set name="damage_range" val="0;0;66;120" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="500" />
 		<set name="price" val="1" />
