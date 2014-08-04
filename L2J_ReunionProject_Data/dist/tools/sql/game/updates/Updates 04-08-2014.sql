@@ -1,0 +1,1 @@
+UPDATE npc SET type='L2Warehouse' WHERE id='32478';
