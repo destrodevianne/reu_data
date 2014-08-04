@@ -4,7 +4,7 @@
 		<set name="icon" val="icon.accessory_earring_of_antaras_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="178" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="GOLD" />
@@ -22,7 +22,7 @@
 		<set name="icon" val="icon.accessory_necklace_of_valakas_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="237" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="GOLD" />
@@ -40,7 +40,7 @@
 		<set name="icon" val="icon.accessory_ring_of_baium_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="83" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="GOLD" />
@@ -58,7 +58,7 @@
 		<set name="icon" val="icon.accessory_earring_of_zaken_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="124" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="GOLD" />
@@ -76,7 +76,7 @@
 		<set name="icon" val="icon.accessory_ring_of_queen_ant_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="82" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="GOLD" />
@@ -94,7 +94,7 @@
 		<set name="icon" val="icon.accessory_earring_of_orfen_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="104" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="GOLD" />
@@ -112,7 +112,7 @@
 		<set name="icon" val="icon.accessory_ring_of_core_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="69" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="GOLD" />
@@ -130,7 +130,7 @@
 		<set name="icon" val="icon.accessory_necklace_of_frintessa_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="230" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="GOLD" />
@@ -148,7 +148,7 @@
 		<set name="icon" val="icon.accessary_dynasty_ring_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="152" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="GOLD" />
@@ -166,7 +166,7 @@
 		<set name="icon" val="icon.accessory_earring_of_zaken_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="547" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="SILVER" />
@@ -183,7 +183,7 @@
 		<set name="icon" val="icon.accessary_queen_of_ice_necklace_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="729" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="SILVER" />
@@ -201,7 +201,7 @@
 		<set name="icon" val="icon.accessary_queen_of_ice_necklace_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
-		<set name="immediate_effect" val="1" />
+		<set name="immediate_effect" val="true" />
 		<set name="crystal_count" val="729" />
 		<set name="crystal_type" val="S84" />
 		<set name="material" val="SILVER" />
