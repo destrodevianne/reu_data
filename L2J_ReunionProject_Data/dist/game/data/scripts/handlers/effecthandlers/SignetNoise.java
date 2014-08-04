@@ -32,25 +32,25 @@ import l2r.gameserver.model.stats.Env;
 public class SignetNoise extends L2Effect
 {
 	private L2EffectPointInstance _actor;
-
+	
 	public SignetNoise(Env env, EffectTemplate template)
 	{
 		super(env, template);
 	}
-
+	
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.SIGNET_GROUND;
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{
 		_actor = (L2EffectPointInstance) getEffected();
 		return true;
 	}
-
+	
 	@Override
 	public boolean onActionTime()
 	{
@@ -58,16 +58,16 @@ public class SignetNoise extends L2Effect
 		{
 			return true; // do nothing first time
 		}
-
+		
 		L2PcInstance caster = getEffector().getActingPlayer();
-
+		
 		for (L2Character target : _actor.getKnownList().getKnownCharactersInRadius(getSkill().getAffectRange()))
 		{
 			if ((target == null) || (target == caster) || target.isDead())
 			{
 				continue;
 			}
-
+			
 			if (caster.canAttackCharacter(target))
 			{
 				L2Effect[] effects = target.getAllEffects();
@@ -85,7 +85,7 @@ public class SignetNoise extends L2Effect
 		}
 		return true;
 	}
-
+	
 	@Override
 	public void onExit()
 	{

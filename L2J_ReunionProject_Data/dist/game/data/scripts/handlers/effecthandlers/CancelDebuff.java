@@ -35,54 +35,54 @@ public class CancelDebuff extends L2Effect
 	{
 		super(env, template);
 	}
-
+	
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.CANCEL_DEBUFF;
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{
 		return cancel(getEffector(), getEffected(), getSkill(), getEffectPower());
 	}
-
+	
 	private static boolean cancel(L2Character caster, L2Character target, L2Skill skill, double baseRate)
 	{
 		if (target.isDead())
 		{
 			return false;
 		}
-
+		
 		int count = 0;
 		final L2Effect[] effects = target.getAllEffects();
-
+		
 		if ((effects == null) || (effects.length == 0))
 		{
 			return false;
 		}
-
+		
 		for (L2Effect e : effects)
 		{
 			if ((e == null) || !e.getSkill().isOffensive() || !e.getSkill().canBeDispeled())
 			{
 				continue;
 			}
-
+			
 			// TODO: Unhardcode Poison of Death skill
 			if (e.getSkill().getId() == 4082)
 			{
 				continue;
 			}
-
+			
 			if (Rnd.get(100) > baseRate)
 			{
 				continue;
 			}
-
+			
 			e.exit();
-
+			
 			count++;
 			if (count >= skill.getMaxNegatedEffects())
 			{

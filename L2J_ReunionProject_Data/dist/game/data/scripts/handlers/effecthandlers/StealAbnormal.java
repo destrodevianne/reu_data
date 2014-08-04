@@ -37,7 +37,7 @@ public class StealAbnormal extends L2Effect
 	{
 		super(env, template);
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{

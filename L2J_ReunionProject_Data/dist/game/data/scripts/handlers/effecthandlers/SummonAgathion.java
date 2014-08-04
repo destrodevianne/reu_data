@@ -34,7 +34,7 @@ public class SummonAgathion extends L2Effect
 	{
 		super(env, template);
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{
@@ -42,14 +42,14 @@ public class SummonAgathion extends L2Effect
 		{
 			return false;
 		}
-
+		
 		final L2PcInstance player = getEffector().getActingPlayer();
 		if (player.isInOlympiadMode())
 		{
 			player.sendPacket(SystemMessageId.THIS_SKILL_IS_NOT_AVAILABLE_FOR_THE_OLYMPIAD_EVENT);
 			return false;
 		}
-
+		
 		player.setAgathionId((getSkill() == null) ? 0 : getSkill().getNpcId());
 		player.broadcastUserInfo();
 		return true;

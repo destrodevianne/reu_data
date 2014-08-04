@@ -69,7 +69,7 @@ public class Paralyze extends L2Effect
 		{
 			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
 		}
-
+		
 		if (_mustCleanFreezingEffect)
 		{
 			getEffected().stopSpecialEffect(AbnormalEffect.S_FREEZING.getMask());

@@ -67,7 +67,7 @@ public class DamOverTime extends L2Effect
 			}
 		}
 		getEffected().reduceCurrentHpByDOT(damage, getEffector(), getSkill());
-
+		
 		return true;
 	}
 }

@@ -33,7 +33,7 @@ public class Stun extends L2Effect
 	{
 		super(env, template);
 	}
-
+	
 	@Override
 	public int getEffectFlags()
 	{
@@ -45,13 +45,13 @@ public class Stun extends L2Effect
 	{
 		return L2EffectType.STUN;
 	}
-
+	
 	@Override
 	public void onExit()
 	{
 		getEffected().stopStunning(false);
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{
