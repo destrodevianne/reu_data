@@ -30,11 +30,11 @@ import l2r.gameserver.model.stats.Formulas;
 public class CpDamPercent extends L2Effect
 {
 	private final double _power;
-
+	
 	public CpDamPercent(Env env, EffectTemplate template)
 	{
 		super(env, template);
-
+		
 		_power = template.getParameters().getDouble("power", 0);
 	}
 	
@@ -45,12 +45,12 @@ public class CpDamPercent extends L2Effect
 		{
 			return false;
 		}
-
+		
 		if (getEffected().isPlayer() && getEffected().getActingPlayer().isFakeDeath())
 		{
 			getEffected().stopFakeDeath(true);
 		}
-
+		
 		int damage = (int) ((getEffected().getCurrentCp() * _power) / 100);
 		// Manage attack or cast break of the target (calculating rate, sending message)
 		if (!getEffected().isRaid() && Formulas.calcAtkBreak(getEffected(), damage))
@@ -58,7 +58,7 @@ public class CpDamPercent extends L2Effect
 			getEffected().breakAttack();
 			getEffected().breakCast();
 		}
-
+		
 		if (damage > 0)
 		{
 			getEffected().setCurrentCp(getEffected().getCurrentCp() - damage);

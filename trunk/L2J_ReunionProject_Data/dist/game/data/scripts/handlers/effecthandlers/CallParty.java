@@ -37,7 +37,7 @@ public class CallParty extends L2Effect
 	{
 		return L2EffectType.CALLPC;
 	}
-
+	
 	@Override
 	public boolean isInstant()
 	{

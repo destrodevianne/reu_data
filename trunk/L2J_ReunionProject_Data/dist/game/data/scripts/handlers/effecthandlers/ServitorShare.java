@@ -37,19 +37,19 @@ public class ServitorShare extends L2Effect
 	{
 		super(env, template);
 	}
-
+	
 	@Override
 	public int getEffectFlags()
 	{
 		return EffectFlag.SERVITOR_SHARE.getMask();
 	}
-
+	
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.BUFF;
 	}
-
+	
 	@Override
 	public void onExit()
 	{
@@ -70,7 +70,7 @@ public class ServitorShare extends L2Effect
 				effects = owner.getAllEffects();
 			}
 		}
-
+		
 		if (effects != null)
 		{
 			for (L2Effect eff : effects)

@@ -36,13 +36,13 @@ public class FocusSouls extends L2Effect
 	{
 		super(env, template);
 	}
-
+	
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.FOCUS_SOULS;
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{
@@ -50,7 +50,7 @@ public class FocusSouls extends L2Effect
 		{
 			return false;
 		}
-
+		
 		final L2PcInstance target = getEffected().getActingPlayer();
 		final int maxSouls = (int) target.calcStat(Stats.MAX_SOULS, 0, null, null);
 		if (maxSouls > 0)

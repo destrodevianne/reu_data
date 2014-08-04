@@ -32,19 +32,19 @@ import l2r.gameserver.network.serverpackets.ExSpawnEmitter;
 public final class SoulEating extends L2Effect implements IExperienceReceivedEventListener
 {
 	private final int _expNeeded;
-
+	
 	public SoulEating(Env env, EffectTemplate template)
 	{
 		super(env, template);
 		_expNeeded = template.getParameters().getInteger("expNeeded");
 	}
-
+	
 	public SoulEating(Env env, L2Effect effect)
 	{
 		super(env, effect);
 		_expNeeded = effect.getEffectTemplate().getParameters().getInteger("expNeeded");
 	}
-
+	
 	@Override
 	public boolean onExperienceReceived(L2Playable playable, long exp)
 	{
@@ -57,9 +57,9 @@ public final class SoulEating extends L2Effect implements IExperienceReceivedEve
 				playable.sendPacket(SystemMessageId.SOUL_CANNOT_BE_ABSORBED_ANYMORE);
 				return true;
 			}
-
+			
 			player.increaseSouls(1);
-
+			
 			if ((player.getTarget() != null) && player.getTarget().isNpc())
 			{
 				final L2Npc npc = (L2Npc) playable.getTarget();
@@ -68,7 +68,7 @@ public final class SoulEating extends L2Effect implements IExperienceReceivedEve
 		}
 		return true;
 	}
-
+	
 	@Override
 	public void onExit()
 	{
@@ -78,7 +78,7 @@ public final class SoulEating extends L2Effect implements IExperienceReceivedEve
 		}
 		super.onExit();
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{

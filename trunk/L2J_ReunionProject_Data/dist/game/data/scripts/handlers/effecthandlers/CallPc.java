@@ -48,7 +48,7 @@ public class CallPc extends L2Effect
 		_itemId = template.getParameters().getInteger("itemId", 0);
 		_itemCount = template.getParameters().getInteger("itemCount", 0);
 	}
-
+	
 	@Override
 	public boolean isInstant()
 	{

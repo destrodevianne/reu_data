@@ -32,7 +32,7 @@ public class UnsummonAgathion extends SummonAgathion
 	{
 		super(env, template);
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{

@@ -36,24 +36,24 @@ public class Transformation extends L2Effect
 	{
 		super(env, template);
 	}
-
+	
 	public Transformation(Env env, L2Effect effect)
 	{
 		super(env, effect);
 	}
-
+	
 	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.TRANSFORMATION;
 	}
-
+	
 	@Override
 	public void onExit()
 	{
 		getEffected().stopTransformation(false);
 	}
-
+	
 	@Override
 	public boolean onStart()
 	{
@@ -61,7 +61,7 @@ public class Transformation extends L2Effect
 		{
 			return false;
 		}
-
+		
 		L2PcInstance trg = getEffected().getActingPlayer();
 		if ((trg == null) || trg.isAlikeDead() || trg.isCursedWeaponEquipped())
 		{
@@ -87,7 +87,7 @@ public class Transformation extends L2Effect
 			getEffected().sendPacket(SystemMessageId.YOU_CANNOT_POLYMORPH_WHILE_RIDING_A_PET);
 			return false;
 		}
-
+		
 		TransformData.getInstance().transformPlayer(getSkill().getTransformId(), trg);
 		return true;
 	}
