@@ -66,14 +66,8 @@ public class Spoil extends L2Effect
 			target.setIsSpoiledBy(getEffector().getObjectId());
 			getEffector().sendPacket(SystemMessageId.SPOIL_SUCCESS);
 		}
-		try
-		{
-			target.getAI().notifyEvent(CtrlEvent.EVT_ATTACKED, getEffector());
-		}
-		catch (Exception e)
-		{
-			_log.warn("Logger: notifyEvent failed (Spoil) Report this to team. ");
-		}
+		
+		target.getAI().notifyEvent(CtrlEvent.EVT_ATTACKED, getEffector());
 		return true;
 	}
 }
