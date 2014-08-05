@@ -1555,7 +1555,6 @@
 		<set name="hitTime" val="500" />
 		<set name="magicLvl" val="78" />
 		<set name="mpConsume" val="12" />
-		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="AURA_CORPSE_MOB" />
