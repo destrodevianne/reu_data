@@ -19,7 +19,7 @@
 package handlers.effecthandlers;
 
 import l2r.gameserver.enums.CtrlIntention;
-import l2r.gameserver.model.actor.L2Attackable;
+import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
 import l2r.gameserver.model.stats.Env;
@@ -44,10 +44,21 @@ public final class GetAgro extends L2Effect
 	@Override
 	public boolean onStart()
 	{
-		if (getEffected() instanceof L2Attackable)
+		if (getEffected().isAttackable())
 		{
 			getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, getEffector());
 		}
+		
+		if (getEffected().isPlayer() && getEffector().isPlayer())
+		{
+			L2PcInstance activeChar = getEffector().getActingPlayer();
+			L2PcInstance target = getEffected().getActingPlayer();
+			if (!activeChar.isFriend(target))
+			{
+				getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, getEffector());
+			}
+		}
+		
 		return true;
 	}
 }
