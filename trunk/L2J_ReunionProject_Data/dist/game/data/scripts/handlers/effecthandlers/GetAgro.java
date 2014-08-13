@@ -51,11 +51,12 @@ public final class GetAgro extends L2Effect
 		
 		if (getEffected().isPlayer() && getEffector().isPlayer())
 		{
-			L2PcInstance activeChar = getEffector().getActingPlayer();
-			L2PcInstance target = getEffected().getActingPlayer();
-			if (!activeChar.isFriend(target))
+			L2PcInstance effector = getEffector().getActingPlayer();
+			L2PcInstance effected = getEffected().getActingPlayer();
+			if (!effector.isFriend(effected))
 			{
-				getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, getEffector());
+				effected.setTarget(effector);
+				effected.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, effector);
 			}
 		}
 		
