@@ -724,12 +724,13 @@
 		</for>
 	</skill>
 	<skill id="9058" levels="1" name="Black Freezing Core">
+		<set name="affectLimit" val="99-99" /> <!-- FIXME: value unconfirmed -->
+		<set name="affectRange" val="2000" /> <!-- FIXME: value unconfirmed -->
 		<set name="itemConsumeId" val="15470" /> 
 		<set name="itemConsumeCount" val="1" /> 
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="1200000" />
-		<set name="skillRadius" val="2000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="COMMAND_CHANNEL" />
 		<cond msgId="113" addName="1">
