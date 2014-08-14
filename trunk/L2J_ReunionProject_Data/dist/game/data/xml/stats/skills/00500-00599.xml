@@ -724,7 +724,7 @@
 		</enchant1for>
 		<enchant2for>
 			<effect name="SummonTrap" noicon="1" val="0">
-				<param npcId="13056" />
+				<param npcId="13064" />
 			</effect>
 		</enchant2for>
 	</skill>
