@@ -43,9 +43,6 @@ import l2r.gameserver.util.Util;
  */
 public class Warp extends L2Effect
 {
-	private int x, y, z;
-	private L2Character _actor;
-	
 	public Warp(Env env, EffectTemplate template)
 	{
 		super(env, template);
@@ -60,43 +57,29 @@ public class Warp extends L2Effect
 	@Override
 	public boolean onStart()
 	{
-		_actor = isSelfEffect() ? getEffector() : getEffected();
+		final L2Character effected = getEffected();
+		final int radius = getSkill().getFlyRadius();
+		final double angle = Util.convertHeadingToDegree(effected.getHeading());
+		final double radian = Math.toRadians(angle);
+		final double course = Math.toRadians(getSkill().getFlyCourse());
+		final int x1 = (int) (Math.cos(Math.PI + radian + course) * radius);
+		final int y1 = (int) (Math.sin(Math.PI + radian + course) * radius);
 		
-		/*
-		 * if (_actor.isMovementDisabled()) This is removed because in retail you can use Warp while movement is disabled. return false;
-		 */
-		
-		int _radius = getSkill().getFlyRadius();
-		
-		double angle = Util.convertHeadingToDegree(_actor.getHeading());
-		double radian = Math.toRadians(angle);
-		double course = Math.toRadians(getSkill().getFlyCourse());
-		
-		int x1 = (int) (Math.cos(Math.PI + radian + course) * _radius);
-		int y1 = (int) (Math.sin(Math.PI + radian + course) * _radius);
-		
-		x = _actor.getX() + x1;
-		y = _actor.getY() + y1;
-		z = _actor.getZ();
-		
+		int x = effected.getX() + x1;
+		int y = effected.getY() + y1;
+		int z = effected.getZ();
+		Location loc = new Location(x, y, z);
 		if (Config.GEODATA > 0)
 		{
-			Location destiny = GeoData.getInstance().moveCheck(_actor.getX(), _actor.getY(), _actor.getZ(), x, y, z, _actor.getInstanceId());
-			x = destiny.getX();
-			y = destiny.getY();
-			z = destiny.getZ();
+			loc = GeoData.getInstance().moveCheck(effected.getX(), effected.getY(), effected.getZ(), x, y, z, effected.getInstanceId());
 		}
 		
-		// TODO: check if this AI intention is retail-like. This stops player's
-		// previous movement
-		_actor.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
-		
-		_actor.broadcastPacket(new FlyToLocation(_actor, x, y, z, FlyType.DUMMY));
-		_actor.abortAttack();
-		_actor.abortCast();
-		
-		_actor.setXYZ(x, y, z);
-		_actor.broadcastPacket(new ValidateLocation(_actor));
+		effected.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
+		effected.broadcastPacket(new FlyToLocation(effected, loc.getX(), loc.getY(), loc.getZ(), FlyType.DUMMY));
+		effected.abortAttack();
+		effected.abortCast();
+		effected.setXYZ(loc);
+		effected.broadcastPacket(new ValidateLocation(effected));
 		
 		return true;
 	}
