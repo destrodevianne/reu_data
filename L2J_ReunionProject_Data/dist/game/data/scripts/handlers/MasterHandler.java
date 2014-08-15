@@ -225,7 +225,6 @@ import l2r.gameserver.scripts.handlers.skillhandlers.Resurrect;
 import l2r.gameserver.scripts.handlers.skillhandlers.ShiftTarget;
 import l2r.gameserver.scripts.handlers.skillhandlers.Sow;
 import l2r.gameserver.scripts.handlers.skillhandlers.TransformDispel;
-import l2r.gameserver.scripts.handlers.skillhandlers.Trap;
 import l2r.gameserver.scripts.handlers.skillhandlers.Unlock;
 import l2r.gameserver.scripts.handlers.targethandlers.Area;
 import l2r.gameserver.scripts.handlers.targethandlers.AreaCorpseMob;
@@ -549,7 +548,6 @@ public class MasterHandler
 			ShiftTarget.class,
 			Sow.class,
 			TransformDispel.class,
-			Trap.class,
 			Unlock.class,
 		},
 		{
