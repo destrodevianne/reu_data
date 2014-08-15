@@ -20,16 +20,19 @@ package handlers.effecthandlers;
 
 import l2r.gameserver.model.actor.L2Npc;
 import l2r.gameserver.model.actor.L2Playable;
-import l2r.gameserver.model.actor.events.listeners.IExperienceReceivedEventListener;
 import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
+import l2r.gameserver.model.events.EventType;
+import l2r.gameserver.model.events.impl.character.playable.OnPlayableExpChanged;
+import l2r.gameserver.model.events.listeners.AbstractEventListener;
+import l2r.gameserver.model.events.listeners.ConsumerEventListener;
 import l2r.gameserver.model.stats.Env;
 import l2r.gameserver.model.stats.Stats;
 import l2r.gameserver.network.SystemMessageId;
 import l2r.gameserver.network.serverpackets.ExSpawnEmitter;
 
-public final class SoulEating extends L2Effect implements IExperienceReceivedEventListener
+public final class SoulEating extends L2Effect
 {
 	private final int _expNeeded;
 	
@@ -45,17 +48,16 @@ public final class SoulEating extends L2Effect implements IExperienceReceivedEve
 		_expNeeded = effect.getEffectTemplate().getParameters().getInteger("expNeeded");
 	}
 	
-	@Override
-	public boolean onExperienceReceived(L2Playable playable, long exp)
+	public void onExperienceReceived(L2Playable playable, long exp)
 	{
-		final L2PcInstance player = getEffected().isPlayer() ? getEffected().getActingPlayer() : null;
-		if ((player != null) && (exp >= _expNeeded))
+		if (playable.isPlayer() && (exp >= _expNeeded))
 		{
+			final L2PcInstance player = playable.getActingPlayer();
 			final int maxSouls = (int) player.calcStat(Stats.MAX_SOULS, 0, null, null);
 			if (player.getChargedSouls() >= maxSouls)
 			{
 				playable.sendPacket(SystemMessageId.SOUL_CANNOT_BE_ABSORBED_ANYMORE);
-				return true;
+				return;
 			}
 			
 			player.increaseSouls(1);
@@ -66,7 +68,6 @@ public final class SoulEating extends L2Effect implements IExperienceReceivedEve
 				player.broadcastPacket(new ExSpawnEmitter(player, npc), 500);
 			}
 		}
-		return true;
 	}
 	
 	@Override
@@ -74,7 +75,13 @@ public final class SoulEating extends L2Effect implements IExperienceReceivedEve
 	{
 		if (getEffected().isPlayer())
 		{
-			getEffected().getEvents().unregisterListener(this);
+			for (AbstractEventListener listener : getEffected().getListeners(EventType.ON_PLAYABLE_EXP_CHANGED))
+			{
+				if (listener.getOwner() == this)
+				{
+					listener.unregisterMe();
+				}
+			}
 		}
 		super.onExit();
 	}
@@ -84,7 +91,7 @@ public final class SoulEating extends L2Effect implements IExperienceReceivedEve
 	{
 		if (getEffected().isPlayer())
 		{
-			getEffected().getEvents().registerListener(this);
+			getEffected().addListener(new ConsumerEventListener(getEffected(), EventType.ON_PLAYABLE_EXP_CHANGED, (OnPlayableExpChanged event) -> onExperienceReceived(event.getActiveChar(), (event.getNewExp() - event.getOldExp())), this));
 		}
 		return super.onStart();
 	}

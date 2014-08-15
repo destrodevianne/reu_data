@@ -155,6 +155,8 @@ public final class EffectMasterHandler
 		ThrowUp.class,
 		TransferDamage.class,
 		Transformation.class,
+		TrapDetect.class,
+		TrapRemove.class,
 		UnsummonAgathion.class,
 		VitalityPointUp.class,
 		Warp.class,
