@@ -40,7 +40,7 @@ public class Paralyze extends L2Effect
 		_mustCleanFreezingEffect = false;
 		if (template.hasParameters())
 		{
-			_mustCleanFreezingEffect = template.getParameters().getBool("mustCleanFreezingEffect", false);
+			_mustCleanFreezingEffect = template.getParameters().getBoolean("mustCleanFreezingEffect", false);
 		}
 	}
 	
