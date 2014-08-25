@@ -18,31 +18,21 @@
  */
 package handlers.effecthandlers;
 
-import l2r.gameserver.model.actor.instance.L2TrapInstance;
+import l2r.gameserver.model.actor.instance.L2PcInstance;
 import l2r.gameserver.model.effects.EffectTemplate;
 import l2r.gameserver.model.effects.L2Effect;
+import l2r.gameserver.model.effects.L2EffectType;
 import l2r.gameserver.model.stats.Env;
 
 /**
- * Trap Detect effect implementation.
+ * Detection effect implementation.
  * @author UnAfraid
  */
-public final class TrapDetect extends L2Effect
+public final class Detection extends L2Effect
 {
-	private final int _power;
-	
-	public TrapDetect(Env env, EffectTemplate template)
+	public Detection(Env env, EffectTemplate template)
 	{
 		super(env, template);
-		
-		if (template.hasParameters())
-		{
-			_power = template.getParameters().getInt("power");
-		}
-		else
-		{
-			throw new IllegalArgumentException(getClass().getSimpleName() + ": effect without power!");
-		}
 	}
 	
 	@Override
@@ -54,17 +44,39 @@ public final class TrapDetect extends L2Effect
 	@Override
 	public boolean onStart()
 	{
-		if (!getEffected().isTrap() || getEffected().isAlikeDead())
+		if (!getEffector().isPlayer() || !getEffected().isPlayer())
 		{
 			return false;
 		}
 		
-		final L2TrapInstance trap = (L2TrapInstance) getEffected();
-		if (trap.getLevel() <= _power)
-		{
-			trap.setDetected(getEffector());
-		}
+		final L2PcInstance player = getEffector().getActingPlayer();
+		final L2PcInstance target = getEffected().getActingPlayer();
+		final boolean hasParty = player.isInParty();
+		final boolean hasClan = player.getClanId() > 0;
+		final boolean hasAlly = player.getAllyId() > 0;
 		
+		if (target.isInvisible())
+		{
+			if (hasParty && (target.isInParty()) && (player.getParty().getLeaderObjectId() == target.getParty().getLeaderObjectId()))
+			{
+				return false;
+			}
+			else if (hasClan && (player.getClanId() == target.getClanId()))
+			{
+				return false;
+			}
+			else if (hasAlly && (player.getAllyId() == target.getAllyId()))
+			{
+				return false;
+			}
+			
+			// Remove Hide.
+			L2Effect eHide = target.getFirstEffect(L2EffectType.HIDE);
+			if (eHide != null)
+			{
+				eHide.exit();
+			}
+		}
 		return true;
 	}
 }

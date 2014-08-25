@@ -210,11 +210,8 @@ import l2r.gameserver.scripts.handlers.punishmenthandlers.ChatBanHandler;
 import l2r.gameserver.scripts.handlers.punishmenthandlers.JailHandler;
 import l2r.gameserver.scripts.handlers.skillhandlers.Blow;
 import l2r.gameserver.scripts.handlers.skillhandlers.Continuous;
-import l2r.gameserver.scripts.handlers.skillhandlers.Detection;
 import l2r.gameserver.scripts.handlers.skillhandlers.Disablers;
 import l2r.gameserver.scripts.handlers.skillhandlers.Dummy;
-import l2r.gameserver.scripts.handlers.skillhandlers.Fishing;
-import l2r.gameserver.scripts.handlers.skillhandlers.FishingSkill;
 import l2r.gameserver.scripts.handlers.skillhandlers.GiveReco;
 import l2r.gameserver.scripts.handlers.skillhandlers.InstantJump;
 import l2r.gameserver.scripts.handlers.skillhandlers.Manadam;
@@ -533,11 +530,8 @@ public class MasterHandler
 			// Skill Handlers
 			Blow.class,
 			Continuous.class,
-			Detection.class,
 			Disablers.class,
 			Dummy.class,
-			Fishing.class,
-			FishingSkill.class,
 			GiveReco.class,
 			InstantJump.class,
 			Manadam.class,

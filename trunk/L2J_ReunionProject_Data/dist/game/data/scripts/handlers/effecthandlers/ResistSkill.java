@@ -43,8 +43,8 @@ public class ResistSkill extends L2Effect
 		{
 			for (int i = 1;; i++)
 			{
-				int skillId = template.getParameters().getInteger("skillId" + i, 0);
-				int skillLvl = template.getParameters().getInteger("skillLvl" + i, 0);
+				int skillId = template.getParameters().getInt("skillId" + i, 0);
+				int skillLvl = template.getParameters().getInt("skillLvl" + i, 0);
 				if (skillId == 0)
 				{
 					break;

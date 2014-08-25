@@ -42,7 +42,7 @@ public final class TrapRemove extends L2Effect
 		
 		if (template.hasParameters())
 		{
-			_power = template.getParameters().getInteger("power");
+			_power = template.getParameters().getInt("power");
 		}
 		else
 		{
