@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<list>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/JavaBuffer.xsd">
 	<buffs id="1" name="Magic Barrier" category="PROPHET" buff_id="1036" buff_level="2" custom_level="0" description="Increases M. Def. by 30%"/>
 	<buffs id="2" name="Shield" category="PROPHET" buff_id="1040" buff_level="3" custom_level="0" description="Increases P. Def. by 15%"/>
 	<buffs id="3" name="Holy Weapon" category="PROPHET" buff_id="1043" buff_level="1" custom_level="0" description="Increases divine P. Atk. by 20"/>

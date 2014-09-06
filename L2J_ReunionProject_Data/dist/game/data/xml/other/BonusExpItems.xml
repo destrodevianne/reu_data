@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<list>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/BonusExpItems.xsd">
 	<bonus>
 		<item id="20335" exp="1.3" sp="1.0" /> <!-- Rune of Experience: 30% - 5 hour limited time (20335) -->
 		<item id="20336" exp="1.5" sp="1.0" /> <!-- Rune of Experience Points 50% - 5 Hour Expiration Period (20336) -->
