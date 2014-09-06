@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<list>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/achievements.xsd">
 	<achievement id="1" name="Champion" description="Gain level 80" reward="9142,5" minLevel="80"/>
 	<achievement id="2" name="Noble" description="Gain noblesse status" reward="9142,10" mustBeNoble="True"/>
 	<achievement id="3" name="Hero" description="Gain hero status" reward="9142,10" mustBeHero="True"/>
