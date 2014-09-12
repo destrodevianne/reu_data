@@ -186,14 +186,7 @@ public class SignetMDam extends L2Effect
 					activeChar.sendDamageMessage(target, mdam, mcrit, false, false);
 					target.reduceCurrentHp(mdam, activeChar, getSkill());
 				}
-				try
-				{
-					target.getAI().notifyEvent(CtrlEvent.EVT_ATTACKED, activeChar);
-				}
-				catch (Exception e)
-				{
-					_log.warn("Logger: notifyEvent failed (SignetMDam) Report this to team. ");
-				}
+				target.getAI().notifyEvent(CtrlEvent.EVT_ATTACKED, activeChar);
 			}
 		}
 		activeChar.setChargedShot(bss ? ShotType.BLESSED_SPIRITSHOTS : ShotType.SPIRITSHOTS, false);
