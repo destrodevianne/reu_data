@@ -54,14 +54,7 @@ public class Confusion extends L2Effect
 	{
 		if (!getEffected().isPlayer())
 		{
-			try
-			{
-				getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
-			}
-			catch (Exception e)
-			{
-				_log.warn("Logger: notifyEvent failed (Confusion) Report this to team. ");
-			}
+			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
 		}
 	}
 	
