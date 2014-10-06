@@ -52,9 +52,15 @@ public class TargetMe extends L2Effect
 				return false;
 			}
 			
+			L2PcInstance effector = getEffector().getActingPlayer();
+			L2PcInstance effected = getEffected().getActingPlayer();
+			if ((effector != null) && (effected != null) && effector.isFriend(effected))
+			{
+				return false;
+			}
+			
 			if (getEffected().getTarget() != getEffector())
 			{
-				L2PcInstance effector = getEffector().getActingPlayer();
 				// If effector is null, then its not a player, but NPC. If its not null, then it should check if the skill is pvp skill.
 				if ((effector == null) || effector.checkPvpSkill(getEffected(), getSkill()))
 				{
