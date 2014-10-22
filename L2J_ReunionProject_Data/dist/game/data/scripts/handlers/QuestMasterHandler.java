@@ -223,6 +223,7 @@ public class QuestMasterHandler
 		Q00296_TarantulasSpiderSilk.class,
 		Q00297_GatekeepersFavor.class,
 		Q00298_LizardmensConspiracy.class,
+		Q00299_GatherIngredientsForPie.class,
 		Q00300_HuntingLetoLizardman.class,
 		Q00303_CollectArrowheads.class,
 		Q00306_CrystalOfFireAndIce.class,
