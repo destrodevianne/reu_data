@@ -136,7 +136,6 @@ import l2r.gameserver.scripts.handlers.bypasshandlers.Freight;
 import l2r.gameserver.scripts.handlers.bypasshandlers.ItemAuctionLink;
 import l2r.gameserver.scripts.handlers.bypasshandlers.Link;
 import l2r.gameserver.scripts.handlers.bypasshandlers.Loto;
-import l2r.gameserver.scripts.handlers.bypasshandlers.ManorManager;
 import l2r.gameserver.scripts.handlers.bypasshandlers.Multisell;
 import l2r.gameserver.scripts.handlers.bypasshandlers.Observation;
 import l2r.gameserver.scripts.handlers.bypasshandlers.OlympiadManagerLink;
@@ -444,7 +443,6 @@ public class MasterHandler
 			ItemAuctionLink.class,
 			Link.class,
 			Loto.class,
-			ManorManager.class,
 			Multisell.class,
 			Observation.class,
 			OlympiadObservation.class,
