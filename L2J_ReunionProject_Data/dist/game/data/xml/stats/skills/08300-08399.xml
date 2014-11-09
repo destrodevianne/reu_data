@@ -801,69 +801,142 @@
 	</skill>
 	<skill id="8372" levels="1" name="Super Strong Giant's Mask">
 		<!-- Mask's effect. For 60 minutes, increases Max HP and Max MP by 10%, P. Atk. by 5%, and earth tolerance by 5. -->
-		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="signal_d" />
-		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="7200000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="icon" val="icon.ev_frankenstein_mask_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="BUFF"/>
+		<set name="hitTime" val="3000"/>
+		<set name="operateType" val="A2"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="staticHitTime" val="true"/>
+		<set name="staticReuse" val="true"/>
+		<set name="targetType" val="SELF" />
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<for>
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="br_event_buf1">
+				<mul order="0x30" stat="maxHp" val="1.1"/>
+				<mul order="0x30" stat="maxMp" val="1.1"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<add order="0x40" stat="earthRes" val="5"/>
+			</effect>
+		</for>
 	</skill>
 	<skill id="8373" levels="1" name="Silent Scream's Mask">
 		<!-- Mask's effect. For 60 minutes, increases Max HP and Max MP by 10%, Critical rate by 5%, and wind tolerance by 5. -->
-		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="signal_d" />
-		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="7200000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="icon" val="icon.ev_scream_mask_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="BUFF"/>
+		<set name="hitTime" val="3000"/>
+		<set name="operateType" val="A2"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="staticHitTime" val="true"/>
+		<set name="staticReuse" val="true"/>
+		<set name="targetType" val="SELF" />
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<for>
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="br_event_buf1">
+				<mul order="0x30" stat="maxHp" val="1.1"/>
+				<mul order="0x30" stat="maxMp" val="1.1"/>
+				<basemul order="0x30" stat="rCrit" val="0.05"/>
+				<add order="0x40" stat="windRes" val="5"/>
+			</effect>
+		</for>
 	</skill>
 	<skill id="8374" levels="1" name="Wrathful Spirit's Mask">
 		<!-- Mask's effect. For 60 minutes, increases Max HP and Max MP by 10%, moving speed by 5%, and fire tolerance by 5. -->
-		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="signal_d" />
-		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="7200000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="icon" val="icon.ev_doccabi_mask_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="BUFF"/>
+		<set name="hitTime" val="3000"/>
+		<set name="operateType" val="A2"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="staticHitTime" val="true"/>
+		<set name="staticReuse" val="true"/>
+		<set name="targetType" val="SELF" />
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<for>
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="br_event_buf1">
+				<mul order="0x30" stat="maxHp" val="1.1"/>
+				<mul order="0x30" stat="maxMp" val="1.1"/>
+				<mul order="0x30" stat="runSpd" val="1.1"/>
+				<add order="0x40" stat="fireRes" val="5"/>
+			</effect>
+		</for>
 	</skill>
 	<skill id="8375" levels="1" name="Unrotten Corpse's Mask">
 		<!-- Mask's effect. For 60 minutes, increases Max HP and Max MP by 10%, skill's MP consumption by 5%, and darkness tolerance by 5. -->
-		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="signal_d" />
-		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="7200000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="icon" val="icon.ev_mummy_mask_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="BUFF"/>
+		<set name="hitTime" val="3000"/>
+		<set name="operateType" val="A2"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="staticHitTime" val="true"/>
+		<set name="staticReuse" val="true"/>
+		<set name="targetType" val="SELF" />
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<for>
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="br_event_buf1">
+				<mul order="0x30" stat="maxHp" val="1.1"/>
+				<mul order="0x30" stat="maxMp" val="1.1"/>
+				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.95"/>
+				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95"/>
+				<add order="0x40" stat="darkRes" val="5"/>
+			</effect>
+		</for>
 	</skill>
 	<skill id="8376" levels="1" name="Planet X235 Alien Mask's Effect">
 		<!-- Mask's effect. For 60 minutes, increases Max HP and Max MP by 10%, damage magic's Prominent Damage occurrence by 2, and water tolerance by 5. -->
-		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="signal_d" />
-		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="7200000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="icon" val="icon.ev_alien_mask_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="BUFF"/>
+		<set name="hitTime" val="3000"/>
+		<set name="operateType" val="A2"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="staticHitTime" val="true"/>
+		<set name="staticReuse" val="true"/>
+		<set name="targetType" val="SELF" />
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<for>
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="br_event_buf1">
+				<mul order="0x30" stat="maxHp" val="1.1"/>
+				<mul order="0x30" stat="maxMp" val="1.1"/>
+				<sub order="0x40" stat="fireRes" val="2"/>
+				<add order="0x40" stat="waterRes" val="5"/>
+			</effect>
+		</for>
 	</skill>
 	<skill id="8377" levels="1" name="Golden Jack O'Lantern Mask's Effect">
 		<!-- Mask's effect. For 60 minutes, increases Max HP and Max MP by 20%, moving speed by 10%, and resistance to debuffs by 10%. -->
-		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="signal_d" />
-		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="82800000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="icon" val="icon.ev_golden_jack0_mask_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="BUFF"/>
+		<set name="hitTime" val="3000"/>
+		<set name="operateType" val="A2"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="staticHitTime" val="true"/>
+		<set name="staticReuse" val="true"/>
+		<set name="targetType" val="SELF" />
+		<cond msgId="1509">
+			<player olympiad="false"/>
+		</cond>
+		<for>
+			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="br_event_buf1">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="runSpd" val="1.1"/>
+				<add order="0x40" stat="debuffVuln" val="10"/>
+			</effect>
+		</for>
 	</skill>
 	<skill id="8378" levels="1" name="Beast Training - Release All">
 		<!-- Confirmed CT2.5 -->
