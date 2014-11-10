@@ -48,7 +48,7 @@ public final class Pumping extends L2Effect
 		
 		if (template.hasParameters())
 		{
-			_power = template.getParameters().getInt("power");
+			_power = template.getParameters().getDouble("power");
 		}
 		else
 		{
