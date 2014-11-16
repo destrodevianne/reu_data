@@ -1,0 +1,9 @@
+UPDATE npc SET type = "L2Merchant" WHERE id = "35102";
+UPDATE npc SET type = "L2Merchant" WHERE id = "35144";
+UPDATE npc SET type = "L2Merchant" WHERE id = "35186";
+UPDATE npc SET type = "L2Merchant" WHERE id = "35228";
+UPDATE npc SET type = "L2Merchant" WHERE id = "35276";
+UPDATE npc SET type = "L2Merchant" WHERE id = "35318";
+UPDATE npc SET type = "L2Merchant" WHERE id = "35365";
+UPDATE npc SET type = "L2Merchant" WHERE id = "35511";
+UPDATE npc SET type = "L2Merchant" WHERE id = "35557";
