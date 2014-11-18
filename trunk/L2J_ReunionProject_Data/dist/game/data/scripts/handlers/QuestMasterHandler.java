@@ -21,6 +21,40 @@ package handlers;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import l2r.gameserver.scripts.SagasScripts.Q00067_SagaOfTheDoombringer;
+import l2r.gameserver.scripts.SagasScripts.Q00068_SagaOfTheSoulHound;
+import l2r.gameserver.scripts.SagasScripts.Q00069_SagaOfTheTrickster;
+import l2r.gameserver.scripts.SagasScripts.Q00070_SagaOfThePhoenixKnight;
+import l2r.gameserver.scripts.SagasScripts.Q00071_SagaOfEvasTemplar;
+import l2r.gameserver.scripts.SagasScripts.Q00072_SagaOfTheSwordMuse;
+import l2r.gameserver.scripts.SagasScripts.Q00073_SagaOfTheDuelist;
+import l2r.gameserver.scripts.SagasScripts.Q00074_SagaOfTheDreadnought;
+import l2r.gameserver.scripts.SagasScripts.Q00075_SagaOfTheTitan;
+import l2r.gameserver.scripts.SagasScripts.Q00076_SagaOfTheGrandKhavatari;
+import l2r.gameserver.scripts.SagasScripts.Q00077_SagaOfTheDominator;
+import l2r.gameserver.scripts.SagasScripts.Q00078_SagaOfTheDoomcryer;
+import l2r.gameserver.scripts.SagasScripts.Q00079_SagaOfTheAdventurer;
+import l2r.gameserver.scripts.SagasScripts.Q00080_SagaOfTheWindRider;
+import l2r.gameserver.scripts.SagasScripts.Q00081_SagaOfTheGhostHunter;
+import l2r.gameserver.scripts.SagasScripts.Q00082_SagaOfTheSagittarius;
+import l2r.gameserver.scripts.SagasScripts.Q00083_SagaOfTheMoonlightSentinel;
+import l2r.gameserver.scripts.SagasScripts.Q00084_SagaOfTheGhostSentinel;
+import l2r.gameserver.scripts.SagasScripts.Q00085_SagaOfTheCardinal;
+import l2r.gameserver.scripts.SagasScripts.Q00086_SagaOfTheHierophant;
+import l2r.gameserver.scripts.SagasScripts.Q00087_SagaOfEvasSaint;
+import l2r.gameserver.scripts.SagasScripts.Q00088_SagaOfTheArchmage;
+import l2r.gameserver.scripts.SagasScripts.Q00089_SagaOfTheMysticMuse;
+import l2r.gameserver.scripts.SagasScripts.Q00090_SagaOfTheStormScreamer;
+import l2r.gameserver.scripts.SagasScripts.Q00091_SagaOfTheArcanaLord;
+import l2r.gameserver.scripts.SagasScripts.Q00092_SagaOfTheElementalMaster;
+import l2r.gameserver.scripts.SagasScripts.Q00093_SagaOfTheSpectralMaster;
+import l2r.gameserver.scripts.SagasScripts.Q00094_SagaOfTheSoultaker;
+import l2r.gameserver.scripts.SagasScripts.Q00095_SagaOfTheHellKnight;
+import l2r.gameserver.scripts.SagasScripts.Q00096_SagaOfTheSpectralDancer;
+import l2r.gameserver.scripts.SagasScripts.Q00097_SagaOfTheShillienTemplar;
+import l2r.gameserver.scripts.SagasScripts.Q00098_SagaOfTheShillienSaint;
+import l2r.gameserver.scripts.SagasScripts.Q00099_SagaOfTheFortuneSeeker;
+import l2r.gameserver.scripts.SagasScripts.Q00100_SagaOfTheMaestro;
 import l2r.gameserver.scripts.quests.*;
 
 /**
@@ -81,9 +115,44 @@ public class QuestMasterHandler
 		Q00051_OFullesSpecialBait.class,
 		Q00052_WilliesSpecialBait.class,
 		Q00053_LinnaeusSpecialBait.class,
+		Q00061_LawEnforcement.class,
 		Q00062_PathOfTheTrooper.class,
 		Q00063_PathOfTheWarder.class,
 		Q00064_CertifiedBerserker.class,
+		Q00067_SagaOfTheDoombringer.class,
+		Q00068_SagaOfTheSoulHound.class,
+		Q00069_SagaOfTheTrickster.class,
+		Q00070_SagaOfThePhoenixKnight.class,
+		Q00071_SagaOfEvasTemplar.class,
+		Q00072_SagaOfTheSwordMuse.class,
+		Q00073_SagaOfTheDuelist.class,
+		Q00074_SagaOfTheDreadnought.class,
+		Q00075_SagaOfTheTitan.class,
+		Q00076_SagaOfTheGrandKhavatari.class,
+		Q00077_SagaOfTheDominator.class,
+		Q00078_SagaOfTheDoomcryer.class,
+		Q00079_SagaOfTheAdventurer.class,
+		Q00080_SagaOfTheWindRider.class,
+		Q00081_SagaOfTheGhostHunter.class,
+		Q00082_SagaOfTheSagittarius.class,
+		Q00083_SagaOfTheMoonlightSentinel.class,
+		Q00084_SagaOfTheGhostSentinel.class,
+		Q00085_SagaOfTheCardinal.class,
+		Q00086_SagaOfTheHierophant.class,
+		Q00087_SagaOfEvasSaint.class,
+		Q00088_SagaOfTheArchmage.class,
+		Q00089_SagaOfTheMysticMuse.class,
+		Q00090_SagaOfTheStormScreamer.class,
+		Q00091_SagaOfTheArcanaLord.class,
+		Q00092_SagaOfTheElementalMaster.class,
+		Q00093_SagaOfTheSpectralMaster.class,
+		Q00094_SagaOfTheSoultaker.class,
+		Q00095_SagaOfTheHellKnight.class,
+		Q00096_SagaOfTheSpectralDancer.class,
+		Q00097_SagaOfTheShillienTemplar.class,
+		Q00098_SagaOfTheShillienSaint.class,
+		Q00099_SagaOfTheFortuneSeeker.class,
+		Q00100_SagaOfTheMaestro.class,
 		Q00101_SwordOfSolidarity.class,
 		Q00102_SeaOfSporesFever.class,
 		Q00103_SpiritOfCraftsman.class,
@@ -100,6 +169,7 @@ public class QuestMasterHandler
 		Q00114_ResurrectionOfAnOldManager.class,
 		Q00115_TheOtherSideOfTruth.class,
 		Q00116_BeyondTheHillsOfWinter.class,
+		Q00117_TheOceanOfDistantStars.class,
 		Q00119_LastImperialPrince.class,
 		Q00121_PavelTheGiant.class,
 		Q00122_OminousNews.class,
@@ -257,10 +327,13 @@ public class QuestMasterHandler
 		Q00338_AlligatorHunter.class,
 		Q00341_HuntingForWildBeasts.class,
 		Q00344_1000YearsTheEndOfLamentation.class,
+		Q00345_MethodToRaiseTheDead.class,
 		Q00347_GoGetTheCalculator.class,
 		Q00348_ArrogantSearch.class,
 		Q00350_EnhanceYourWeapon.class,
+		Q00352_HelpRoodRaiseANewPet.class,
 		Q00354_ConquestOfAlligatorIsland.class,
+		Q00355_FamilyHonor.class,
 		Q00356_DigUpTheSeaOfSpores.class,
 		Q00357_WarehouseKeepersAmbition.class,
 		Q00358_IllegitimateChildOfTheGoddess.class,
@@ -275,8 +348,11 @@ public class QuestMasterHandler
 		Q00368_TrespassingIntoTheHolyGround.class,
 		Q00369_CollectorOfJewels.class,
 		Q00370_AnElderSowsSeeds.class,
+		Q00371_ShrieksOfGhosts.class,
 		Q00376_ExplorationOfTheGiantsCavePart1.class,
 		Q00377_ExplorationOfTheGiantsCavePart2.class,
+		Q00378_GrandFeast.class,
+		Q00379_FantasyWine.class,
 		Q00380_BringOutTheFlavorOfIngredients.class,
 		Q00381_LetsBecomeARoyalMember.class,
 		Q00382_KailsMagicCoin.class,
@@ -315,6 +391,7 @@ public class QuestMasterHandler
 		Q00461_RumbleInTheBase.class,
 		Q00463_IMustBeaGenius.class,
 		Q00464_Oath.class,
+		Q00501_ProofOfClanAlliance.class,
 		Q00503_PursuitClanAmbition.class,
 		Q00504_CompetitionForTheBanditStronghold.class,
 		Q00508_AClansReputation.class,
