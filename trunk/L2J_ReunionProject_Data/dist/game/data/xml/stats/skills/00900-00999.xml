@@ -973,7 +973,8 @@
 		<set name="abnormalLvl" val="9" />
 		<set name="abnormalTime" val="15" />
 		<set name="abnormalType" val="dot_attr" />
-		<set name="affectRange" val="150" />
+		<set name="affectLimit" val="50-50" />
+		<set name="affectRange" val="200" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="720" />
 		<set name="effectRange" val="400" />
