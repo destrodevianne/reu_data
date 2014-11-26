@@ -1,0 +1,11 @@
+UPDATE character_quests SET name='Q00066_CertifiedArbalester' WHERE name='66_CertifiedArbalester'; 
+UPDATE character_quests SET name='Q00220_TestimonyOfGlory' WHERE name='220_TestimonyOfGlory';
+UPDATE character_quests SET name='Q00223_TestOfTheChampion' WHERE name='223_TestOfChampion';
+UPDATE character_quests SET name='Q00224_TestOfSagittarius' WHERE name='224_TestOfSagittarius'; 
+UPDATE character_quests SET name='Q00225_TestOfTheSearcher' WHERE name='225_TestOfSearcher'; 
+UPDATE character_quests SET name='Q00226_TestOfTheHealer' WHERE name='226_TestOfHealer'; 
+UPDATE character_quests SET name='Q00228_TestOfMagus' WHERE name='228_TestOfMagus'; 
+UPDATE character_quests SET name='Q00229_TestOfWitchcraft' WHERE name='229_TestOfWitchcraft'; 
+UPDATE character_quests SET name='Q00231_TestOfTheMaestro' WHERE name='231_TestOfMaestro'; 
+UPDATE character_quests SET name='Q00232_TestOfTheLord' WHERE name='232_TestOfLord'; 
+UPDATE character_quests SET name='Q00351_BlackSwan' WHERE name='351_BlackSwan'; 
