@@ -74,6 +74,7 @@ public final class EffectMasterHandler
 		DamOverTime.class,
 		DamOverTimePercent.class,
 		Debuff.class,
+		DetectHiddenObjects.class,
 		Detection.class,
 		DispelBySlot.class,
 		DispelOnlyOne.class,
