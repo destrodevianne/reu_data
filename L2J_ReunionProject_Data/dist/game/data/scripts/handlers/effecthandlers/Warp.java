@@ -18,7 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import l2r.Config;
 import l2r.gameserver.GeoData;
 import l2r.gameserver.enums.CtrlIntention;
 import l2r.gameserver.model.Location;
@@ -68,17 +67,13 @@ public class Warp extends L2Effect
 		int x = effected.getX() + x1;
 		int y = effected.getY() + y1;
 		int z = effected.getZ();
-		Location loc = new Location(x, y, z);
-		if (Config.GEODATA > 0)
-		{
-			loc = GeoData.getInstance().moveCheck(effected.getX(), effected.getY(), effected.getZ(), x, y, z, effected.getInstanceId());
-		}
 		
+		final Location destination = GeoData.getInstance().moveCheck(effected.getX(), effected.getY(), effected.getZ(), x, y, z, effected.getInstanceId());
 		effected.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
-		effected.broadcastPacket(new FlyToLocation(effected, loc.getX(), loc.getY(), loc.getZ(), FlyType.DUMMY));
+		effected.broadcastPacket(new FlyToLocation(effected, destination, FlyType.DUMMY));
 		effected.abortAttack();
 		effected.abortCast();
-		effected.setXYZ(loc);
+		effected.setXYZ(destination);
 		effected.broadcastPacket(new ValidateLocation(effected));
 		
 		return true;

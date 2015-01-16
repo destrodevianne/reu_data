@@ -18,9 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import java.util.logging.Logger;
-
-import l2r.Config;
 import l2r.gameserver.GeoData;
 import l2r.gameserver.model.Location;
 import l2r.gameserver.model.effects.EffectFlag;
@@ -32,11 +29,12 @@ import l2r.gameserver.network.serverpackets.FlyToLocation;
 import l2r.gameserver.network.serverpackets.FlyToLocation.FlyType;
 import l2r.gameserver.network.serverpackets.ValidateLocation;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class ThrowUp extends L2Effect
 {
-	private static final Logger _log = Logger.getLogger(ThrowUp.class.getName());
-	
-	private int _x, _y, _z;
+	private static final Logger _log = LoggerFactory.getLogger(ThrowUp.class);
 	
 	public ThrowUp(Env env, EffectTemplate template)
 	{
@@ -91,27 +89,16 @@ public class ThrowUp extends L2Effect
 		cos = dx / distance;
 		
 		// Calculate the new destination with offset included
-		_x = getEffector().getX() - (int) (offset * cos);
-		_y = getEffector().getY() - (int) (offset * sin);
-		_z = getEffected().getZ();
+		int x = getEffector().getX() - (int) (offset * cos);
+		int y = getEffector().getY() - (int) (offset * sin);
+		int z = getEffected().getZ();
 		
-		if (Config.GEODATA > 0)
-		{
-			Location destiny = GeoData.getInstance().moveCheck(getEffected().getX(), getEffected().getY(), getEffected().getZ(), _x, _y, _z, getEffected().getInstanceId());
-			_x = destiny.getX();
-			_y = destiny.getY();
-		}
-		getEffected().startStunning();
-		getEffected().broadcastPacket(new FlyToLocation(getEffected(), _x, _y, _z, FlyType.THROW_UP));
-		return true;
-	}
-	
-	@Override
-	public void onExit()
-	{
-		getEffected().stopStunning(false);
-		getEffected().setXYZ(_x, _y, _z);
+		final Location destination = GeoData.getInstance().moveCheck(getEffected().getX(), getEffected().getY(), getEffected().getZ(), x, y, z, getEffected().getInstanceId());
+		getEffected().broadcastPacket(new FlyToLocation(getEffected(), destination, FlyType.THROW_UP));
+		// TODO: Review.
+		getEffected().setXYZ(destination);
 		getEffected().broadcastPacket(new ValidateLocation(getEffected()));
+		return true;
 	}
 	
 	@Override

@@ -54,7 +54,7 @@ public class Spoil extends L2Effect
 		}
 		
 		final L2MonsterInstance target = (L2MonsterInstance) getEffected();
-		if (target.isSpoil())
+		if (target.isSpoiled())
 		{
 			getEffector().sendPacket(SystemMessageId.ALREADY_SPOILED);
 			return false;
@@ -62,8 +62,7 @@ public class Spoil extends L2Effect
 		
 		if (Formulas.calcMagicSuccess(getEffector(), target, getSkill()))
 		{
-			target.setSpoil(true);
-			target.setIsSpoiledBy(getEffector().getObjectId());
+			target.setSpoilerObjectId(getEffector().getObjectId());
 			getEffector().sendPacket(SystemMessageId.SPOIL_SUCCESS);
 		}
 		
