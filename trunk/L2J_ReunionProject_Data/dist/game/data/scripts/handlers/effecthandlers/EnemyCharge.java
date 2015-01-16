@@ -18,9 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import java.util.logging.Logger;
-
-import l2r.Config;
 import l2r.gameserver.GeoData;
 import l2r.gameserver.model.Location;
 import l2r.gameserver.model.effects.EffectTemplate;
@@ -31,9 +28,12 @@ import l2r.gameserver.network.serverpackets.FlyToLocation;
 import l2r.gameserver.network.serverpackets.FlyToLocation.FlyType;
 import l2r.gameserver.network.serverpackets.ValidateLocation;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class EnemyCharge extends L2Effect
 {
-	static final Logger _log = Logger.getLogger(EnemyCharge.class.getName());
+	static final Logger _log = LoggerFactory.getLogger(EnemyCharge.class);
 	
 	private int _x, _y, _z;
 	
@@ -99,16 +99,12 @@ public class EnemyCharge extends L2Effect
 		_y = curY + (int) ((distance - offset) * sin);
 		_z = getEffected().getZ();
 		
-		if (Config.GEODATA > 0)
-		{
-			Location destiny = GeoData.getInstance().moveCheck(getEffector().getX(), getEffector().getY(), getEffector().getZ(), _x, _y, _z, getEffector().getInstanceId());
-			_x = destiny.getX();
-			_y = destiny.getY();
-		}
-		getEffector().broadcastPacket(new FlyToLocation(getEffector(), _x, _y, _z, FlyType.CHARGE));
+		final Location destination = GeoData.getInstance().moveCheck(getEffector().getX(), getEffector().getY(), getEffector().getZ(), _x, _y, _z, getEffector().getInstanceId());
+		
+		getEffector().broadcastPacket(new FlyToLocation(getEffector(), destination, FlyType.CHARGE));
 		
 		// maybe is need force set X,Y,Z
-		getEffector().setXYZ(_x, _y, _z);
+		getEffector().setXYZ(destination);
 		getEffector().broadcastPacket(new ValidateLocation(getEffector()));
 		
 		return true;

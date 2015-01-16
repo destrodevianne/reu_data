@@ -18,7 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import l2r.Config;
 import l2r.gameserver.GeoData;
 import l2r.gameserver.enums.CtrlIntention;
 import l2r.gameserver.model.Location;
@@ -111,19 +110,13 @@ public class Fear extends L2Effect
 		posX += _dX * FEAR_RANGE;
 		posY += _dY * FEAR_RANGE;
 		
-		if (Config.GEODATA > 0)
-		{
-			Location destiny = GeoData.getInstance().moveCheck(getEffected().getX(), getEffected().getY(), getEffected().getZ(), posX, posY, posZ, getEffected().getInstanceId());
-			posX = destiny.getX();
-			posY = destiny.getY();
-		}
-		
 		if (!getEffected().isPet())
 		{
 			getEffected().setRunning();
 		}
 		
-		getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(posX, posY, posZ, 0));
+		final Location destination = GeoData.getInstance().moveCheck(getEffected().getX(), getEffected().getY(), getEffected().getZ(), posX, posY, posZ, getEffected().getInstanceId());
+		getEffected().getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, destination);
 		return true;
 	}
 	
