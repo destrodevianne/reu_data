@@ -987,18 +987,24 @@
 		</enchant2for>
 	</skill>
 	<skill id="330" levels="1" name="Skill Mastery">
-		<!-- Masters excellence in skills. Low possibility of being able to re-use skills without delay or doubles the duration. Influenced by STR. -->
 		<set name="magicLvl" val="77" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
-		<!-- FIXME: effect hardcoded inside formula -->
+		<for>
+			<effect name="Buff" noicon="1" val="0" >
+				<add stat="skillCritical" val="1" /> <!-- STR -->
+			</effect>
+		</for>
 	</skill>
 	<skill id="331" levels="1" name="Skill Mastery">
-		<!-- Masters excellence in skills. Low possibility of being able to re-use skills without delay or doubles the duration. Influenced by INT. -->
 		<set name="magicLvl" val="77" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
-		<!-- FIXME: effect hardcoded inside formula -->
+		<for>
+			<effect name="Buff" noicon="1" val="0" >
+				<add stat="skillCritical" val="4" /> <!-- INT -->
+			</effect>
+		</for>
 	</skill>
 	<skill id="332" levels="1" name="Extra Inventory">
 		<!-- Confirmed CT2.5 -->
@@ -1028,7 +1034,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect count="0x7fffffff" name="MpConsumePerLevel" abnormalTime="3" val="1">
-				<mul order="0x30" stat="skillMastery" val="11" />
+				<mul order="0x30" stat="skillCriticalProbability" val="11" />
 			</effect>
 		</for>
 	</skill>
