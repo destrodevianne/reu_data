@@ -442,7 +442,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" noicon="1" val="0">
+			<effect name="Buff" noicon="1" val="0" >
 				<set order="0x08" stat="fishingExpertise" val="#power" />
 			</effect>
 		</for>
