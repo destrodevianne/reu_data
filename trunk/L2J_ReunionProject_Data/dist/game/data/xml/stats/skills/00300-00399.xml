@@ -992,7 +992,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" noicon="1" val="0" >
-				<add stat="skillCritical" val="1" /> <!-- STR -->
+				<add order="0x40" stat="skillCritical" val="1" /> <!-- STR -->
 			</effect>
 		</for>
 	</skill>
@@ -1002,7 +1002,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" noicon="1" val="0" >
-				<add stat="skillCritical" val="4" /> <!-- INT -->
+				<add order="0x40" stat="skillCritical" val="4" /> <!-- INT -->
 			</effect>
 		</for>
 	</skill>
