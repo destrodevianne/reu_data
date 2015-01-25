@@ -324,7 +324,7 @@
 		</cond>
 		<for>
 			<effect name="Transformation" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="transform">
-				<mul order="0x30" stat="runSpd" val="1.5" />
+				<mul stat="runSpd" val="1.5" />
 			</effect>
 		</for>
 	</skill>
@@ -357,7 +357,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="runSpd" val="7" />
+			<add stat="runSpd" val="7" />
 		</for>
 	</skill>
 	<skill id="21236" levels="1" name="7th Anniversary T-shirt: Blessed Escape Ability">

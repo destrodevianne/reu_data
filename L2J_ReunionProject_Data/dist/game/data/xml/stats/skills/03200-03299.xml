@@ -18,7 +18,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="mReuse" val="0.85" />
+				<mul stat="mReuse" val="0.85" />
 			</effect>
 		</for>
 	</skill>
@@ -40,7 +40,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="pReuse" val="0.85" />
+				<mul stat="pReuse" val="0.85" />
 			</effect>
 		</for>
 	</skill>
@@ -62,8 +62,8 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="mReuse" val="0.85" />
-				<mul order="0x30" stat="pReuse" val="0.85" />
+				<mul stat="mReuse" val="0.85" />
+				<mul stat="pReuse" val="0.85" />
 			</effect>
 		</for>
 	</skill>
@@ -103,7 +103,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="reflectDam" val="#reflectDam" />
+				<add stat="reflectDam" val="#reflectDam" />
 			</effect>
 		</for>
 	</skill>
@@ -514,7 +514,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="healEffect" val="1.01" />
+			<mul stat="healEffect" val="1.01" />
 		</for>
 	</skill>
 	<skill id="3239" levels="10" name="Item Skill: Mana Gain">
@@ -524,7 +524,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="manaCharge" val="1" />
+			<add stat="manaCharge" val="1" />
 		</for>
 	</skill>
 	<skill id="3240" levels="10" name="Item Skill: Might">
@@ -535,7 +535,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="pAtk" val="#pAtk" />
+			<add stat="pAtk" val="#pAtk" />
 		</for>
 	</skill>
 	<skill id="3241" levels="10" name="Item Skill: Empower">
@@ -545,7 +545,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="mAtk" val="55" />
+			<add stat="mAtk" val="55" />
 		</for>
 	</skill>
 	<skill id="3243" levels="10" name="Item Skill: Duel Might">
@@ -555,8 +555,8 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="pvpPhysDmg" val="1.05" />
-			<mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05" />
+			<mul stat="pvpPhysDmg" val="1.05" />
+			<mul stat="pvpPhysSkillsDmg" val="1.05" />
 		</for>
 	</skill>
 	<skill id="3244" levels="10" name="Item Skill: Shield">
@@ -567,7 +567,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="pDef" val="#pDef" />
+			<add stat="pDef" val="#pDef" />
 		</for>
 	</skill>
 	<skill id="3245" levels="10" name="Item Skill: Magic Barrier">
@@ -578,7 +578,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="mDef" val="#mDef" />
+			<add stat="mDef" val="#mDef" />
 		</for>
 	</skill>
 	<skill id="3246" levels="10" name="Item Skill: Heal Empower">
@@ -589,7 +589,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="healEffect" val="#healEffect" />
+			<add stat="healEffect" val="#healEffect" />
 		</for>
 	</skill>
 	<skill id="3247" levels="10" name="Item Skill: Agility">
@@ -599,7 +599,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="rEvas" val="2" />
+			<add stat="rEvas" val="2" />
 		</for>
 	</skill>
 	<skill id="3248" levels="10" name="Item Skill: Guidance">
@@ -609,7 +609,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="accCombat" val="2" />
+			<add stat="accCombat" val="2" />
 		</for>
 	</skill>
 	<skill id="3249" levels="10" name="Item Skill: Focus">
@@ -619,7 +619,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<basemul order="0x30" stat="rCrit" val="0.2" />
+			<mul stat="rCrit" val="0.2" />
 		</for>
 	</skill>
 	<skill id="3250" levels="10" name="Item Skill: Wild Magic">
@@ -629,7 +629,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="mCritRate" val="4" />
+			<add stat="mCritRate" val="4" />
 		</for>
 	</skill>
 	<skill id="3251" levels="10" name="Item Skill: Weight Limit">
@@ -639,7 +639,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="weightLimit" val="2" />
+			<mul stat="weightLimit" val="2" />
 		</for>
 	</skill>
 	<skill id="3252" levels="10" name="Item Skill: Kiss of Eva">
@@ -649,7 +649,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="breath" val="6" />
+			<mul stat="breath" val="6" />
 		</for>
 	</skill>
 	<skill id="3253" levels="10" name="Item Skill: Acrobatics">
@@ -659,7 +659,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="fall" val="100" />
+			<sub stat="fall" val="100" />
 		</for>
 	</skill>
 	<skill id="3254" levels="10" name="Item Skill: Iron Body">
@@ -669,7 +669,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="damageZoneVuln" val="40" />
+			<sub stat="damageZoneVuln" val="40" />
 		</for>
 	</skill>
 	<skill id="3255" levels="3" name="Item Skill: Skill Clarity">
@@ -680,7 +680,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate" />
+			<mul stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate" />
 		</for>
 	</skill>
 	<skill id="3256" levels="3" name="Item Skill: Spell Clarity">
@@ -691,7 +691,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate" />
+			<mul stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate" />
 		</for>
 	</skill>
 	<skill id="3257" levels="3" name="Item Skill: Music Clarity">
@@ -702,7 +702,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="DanceMpConsumeRate" val="#DanceMpConsumeRate" />
+			<mul stat="DanceMpConsumeRate" val="#DanceMpConsumeRate" />
 		</for>
 	</skill>
 	<skill id="3258" levels="3" name="Item Skill: Clarity">
@@ -714,9 +714,9 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate" />
-			<mul order="0x30" stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate" />
-			<mul order="0x30" stat="DanceMpConsumeRate" val="0.9" />
+			<mul stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate" />
+			<mul stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate" />
+			<mul stat="DanceMpConsumeRate" val="0.9" />
 		</for>
 	</skill>
 	<skill id="3259" levels="3" name="Item Skill: Reflect Damage">
@@ -727,7 +727,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="reflectDam" val="#reflectDam" />
+			<add stat="reflectDam" val="#reflectDam" />
 		</for>
 	</skill>
 	<skill id="3260" levels="1" name="Forgiveness">
@@ -904,7 +904,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<add order="0x40" stat="pAtk" val="63" />
+				<add stat="pAtk" val="63" />
 			</effect>
 		</for>
 	</skill>
@@ -925,7 +925,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<add order="0x40" stat="pDef" val="72" />
+				<add stat="pDef" val="72" />
 			</effect>
 		</for>
 	</skill>
@@ -962,7 +962,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<add order="0x40" stat="sDef" val="220" />
+				<add stat="sDef" val="220" />
 			</effect>
 		</for>
 	</skill>
@@ -983,7 +983,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<mul order="0x30" stat="rShld" val="1.3" />
+				<mul stat="rShld" val="1.3" />
 			</effect>
 		</for>
 	</skill>
@@ -1004,7 +1004,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<add order="0x40" stat="mDef" val="100" />
+				<add stat="mDef" val="100" />
 			</effect>
 		</for>
 	</skill>
@@ -1025,7 +1025,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<add order="0x40" stat="mCritRate" val="2" />
+				<add stat="mCritRate" val="2" />
 			</effect>
 		</for>
 	</skill>
@@ -1046,7 +1046,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<mul order="0x30" stat="regMp" val="1.1" />
+				<mul stat="regMp" val="1.1" />
 			</effect>
 		</for>
 	</skill>
@@ -1068,7 +1068,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Paralyze" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="talisman">
-				<mul order="0x30" stat="pDef" val="0.1" />
+				<mul stat="pDef" val="0.1" />
 			</effect>
 			<!-- 27MP * 3 during 30 seconds -->
 			<effect count="10" name="ManaHealOverTime" noicon="1" val="81" abnormalTime="3" />
@@ -1091,7 +1091,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="SilentMove" abnormalTime="120" abnormalVisualEffect="stealth" val="0" abnormalLvl="1" abnormalType="talisman">
-				<mul order="0x30" stat="runSpd" val="0.6" />
+				<mul stat="runSpd" val="0.6" />
 			</effect>
 		</for>
 	</skill>
@@ -1112,9 +1112,9 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="talisman">
-				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.96" />
-				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.9" />
-				<mul order="0x30" stat="DanceMpConsumeRate" val="0.9" />
+				<mul stat="MagicalMpConsumeRate" val="0.96" />
+				<mul stat="PhysicalMpConsumeRate" val="0.9" />
+				<mul stat="DanceMpConsumeRate" val="0.9" />
 			</effect>
 		</for>
 	</skill>
@@ -1135,9 +1135,9 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="90" val="0" abnormalLvl="1" abnormalType="talisman">
-				<mul order="0x30" stat="MagicalMpConsumeRate" val="0" />
-				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0" />
-				<mul order="0x30" stat="DanceMpConsumeRate" val="0" />
+				<mul stat="MagicalMpConsumeRate" val="0" />
+				<mul stat="PhysicalMpConsumeRate" val="0" />
+				<mul stat="DanceMpConsumeRate" val="0" />
 			</effect>
 		</for>
 	</skill>
@@ -1158,7 +1158,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<add order="0x40" stat="healEffect" val="100" />
+				<add stat="healEffect" val="100" />
 			</effect>
 		</for>
 	</skill>
@@ -1179,8 +1179,8 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="talisman">
-				<add order="0x40" stat="pDef" val="3600" />
-				<add order="0x40" stat="mDef" val="2700" />
+				<add stat="pDef" val="3600" />
+				<add stat="mDef" val="2700" />
 			</effect>
 		</for>
 	</skill>
@@ -1201,14 +1201,14 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<add order="0x40" stat="pAtk" val="8.7" />
-				<add order="0x40" stat="pAtkSpd" val="4" />
-				<add order="0x40" stat="mAtk" val="10.1" />
-				<add order="0x40" stat="mAtkSpd" val="3" />
-				<add order="0x40" stat="runSpd" val="3" />
-				<sub order="0x40" stat="pDef" val="13.6" />
-				<sub order="0x40" stat="mDef" val="11" />
-				<sub order="0x40" stat="rEvas" val="1" />
+				<add stat="pAtk" val="8.7" />
+				<add stat="pAtkSpd" val="4" />
+				<add stat="mAtk" val="10.1" />
+				<add stat="mAtkSpd" val="3" />
+				<add stat="runSpd" val="3" />
+				<sub stat="pDef" val="13.6" />
+				<sub stat="mDef" val="11" />
+				<sub stat="rEvas" val="1" />
 			</effect>
 		</for>
 	</skill>
@@ -1330,7 +1330,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="pAtk" val="20.8" />
+			<add stat="pAtk" val="20.8" />
 		</for>
 	</skill>
 	<skill id="3294" levels="1" name="Yellow Talisman of Arcane Power">
@@ -1339,7 +1339,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="mAtk" val="24.3" />
+			<add stat="mAtk" val="24.3" />
 		</for>
 	</skill>
 	<skill id="3295" levels="1" name="Yellow Talisman of Defense">
@@ -1348,7 +1348,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="pDef" val="32.8" />
+			<add stat="pDef" val="32.8" />
 		</for>
 	</skill>
 	<skill id="3296" levels="1" name="Yellow Talisman - Magic Resistance">
@@ -1357,7 +1357,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="mDef" val="26.4" />
+			<add stat="mDef" val="26.4" />
 		</for>
 	</skill>
 	<skill id="3297" levels="1" name="Yellow Talisman of Accuracy">
@@ -1366,7 +1366,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="accCombat" val="2" />
+			<add stat="accCombat" val="2" />
 		</for>
 	</skill>
 	<skill id="3298" levels="1" name="Yellow Talisman of Evasion">
@@ -1375,7 +1375,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="rEvas" val="2" />
+			<add stat="rEvas" val="2" />
 		</for>
 	</skill>
 	<skill id="3299" levels="1" name="Yellow Talisman of Critical Power">
@@ -1384,7 +1384,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="cAtkAdd" val="30" />
+			<add stat="cAtkAdd" val="30" />
 		</for>
 	</skill>
 </list>

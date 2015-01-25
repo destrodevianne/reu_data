@@ -21,7 +21,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="#abnormalLvls" abnormalType="attack_time_up">
-				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
+				<mul stat="pAtkSpd" val="#pAtkSpd" />
 			</effect>
 		</for>
 		<table name="#mpConsume"> 17 29 39 53 67 83 97 103 108 112 115 116 </table>
@@ -96,7 +96,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="#abnormalLvls" abnormalType="speed_down">
-				<mul order="0x30" stat="runSpd" val="#runSpd" />
+				<mul stat="runSpd" val="#runSpd" />
 			</effect>
 		</for>
 		<table name="#mpConsume"> 17 29 39 53 67 83 97 103 108 112 115 116 </table>
@@ -276,7 +276,7 @@
 		<set name="targetType" val="CLAN" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="99" abnormalType="pa_up">
-				<mul order="0x30" stat="pAtk" val="1.5" />
+				<mul stat="pAtk" val="1.5" />
 			</effect>
 		</for>
 		<table name="#mpConsume"> 6 10 13 18 23 28 33 35 36 38 39 39 </table>
@@ -297,7 +297,7 @@
 		<set name="targetType" val="CLAN" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="99" abnormalType="pd_up">
-				<mul order="0x30" stat="pDef" val="1.5" />
+				<mul stat="pDef" val="1.5" />
 			</effect>
 		</for>
 		<table name="#mpConsume"> 6 10 13 18 23 28 33 35 36 38 39 39 </table>
@@ -318,7 +318,7 @@
 		<set name="targetType" val="CLAN" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="99" abnormalType="attack_time_down">
-				<mul order="0x30" stat="pAtkSpd" val="1.5" />
+				<mul stat="pAtkSpd" val="1.5" />
 			</effect>
 		</for>
 		<table name="#mpConsume"> 6 10 13 18 23 28 33 35 36 38 39 39 </table>
@@ -339,7 +339,7 @@
 		<set name="targetType" val="CLAN" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="99" abnormalType="dmg_shield">
-				<add order="0x40" stat="reflectDam" val="20" />
+				<add stat="reflectDam" val="20" />
 			</effect>
 		</for>
 		<table name="#mpConsume"> 6 10 13 18 23 28 33 35 36 38 39 39 </table>
@@ -510,7 +510,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="stunVuln" val="#stunVuln" />
+			<sub stat="stunVuln" val="#stunVuln" />
 		</for>
 	</skill>
 	<skill id="4226" levels="1" name="Ban Heal">
@@ -518,7 +518,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="healEffect" val="0" />
+			<mul stat="healEffect" val="0" />
 		</for>
 	</skill>
 	<skill id="4227" levels="1" name="Zaken Regeneration">
@@ -532,7 +532,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="14400" val="0" abnormalLvl="11" abnormalType="hp_regen_up">
-				<mul order="0x30" stat="regHp" val="20" />
+				<mul stat="regHp" val="20" />
 			</effect>
 		</for>
 	</skill>
@@ -628,7 +628,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="absorbDam" val="15" />
+			<add stat="absorbDam" val="15" />
 		</for>
 	</skill>
 	<skill id="4234" levels="12" name="BOSS Power Throw">
@@ -678,7 +678,7 @@
 		<set name="targetType" val="AREA" />
 		<for>
 			<effect name="Debuff" abnormalTime="120" val="0" effectPower="90" abnormalLvl="1" abnormalType="heal_effect_down">
-				<mul order="0x30" stat="healEffect" val="0.5" />
+				<mul stat="healEffect" val="0.5" />
 			</effect>
 		</for>
 	</skill>
@@ -706,7 +706,7 @@
 		<set name="targetType" val="FRONT_AREA" />
 		<for>
 			<effect name="Debuff" abnormalTime="60" val="0" effectPower="90" abnormalLvl="3" abnormalType="speed_down">
-				<mul order="0x30" stat="runSpd" val="0.7" />
+				<mul stat="runSpd" val="0.7" />
 			</effect>
 		</for>
 	</skill>
@@ -728,8 +728,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="reuse_delay_up">
-				<mul stat="pReuse" order="0x30" val="3.0" />
-				<mul stat="mReuse" order="0x30" val="3.0" />
+				<mul stat="pReuse" val="3.0" />
+				<mul stat="mReuse" val="3.0" />
 			</effect>
 		</for>
 	</skill>
@@ -744,7 +744,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1800" val="0" abnormalLvl="12" abnormalType="hp_regen_down">
-				<mul order="0x30" stat="regHp" val="0.4" />
+				<mul stat="regHp" val="0.4" />
 			</effect>
 		</for>
 	</skill>
@@ -759,7 +759,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1800" val="0" abnormalLvl="13" abnormalType="hp_regen_down">
-				<mul order="0x30" stat="regHp" val="0.7" />
+				<mul stat="regHp" val="0.7" />
 			</effect>
 		</for>
 	</skill>
@@ -774,7 +774,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1800" val="0" abnormalLvl="14" abnormalType="hp_regen_down">
-				<mul order="0x30" stat="regHp" val="1" />
+				<mul stat="regHp" val="1" />
 			</effect>
 		</for>
 	</skill>
@@ -840,9 +840,9 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="public_slot">
-				<mul order="0x30" stat="pAtkSpd" val="1.42" />
-				<mul order="0x30" stat="pDef" val="1.76" />
-				<mul order="0x30" stat="mDef" val="1.76" />
+				<mul stat="pAtkSpd" val="1.42" />
+				<mul stat="pDef" val="1.76" />
+				<mul stat="mDef" val="1.76" />
 			</effect>
 		</for>
 	</skill>
@@ -852,9 +852,9 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="bowWpnVuln" val="0.5" />
-			<mul order="0x30" stat="mDef" val="2.0" />
-			<sub order="0x40" stat="bleedVuln" val="50" />
+			<mul stat="bowWpnVuln" val="0.5" />
+			<mul stat="mDef" val="2.0" />
+			<sub stat="bleedVuln" val="50" />
 		</for>
 	</skill>
 	<skill id="4247" levels="12" name="NPC Windstrike - Slow">
@@ -921,7 +921,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="60" val="0" effectPower="60" abnormalLvl="2" abnormalType="speed_down">
-				<mul order="0x30" stat="runSpd" val="0.8" />
+				<mul stat="runSpd" val="0.8" />
 			</effect>
 		</for>
 		<table name="#mpConsume"> 13 20 27 35 45 55 65 69 73 75 77 78 </table>
@@ -1042,7 +1042,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="stunVuln" val="100" />
+			<sub stat="stunVuln" val="100" />
 		</for>
 	</skill>
 	<skill id="4257" levels="12" name="NPC Hydroblast - Magic">
@@ -1083,7 +1083,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="1200" val="0" abnormalLvl="99" abnormalType="speed_down">
-				<mul order="0x30" stat="runSpd" val="0.7" />
+				<mul stat="runSpd" val="0.7" />
 			</effect>
 		</for>
 	</skill>
@@ -1180,7 +1180,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="2" abnormalType="speed_up">
-				<add order="0x40" stat="runSpd" val="33" />
+				<add stat="runSpd" val="33" />
 			</effect>
 		</for>
 	</skill>
@@ -1200,7 +1200,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="1" abnormalType="attack_time_down">
-				<mul order="0x30" stat="pAtkSpd" val="1.15" />
+				<mul stat="pAtkSpd" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -1220,7 +1220,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="ma_up">
-				<mul order="0x30" stat="mAtk" val="1.55" />
+				<mul stat="mAtk" val="1.55" />
 			</effect>
 		</for>
 	</skill>
@@ -1241,7 +1241,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="3" abnormalType="pa_up">
-				<mul order="0x30" stat="pAtk" val="1.15" />
+				<mul stat="pAtk" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -1262,7 +1262,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="3" abnormalType="pd_up">
-				<mul order="0x30" stat="pDef" val="1.15" />
+				<mul stat="pDef" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -1299,9 +1299,9 @@
 		<set name="stayAfterDeath" val="true" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="regHp" val="#rate" />
-			<mul order="0x30" stat="regMp" val="#rate" />
-			<mul order="0x30" stat="runSpd" val="#rateSpd" />
+			<mul stat="regHp" val="#rate" />
+			<mul stat="regMp" val="#rate" />
+			<mul stat="runSpd" val="#rateSpd" />
 		</for>
 	</skill>
 	<skill id="4271" levels="8" name="Increase Force">
@@ -1314,8 +1314,8 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="bowWpnVuln" val="0.3" />
-			<mul order="0x30" stat="crossbowWpnVuln" val="0.3" />
+			<mul stat="bowWpnVuln" val="0.3" />
+			<mul stat="crossbowWpnVuln" val="0.3" />
 		</for>
 	</skill>
 	<skill id="4273" levels="5" name="Resist Dagger">
@@ -1324,9 +1324,9 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="daggerWpnVuln" val="#daggerVuln" />
-			<mul order="0x30" stat="dualDaggerWpnVuln" val="#daggerVuln" />
-			<mul order="0x30" stat="rapierWpnVuln" val="#daggerVuln" />
+			<mul stat="daggerWpnVuln" val="#daggerVuln" />
+			<mul stat="dualDaggerWpnVuln" val="#daggerVuln" />
+			<mul stat="rapierWpnVuln" val="#daggerVuln" />
 		</for>
 	</skill>
 	<skill id="4274" levels="5" name="Blunt Attack Weak Point">
@@ -1335,7 +1335,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="bluntWpnVuln" val="#bluntVuln" />
+			<mul stat="bluntWpnVuln" val="#bluntVuln" />
 		</for>
 	</skill>
 	<skill id="4275" levels="5" name="Sacred Attack Weak Point">
@@ -1349,8 +1349,8 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="bowWpnVuln" val="#bowVuln" />
-			<mul order="0x30" stat="crossbowWpnVuln" val="#bowVuln" />
+			<mul stat="bowWpnVuln" val="#bowVuln" />
+			<mul stat="crossbowWpnVuln" val="#bowVuln" />
 		</for>
 	</skill>
 	<skill id="4277" levels="5" name="Resist Poison">
@@ -1359,14 +1359,14 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="poisonVuln" val="#poisonVuln" />
+			<sub stat="poisonVuln" val="#poisonVuln" />
 		</for>
 	</skill>
 	<skill id="4278" levels="1" name="Dark Attack">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkPower" val="20" />
+			<add stat="darkPower" val="20" />
 		</for>
 	</skill>
 	<skill id="4279" levels="5" name="Fire Attack Weak Point">
@@ -1394,7 +1394,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="mDef" val="2" />
+			<mul stat="mDef" val="2" />
 		</for>
 	</skill>
 	<skill id="4284" levels="5" name="Resist Bleeding">
@@ -1403,7 +1403,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="bleedVuln" val="#bleedVuln" />
+			<sub stat="bleedVuln" val="#bleedVuln" />
 		</for>
 	</skill>
 	<skill id="4285" levels="5" name="Resist Sleep">
@@ -1412,7 +1412,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="sleepVuln" val="#sleepVuln" />
+			<sub stat="sleepVuln" val="#sleepVuln" />
 		</for>
 	</skill>
 	<skill id="4286" levels="1" name="Greater Resist Sleep">
@@ -1420,7 +1420,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="sleepVuln" val="95" />
+			<sub stat="sleepVuln" val="95" />
 		</for>
 	</skill>
 	<skill id="4287" levels="5" name="Resist Hold">
@@ -1429,7 +1429,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="rootVuln" val="#rootVuln" />
+			<sub stat="rootVuln" val="#rootVuln" />
 		</for>
 	</skill>
 	<skill id="4288" levels="1" name="Greater Resist Hold">
@@ -1437,7 +1437,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="rootVuln" val="95" />
+			<sub stat="rootVuln" val="95" />
 		</for>
 	</skill>
 	<skill id="4289" levels="1" name="Wyvern Breath">

@@ -8,7 +8,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="healEffect" val="#healEffect" />
+			<add stat="healEffect" val="#healEffect" />
 		</for>
 	</skill>
 	<skill id="3901" levels="2" name="Staff of Mana Boost">
@@ -17,7 +17,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="maxMp" val="#maxMp" />
+			<add stat="maxMp" val="#maxMp" />
 		</for>
 	</skill>
 	<skill id="3902" levels="1" name="Staff of Clarity">
@@ -26,9 +26,9 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul order="0x30" stat="MagicalMpConsumeRate" val="0.95" />
-			<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95" />
-			<mul order="0x30" stat="DanceMpConsumeRate" val="0.95" />
+			<mul stat="MagicalMpConsumeRate" val="0.95" />
+			<mul stat="PhysicalMpConsumeRate" val="0.95" />
+			<mul stat="DanceMpConsumeRate" val="0.95" />
 		</for>
 	</skill>
 	<skill id="3904" levels="1" name="Augment Option - Divine Attack">
@@ -37,7 +37,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="holyPower" val="8.57" />
+			<add stat="holyPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3905" levels="1" name="Augment Option - Dark Attack">
@@ -46,7 +46,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkPower" val="8.57" />
+			<add stat="darkPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3906" levels="1" name="Augment Option - Fire Attack">
@@ -55,7 +55,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="firePower" val="8.57" />
+			<add stat="firePower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3907" levels="1" name="Augment Option - Water Attack">
@@ -64,7 +64,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="waterPower" val="8.57" />
+			<add stat="waterPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3908" levels="1" name="Augment Option - Wind Attack">
@@ -73,7 +73,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="windPower" val="8.57" />
+			<add stat="windPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3909" levels="1" name="Augment Option - Earth Attack">
@@ -82,7 +82,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="earthPower" val="8.57" />
+			<add stat="earthPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3910" levels="1" name="Augment Option - Divine Resistance">
@@ -91,7 +91,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="holyRes" val="8.57" />
+			<add stat="holyRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3911" levels="1" name="Augment Option - Dark Resistance">
@@ -100,7 +100,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkRes" val="8.57" />
+			<add stat="darkRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3912" levels="1" name="Augment Option - Fire Resistance">
@@ -109,7 +109,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="fireRes" val="8.57" />
+			<add stat="fireRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3913" levels="1" name="Augment Option - Water Resistance">
@@ -118,7 +118,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="waterRes" val="8.57" />
+			<add stat="waterRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3914" levels="1" name="Augment Option - Wind Resistance">
@@ -127,7 +127,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="windRes" val="8.57" />
+			<add stat="windRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3915" levels="1" name="Augment Option - Earth Resistance">
@@ -136,7 +136,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="earthRes" val="8.57" />
+			<add stat="earthRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3916" levels="1" name="Augment Option - Divine Attack">
@@ -145,7 +145,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="holyPower" val="8.57" />
+			<add stat="holyPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3917" levels="1" name="Augment Option - Dark Attack">
@@ -154,7 +154,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkPower" val="8.57" />
+			<add stat="darkPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3918" levels="1" name="Augment Option - Fire Attack">
@@ -163,7 +163,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="firePower" val="8.57" />
+			<add stat="firePower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3919" levels="1" name="Augment Option - Water Attack">
@@ -172,7 +172,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="waterPower" val="8.57" />
+			<add stat="waterPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3920" levels="1" name="Augment Option - Wind Attack">
@@ -181,7 +181,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="windPower" val="8.57" />
+			<add stat="windPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3921" levels="1" name="Augment Option - Earth Attack">
@@ -190,7 +190,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="earthPower" val="8.57" />
+			<add stat="earthPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3922" levels="1" name="Augment Option - Divine Resistance">
@@ -199,7 +199,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="holyRes" val="8.57" />
+			<add stat="holyRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3923" levels="1" name="Augment Option - Dark Resistance">
@@ -208,7 +208,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkRes" val="8.57" />
+			<add stat="darkRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3924" levels="1" name="Augment Option - Fire Resistance">
@@ -217,7 +217,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="fireRes" val="8.57" />
+			<add stat="fireRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3925" levels="1" name="Augment Option - Water Resistance">
@@ -226,7 +226,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="waterRes" val="8.57" />
+			<add stat="waterRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3926" levels="1" name="Augment Option - Wind Resistance">
@@ -235,7 +235,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="windRes" val="8.57" />
+			<add stat="windRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3927" levels="1" name="Augment Option - Earth Resistance">
@@ -244,7 +244,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="earthRes" val="8.57" />
+			<add stat="earthRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3928" levels="1" name="Augment Option - Divine Attack">
@@ -253,7 +253,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="holyPower" val="8.57" />
+			<add stat="holyPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3929" levels="1" name="Augment Option - Dark Attack">
@@ -262,7 +262,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkPower" val="8.57" />
+			<add stat="darkPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3930" levels="1" name="Augment Option - Fire Attack">
@@ -271,7 +271,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="firePower" val="8.57" />
+			<add stat="firePower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3931" levels="1" name="Augment Option - Water Attack">
@@ -280,7 +280,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="waterPower" val="8.57" />
+			<add stat="waterPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3932" levels="1" name="Augment Option - Wind Attack">
@@ -289,7 +289,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="windPower" val="8.57" />
+			<add stat="windPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3933" levels="1" name="Augment Option - Earth Attack">
@@ -298,7 +298,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="earthPower" val="8.57" />
+			<add stat="earthPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3934" levels="1" name="Augment Option - Divine Resistance">
@@ -307,7 +307,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="holyRes" val="8.57" />
+			<add stat="holyRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3935" levels="1" name="Augment Option - Dark Resistance">
@@ -316,7 +316,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkRes" val="8.57" />
+			<add stat="darkRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3936" levels="1" name="Augment Option - Fire Resistance">
@@ -325,7 +325,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="fireRes" val="8.57" />
+			<add stat="fireRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3937" levels="1" name="Augment Option - Water Resistance">
@@ -334,7 +334,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="waterRes" val="8.57" />
+			<add stat="waterRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3938" levels="1" name="Augment Option - Wind Resistance">
@@ -343,7 +343,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="windRes" val="8.57" />
+			<add stat="windRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3939" levels="1" name="Augment Option - Earth Resistance">
@@ -352,7 +352,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="earthRes" val="8.57" />
+			<add stat="earthRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3940" levels="1" name="Augment Option - Divine Attack">
@@ -361,7 +361,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="holyPower" val="8.57" />
+			<add stat="holyPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3941" levels="1" name="Augment Option - Dark Attack">
@@ -370,7 +370,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkPower" val="8.57" />
+			<add stat="darkPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3942" levels="1" name="Augment Option - Fire Attack">
@@ -379,7 +379,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="firePower" val="8.57" />
+			<add stat="firePower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3943" levels="1" name="Augment Option - Water Attack">
@@ -388,7 +388,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="waterPower" val="8.57" />
+			<add stat="waterPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3944" levels="1" name="Augment Option - Wind Attack">
@@ -397,7 +397,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="windPower" val="8.57" />
+			<add stat="windPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3945" levels="1" name="Augment Option - Earth Attack">
@@ -406,7 +406,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="earthPower" val="8.57" />
+			<add stat="earthPower" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3946" levels="1" name="Augment Option - Divine Resistance">
@@ -415,7 +415,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="holyRes" val="8.57" />
+			<add stat="holyRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3947" levels="1" name="Augment Option - Dark Resistance">
@@ -424,7 +424,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkRes" val="8.57" />
+			<add stat="darkRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3948" levels="1" name="Augment Option - Fire Resistance">
@@ -433,7 +433,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="fireRes" val="8.57" />
+			<add stat="fireRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3949" levels="1" name="Augment Option - Water Resistance">
@@ -442,7 +442,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="waterRes" val="8.57" />
+			<add stat="waterRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3950" levels="1" name="Augment Option - Wind Resistance">
@@ -451,7 +451,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="windRes" val="8.57" />
+			<add stat="windRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3951" levels="1" name="Augment Option - Earth Resistance">
@@ -460,7 +460,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="earthRes" val="8.57" />
+			<add stat="earthRes" val="8.57" />
 		</for>
 	</skill>
 	<skill id="3952" levels="1" name="Augment Option - Stun Resistance">
@@ -470,7 +470,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="stunProf" val="1.71" />
+			<add stat="stunProf" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3953" levels="1" name="Augment Option - Bleed Resistance">
@@ -480,7 +480,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="bleedProf" val="1.71" />
+			<add stat="bleedProf" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3954" levels="1" name="Augment Option - Poison Resistance">
@@ -490,7 +490,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="poisonProf" val="1.71" />
+			<add stat="poisonProf" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3955" levels="1" name="Augment Option - Sleep Resistance">
@@ -500,7 +500,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="sleepProf" val="1.71" />
+			<add stat="sleepProf" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3956" levels="1" name="Augment Option - Paralysis Resistance">
@@ -510,7 +510,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="paralyzeProf" val="1.71" />
+			<add stat="paralyzeProf" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3957" levels="1" name="Augment Option - Mental Attack Resistance">
@@ -520,7 +520,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="derangementProf" val="1.71" />
+			<add stat="derangementProf" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3958" levels="1" name="Augment Option - Stun Resistance">
@@ -529,7 +529,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="stunVuln" val="1.71" />
+			<sub stat="stunVuln" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3959" levels="1" name="Augment Option - Bleed Resistance">
@@ -538,7 +538,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="bleedVuln" val="1.71" />
+			<sub stat="bleedVuln" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3960" levels="1" name="Augment Option - Poison Resistance">
@@ -547,7 +547,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="poisonVuln" val="1.71" />
+			<sub stat="poisonVuln" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3961" levels="1" name="Augment Option - Sleep Resistance">
@@ -556,7 +556,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="sleepVuln" val="1.71" />
+			<sub stat="sleepVuln" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3962" levels="1" name="Augment Option - Paralysis Resistance">
@@ -565,7 +565,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="paralyzeVuln" val="1.71" />
+			<sub stat="paralyzeVuln" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3963" levels="1" name="Augment Option - Mental Attack Resistance">
@@ -574,7 +574,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="derangementVuln" val="1.71" />
+			<sub stat="derangementVuln" val="1.71" />
 		</for>
 	</skill>
 	<skill id="3964" levels="1" name="Augment Option - Stun Resistance">
@@ -584,7 +584,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="stunProf" val="2.14" />
+			<add stat="stunProf" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3965" levels="1" name="Augment Option - Bleed Resistance">
@@ -594,7 +594,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="bleedProf" val="2.14" />
+			<add stat="bleedProf" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3966" levels="1" name="Augment Option - Poison Resistance">
@@ -604,7 +604,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="poisonProf" val="2.14" />
+			<add stat="poisonProf" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3967" levels="1" name="Augment Option - Sleep Resistance">
@@ -614,7 +614,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="sleepProf" val="2.14" />
+			<add stat="sleepProf" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3968" levels="1" name="Augment Option - Paralysis Resistance">
@@ -624,7 +624,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="paralyzeProf" val="2.14" />
+			<add stat="paralyzeProf" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3969" levels="1" name="Augment Option - Mental Attack Resistance">
@@ -634,7 +634,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="derangementProf" val="2.14" />
+			<add stat="derangementProf" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3970" levels="1" name="Augment Option - Stun Resistance">
@@ -643,7 +643,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="stunVuln" val="2.14" />
+			<sub stat="stunVuln" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3971" levels="1" name="Augment Option - Bleed Resistance">
@@ -652,7 +652,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="bleedVuln" val="2.14" />
+			<sub stat="bleedVuln" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3972" levels="1" name="Augment Option - Poison Resistance">
@@ -661,7 +661,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="poisonVuln" val="2.14" />
+			<sub stat="poisonVuln" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3973" levels="1" name="Augment Option - Sleep Resistance">
@@ -670,7 +670,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="sleepVuln" val="2.14" />
+			<sub stat="sleepVuln" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3974" levels="1" name="Augment Option - Paralysis Resistance">
@@ -679,7 +679,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="paralyzeVuln" val="2.14" />
+			<sub stat="paralyzeVuln" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3975" levels="1" name="Augment Option - Mental Attack Resistance">
@@ -688,7 +688,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="derangementVuln" val="2.14" />
+			<sub stat="derangementVuln" val="2.14" />
 		</for>
 	</skill>
 	<skill id="3976" levels="1" name="Augment Option - Stun Resistance">
@@ -698,7 +698,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="stunProf" val="3" />
+			<add stat="stunProf" val="3" />
 		</for>
 	</skill>
 	<skill id="3977" levels="1" name="Augment Option - Bleed Resistance">
@@ -708,7 +708,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="bleedProf" val="3" />
+			<add stat="bleedProf" val="3" />
 		</for>
 	</skill>
 	<skill id="3978" levels="1" name="Augment Option - Poison Resistance">
@@ -718,7 +718,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="poisonProf" val="3" />
+			<add stat="poisonProf" val="3" />
 		</for>
 	</skill>
 	<skill id="3979" levels="1" name="Augment Option - Sleep Resistance">
@@ -728,7 +728,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="sleepProf" val="3" />
+			<add stat="sleepProf" val="3" />
 		</for>
 	</skill>
 	<skill id="3980" levels="1" name="Augment Option - Paralysis Resistance">
@@ -738,7 +738,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="paralyzeProf" val="3" />
+			<add stat="paralyzeProf" val="3" />
 		</for>
 	</skill>
 	<skill id="3981" levels="1" name="Augment Option - Mental Attack Resistance">
@@ -748,7 +748,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="derangementProf" val="3" />
+			<add stat="derangementProf" val="3" />
 		</for>
 	</skill>
 	<skill id="3982" levels="1" name="Augment Option - Stun Resistance">
@@ -757,7 +757,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="stunVuln" val="3" />
+			<sub stat="stunVuln" val="3" />
 		</for>
 	</skill>
 	<skill id="3983" levels="1" name="Augment Option - Bleed Resistance">
@@ -766,7 +766,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="bleedVuln" val="3" />
+			<sub stat="bleedVuln" val="3" />
 		</for>
 	</skill>
 	<skill id="3984" levels="1" name="Augment Option - Poison Resistance">
@@ -775,7 +775,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="poisonVuln" val="3" />
+			<sub stat="poisonVuln" val="3" />
 		</for>
 	</skill>
 	<skill id="3985" levels="1" name="Augment Option - Sleep Resistance">
@@ -784,7 +784,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="sleepVuln" val="3" />
+			<sub stat="sleepVuln" val="3" />
 		</for>
 	</skill>
 	<skill id="3986" levels="1" name="Augment Option - Paralysis Resistance">
@@ -793,7 +793,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="paralyzeVuln" val="3" />
+			<sub stat="paralyzeVuln" val="3" />
 		</for>
 	</skill>
 	<skill id="3987" levels="1" name="Augment Option - Mental Attack Resistance">
@@ -802,7 +802,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="derangementVuln" val="3" />
+			<sub stat="derangementVuln" val="3" />
 		</for>
 	</skill>
 	<skill id="3988" levels="1" name="Augment Option - Stun Resistance">
@@ -812,7 +812,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="stunProf" val="3.42" />
+			<add stat="stunProf" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3989" levels="1" name="Augment Option - Bleed Resistance">
@@ -822,7 +822,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="bleedProf" val="3.42" />
+			<add stat="bleedProf" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3990" levels="1" name="Augment Option - Poison Resistance">
@@ -832,7 +832,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="poisonProf" val="3.42" />
+			<add stat="poisonProf" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3991" levels="1" name="Augment Option - Sleep Resistance">
@@ -842,7 +842,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="sleepProf" val="3.42" />
+			<add stat="sleepProf" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3992" levels="1" name="Augment Option - Paralysis Resistance">
@@ -852,7 +852,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="paralyzeProf" val="3.42" />
+			<add stat="paralyzeProf" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3993" levels="1" name="Augment Option - Mental Attack Resistance">
@@ -862,7 +862,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="derangementProf" val="3.42" />
+			<add stat="derangementProf" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3994" levels="1" name="Augment Option - Stun Resistance">
@@ -871,7 +871,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="stunVuln" val="3.42" />
+			<sub stat="stunVuln" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3995" levels="1" name="Augment Option - Bleed Resistance">
@@ -880,7 +880,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="bleedVuln" val="3.42" />
+			<sub stat="bleedVuln" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3996" levels="1" name="Augment Option - Poison Resistance">
@@ -889,7 +889,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="poisonVuln" val="3.42" />
+			<sub stat="poisonVuln" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3997" levels="1" name="Augment Option - Sleep Resistance">
@@ -898,7 +898,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="sleepVuln" val="3.42" />
+			<sub stat="sleepVuln" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3998" levels="1" name="Augment Option - Paralysis Resistance">
@@ -907,7 +907,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="paralyzeVuln" val="3.42" />
+			<sub stat="paralyzeVuln" val="3.42" />
 		</for>
 	</skill>
 	<skill id="3999" levels="1" name="Augment Option - Mental Attack Resistance">
@@ -916,7 +916,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="derangementVuln" val="3.42" />
+			<sub stat="derangementVuln" val="3.42" />
 		</for>
 	</skill>
 </list>

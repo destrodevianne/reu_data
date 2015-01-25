@@ -13,9 +13,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3558-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="94" />
-			<add order="0x40" stat="maxMp" val="37" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="94" />
+			<add stat="maxMp" val="37" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50031" type="Armor" name="Necklace of Valakas">
@@ -31,9 +31,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3557-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="125" />
-			<add order="0x40" stat="maxMp" val="50" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="125" />
+			<add stat="maxMp" val="50" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50032" type="Armor" name="Ring of Baium">
@@ -49,9 +49,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3561-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="48" />
-			<add order="0x40" stat="maxMp" val="21" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="48" />
+			<add stat="maxMp" val="21" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50033" type="Armor" name="Earring of Zaken">
@@ -67,9 +67,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3559-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="71" />
-			<add order="0x40" stat="maxMp" val="31" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="71" />
+			<add stat="maxMp" val="31" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50034" type="Armor" name="Ring of Queen Ant">
@@ -85,9 +85,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3562-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="48" />
-			<add order="0x40" stat="maxMp" val="21" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="48" />
+			<add stat="maxMp" val="21" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50035" type="Armor" name="Earring of Orfen">
@@ -103,9 +103,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3560-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="71" />
-			<add order="0x40" stat="maxMp" val="31" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="71" />
+			<add stat="maxMp" val="31" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50036" type="Armor" name="Ring of Core">
@@ -121,9 +121,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3563-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="48" />
-			<add order="0x40" stat="maxMp" val="21" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="48" />
+			<add stat="maxMp" val="21" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50037" type="Armor" name="Necklace of Frintezza">
@@ -139,9 +139,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3604-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="95" />
-			<add order="0x40" stat="maxMp" val="42" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="95" />
+			<add stat="maxMp" val="42" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50038" type="Armor" name="Ring of Beleth">
@@ -157,9 +157,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3649-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="48" />
-			<add order="0x40" stat="maxMp" val="21" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="48" />
+			<add stat="maxMp" val="21" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50039" type="Armor" name="Blessed Earring of Zaken">
@@ -174,9 +174,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3559-2" />
 		<for>
-			<add order="0x10" stat="mDef" val="94" />
-			<add order="0x40" stat="maxMp" val="37" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="94" />
+			<add stat="maxMp" val="37" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50040" type="Armor" name="Necklace of Freya">
@@ -192,9 +192,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="8459-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="125" />
-			<add order="0x40" stat="maxMp" val="50" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="125" />
+			<add stat="maxMp" val="50" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="50041" type="Armor" name="Blessed Necklace of Freya">
@@ -210,9 +210,9 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="8460-1" />
 		<for>
-			<add order="0x10" stat="mDef" val="132" />
-			<add order="0x40" stat="maxMp" val="50" />
-			<enchant order="0x0C" stat="mDef" val="0" />
+			<add stat="mDef" val="132" />
+			<add stat="maxMp" val="50" />
+			<enchant stat="mDef" val="0" />
 		</for>
 	</item>
 </list>

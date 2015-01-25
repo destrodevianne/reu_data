@@ -46,7 +46,7 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="4" abnormalType="casting_time_down">
-				<mul order="0x30" stat="mAtkSpd" val="1.7" />
+				<mul stat="mAtkSpd" val="1.7" />
 			</effect>
 		</for>
 	</skill>
@@ -64,7 +64,7 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="4" abnormalType="speed_up_special">
-				<add order="0x40" stat="runSpd" val="250" />
+				<add stat="runSpd" val="250" />
 			</effect>
 		</for>
 	</skill>

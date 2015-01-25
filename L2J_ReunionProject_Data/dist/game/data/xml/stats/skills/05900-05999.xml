@@ -299,12 +299,12 @@
 		<set name="targetType" val="FRONT_AREA" />
 		<for>
 			<effect name="Debuff" abnormalTime="10" val="0" abnormalVisualEffect="bleed" effectPower="80" abnormalLvl="1" abnormalType="multi_debuff_f">
-				<mul order="0x30" stat="pAtk" val="0.9" />
-				<mul order="0x30" stat="pAtkSpd" val="0.95" />
-				<mul order="0x30" stat="mAtk" val="0.95" />
-				<sub order="0x40" stat="accCombat" val="3" />
-				<basemul order="0x30" stat="rCrit" val="-0.1" />
-				<mul order="0x30" stat="cAtk" val="0.9" />
+				<mul stat="pAtk" val="0.9" />
+				<mul stat="pAtkSpd" val="0.95" />
+				<mul stat="mAtk" val="0.95" />
+				<sub stat="accCombat" val="3" />
+				<mul stat="rCrit" val="-0.1" />
+				<mul stat="cAtk" val="0.9" />
 			</effect>
 		</for>
 	</skill>
@@ -332,10 +332,10 @@
 		<set name="targetType" val="AREA" />
 		<for>
 			<effect name="Debuff" abnormalTime="10" val="0" abnormalVisualEffect="bleed" effectPower="80" abnormalLvl="1" abnormalType="multi_debuff_g">
-				<sub order="0x40" stat="rEvas" val="3" />
-				<mul order="0x30" stat="pDef" val="0.5" />
-				<mul order="0x30" stat="mDef" val="0.5" />
-				<mul order="0x30" stat="runSpd" val="0.5" />
+				<sub stat="rEvas" val="3" />
+				<mul stat="pDef" val="0.5" />
+				<mul stat="mDef" val="0.5" />
+				<mul stat="runSpd" val="0.5" />
 			</effect>
 		</for>
 	</skill>
@@ -352,10 +352,10 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="10800" val="0" abnormalLvl="1" abnormalType="ma_up" >
-				<mul order="0x30" stat="pDef" val="0.95" />
-				<mul order="0x30" stat="mDef" val="0.95" />
-				<mul order="0x50" stat="regHp" val="0.95" />
-				<mul order="0x30" stat="mAtk" val="1.03" />
+				<mul stat="pDef" val="0.95" />
+				<mul stat="mDef" val="0.95" />
+				<mul stat="regHp" val="0.95" />
+				<mul stat="mAtk" val="1.03" />
 			</effect>
 		</for>
 	</skill>
@@ -640,7 +640,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="43200" val="0" abnormalLvl="9" abnormalType="vp_up" abnormalVisualEffect="vitality">
-				<sub order="0x40" stat="vitalityConsumeRate" val="10" />
+				<sub stat="vitalityConsumeRate" val="10" />
 			</effect>
 		</for>
 	</skill>
@@ -1027,16 +1027,16 @@
 		<set name="targetType" val="PARTY" />
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="dwarf_attack_buff">
-				<mul order="0x30" stat="pAtk" val="1.05">
+				<mul stat="pAtk" val="1.05">
 					<using kind="SWORD,DAGGER,DUALDAGGER,POLE,RAPIER,ANCIENTSWORD,DUAL,DUALFIST,BLUNT,BOW,CROSSBOW" />
 				</mul>
-				<basemul order="0x30" stat="rCrit" val="0.2">
+				<mul stat="rCrit" val="0.2">
 					<using kind="SWORD,DAGGER,DUALDAGGER,POLE,RAPIER,ANCIENTSWORD,DUAL,DUALFIST" />
-				</basemul>
-				<add order="0x40" stat="pAtkRange" val="100">
+				</mul>
+				<add stat="pAtkRange" val="100">
 					<using kind="BOW,CROSSBOW" />
 				</add>
-				<add order="0x40" stat="stunProf" val="8" />
+				<add stat="stunProf" val="8" />
 			</effect>
 		</for>
 	</skill>
@@ -1057,19 +1057,19 @@
 		<set name="targetType" val="PARTY" />
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="dwarf_defence_buff">
-				<mul order="0x30" stat="pDef" val="1.1">
+				<mul stat="pDef" val="1.1">
 					<using kind="HEAVY" />
 				</mul>
-				<mul order="0x30" stat="pDef" val="1.05">
+				<mul stat="pDef" val="1.05">
 					<using kind="LIGHT" />
 				</mul>
-				<add order="0x40" stat="rEvas" val="2">
+				<add stat="rEvas" val="2">
 					<using kind="LIGHT" />
 				</add>
-				<mul order="0x30" stat="pDef" val="1.05">
+				<mul stat="pDef" val="1.05">
 					<using kind="MAGIC" />
 				</mul>
-				<add order="0x40" stat="regMp" val="2.0">
+				<add stat="regMp" val="2.0">
 					<using kind="MAGIC" />
 				</add>
 			</effect>

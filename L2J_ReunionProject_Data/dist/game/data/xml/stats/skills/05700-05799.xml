@@ -18,7 +18,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="2700" val="0" abnormalLvl="9" abnormalType="md_down">
-				<mul order="0x30" stat="mDef" val="0.34" />
+				<mul stat="mDef" val="0.34" />
 			</effect>
 		</for>
 	</skill>
@@ -40,7 +40,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="2700" val="0" abnormalLvl="9" abnormalType="pa_down">
-				<mul order="0x30" stat="pAtk" val="0.34" />
+				<mul stat="pAtk" val="0.34" />
 			</effect>
 		</for>
 	</skill>
@@ -205,7 +205,7 @@
 		<for>
 			<!-- 55HP * 5 During 30 seconds -->
 			<effect count="6" name="DamOverTime" abnormalTime="5" val="275" abnormalVisualEffect="bleed" effectPower="80" abnormalLvl="1" abnormalType="fire_dot">
-				<mul order="0x30" stat="runSpd" val="0.77" />
+				<mul stat="runSpd" val="0.77" />
 			</effect>
 		</for>
 	</skill>

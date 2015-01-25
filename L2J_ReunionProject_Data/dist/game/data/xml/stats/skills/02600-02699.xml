@@ -371,7 +371,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="holy_attack">
-				<add order="0x40" stat="firePower" val="20" />
+				<add stat="firePower" val="20" />
 			</effect>
 		</for>
 	</skill>
@@ -387,7 +387,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="holy_attack">
-				<add order="0x40" stat="earthPower" val="20" />
+				<add stat="earthPower" val="20" />
 			</effect>
 		</for>
 	</skill>
