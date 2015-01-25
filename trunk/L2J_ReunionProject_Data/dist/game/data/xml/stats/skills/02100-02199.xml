@@ -563,8 +563,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="10" val="0" abnormalLvl="99" abnormalType="hp_regen_up">
-				<mul order="0x30" stat="regMp" val="1.2" />
-				<mul order="0x30" stat="regHp" val="1.4" />
+				<mul stat="regMp" val="1.2" />
+				<mul stat="regHp" val="1.4" />
 			</effect>
 		</for>
 	</skill>
@@ -798,7 +798,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="#abnormalLvls" abnormalType="casting_time_down">
-				<mul order="0x30" stat="mAtkSpd" val="#mAtkSpd" />
+				<mul stat="mAtkSpd" val="#mAtkSpd" />
 			</effect>
 		</for>
 	</skill>

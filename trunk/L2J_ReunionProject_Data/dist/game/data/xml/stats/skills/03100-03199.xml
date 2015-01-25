@@ -470,7 +470,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="maxHp" val="#maxHp" />
+				<add stat="maxHp" val="#maxHp" />
 			</effect>
 		</for>
 	</skill>
@@ -492,7 +492,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x40" stat="maxHp" val="1.03" />
+				<mul stat="maxHp" val="1.03" />
 			</effect>
 			<effect name="HealPercent" noicon="1" val="3" />
 		</for>
@@ -516,7 +516,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="healEffect" val="#healEffect" />
+				<mul stat="healEffect" val="#healEffect" />
 			</effect>
 		</for>
 	</skill>
@@ -558,7 +558,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="maxMp" val="#maxMp" />
+				<add stat="maxMp" val="#maxMp" />
 			</effect>
 		</for>
 	</skill>
@@ -581,7 +581,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="manaCharge" val="#manaCharge" />
+				<add stat="manaCharge" val="#manaCharge" />
 			</effect>
 		</for>
 	</skill>
@@ -621,7 +621,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="maxCp" val="#maxCp" />
+				<add stat="maxCp" val="#maxCp" />
 			</effect>
 		</for>
 	</skill>
@@ -644,7 +644,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="pAtk" val="#pAtk" />
+				<add stat="pAtk" val="#pAtk" />
 			</effect>
 		</for>
 	</skill>
@@ -667,7 +667,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="mAtk" val="#mAtk" />
+				<add stat="mAtk" val="#mAtk" />
 			</effect>
 		</for>
 	</skill>
@@ -689,8 +689,8 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="pvpPhysDmg" val="1.05" />
-				<mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 			</effect>
 		</for>
 	</skill>
@@ -713,7 +713,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="pDef" val="#pDef" />
+				<add stat="pDef" val="#pDef" />
 			</effect>
 		</for>
 	</skill>
@@ -736,7 +736,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="mDef" val="#mDef" />
+				<add stat="mDef" val="#mDef" />
 			</effect>
 		</for>
 	</skill>
@@ -764,8 +764,8 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="pvp_dmg_down">
-				<mul order="0x30" stat="pvpPhysDmg" val="0.95" />
-				<mul order="0x30" stat="pvpPhysSkillsDmg" val="0.95" />
+				<mul stat="pvpPhysDmg" val="0.95" />
+				<mul stat="pvpPhysSkillsDmg" val="0.95" />
 			</effect>
 		</for>
 	</skill>
@@ -788,7 +788,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="healEffect" val="#healEffect" />
+				<add stat="healEffect" val="#healEffect" />
 			</effect>
 		</for>
 	</skill>
@@ -811,7 +811,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="rEvas" val="#rEvas" />
+				<add stat="rEvas" val="#rEvas" />
 			</effect>
 		</for>
 	</skill>
@@ -834,7 +834,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="accCombat" val="#accCombat" />
+				<add stat="accCombat" val="#accCombat" />
 			</effect>
 		</for>
 	</skill>
@@ -857,7 +857,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<basemul order="0x30" stat="rCrit" val="#rCrit" />
+				<mul stat="rCrit" val="#rCrit" />
 			</effect>
 		</for>
 	</skill>
@@ -880,7 +880,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="mCritRate" val="#mCritRate" />
+				<add stat="mCritRate" val="#mCritRate" />
 			</effect>
 		</for>
 	</skill>
@@ -902,7 +902,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="breath" val="6" />
+				<mul stat="breath" val="6" />
 			</effect>
 		</for>
 	</skill>
@@ -927,7 +927,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<sub order="0x40" stat="fall" val="100" />
+				<sub stat="fall" val="100" />
 			</effect>
 		</for>
 	</skill>
@@ -953,7 +953,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<sub order="0x40" stat="damageZoneVuln" val="#damageZoneVuln" />
+				<sub stat="damageZoneVuln" val="#damageZoneVuln" />
 			</effect>
 		</for>
 	</skill>
@@ -1008,7 +1008,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<add order="0x40" stat="absorbDam" val="#absorbDam" /> <!-- absorb HP from damage inflicted on enemies -->
+				<add stat="absorbDam" val="#absorbDam" /> <!-- absorb HP from damage inflicted on enemies -->
 			</effect>
 		</for>
 	</skill>
@@ -1207,11 +1207,11 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="SilentMove" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<sub order="0x40" stat="rEvas" val="#rEvas" />
-				<mul order="0x30" stat="pDef" val="#amount" />
-				<mul order="0x30" stat="mDef" val="#amount" />
-				<sub order="0x40" stat="accCombat" val="12" />
-				<mul order="0x30" stat="pAtk" val="0.55" />
+				<sub stat="rEvas" val="#rEvas" />
+				<mul stat="pDef" val="#amount" />
+				<mul stat="mDef" val="#amount" />
+				<sub stat="accCombat" val="12" />
+				<mul stat="pAtk" val="0.55" />
 			</effect>
 		</for>
 	</skill>
@@ -1252,7 +1252,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate" />
+				<mul stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate" />
 			</effect>
 		</for>
 	</skill>
@@ -1275,7 +1275,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate" />
+				<mul stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate" />
 			</effect>
 		</for>
 	</skill>
@@ -1298,7 +1298,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="DanceMpConsumeRate" val="#DanceMpConsumeRate" />
+				<mul stat="DanceMpConsumeRate" val="#DanceMpConsumeRate" />
 			</effect>
 		</for>
 	</skill>
@@ -1322,9 +1322,9 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate" />
-				<mul order="0x30" stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate" />
-				<mul order="0x30" stat="DanceMpConsumeRate" val="0.9" />
+				<mul stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate" />
+				<mul stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate" />
+				<mul stat="DanceMpConsumeRate" val="0.9" />
 			</effect>
 		</for>
 	</skill>
@@ -1824,7 +1824,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="speed_down">
-				<mul order="0x30" stat="runSpd" val="0.7" />
+				<mul stat="runSpd" val="0.7" />
 			</effect>
 		</for>
 	</skill>
@@ -1854,7 +1854,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="5" val="0" abnormalLvl="3" abnormalType="attack_time_up">
-				<mul order="0x30" stat="pAtkSpd" val="0.77" />
+				<mul stat="pAtkSpd" val="0.77" />
 			</effect>
 		</for>
 	</skill>
@@ -1973,9 +1973,9 @@
 		<set name="trait" val="PARALYZE" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="15" val="0" chanceType="ON_EXIT" triggeredId="6126">
-				<mul order="0x30" stat="pAtkSpd" val="0.5" />
-				<mul order="0x30" stat="runSpd" val="0.5" />
-				<mul order="0x30" stat="mAtkSpd" val="0.5" />
+				<mul stat="pAtkSpd" val="0.5" />
+				<mul stat="runSpd" val="0.5" />
+				<mul stat="mAtkSpd" val="0.5" />
 			</effect>
 		</for>
 	</skill>
@@ -2179,7 +2179,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="abnormal_item">
-				<mul order="0x30" stat="pReuse" val="0.85" />
+				<mul stat="pReuse" val="0.85" />
 			</effect>
 		</for>
 	</skill>

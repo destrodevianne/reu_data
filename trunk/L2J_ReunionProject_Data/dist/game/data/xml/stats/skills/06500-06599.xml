@@ -95,8 +95,8 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x40" stat="darkPower" val="10" />
-			<add order="0x40" stat="darkRes" val="50" />
+			<add stat="darkPower" val="10" />
+			<add stat="darkRes" val="50" />
 		</for>
 	</skill>
 	<skill id="6516" levels="28" name="NPC dark attack">

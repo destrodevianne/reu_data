@@ -6,7 +6,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x10" stat="CON" val="2" />
+			<add stat="CON" val="2" />
 		</for>
 	</skill>
 	<skill id="8501" levels="1" name="Pink Talisman - INT">
@@ -15,7 +15,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x10" stat="INT" val="2" />
+			<add stat="INT" val="2" />
 		</for>
 	</skill>
 	<skill id="8502" levels="1" name="Pink Talisman - WIT">
@@ -24,7 +24,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x10" stat="WIT" val="2" />
+			<add stat="WIT" val="2" />
 		</for>
 	</skill>
 	<skill id="8503" levels="1" name="Pink Talisman - MEN">
@@ -33,7 +33,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x10" stat="MEN" val="2" />
+			<add stat="MEN" val="2" />
 		</for>
 	</skill>
 	<skill id="8504" levels="1" name="Pink Talisman - Stun Resist">
@@ -42,7 +42,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="stunVuln" val="15" />
+			<sub stat="stunVuln" val="15" />
 		</for>
 	</skill>
 	<skill id="8505" levels="1" name="Pink Talisman - Sleep Resist">
@@ -51,7 +51,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="sleepVuln" val="15" />
+			<sub stat="sleepVuln" val="15" />
 		</for>
 	</skill>
 	<skill id="8506" levels="1" name="Pink Talisman - Hold Resist">
@@ -60,7 +60,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="rootVuln" val="15" />
+			<sub stat="rootVuln" val="15" />
 		</for>
 	</skill>
 	<skill id="8507" levels="1" name="Pink Talisman - Paralyze Resist">
@@ -69,7 +69,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub order="0x40" stat="paralyzeVuln" val="15" />
+			<sub stat="paralyzeVuln" val="15" />
 		</for>
 	</skill>
 	<skill id="8508" levels="1" name="Pink Talisman - All STAT">
@@ -78,12 +78,12 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add order="0x10" stat="STR" val="1" />
-			<add order="0x10" stat="DEX" val="1" />
-			<add order="0x10" stat="CON" val="1" />
-			<add order="0x10" stat="INT" val="1" />
-			<add order="0x10" stat="WIT" val="1" />
-			<add order="0x10" stat="MEN" val="1" />
+			<add stat="STR" val="1" />
+			<add stat="DEX" val="1" />
+			<add stat="CON" val="1" />
+			<add stat="INT" val="1" />
+			<add stat="WIT" val="1" />
+			<add stat="MEN" val="1" />
 		</for>
 	</skill>
 	<skill id="8509" levels="1" name="High Angel Circlet">

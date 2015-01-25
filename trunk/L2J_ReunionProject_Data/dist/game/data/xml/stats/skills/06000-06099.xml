@@ -132,10 +132,10 @@
 		<set name="targetType" val="SELF" /> 
 		<for> 
 			<effect name="Buff" abnormalTime="10800" val="0" abnormalLvl="1" abnormalType="ma_up" > 
-				<mul order="0x30" stat="pDef" val="0.75" /> 
-				<mul order="0x30" stat="mDef" val="0.75" /> 
-				<mul order="0x50" stat="regHp" val="0.75" /> 
-				<mul order="0x30" stat="mAtk" val="1.06" /> 
+				<mul stat="pDef" val="0.75" /> 
+				<mul stat="mDef" val="0.75" /> 
+				<mul stat="regHp" val="0.75" /> 
+				<mul stat="mAtk" val="1.06" /> 
 			</effect> 
 		</for>
 	</skill>
@@ -151,10 +151,10 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="10800" val="0" abnormalLvl="1" abnormalType="ma_up" >
-				<mul order="0x30" stat="pDef" val="0.5" />
-				<mul order="0x30" stat="mDef" val="0.5" />
-				<mul order="0x50" stat="regHp" val="0.5" />
-				<mul order="0x30" stat="mAtk" val="1.09" />
+				<mul stat="pDef" val="0.5" />
+				<mul stat="mDef" val="0.5" />
+				<mul stat="regHp" val="0.5" />
+				<mul stat="mAtk" val="1.09" />
 			</effect>
 		</for>
 	</skill>
@@ -170,10 +170,10 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="10800" val="0" abnormalLvl="1" abnormalType="ma_up" >
-				<mul order="0x30" stat="pDef" val="0.25" />
-				<mul order="0x30" stat="mDef" val="0.25" />
-				<mul order="0x50" stat="regHp" val="0.25" />
-				<mul order="0x30" stat="mAtk" val="1.12" />
+				<mul stat="pDef" val="0.25" />
+				<mul stat="mDef" val="0.25" />
+				<mul stat="regHp" val="0.25" />
+				<mul stat="mAtk" val="1.12" />
 			</effect>
 		</for>
 	</skill>
@@ -188,10 +188,10 @@
 		<set name="targetType" val="SELF" /> 
 		<for>
 			<effect name="Buff" abnormalTime="10800" val="0" abnormalLvl="1" abnormalType="ma_up" >
-				<mul order="0x30" stat="pDef" val="0.06" />
-				<mul order="0x30" stat="mDef" val="0.06" />
-				<mul order="0x50" stat="regHp" val="0.06" />
-				<mul order="0x30" stat="mAtk" val="1.15" />
+				<mul stat="pDef" val="0.06" />
+				<mul stat="mDef" val="0.06" />
+				<mul stat="regHp" val="0.06" />
+				<mul stat="mAtk" val="1.15" />
 			</effect>
 	</for>
 	</skill>
@@ -501,9 +501,9 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="#abnormalLvls" abnormalType="multi_buff">
-				<mul order="0x30" stat="pAtk" val="#amount" />
-				<mul order="0x30" stat="pDef" val="#amount" />
-				<mul order="0x30" stat="mDef" val="#amount" />
+				<mul stat="pAtk" val="#amount" />
+				<mul stat="pDef" val="#amount" />
+				<mul stat="mDef" val="#amount" />
 			</effect>
 		</for>
 	</skill>
@@ -580,10 +580,10 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="#abnormalLvls" abnormalType="multi_buff">
-				<mul order="0x30" stat="pAtk" val="#amount" />
-				<mul order="0x30" stat="pDef" val="#amount" />
-				<mul order="0x30" stat="mAtk" val="#amount" />
-				<mul order="0x30" stat="mDef" val="#amount" />
+				<mul stat="pAtk" val="#amount" />
+				<mul stat="pDef" val="#amount" />
+				<mul stat="mAtk" val="#amount" />
+				<mul stat="mDef" val="#amount" />
 			</effect>
 		</for>
 	</skill>
@@ -634,7 +634,7 @@
 		<set name="stayAfterDeath" val="True" />
 		<for>
 			<effect name="Debuff" abnormalTime="7200" val="0" abnormalType="BOT_PENALTY" abnormalLvl="1">
-				<mul order="0x30" stat="runSpd" val="0.0" />
+				<mul stat="runSpd" val="0.0" />
 			</effect>
 		</for>
 	</skill>
@@ -649,7 +649,7 @@
 		<set name="stayAfterDeath" val="True" />
 		<for>
 			<effect name="Debuff" abnormalTime="7200" val="0" abnormalType="BOT_PENALTY" abnormalLvl="1">
-				<mul order="0x30" stat="runSpd" val="0.0" />
+				<mul stat="runSpd" val="0.0" />
 			</effect>
 		</for>
 	</skill>
@@ -666,7 +666,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="8" val="0" abnormalLvl="1" abnormalType="counter_critical_trigger">
-				<mul order="0x30" stat="cAtk" val="2">
+				<mul stat="cAtk" val="2">
 					<using kind="SWORD,BLUNT,DAGGER,DUALDAGGER,DUAL,DUALFIST,POLE,ANCIENTSWORD,RAPIER" />
 				</mul>
 			</effect>
@@ -685,7 +685,7 @@
 		<set name="targetType" val="PARTY" />
 		<for>
 			<effect name="Buff" abnormalTime="8" val="0" abnormalLvl="1" abnormalType="attack_time_down_special">
-				<mul order="0x30" stat="pAtkSpd" val="1.5" />
+				<mul stat="pAtkSpd" val="1.5" />
 			</effect>
 		</for>
 	</skill>
@@ -966,7 +966,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Hide" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="hide">
-				<mul order="0x30" stat="runSpd" val="0.9" />
+				<mul stat="runSpd" val="0.9" />
 			</effect>
 		</for>
 	</skill>
@@ -1013,7 +1013,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="30" val="0" effectPower="80" abnormalLvl="3" abnormalType="armor_unholy">
-				<sub order="0x40" stat="darkRes" val="25" />
+				<sub stat="darkRes" val="25" />
 			</effect>
 		</for>
 	</skill>

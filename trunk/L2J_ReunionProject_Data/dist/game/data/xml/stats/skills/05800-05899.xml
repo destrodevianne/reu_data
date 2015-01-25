@@ -360,7 +360,7 @@
 		<set name="targetType" val="CLAN" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="pd_up">
-				<mul order="0x30" stat="pDef" val="1.15" />
+				<mul stat="pDef" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -382,7 +382,7 @@
 		<set name="targetType" val="CLAN" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="md_up">
-				<mul order="0x30" stat="mDef" val="1.33" />
+				<mul stat="mDef" val="1.33" />
 			</effect>
 		</for>
 	</skill>
@@ -508,8 +508,8 @@
 		<set name="targetType" val="CLAN" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="instinct">
-				<mul order="0x30" stat="pDef" val="1.15" />
-				<mul order="0x30" stat="mDef" val="1.33" />
+				<mul stat="pDef" val="1.15" />
+				<mul stat="mDef" val="1.33" />
 			</effect>
 		</for>
 	</skill>
@@ -624,7 +624,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="speed_down">
-				<mul order="0x30" stat="runSpd" val="0.5" />
+				<mul stat="runSpd" val="0.5" />
 			</effect>
 		</for>
 	</skill>
@@ -970,7 +970,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect count="7" name="DamOverTime" abnormalTime="3" val="250" abnormalLvl="3" abnormalType="casting_time_up">
-				<mul order="0x30" stat="mAtkSpd" val="0.8" />
+				<mul stat="mAtkSpd" val="0.8" />
 			</effect>
 		</for>
 	</skill>
@@ -1147,8 +1147,8 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="speed_down">
-				<sub order="0x40" stat="rEvas" val="10" />
-				<mul order="0x30" stat="runSpd" val="0.8" />
+				<sub stat="rEvas" val="10" />
+				<mul stat="runSpd" val="0.8" />
 			</effect>
 		</for>
 	</skill>
@@ -1275,17 +1275,17 @@
 		<set name="trait" val="DERANGEMENT" />
 		<for>
 			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="multi_debuff_a">
-				<mul order="0x30" stat="pDef" val="0.8" />
-				<mul order="0x30" stat="mDef" val="0.8" />
-				<sub order="0x40" stat="rEvas" val="10" />
-				<mul order="0x30" stat="maxHp" val="0.8" />
-				<mul order="0x30" stat="regHp" val="0.5" />
-				<mul order="0x30" stat="pAtk" val="1.2" />
-				<mul order="0x30" stat="mAtk" val="1.2" />
-				<mul order="0x30" stat="pAtkSpd" val="1.1" />
-				<add order="0x40" stat="accCombat" val="10" />
-				<mul order="0x30" stat="cAtk" val="1.2" />
-				<basemul order="0x30" stat="rCrit" val="1.2" />
+				<mul stat="pDef" val="0.8" />
+				<mul stat="mDef" val="0.8" />
+				<sub stat="rEvas" val="10" />
+				<mul stat="maxHp" val="0.8" />
+				<mul stat="regHp" val="0.5" />
+				<mul stat="pAtk" val="1.2" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="pAtkSpd" val="1.1" />
+				<add stat="accCombat" val="10" />
+				<mul stat="cAtk" val="1.2" />
+				<mul stat="rCrit" val="1.2" />
 			</effect>
 		</for>
 	</skill>
@@ -1310,12 +1310,12 @@
 		<set name="trait" val="DERANGEMENT" />
 		<for>
 			<effect name="Debuff" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="multi_debuff_b">
-				<mul order="0x30" stat="pDef" val="0.8" />
-				<mul order="0x30" stat="mDef" val="0.8" />
-				<sub order="0x40" stat="rEvas" val="10" />
-				<mul order="0x30" stat="maxHp" val="0.8" />
-				<mul order="0x30" stat="regHp" val="0.1" />
-				<mul order="0x30" stat="runSpd" val="1.25" />
+				<mul stat="pDef" val="0.8" />
+				<mul stat="mDef" val="0.8" />
+				<sub stat="rEvas" val="10" />
+				<mul stat="maxHp" val="0.8" />
+				<mul stat="regHp" val="0.1" />
+				<mul stat="runSpd" val="1.25" />
 			</effect>
 		</for>
 	</skill>
@@ -1350,10 +1350,10 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="speed_down">
-				<sub order="0x40" stat="rEvas" val="5" />
-				<mul order="0x30" stat="runSpd" val="0.9" />
-				<mul order="0x30" stat="pDef" val="0.9" />
-				<mul order="0x30" stat="mDef" val="0.9" />
+				<sub stat="rEvas" val="5" />
+				<mul stat="runSpd" val="0.9" />
+				<mul stat="pDef" val="0.9" />
+				<mul stat="mDef" val="0.9" />
 			</effect>
 		</for>
 	</skill>
@@ -1380,10 +1380,10 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Debuff" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="speed_down">
-				<sub order="0x40" stat="rEvas" val="10" />
-				<mul order="0x30" stat="runSpd" val="0.8" />
-				<mul order="0x30" stat="pDef" val="0.8" />
-				<mul order="0x30" stat="mDef" val="0.8" />
+				<sub stat="rEvas" val="10" />
+				<mul stat="runSpd" val="0.8" />
+				<mul stat="pDef" val="0.8" />
+				<mul stat="mDef" val="0.8" />
 			</effect>
 		</for>
 	</skill>

@@ -12,7 +12,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="3" abnormalType="max_hp_up">
-				<mul order="0x30" stat="maxHp" val="1.2" />
+				<mul stat="maxHp" val="1.2" />
 			</effect>
 		</for>
 	</skill>
@@ -28,7 +28,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="3" abnormalType="max_mp_up">
-				<mul order="0x30" stat="maxMp" val="1.2" />
+				<mul stat="maxMp" val="1.2" />
 			</effect>
 		</for>
 	</skill>
@@ -1019,22 +1019,22 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="multi_buff">
-				<mul order="0x30" stat="cAtk" val="1.2" />
-				<sub order="0x40" stat="debuffVuln" val="10" />
-				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.95" />
-				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95" />
-				<mul order="0x30" stat="DanceMpConsumeRate" val="0.95" />
-				<mul order="0x30" stat="mAtk" val="1.2" />
-				<mul order="0x30" stat="mAtkSpd" val="1.2" />
-				<mul order="0x30" stat="maxMp" val="1.2" />
-				<add order="0x40" stat="mCritRate" val="2" />
-				<mul order="0x30" stat="mDef" val="1.2" />
-				<mul order="0x30" stat="pAtk" val="1.1" />
-				<mul order="0x30" stat="pAtkSpd" val="1.2" />
-				<mul order="0x30" stat="pDef" val="1.2" />
-				<mul order="0x30" stat="regHp" val="1.2" />
-				<mul order="0x30" stat="regMp" val="1.2" />
-				<mul order="0x30" stat="runSpd" val="0.8" />
+				<mul stat="cAtk" val="1.2" />
+				<sub stat="debuffVuln" val="10" />
+				<mul stat="MagicalMpConsumeRate" val="0.95" />
+				<mul stat="PhysicalMpConsumeRate" val="0.95" />
+				<mul stat="DanceMpConsumeRate" val="0.95" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<mul stat="maxMp" val="1.2" />
+				<add stat="mCritRate" val="2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="regHp" val="1.2" />
+				<mul stat="regMp" val="1.2" />
+				<mul stat="runSpd" val="0.8" />
 			</effect>
 		</for>
 	</skill>
@@ -1052,19 +1052,19 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="multi_buff">
-				<sub order="0x40" stat="debuffVuln" val="10" />
-				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.95" />
-				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95" />
-				<mul order="0x30" stat="DanceMpConsumeRate" val="0.95" />
-				<mul order="0x30" stat="mAtk" val="1.2" />
-				<mul order="0x30" stat="mAtkSpd" val="1.2" />
-				<add order="0x40" stat="mCritRate" val="2" />
-				<mul order="0x30" stat="mDef" val="1.2" />
-				<mul order="0x30" stat="pAtk" val="1.1" />
-				<mul order="0x30" stat="pAtkSpd" val="1.2" />
-				<mul order="0x30" stat="pDef" val="1.2" />
-				<mul order="0x30" stat="regMp" val="1.2" />
-				<mul order="0x30" stat="runSpd" val="0.8" />
+				<sub stat="debuffVuln" val="10" />
+				<mul stat="MagicalMpConsumeRate" val="0.95" />
+				<mul stat="PhysicalMpConsumeRate" val="0.95" />
+				<mul stat="DanceMpConsumeRate" val="0.95" />
+				<mul stat="mAtk" val="1.2" />
+				<mul stat="mAtkSpd" val="1.2" />
+				<add stat="mCritRate" val="2" />
+				<mul stat="mDef" val="1.2" />
+				<mul stat="pAtk" val="1.1" />
+				<mul stat="pAtkSpd" val="1.2" />
+				<mul stat="pDef" val="1.2" />
+				<mul stat="regMp" val="1.2" />
+				<mul stat="runSpd" val="0.8" />
 			</effect>
 		</for>
 	</skill>
@@ -1566,8 +1566,8 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="wp_event_buf1" special="baguettesword,blackafro">
-				<mul order="0x30" stat="maxHp" val="1.1" />
-				<mul order="0x30" stat="regHp" val="1.2" />
+				<mul stat="maxHp" val="1.1" />
+				<mul stat="regHp" val="1.2" />
 			</effect>
 		</for>
 	</skill>
@@ -1584,13 +1584,13 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="wp_event_buf1" special="baguettesword,yellowafro">
-				<mul order="0x30" stat="maxHp" val="1.1" />
-				<mul order="0x30" stat="maxMp" val="1.1" />
-				<mul order="0x30" stat="mAtkSpd" val="1.1" />
-				<mul order="0x30" stat="pDef" val="1.1" />
-				<mul order="0x30" stat="mDef" val="1.1" />
-				<mul order="0x30" stat="pAtkSpd" val="1.15" />
-				<add order="0x40" stat="runSpd" val="10" />
+				<mul stat="maxHp" val="1.1" />
+				<mul stat="maxMp" val="1.1" />
+				<mul stat="mAtkSpd" val="1.1" />
+				<mul stat="pDef" val="1.1" />
+				<mul stat="mDef" val="1.1" />
+				<mul stat="pAtkSpd" val="1.15" />
+				<add stat="runSpd" val="10" />
 			</effect>
 		</for>
 	</skill>
@@ -1607,8 +1607,8 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="600" val="0" abnormalLvl="1" abnormalType="wp_event_buf1" special="baguettesword,pinkafro">
-				<mul order="0x30" stat="maxMp" val="1.1" />
-				<mul order="0x30" stat="regMp" val="1.2" />
+				<mul stat="maxMp" val="1.1" />
+				<mul stat="regMp" val="1.2" />
 			</effect>
 		</for>
 	</skill>
