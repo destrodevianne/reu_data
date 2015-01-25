@@ -582,7 +582,7 @@
 		<set name="power" val="1330120" />
 		<set name="reuseDelay" val="10500" />
 		<set name="skillType" val="PDAM" />
-		<set name="targetType" val="ONE" />
+		<set name="targetType" val="SIEGE" />
 	</skill>
 	<skill id="4231" levels="12" name="NPC Spit Attack">
 		<!-- Freya retail confirmed -->
