@@ -655,7 +655,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="VitalityPointUp" noicon="1" val="20000" />
+			<effect name="VitalityPointUp" noicon="1" val="0">
+				<param value="20000" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="22138" levels="1" name="Mango Dessert">
@@ -668,7 +670,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="VitalityPointUp" noicon="1" val="20000" />
+			<effect name="VitalityPointUp" noicon="1" val="0">
+				<param value="20000" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="22139" levels="1" name="Branding Wind Walk">
