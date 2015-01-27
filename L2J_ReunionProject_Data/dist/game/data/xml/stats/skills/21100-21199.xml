@@ -1379,14 +1379,30 @@
 		<set name="trait" val="ETC" />
 	</skill>
 	<skill id="21199" levels="1" name="Vitality of Courage">
-		<!-- Recovers all energy with the power of courage, and maintains the energy stage for 5 minutes. Reuse delay 30 minutes. When you use the skill, 1 Proof of a Warrior is consumed. -->
+		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
-		<set name="abnormalType" val="vp_keep" />
+		<set name="abnormalType" val="VP_KEEP" />
+		<set name="effectPoint" val="1" />
+		<set name="hitTime" val="500" />
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_c_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="20976" /> <!-- Proof of a Warrior -->
+		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="1800000" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<for>
+			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="26" abnormalType="vp_keep" abnormalVisualEffect="vitality">
+				<mul stat="vitalityConsumeRate" val="0" />
+			</effect>
+			<effect name="VitalityPointUp" noicon="1" val="0">
+				<param value="20000" />
+			</effect>
+		</for>
 	</skill>
 </list>
