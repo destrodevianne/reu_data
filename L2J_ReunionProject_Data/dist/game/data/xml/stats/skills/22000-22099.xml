@@ -71,7 +71,9 @@
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="VitalityPointUp" noicon="1" val="600" />
+			<effect name="VitalityPointUp" noicon="1" val="0">
+				<param value="600" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="22006" levels="1" name="Halloween Candy">
@@ -84,7 +86,9 @@
 		<set name="itemConsumeId" val="20034" />
 		<set name="itemConsumeCount" val="1" />
 		<for>
-			<effect name="VitalityPointUp" noicon="1" val="20000" />
+			<effect name="VitalityPointUp" noicon="1" val="0">
+				<param value="20000" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="22007" levels="1" name="Good Luck Lucky Bag">
@@ -506,7 +510,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="VitalityPointUp" noicon="1" val="20000" />
+			<effect name="VitalityPointUp" noicon="1" val="0">
+				<param value="20000" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="22029" levels="1" name="Baguette Herb">
@@ -907,7 +913,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="VitalityPointUp" noicon="1" val="20000" />
+			<effect name="VitalityPointUp" noicon="1" val="0">
+				<param value="20000" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="22056" levels="1" name="Wind Walk">

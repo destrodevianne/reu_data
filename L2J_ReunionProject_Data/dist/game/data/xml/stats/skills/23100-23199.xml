@@ -767,7 +767,9 @@
 			<effect name="Buff" abnormalTime="7200" val="0" abnormalLvl="26" abnormalType="vp_keep" abnormalVisualEffect="vitality">
 				<mul stat="vitalityConsumeRate" val="0" />
 			</effect>
-			<effect name="VitalityPointUp" noicon="1" val="20000" />
+			<effect name="VitalityPointUp" noicon="1" val="0">
+				<param value="20000" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="23180" levels="1" name="Joy of Vitality">
