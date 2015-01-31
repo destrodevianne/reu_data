@@ -840,7 +840,7 @@
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="br_event_buf1">
 				<mul stat="maxHp" val="1.1"/>
 				<mul stat="maxMp" val="1.1"/>
-				<mul stat="rCrit" val="0.05"/>
+				<mul stat="rCrit" val="1.05"/>
 				<add stat="windRes" val="5"/>
 			</effect>
 		</for>
