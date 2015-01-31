@@ -943,7 +943,7 @@
 	<skill id="6366" levels="2" name="Maguen Plasma - Critical">
 		<table name="#cAtk"> 1.05 1.1 </table>
 		<table name="#mCritRate"> 0.02 0.04 </table>
-		<table name="#rCrit"> 0.04 0.08 </table>
+		<table name="#rCrit"> 1.04 1.08 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="signal_b" />

@@ -226,7 +226,7 @@
 		<table name="#aggro"> 457 566 624 </table>
 		<table name="#mpConsume"> 137 156 201 </table>
 		<table name="#mpInitialConsume"> 35 44 51 </table>
-		<table name="#rCrit"> 0.2 0.25 0.3 </table>
+		<table name="#rCrit"> 1.2 1.25 1.3 </table>
 		<table name="#ench1AbnormalTimes"> 1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400 </table>
 		<table name="#ench1time"> 1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400 </table>
 		<table name="#ench2MpConsume"> 197 194 190 187 184 180 177 174 170 167 164 160 157 154 150 147 144 140 137 134 130 127 123 120 117 113 110 107 103 100 </table>
@@ -257,7 +257,7 @@
 		</for>
 		<enchant1for>
 			<effect name="Buff" abnormalTime="#ench1time" val="0" abnormalLvl="3" abnormalType="critical_prob_up">
-				<mul stat="rCrit" val="0.3" />
+				<mul stat="rCrit" val="1.3" />
 			</effect>
 		</enchant1for>
 	</skill>
@@ -1466,7 +1466,7 @@
 				<mul stat="cAtk" val="1.2">
 					<player behind="true" />
 				</mul>
-				<mul stat="rCrit" val="0.2">
+				<mul stat="rCrit" val="1.2">
 					<player behind="true" />
 				</mul>
 				<sub stat="debuffVuln" val="10" />
@@ -1481,7 +1481,7 @@
 				<mul stat="cAtk" val="1.2">
 					<player behind="true" />
 				</mul>
-				<mul stat="rCrit" val="0.2">
+				<mul stat="rCrit" val="1.2">
 					<player behind="true" />
 				</mul>
 				<sub stat="debuffVuln" val="10" />
@@ -1513,7 +1513,7 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="rCrit" val="0.2" />
+				<mul stat="rCrit" val="1.2" />
 				<mul stat="pAtk" val="1.1" />
 				<mul stat="cAtk" val="1.2" />
 				<mul stat="pAtkSpd" val="1.2" />
@@ -1530,7 +1530,7 @@
 		</for>
 		<enchant1for>
 			<effect name="Buff" abnormalTime="#ench1Time" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="rCrit" val="0.2" />
+				<mul stat="rCrit" val="1.2" />
 				<mul stat="pAtk" val="1.1" />
 				<mul stat="cAtk" val="1.2" />
 				<mul stat="pAtkSpd" val="1.2" />
@@ -1881,7 +1881,7 @@
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="multi_buff">
 				<mul stat="maxHp" val="1.2" />
-				<mul stat="rCrit" val="0.2" />
+				<mul stat="rCrit" val="1.2" />
 				<mul stat="mCritPower" val="1.2" />
 				<mul stat="pAtk" val="1.1" />
 				<mul stat="pDef" val="1.2" />
@@ -1897,7 +1897,7 @@
 		<enchant1for>
 			<effect name="Buff" abnormalTime="#ench1Time" val="0" abnormalLvl="1" abnormalType="multi_buff">
 				<mul stat="maxHp" val="1.2" />
-				<mul stat="rCrit" val="0.2" />
+				<mul stat="rCrit" val="1.2" />
 				<mul stat="mCritPower" val="1.2" />
 				<mul stat="pAtk" val="1.1" />
 				<mul stat="pDef" val="1.2" />
@@ -1913,7 +1913,7 @@
 		<enchant3for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="multi_buff">
 				<mul stat="maxHp" val="1.2" />
-				<mul stat="rCrit" val="0.2" />
+				<mul stat="rCrit" val="1.2" />
 				<mul stat="mCritPower" val="1.2" />
 				<mul stat="pAtk" val="1.1" />
 				<mul stat="pDef" val="1.2" />
@@ -2358,7 +2358,7 @@
 				<mul stat="runSpd" val="0.8" />
 				<mul stat="mDef" val="0.7" />
 				<mul stat="pAtkSpd" val="0.7" />
-				<mul stat="rCrit" val="-0.3" />
+				<mul stat="rCrit" val="0.7" />
 				<mul stat="cAtk" val="0.7" />
 				<sub stat="accCombat" val="6" />
 			</effect>

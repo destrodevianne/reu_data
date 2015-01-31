@@ -1437,7 +1437,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="rCrit" val="0.5" />
+			<mul stat="rCrit" val="1.5" />
 		</for>
 	</skill>
 	<skill id="4087" levels="12" name="NPC Blaze">
