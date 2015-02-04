@@ -273,7 +273,7 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="26" abnormalType="decrease_weight_penalty">
-				<add stat="weightPenalty" val="9000" />
+				<add order="0x40" stat="weightPenalty" val="9000" />
 			</effect>
 		</for>
 	</skill>
@@ -302,7 +302,7 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="26" abnormalType="attack_time_down">
-				<mul stat="pAtkSpd" val="1.33" />
+				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 		</for>
 	</skill>
@@ -331,7 +331,7 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="26" abnormalType="casting_time_down">
-				<mul stat="mAtkSpd" val="1.3" />
+				<mul order="0x30" stat="mAtkSpd" val="1.3" />
 			</effect>
 		</for>
 	</skill>
@@ -361,7 +361,7 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="26" abnormalType="speed_up">
-				<add stat="runSpd" val="20" />
+				<add order="0x40" stat="runSpd" val="20" />
 			</effect>
 		</for>
 	</skill>
@@ -786,7 +786,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="7200" val="0" abnormalLvl="26" abnormalType="vp_keep" abnormalVisualEffect="vitality">
-				<mul stat="vitalityConsumeRate" val="0" />
+				<mul order="0x30" stat="vitalityConsumeRate" val="0" />
 			</effect>
 			<effect name="VitalityPointUp" noicon="1" val="0">
 				<param value="20000" />
@@ -836,7 +836,7 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="26" abnormalType="speed_up">
-				<add stat="runSpd" val="20" />
+				<add order="0x40" stat="runSpd" val="20" />
 			</effect>
 		</for>
 	</skill>

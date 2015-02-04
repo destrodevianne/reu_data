@@ -355,8 +355,8 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_hit_defence_crt_rate_up">
-				<add stat="accCombat" val="4" />
-				<mul stat="defCritRate" val="0.7" />
+				<add order="0x40" stat="accCombat" val="4" />
+				<mul order="0x30" stat="defCritRate" val="0.7" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="hit_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -378,8 +378,8 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_ma_md_up">
-				<mul stat="mAtk" val="1.75" />
-				<mul stat="mDef" val="1.3" />
+				<mul order="0x30" stat="mAtk" val="1.75" />
+				<mul order="0x30" stat="mDef" val="1.3" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="ma_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -397,22 +397,22 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="maxMp" val="1.15" />
-				<add stat="regMp" val="1.5">
+				<mul order="0x30" stat="maxMp" val="1.15" />
+				<add order="0x40" stat="regMp" val="1.5">
 					<using kind="HEAVY,LIGHT" />
 				</add>
-				<add stat="regMp" val="4">
+				<add order="0x40" stat="regMp" val="4">
 					<using kind="MAGIC" />
 				</add>
-				<mul stat="mDef" val="1.3" />
-				<mul stat="mAtk" val="1.3" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<add stat="fireRes" val="10" />
-				<add stat="waterRes" val="10" />
-				<add stat="windRes" val="10" />
-				<add stat="earthRes" val="10" />
-				<sub stat="debuffVuln" val="25" />
-				<sub stat="cancelVuln" val="40" />
+				<mul order="0x30" stat="mDef" val="1.3" />
+				<mul order="0x30" stat="mAtk" val="1.3" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<add order="0x40" stat="fireRes" val="10" />
+				<add order="0x40" stat="waterRes" val="10" />
+				<add order="0x40" stat="windRes" val="10" />
+				<add order="0x40" stat="earthRes" val="10" />
+				<sub order="0x40" stat="debuffVuln" val="25" />
+				<sub order="0x40" stat="cancelVuln" val="40" />
 			</effect>
 		</for>
 	</skill>
@@ -432,8 +432,8 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_vampiric_haste">
-				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
-				<mul stat="pAtkSpd" val="1.33" />
+				<add order="0x40" stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="vampiric_attack" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -452,10 +452,10 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_attack_buff">
-				<mul stat="pAtk" val="1.05">
+				<mul order="0x30" stat="pAtk" val="1.05">
 					<using kind="BLUNT" />
 				</mul>
-				<add stat="stunProf" val="8">
+				<add order="0x40" stat="stunProf" val="8">
 					<using kind="BLUNT" />
 				</add>
 			</effect>
@@ -473,10 +473,10 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_attack_buff">
-				<mul stat="pAtk" val="1.05">
+				<mul order="0x30" stat="pAtk" val="1.05">
 					<using kind="BOW,CROSSBOW" />
 				</mul>
-				<add stat="pAtkRange" val="100">
+				<add order="0x40" stat="pAtkRange" val="100">
 					<using kind="BOW,CROSSBOW" />
 				</add>
 			</effect>
@@ -494,10 +494,10 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_defence_buff">
-				<mul stat="pDef" val="1.05">
+				<mul order="0x30" stat="pDef" val="1.05">
 					<using kind="LIGHT" />
 				</mul>
-				<add stat="rEvas" val="2">
+				<add order="0x40" stat="rEvas" val="2">
 					<using kind="LIGHT" />
 				</add>
 			</effect>
@@ -515,10 +515,10 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_defence_buff">
-				<mul stat="pDef" val="1.05">
+				<mul order="0x30" stat="pDef" val="1.05">
 					<using kind="MAGIC" />
 				</mul>
-				<add stat="regMp" val="2">
+				<add order="0x40" stat="regMp" val="2">
 					<using kind="MAGIC" />
 				</add>
 			</effect>
@@ -537,7 +537,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="3600" val="0" triggeredId="6059" chanceType="ON_ATTACKED_HIT" activationChance="80" activationMinDamage="300" abnormalLvl="1" abnormalType="counter_critical">
-				<mul stat="defCritDamage" val="0.7" />
+				<mul order="0x30" stat="defCritDamage" val="0.7" />
 			</effect>
 		</for>
 	</skill>
@@ -553,10 +553,10 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="md_up_attr">
-				<add stat="waterRes" val="20" />
-				<add stat="fireRes" val="20" />
-				<add stat="windRes" val="20" />
-				<add stat="earthRes" val="20" />
+				<add order="0x40" stat="waterRes" val="20" />
+				<add order="0x40" stat="fireRes" val="20" />
+				<add order="0x40" stat="windRes" val="20" />
+				<add order="0x40" stat="earthRes" val="20" />
 			</effect>
 		</for>
 	</skill>
@@ -572,8 +572,8 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="resist_debuff_dispel">
-				<sub stat="cancelVuln" val="30" />
-				<sub stat="debuffVuln" val="20" />
+				<sub order="0x40" stat="cancelVuln" val="30" />
+				<sub order="0x40" stat="debuffVuln" val="20" />
 			</effect>
 		</for>
 	</skill>
@@ -617,7 +617,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="critical_prob_up">
-				<mul stat="rCrit" val="1.3" />
+				<basemul order="0x30" stat="rCrit" val="0.3" />
 			</effect>
 		</for>
 	</skill>
@@ -631,7 +631,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="critical_dmg_up">
-				<mul stat="cAtk" val="1.35" />
+				<mul order="0x30" stat="cAtk" val="1.35" />
 			</effect>
 		</for>
 	</skill>
@@ -645,7 +645,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="attack_time_down">
-				<mul stat="pAtkSpd" val="1.33" />
+				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 		</for>
 	</skill>
@@ -659,7 +659,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="hit_up">
-				<add stat="accCombat" val="4" />
+				<add order="0x40" stat="accCombat" val="4" />
 			</effect>
 		</for>
 	</skill>
@@ -673,7 +673,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="6" abnormalType="max_hp_up">
-				<mul stat="maxHp" val="1.35" />
+				<mul order="0x30" stat="maxHp" val="1.35" />
 			</effect>
 		</for>
 	</skill>
@@ -687,7 +687,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="6" abnormalType="max_mp_up">
-				<mul stat="maxMp" val="1.35" />
+				<mul order="0x30" stat="maxMp" val="1.35" />
 			</effect>
 		</for>
 	</skill>
@@ -701,7 +701,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="avoid_up">
-				<add stat="rEvas" val="4" />
+				<add order="0x40" stat="rEvas" val="4" />
 			</effect>
 		</for>
 	</skill>
@@ -715,7 +715,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="casting_time_down">
-				<mul stat="mAtkSpd" val="1.3" />
+				<mul order="0x30" stat="mAtkSpd" val="1.3" />
 			</effect>
 		</for>
 	</skill>
@@ -729,7 +729,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="decrease_weight_penalty">
-				<add stat="weightPenalty" val="9000" />
+				<add order="0x40" stat="weightPenalty" val="9000" />
 			</effect>
 		</for>
 	</skill>
@@ -743,7 +743,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="pa_up">
-				<mul stat="pAtk" val="1.15" />
+				<mul order="0x30" stat="pAtk" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -757,7 +757,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="pd_up">
-				<mul stat="pDef" val="1.15" />
+				<mul order="0x30" stat="pDef" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -771,7 +771,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="md_up">
-				<mul stat="mDef" val="1.3" />
+				<mul order="0x30" stat="mDef" val="1.3" />
 			</effect>
 		</for>
 	</skill>
@@ -785,7 +785,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="4" abnormalType="vampiric_attack">
-				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+				<add order="0x40" stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
 			</effect>
 		</for>
 	</skill>
@@ -799,7 +799,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="ma_up">
-				<mul stat="mAtk" val="1.75" />
+				<mul order="0x30" stat="mAtk" val="1.75" />
 			</effect>
 		</for>
 	</skill>
@@ -813,7 +813,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="speed_up">
-				<add stat="runSpd" val="33" />
+				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</for>
 	</skill>
@@ -827,14 +827,14 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="berserker">
-				<mul stat="mAtk" val="1.16" />
-				<mul stat="pAtk" val="1.08" />
-				<mul stat="mDef" val="0.84" />
-				<mul stat="pDef" val="0.92" />
-				<mul stat="mAtkSpd" val="1.08" />
-				<mul stat="pAtkSpd" val="1.08" />
-				<add stat="runSpd" val="8" />
-				<sub stat="rEvas" val="4" />
+				<mul order="0x30" stat="mAtk" val="1.16" />
+				<mul order="0x30" stat="pAtk" val="1.08" />
+				<mul order="0x30" stat="mDef" val="0.84" />
+				<mul order="0x30" stat="pDef" val="0.92" />
+				<mul order="0x30" stat="mAtkSpd" val="1.08" />
+				<mul order="0x30" stat="pAtkSpd" val="1.08" />
+				<add order="0x40" stat="runSpd" val="8" />
+				<sub order="0x40" stat="rEvas" val="4" />
 			</effect>
 		</for>
 	</skill>
@@ -848,7 +848,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="pa_pd_up">
-				<mul stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
 			</effect>
 		</for>
 	</skill>
@@ -862,7 +862,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="pa_pd_up">
-				<mul stat="pDef" val="1.15" />
+				<mul order="0x30" stat="pDef" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -876,7 +876,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="magic_critical_up">
-				<mul stat="mCritRate" val="2" />
+				<basemul order="0x30" stat="mCritRate" val="2" />
 			</effect>
 		</for>
 	</skill>
@@ -890,9 +890,9 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="cheap_magic">
-				<mul stat="MagicalMpConsumeRate" val="0.9" />
-				<mul stat="PhysicalMpConsumeRate" val="0.8" />
-				<mul stat="DanceMpConsumeRate" val="0.8" />
+				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.9" />
+				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.8" />
+				<mul order="0x30" stat="DanceMpConsumeRate" val="0.8" />
 			</effect>
 		</for>
 	</skill>
@@ -907,19 +907,19 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="mCritRate" val="2" />
-				<mul stat="regMp" val="1.2" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="pDef" val="1.2" />
-				<mul stat="pAtkSpd" val="1.2" />
-				<mul stat="mAtk" val="1.2" />
-				<mul stat="mDef" val="1.2" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<sub stat="debuffVuln" val="10" />
-				<mul stat="runSpd" val="0.8" />
-				<mul stat="MagicalMpConsumeRate" val="0.95" />
-				<mul stat="PhysicalMpConsumeRate" val="0.95" />
-				<mul stat="DanceMpConsumeRate" val="0.95" />
+				<basemul order="0x30" stat="mCritRate" val="2" />
+				<mul order="0x30" stat="regMp" val="1.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<sub order="0x40" stat="debuffVuln" val="10" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
+				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.95" />
+				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95" />
+				<mul order="0x30" stat="DanceMpConsumeRate" val="0.95" />
 			</effect>
 		</for>
 	</skill>
@@ -933,19 +933,19 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="maxMp" val="1.2" />
-				<mul stat="regHp" val="1.2" />
-				<mul stat="mCritRate" val="2" />
-				<mul stat="cAtk" val="1.2" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="pDef" val="1.2" />
-				<mul stat="pAtkSpd" val="1.2" />
-				<mul stat="mAtk" val="1.2" />
-				<mul stat="mDef" val="1.2" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<add stat="accCombat" val="4" />
-				<sub stat="debuffVuln" val="10" />
-				<mul stat="runSpd" val="0.8" />
+				<mul order="0x30" stat="maxMp" val="1.2" />
+				<mul order="0x30" stat="regHp" val="1.2" />
+				<basemul order="0x30" stat="mCritRate" val="2" />
+				<mul order="0x30" stat="cAtk" val="1.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<add order="0x40" stat="accCombat" val="4" />
+				<sub order="0x40" stat="debuffVuln" val="10" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 		</for>
 	</skill>
@@ -959,18 +959,18 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="maxHp" val="1.2" />
-				<mul stat="rCrit" val="1.2" />
-				<mul stat="mCritRate" val="0.2" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="pDef" val="1.2" />
-				<mul stat="pAtkSpd" val="1.2" />
-				<mul stat="mAtk" val="1.2" />
-				<mul stat="mDef" val="1.2" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<sub stat="debuffVuln" val="10" />
-				<mul stat="runSpd" val="0.8" />
-				<add stat="absorbDam" val="5" /> <!-- absorb 5% HP from damage inflicted on enemies -->
+				<mul order="0x30" stat="maxHp" val="1.2" />
+				<basemul order="0x30" stat="rCrit" val="0.2" />
+				<basemul order="0x30" stat="mCritRate" val="0.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<sub order="0x40" stat="debuffVuln" val="10" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
+				<add order="0x40" stat="absorbDam" val="5" /> <!-- absorb 5% HP from damage inflicted on enemies -->
 			</effect>
 		</for>
 	</skill>
@@ -984,18 +984,18 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="2" abnormalType="multi_buff">
-				<mul stat="maxHp" val="1.2" />
-				<mul stat="mCritRate" val="0.2" />
-				<mul stat="cAtk" val="1.2" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="pDef" val="1.2" />
-				<mul stat="pAtkSpd" val="1.2" />
-				<mul stat="mAtk" val="1.2" />
-				<mul stat="mDef" val="1.2" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<sub stat="debuffVuln" val="10" />
-				<add stat="accCombat" val="4" />
-				<mul stat="runSpd" val="0.8" />
+				<mul order="0x30" stat="maxHp" val="1.2" />
+				<basemul order="0x30" stat="mCritRate" val="0.2" />
+				<mul order="0x30" stat="cAtk" val="1.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<sub order="0x40" stat="debuffVuln" val="10" />
+				<add order="0x40" stat="accCombat" val="4" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 			<effect name="HealPercent" noicon="1" val="20" />
 		</for>
@@ -1017,8 +1017,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_pa_pd_up">
-				<mul stat="pAtk" val="1.15" />
-				<mul stat="pDef" val="1.15" />
+				<mul order="0x30" stat="pAtk" val="1.15" />
+				<mul order="0x30" stat="pDef" val="1.15" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="pa_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1042,8 +1042,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_ma_md_up">
-				<mul stat="mAtk" val="1.75" />
-				<mul stat="mDef" val="1.3" />
+				<mul order="0x30" stat="mAtk" val="1.75" />
+				<mul order="0x30" stat="mDef" val="1.3" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="ma_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1067,8 +1067,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_hp_mp_up">
-				<mul stat="maxHp" val="1.35" />
-				<mul stat="maxMp" val="1.35" />
+				<mul order="0x30" stat="maxHp" val="1.35" />
+				<mul order="0x30" stat="maxMp" val="1.35" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="max_hp_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1092,8 +1092,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_crt_rate_dmg_up">
-				<mul stat="rCrit" val="1.3" />
-				<mul stat="cAtk" val="1.35" />
+				<basemul order="0x30" stat="rCrit" val="0.3" />
+				<mul order="0x30" stat="cAtk" val="1.35" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="critical_prob_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1117,8 +1117,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_shield_rate_defence_up">
-				<mul stat="rShld" val="1.3" />
-				<mul stat="sDef" val="1.5" />
+				<mul order="0x30" stat="rShld" val="1.3" />
+				<mul order="0x30" stat="sDef" val="1.5" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="shield_prob_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1142,8 +1142,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_speed_avoid_up">
-				<add stat="runSpd" val="33" />
-				<add stat="rEvas" val="4" />
+				<add order="0x40" stat="runSpd" val="33" />
+				<add order="0x40" stat="rEvas" val="4" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="speed_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1161,12 +1161,12 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_attack_buff">
-				<mul stat="pAtk" val="1.05">
+				<mul order="0x30" stat="pAtk" val="1.05">
 					<using kind="SWORD,DUAL,ANCIENTSWORD,RAPIER,DAGGER,DUALDAGGER,POLE,DUALFIST" />
 				</mul>
-				<mul stat="rCrit" val="1.2">
+				<basemul order="0x30" stat="rCrit" val="0.2">
 					<using kind="SWORD,DUAL,ANCIENTSWORD,RAPIER,DAGGER,DUALDAGGER,POLE,DUALFIST" />
-				</mul>
+				</basemul>
 			</effect>
 		</for>
 	</skill>
@@ -1181,7 +1181,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_attack_buff">
-				<mul stat="pDef" val="1.1">
+				<mul order="0x30" stat="pDef" val="1.1">
 					<using kind="HEAVY" />
 				</mul>
 			</effect>
@@ -1215,8 +1215,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_hit_defence_crt_rate_up">
-				<add stat="accCombat" val="4" />
-				<mul stat="defCritRate" val="0.7" />
+				<add order="0x40" stat="accCombat" val="4" />
+				<mul order="0x30" stat="defCritRate" val="0.7" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="hit_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1237,8 +1237,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_ma_md_up">
-				<mul stat="mAtk" val="1.75" />
-				<mul stat="mDef" val="1.3" />
+				<mul order="0x30" stat="mAtk" val="1.75" />
+				<mul order="0x30" stat="mDef" val="1.3" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="ma_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1255,22 +1255,22 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="maxMp" val="1.15" />
-				<add stat="regMp" val="1.5">
+				<mul order="0x30" stat="maxMp" val="1.15" />
+				<add order="0x40" stat="regMp" val="1.5">
 					<using kind="HEAVY,LIGHT" />
 				</add>
-				<add stat="regMp" val="4">
+				<add order="0x40" stat="regMp" val="4">
 					<using kind="MAGIC" />
 				</add>
-				<mul stat="mDef" val="1.3" />
-				<mul stat="mAtk" val="1.3" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<add stat="fireRes" val="10" />
-				<add stat="waterRes" val="10" />
-				<add stat="windRes" val="10" />
-				<add stat="earthRes" val="10" />
-				<sub stat="debuffVuln" val="25" />
-				<sub stat="cancelVuln" val="40" />
+				<mul order="0x30" stat="mDef" val="1.3" />
+				<mul order="0x30" stat="mAtk" val="1.3" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<add order="0x40" stat="fireRes" val="10" />
+				<add order="0x40" stat="waterRes" val="10" />
+				<add order="0x40" stat="windRes" val="10" />
+				<add order="0x40" stat="earthRes" val="10" />
+				<sub order="0x40" stat="debuffVuln" val="25" />
+				<sub order="0x40" stat="cancelVuln" val="40" />
 			</effect>
 		</for>
 	</skill>
@@ -1289,8 +1289,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="improve_vampiric_haste">
-				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
-				<mul stat="pAtkSpd" val="1.33" />
+				<add order="0x40" stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+				<mul order="0x30" stat="pAtkSpd" val="1.33" />
 			</effect>
 			<effect name="Negate" noicon="1" val="0" />
 			<effect name="Buff" abnormalTime="3600" noicon="1" val="0" abnormalLvl="100" abnormalType="vampiric_attack" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -1308,10 +1308,10 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_attack_buff">
-				<mul stat="pAtk" val="1.05">
+				<mul order="0x30" stat="pAtk" val="1.05">
 					<using kind="BLUNT" />
 				</mul>
-				<add stat="stunProf" val="8">
+				<add order="0x40" stat="stunProf" val="8">
 					<using kind="BLUNT" />
 				</add>
 			</effect>
@@ -1328,10 +1328,10 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_attack_buff">
-				<mul stat="pAtk" val="1.05">
+				<mul order="0x30" stat="pAtk" val="1.05">
 					<using kind="BOW,CROSSBOW" />
 				</mul>
-				<add stat="pAtkRange" val="100">
+				<add order="0x40" stat="pAtkRange" val="100">
 					<using kind="BOW,CROSSBOW" />
 				</add>
 			</effect>
@@ -1348,10 +1348,10 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_defence_buff">
-				<mul stat="pDef" val="1.05">
+				<mul order="0x30" stat="pDef" val="1.05">
 					<using kind="LIGHT" />
 				</mul>
-				<add stat="rEvas" val="2">
+				<add order="0x40" stat="rEvas" val="2">
 					<using kind="LIGHT" />
 				</add>
 			</effect>
@@ -1368,10 +1368,10 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="dwarf_defence_buff">
-				<mul stat="pDef" val="1.05">
+				<mul order="0x30" stat="pDef" val="1.05">
 					<using kind="MAGIC" />
 				</mul>
-				<add stat="regMp" val="2">
+				<add order="0x40" stat="regMp" val="2">
 					<using kind="MAGIC" />
 				</add>
 			</effect>
@@ -1388,7 +1388,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="3600" val="0" triggeredId="6059" chanceType="ON_ATTACKED_HIT" activationChance="80" activationMinDamage="300" abnormalLvl="1" abnormalType="counter_critical">
-				<mul stat="defCritDamage" val="0.7" />
+				<mul order="0x30" stat="defCritDamage" val="0.7" />
 			</effect>
 		</for>
 	</skill>
@@ -1402,10 +1402,10 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="md_up_attr">
-				<add stat="waterRes" val="20" />
-				<add stat="fireRes" val="20" />
-				<add stat="windRes" val="20" />
-				<add stat="earthRes" val="20" />
+				<add order="0x40" stat="waterRes" val="20" />
+				<add order="0x40" stat="fireRes" val="20" />
+				<add order="0x40" stat="windRes" val="20" />
+				<add order="0x40" stat="earthRes" val="20" />
 			</effect>
 		</for>
 	</skill>
@@ -1419,8 +1419,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="3600" val="0" abnormalLvl="3" abnormalType="resist_debuff_dispel">
-				<sub stat="cancelVuln" val="30" />
-				<sub stat="debuffVuln" val="20" />
+				<sub order="0x40" stat="cancelVuln" val="30" />
+				<sub order="0x40" stat="debuffVuln" val="20" />
 			</effect>
 		</for>
 	</skill>

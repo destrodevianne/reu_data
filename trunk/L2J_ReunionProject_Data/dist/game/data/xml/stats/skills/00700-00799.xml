@@ -84,17 +84,17 @@
 		<set name="targetType" val="PARTY_MEMBER" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<add stat="mCritRate" val="2" />
-				<mul stat="regMp" val="1.2" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="pDef" val="1.2" />
-				<mul stat="pAtkSpd" val="1.2" />
-				<mul stat="mAtk" val="1.2" />
-				<mul stat="mDef" val="1.2" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<sub stat="debuffVuln" val="10" />
-				<mul stat="runSpd" val="0.8" />
-				<mul stat="MagicalMpConsumeRate" val="0.95" />
+				<add order="0x40" stat="mCritRate" val="2" />
+				<mul order="0x30" stat="regMp" val="1.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<sub order="0x40" stat="debuffVuln" val="10" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
+				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.95" />
 			</effect>
 		</for>
 	</skill>
@@ -116,19 +116,19 @@
 		<set name="targetType" val="PARTY_MEMBER" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="maxMp" val="1.2" />
-				<mul stat="regHp" val="1.2" />
-				<add stat="mCritRate" val="2" />
-				<mul stat="cAtk" val="1.2" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="pDef" val="1.2" />
-				<mul stat="pAtkSpd" val="1.2" />
-				<mul stat="mAtk" val="1.2" />
-				<mul stat="mDef" val="1.2" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<add stat="accCombat" val="4" />
-				<sub stat="debuffVuln" val="10" />
-				<mul stat="runSpd" val="0.8" />
+				<mul order="0x30" stat="maxMp" val="1.2" />
+				<mul order="0x30" stat="regHp" val="1.2" />
+				<add order="0x40" stat="mCritRate" val="2" />
+				<mul order="0x30" stat="cAtk" val="1.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<add order="0x40" stat="accCombat" val="4" />
+				<sub order="0x40" stat="debuffVuln" val="10" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 		</for>
 	</skill>
@@ -150,18 +150,18 @@
 		<set name="targetType" val="PARTY_MEMBER" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="maxHp" val="1.2" />
-				<mul stat="rCrit" val="1.2" />
-				<mul stat="mCritRate" val="0.2" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="pDef" val="1.2" />
-				<mul stat="pAtkSpd" val="1.2" />
-				<mul stat="mAtk" val="1.2" />
-				<mul stat="mDef" val="1.2" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<sub stat="debuffVuln" val="10" />
-				<mul stat="runSpd" val="0.8" />
-				<add stat="absorbDam" val="5" /> <!-- absorb 5% HP from damage inflicted on enemies -->
+				<mul order="0x30" stat="maxHp" val="1.2" />
+				<basemul order="0x30" stat="rCrit" val="0.2" />
+				<basemul order="0x30" stat="mCritRate" val="0.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<sub order="0x40" stat="debuffVuln" val="10" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
+				<add order="0x40" stat="absorbDam" val="5" /> <!-- absorb 5% HP from damage inflicted on enemies -->
 			</effect>
 		</for>
 	</skill>
@@ -183,18 +183,18 @@
 		<set name="targetType" val="PARTY_MEMBER" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="maxHp" val="1.2" />
-				<add stat="mCritRate" val="2" />
-				<mul stat="cAtk" val="1.2" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="pDef" val="1.2" />
-				<mul stat="pAtkSpd" val="1.2" />
-				<mul stat="mAtk" val="1.2" />
-				<mul stat="mDef" val="1.2" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<sub stat="debuffVuln" val="10" />
-				<add stat="accCombat" val="4" />
-				<mul stat="runSpd" val="0.8" />
+				<mul order="0x30" stat="maxHp" val="1.2" />
+				<add order="0x40" stat="mCritRate" val="2" />
+				<mul order="0x30" stat="cAtk" val="1.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<sub order="0x40" stat="debuffVuln" val="10" />
+				<add order="0x40" stat="accCombat" val="4" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 		</for>
 	</skill>
@@ -241,16 +241,16 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="transform_sacrifice">
-				<add stat="runSpd" val="10" />
-				<add stat="accCombat" val="2" />
-				<mul stat="pDef" val="1.1" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="pAtkSpd" val="1.1" />
-				<mul stat="rCrit" val="1.1" />
-				<mul stat="cAtk" val="1.1" />
-				<mul stat="mDef" val="1.1" />
-				<mul stat="mAtk" val="1.1" />
-				<mul stat="mAtkSpd" val="1.1" />
+				<add order="0x40" stat="runSpd" val="10" />
+				<add order="0x40" stat="accCombat" val="2" />
+				<mul order="0x30" stat="pDef" val="1.1" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="pAtkSpd" val="1.1" />
+				<basemul order="0x30" stat="rCrit" val="0.1" />
+				<mul order="0x30" stat="cAtk" val="1.1" />
+				<mul order="0x30" stat="mDef" val="1.1" />
+				<mul order="0x30" stat="mAtk" val="1.1" />
+				<mul order="0x30" stat="mAtkSpd" val="1.1" />
 			</effect>
 			<effect self="1" name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_START" triggeredId="5602" />
 		</for>
@@ -284,7 +284,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect count="0x7fffffff" name="MpConsumePerLevel" abnormalTime="3" val="0.2">
-				<add stat="transDam" val="50" />
+				<add order="0x40" stat="transDam" val="50" />
 			</effect>
 		</for>
 	</skill>
@@ -306,18 +306,18 @@
 		<set name="targetType" val="PET" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="1" abnormalType="multi_buff">
-				<mul stat="rCrit" val="1.2" />
-				<mul stat="pAtk" val="1.1" />
-				<mul stat="cAtk" val="1.2" />
-				<mul stat="pAtkSpd" val="1.2" />
-				<mul stat="maxHp" val="1.2" />
-				<mul stat="runSpd" val="0.8" />
-				<add stat="accCombat" val="4" />
-				<mul stat="pDef" val="1.2" />
-				<mul stat="mDef" val="1.2" />
-				<mul stat="mAtk" val="1.2" />
-				<mul stat="mAtkSpd" val="1.2" />
-				<sub stat="debuffVuln" val="20" />
+				<basemul order="0x30" stat="rCrit" val="0.2" />
+				<mul order="0x30" stat="pAtk" val="1.1" />
+				<mul order="0x30" stat="cAtk" val="1.2" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="maxHp" val="1.2" />
+				<mul order="0x30" stat="runSpd" val="0.8" />
+				<add order="0x40" stat="accCombat" val="4" />
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<mul order="0x30" stat="mAtk" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<sub order="0x40" stat="debuffVuln" val="20" />
 			</effect>
 			<effect name="HealPercent" noicon="1" val="20" />
 		</for>
@@ -356,8 +356,8 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="transform_sacrifice">
-				<mul stat="rCrit" val="1.2" />
-				<mul stat="cAtk" val="1.2" />
+				<basemul order="0x30" stat="rCrit" val="0.2" />
+				<mul order="0x30" stat="cAtk" val="1.2" />
 			</effect>
 			<effect self="1" name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_START" triggeredId="5602" />
 		</for>
@@ -466,7 +466,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="4" abnormalType="vampiric_attack">
-				<add stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
+				<add order="0x40" stat="absorbDam" val="9" /> <!-- absorb 9% HP from damage inflicted on enemies -->
 			</effect>
 		</for>
 	</skill>
@@ -619,7 +619,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="1" abnormalType="pa_up">
-				<mul stat="pAtk" val="1.08" />
+				<mul order="0x30" stat="pAtk" val="1.08" />
 			</effect>
 		</for>
 	</skill>
@@ -678,9 +678,9 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Debuff" abnormalTime="30" val="0" abnormalLvl="3" abnormalType="attack_time_up">
-				<mul stat="runSpd" val="0.77" />
-				<mul stat="pAtkSpd" val="0.77" />
-				<mul stat="mAtkSpd" val="0.77" />
+				<mul order="0x30" stat="runSpd" val="0.77" />
+				<mul order="0x30" stat="pAtkSpd" val="0.77" />
+				<mul order="0x30" stat="mAtkSpd" val="0.77" />
 			</effect>
 		</for>
 	</skill>
@@ -821,9 +821,9 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="ImmobileBuff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="pd_up_special">
-				<add stat="pDef" val="1800" />
-				<add stat="mDef" val="1350" />
-				<sub stat="cancelVuln" val="80" />
+				<add order="0x40" stat="pDef" val="1800" />
+				<add order="0x40" stat="mDef" val="1350" />
+				<sub order="0x40" stat="cancelVuln" val="80" />
 			</effect>
 		</for>
 	</skill>
@@ -1066,7 +1066,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1200" val="0" abnormalLvl="2" abnormalType="speed_up">
-				<add stat="runSpd" val="33" />
+				<add order="0x40" stat="runSpd" val="33" />
 			</effect>
 		</for>
 	</skill>
@@ -1114,9 +1114,9 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="ImmobileBuff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="pd_up_special">
-				<add stat="pDef" val="1800" />
-				<add stat="mDef" val="1350" />
-				<sub stat="cancelVuln" val="80" />
+				<add order="0x40" stat="pDef" val="1800" />
+				<add order="0x40" stat="mDef" val="1350" />
+				<sub order="0x40" stat="cancelVuln" val="80" />
 			</effect>
 		</for>
 	</skill>
@@ -1210,7 +1210,7 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="3" abnormalType="critical_prob_up">
-				<mul stat="rCrit" val="1.3" />
+				<basemul order="0x30" stat="rCrit" val="0.3" />
 			</effect>
 		</for>
 	</skill>
@@ -1220,7 +1220,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="mDef" val="1.15" />
+			<mul order="0x30" stat="mDef" val="1.15" />
 			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="20" activationMinDamage="300" chanceType="ON_ATTACKED" triggeredId="5556" />
 		</for>
 	</skill>
@@ -1230,10 +1230,10 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="fireRes" val="20" />
-			<add stat="waterRes" val="20" />
-			<add stat="windRes" val="20" />
-			<add stat="earthRes" val="20" />
+			<add order="0x40" stat="fireRes" val="20" />
+			<add order="0x40" stat="waterRes" val="20" />
+			<add order="0x40" stat="windRes" val="20" />
+			<add order="0x40" stat="earthRes" val="20" />
 			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="20" activationMinDamage="100" chanceType="ON_ATTACKED" triggeredId="5556" />
 		</for>
 	</skill>
@@ -1243,8 +1243,8 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="holyRes" val="20" />
-			<add stat="darkRes" val="20" />
+			<add order="0x40" stat="holyRes" val="20" />
+			<add order="0x40" stat="darkRes" val="20" />
 			<effect name="ChanceSkillTrigger" abnormalTime="-1" val="0" activationChance="20" activationMinDamage="100" chanceType="ON_ATTACKED" triggeredId="5556" />
 		</for>
 	</skill>
@@ -1261,10 +1261,10 @@
 			<using kind="SWORD,BLUNT,DUAL,DUALFIST,DAGGER,DUALDAGGER,POLE,ANCIENTSWORD,RAPIER" />
 		</cond>
 		<for>
-			<add stat="pAtk" val="100">
+			<add order="0x40" stat="pAtk" val="100">
 				<using kind="SWORD,BLUNT,DUAL,DUALFIST,DAGGER,DUALDAGGER,POLE,ANCIENTSWORD,RAPIER" />
 			</add>
-			<mul stat="pAtkSpd" val="1.1">
+			<mul order="0x30" stat="pAtkSpd" val="1.1">
 				<using kind="SWORD,BLUNT,DUAL,DUALFIST,DAGGER,DUALDAGGER,POLE,ANCIENTSWORD,RAPIER" />
 			</mul>
 			<!-- TODO: Require support for effects using conditions -->
@@ -1286,10 +1286,10 @@
 			<using kind="BOW,CROSSBOW" />
 		</cond>
 		<for>
-			<add stat="accCombat" val="8">
+			<add order="0x40" stat="accCombat" val="8">
 				<using kind="BOW,CROSSBOW" />
 			</add>
-			<add stat="pAtkRange" val="50">
+			<add order="0x40" stat="pAtkRange" val="50">
 				<using kind="BOW,CROSSBOW" />
 			</add>
 			<!-- TODO: Require support for effects using conditions -->
@@ -1311,7 +1311,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="30" val="0" abnormalVisualEffect="invulnerable" abnormalLvl="2" abnormalType="pd_up_special">
-				<add stat="mDef" val="5000" />
+				<add order="0x40" stat="mDef" val="5000" />
 			</effect>
 		</for>
 	</skill>
@@ -1332,7 +1332,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="60" val="0" activationChance="8" chanceType="ON_ATTACKED_HIT" triggeredId="5561" abnormalLvl="1" abnormalType="seed_of_knight">
-				<add stat="pAtk" val="100" />
+				<add order="0x40" stat="pAtk" val="100" />
 			</effect>
 		</for>
 	</skill>
@@ -1370,9 +1370,9 @@
 		</cond>
 		<for>
 			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="touch_of_death" effectPower="60" >
-				<mul stat="maxCp" val="0.1" />
-				<add stat="debuffVuln" val="30" />
-				<mul stat="healEffect" val="0.7" />
+				<mul order="0x30" stat="maxCp" val="0.1" />
+				<add order="0x40" stat="debuffVuln" val="30" />
+				<mul order="0x30" stat="healEffect" val="0.7" />
 			</effect>
 			<effect name="Cancel" noicon="1" val="0" effectPower="25" />
 			<effect name="DispelOnlyOne" noicon="1" val="0" effectPower="-1" />
@@ -1400,9 +1400,9 @@
 		<set name="trait" val="DERANGEMENT" />
 		<for>
 			<effect count="4" name="Fear" abnormalTime="2" val="0" abnormalLvl="1" abnormalType="turn_flee">
-				<mul stat="mDef" val="0.7" />
-				<mul stat="pDef" val="0.7" />
-				<mul stat="runSpd" val="0.7" />
+				<mul order="0x30" stat="mDef" val="0.7" />
+				<mul order="0x30" stat="pDef" val="0.7" />
+				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
 		</for>
 	</skill>
@@ -1427,14 +1427,14 @@
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="song_of_windstorm">
-				<mul stat="bowWpnVuln" val="0.9" />
-				<mul stat="crossbowWpnVuln" val="0.95" />
+				<mul order="0x30" stat="bowWpnVuln" val="0.9" />
+				<mul order="0x30" stat="crossbowWpnVuln" val="0.95" />
 			</effect>
 		</for>
 		<enchant1for>
 			<effect name="Buff" abnormalTime="#ench1Time" val="0" abnormalLvl="1" abnormalType="song_of_windstorm">
-				<mul stat="bowWpnVuln" val="0.9" />
-				<mul stat="crossbowWpnVuln" val="0.95" />
+				<mul order="0x30" stat="bowWpnVuln" val="0.9" />
+				<mul order="0x30" stat="crossbowWpnVuln" val="0.95" />
 			</effect>
 		</enchant1for>
 	</skill>
@@ -1462,16 +1462,16 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="15" val="0" abnormalLvl="1" abnormalType="dance_of_bladestorm">
-				<mul stat="bowWpnVuln" val="0.55" />
-				<mul stat="crossbowWpnVuln" val="0.75" />
-				<mul stat="mAtk" val="0.01" />
+				<mul order="0x30" stat="bowWpnVuln" val="0.55" />
+				<mul order="0x30" stat="crossbowWpnVuln" val="0.75" />
+				<mul order="0x30" stat="mAtk" val="0.01" />
 			</effect>
 		</for>
 		<enchant1for>
 			<effect name="Buff" abnormalTime="#ench1Time" val="0" abnormalLvl="1" abnormalType="dance_of_bladestorm">
-				<mul stat="bowWpnVuln" val="0.55" />
-				<mul stat="crossbowWpnVuln" val="0.75" />
-				<mul stat="mAtk" val="0.01" />
+				<mul order="0x30" stat="bowWpnVuln" val="0.55" />
+				<mul order="0x30" stat="crossbowWpnVuln" val="0.75" />
+				<mul order="0x30" stat="mAtk" val="0.01" />
 			</effect>
 		</enchant1for>
 	</skill>
@@ -1480,7 +1480,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="rEvas" val="15">
+			<add order="0x40" stat="rEvas" val="15">
 				<player hp="30" />
 			</add>
 		</for>
@@ -1507,11 +1507,11 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="30" val="0" abnormalVisualEffect="invulnerable" abnormalLvl="2" abnormalType="avoid_up_special">
-				<add stat="runSpd" val="20" />
-				<add stat="rEvas" val="15" />
-				<mul stat="blowRate" val="1.3" />
-				<sub stat="cancelVuln" val="90" />
-				<add stat="pSkillEvas" val="40" />
+				<add order="0x40" stat="runSpd" val="20" />
+				<add order="0x40" stat="rEvas" val="15" />
+				<mul order="0x30" stat="blowRate" val="1.3" />
+				<sub order="0x40" stat="cancelVuln" val="90" />
+				<add order="0x40" stat="pSkillEvas" val="40" />
 			</effect>
 		</for>
 	</skill>
@@ -1528,11 +1528,11 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="30" val="0" abnormalVisualEffect="invulnerable" abnormalLvl="2" abnormalType="avoid_up_special">
-				<add stat="runSpd" val="50" />
-				<add stat="rEvas" val="20" />
-				<mul stat="blowRate" val="1.2" />
-				<sub stat="cancelVuln" val="80" />
-				<add stat="pSkillEvas" val="75" />
+				<add order="0x40" stat="runSpd" val="50" />
+				<add order="0x40" stat="rEvas" val="20" />
+				<mul order="0x30" stat="blowRate" val="1.2" />
+				<sub order="0x40" stat="cancelVuln" val="80" />
+				<add order="0x40" stat="pSkillEvas" val="75" />
 			</effect>
 		</for>
 	</skill>
@@ -1549,11 +1549,11 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="30" val="0" abnormalVisualEffect="invulnerable" abnormalLvl="2" abnormalType="avoid_up_special">
-				<add stat="runSpd" val="33" />
-				<add stat="rEvas" val="15" />
-				<mul stat="blowRate" val="1.4" />
-				<sub stat="cancelVuln" val="90" />
-				<add stat="pSkillEvas" val="60" />
+				<add order="0x40" stat="runSpd" val="33" />
+				<add order="0x40" stat="rEvas" val="15" />
+				<mul order="0x30" stat="blowRate" val="1.4" />
+				<sub order="0x40" stat="cancelVuln" val="90" />
+				<add order="0x40" stat="pSkillEvas" val="60" />
 			</effect>
 		</for>
 	</skill>
@@ -1659,9 +1659,9 @@
 		<set name="trait" val="DERANGEMENT" />
 		<for>
 			<effect count="4" name="Fear" abnormalTime="2" val="0" abnormalLvl="1" abnormalType="turn_flee">
-				<mul stat="runSpd" val="0.67" />
-				<mul stat="pDef" val="0.67" />
-				<sub stat="rEvas" val="10" />
+				<mul order="0x30" stat="runSpd" val="0.67" />
+				<mul order="0x30" stat="pDef" val="0.67" />
+				<sub order="0x40" stat="rEvas" val="10" />
 			</effect>
 		</for>
 	</skill>
@@ -1693,7 +1693,7 @@
 		</cond>
 		<for>
 			<effect name="Disarm" abnormalTime="5" val="0" abnormalVisualEffect="bleed" abnormalLvl="1" abnormalType="disarm">
-				<mul stat="pAtk" val="0.6" />
+				<mul order="0x30" stat="pAtk" val="0.6" />
 			</effect>
 		</for>
 	</skill>
@@ -1890,7 +1890,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="60" val="0" activationChance="20" chanceType="ON_ATTACKED_HIT" triggeredId="5562" abnormalLvl="1" abnormalType="seed_of_knight">
-				<add stat="pDef" val="200" />
+				<add order="0x40" stat="pDef" val="200" />
 			</effect>
 		</for>
 	</skill>
@@ -1913,20 +1913,20 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="3" abnormalType="possession_special">
-				<sub stat="debuffVuln" val="40" />
-				<mul stat="pDef" val="1.5" />
-				<mul stat="mDef" val="1.5" />
-				<add stat="accCombat" val="6" />
-				<add stat="runSpd" val="30" />
-				<mul stat="pAtkSpd" val="1.3" />
-				<add stat="rCrit" val="100">
+				<sub order="0x40" stat="debuffVuln" val="40" />
+				<mul order="0x30" stat="pDef" val="1.5" />
+				<mul order="0x30" stat="mDef" val="1.5" />
+				<add order="0x40" stat="accCombat" val="6" />
+				<add order="0x40" stat="runSpd" val="30" />
+				<mul order="0x30" stat="pAtkSpd" val="1.3" />
+				<add order="0x40" stat="rCrit" val="100">
 					<using kind="SWORD" />
 				</add>
-				<mul stat="cAtk" val="2">
+				<mul order="0x30" stat="cAtk" val="2">
 					<using kind="BLUNT" />
 				</mul>
-				<sub stat="cancelVuln" val="40" />
-				<mul stat="healEffect" val="0.2" />
+				<sub order="0x40" stat="cancelVuln" val="40" />
+				<mul order="0x30" stat="healEffect" val="0.2" />
 			</effect>
 		</for>
 	</skill>
@@ -1947,7 +1947,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="60" val="0" activationChance="20" chanceType="ON_ATTACKED_HIT" triggeredId="5563" abnormalLvl="1" abnormalType="seed_of_knight">
-				<add stat="mDef" val="200" />
+				<add order="0x40" stat="mDef" val="200" />
 			</effect>
 		</for>
 	</skill>
@@ -1974,9 +1974,9 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="touch_of_life">
-				<sub stat="cancelVuln" val="100" />
-				<sub stat="debuffVuln" val="30" />
-				<mul stat="healEffect" val="1.3" />
+				<sub order="0x40" stat="cancelVuln" val="100" />
+				<sub order="0x40" stat="debuffVuln" val="30" />
+				<mul order="0x30" stat="healEffect" val="1.3" />
 			</effect>
 			<!-- 50HP * 5 during 60 seconds -->
 			<effect count="12" name="HealOverTime" abnormalTime="5" noicon="1" val="250" />
@@ -2000,7 +2000,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="60" val="0" activationChance="20" chanceType="ON_ATTACKED_HIT" triggeredId="5564" abnormalLvl="1" abnormalType="seed_of_knight">
-				<mul stat="cAtk" val="1.1" />
+				<mul order="0x30" stat="cAtk" val="1.1" />
 			</effect>
 		</for>
 	</skill>
@@ -2023,18 +2023,18 @@
 		</cond>
 		<for>
 			<effect name="Buff" abnormalTime="60" val="0" abnormalLvl="3" abnormalType="possession_special">
-				<mul stat="pAtk" val="1.3" />
-				<mul stat="mAtk" val="1.3" />
-				<add stat="runSpd" val="30" />
-				<mul stat="pAtkSpd" val="1.3" />
-				<add stat="rCrit" val="100">
+				<mul order="0x30" stat="pAtk" val="1.3" />
+				<mul order="0x30" stat="mAtk" val="1.3" />
+				<add order="0x40" stat="runSpd" val="30" />
+				<mul order="0x30" stat="pAtkSpd" val="1.3" />
+				<add order="0x40" stat="rCrit" val="100">
 					<using kind="SWORD" />
 				</add>
-				<mul stat="cAtk" val="2">
+				<mul order="0x30" stat="cAtk" val="2">
 					<using kind="BLUNT" />
 				</mul>
-				<add stat="absorbDam" val="40" /> <!-- Recovers as HP 40% of general close rate physical damage inflicted on the enemy -->
-				<mul stat="healEffect" val="0.2" />
+				<add order="0x40" stat="absorbDam" val="40" /> <!-- Recovers as HP 40% of general close rate physical damage inflicted on the enemy -->
+				<mul order="0x30" stat="healEffect" val="0.2" />
 			</effect>
 		</for>
 	</skill>
@@ -2089,9 +2089,9 @@
 		<set name="trait" val="PARALYZE" />
 		<for>
 			<effect name="ChanceSkillTrigger" abnormalTime="5" val="0" triggeredId="6092" chanceType="ON_EXIT" effectPower="50" abnormalLvl="1" abnormalType="paralyze">
-				<mul stat="pAtkSpd" val="0.5" />
-				<mul stat="runSpd" val="0.5" />
-				<mul stat="mAtkSpd" val="0.5" />
+				<mul order="0x30" stat="pAtkSpd" val="0.5" />
+				<mul order="0x30" stat="runSpd" val="0.5" />
+				<mul order="0x30" stat="mAtkSpd" val="0.5" />
 			</effect>
 		</for>
 	</skill>
@@ -2211,7 +2211,7 @@
 		<enchant2 name="reuseDelay" val="#ench2Reuse" />
 		<for>
 			<effect name="Disarm" abnormalTime="5" val="0" abnormalVisualEffect="bleed" abnormalLvl="1" abnormalType="disarm">
-				<mul stat="pAtk" val="0.6" />
+				<mul order="0x30" stat="pAtk" val="0.6" />
 			</effect>
 		</for>
 	</skill>
@@ -2300,13 +2300,13 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="pDef" val="#pDefHeavy">
+			<add order="0x40" stat="pDef" val="#pDefHeavy">
 				<using kind="HEAVY" />
 			</add>
-			<add stat="pDef" val="#pDefLight">
+			<add order="0x40" stat="pDef" val="#pDefLight">
 				<using kind="LIGHT" />
 			</add>
-			<add stat="pDef" val="#pDefMagic">
+			<add order="0x40" stat="pDef" val="#pDefMagic">
 				<using kind="MAGIC" />
 			</add>
 		</for>

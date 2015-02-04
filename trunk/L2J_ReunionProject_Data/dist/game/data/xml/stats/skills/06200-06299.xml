@@ -22,9 +22,9 @@
 		<set name="transformId" val="111" />
 		<for>
 			<effect name="Transformation" abnormalTime="520" val="0" abnormalLvl="99" abnormalType="transform">
-				<mul stat="weightLimit" val="11" />
-				<add stat="weightPenalty" val="9000" />
-				<add stat="inventoryLimit" val="8" />
+				<mul order="0x30" stat="weightLimit" val="11" />
+				<add order="0x40" stat="weightPenalty" val="9000" />
+				<add order="0x40" stat="inventoryLimit" val="8" />
 			</effect>
 			<effect name="Cancel" noicon="1" val="0" effectPower="100" />
 			<effect name="Buff" abnormalTime="520" noicon="1" val="0" abnormalLvl="100" abnormalType="improve_speed_avoid_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -47,9 +47,9 @@
 		<set name="transformId" val="112" />
 		<for>
 			<effect name="Transformation" abnormalTime="460" val="0" abnormalLvl="99" abnormalType="transform">
-				<mul stat="weightLimit" val="11" />
-				<add stat="weightPenalty" val="9000" />
-				<add stat="inventoryLimit" val="8" />
+				<mul order="0x30" stat="weightLimit" val="11" />
+				<add order="0x40" stat="weightPenalty" val="9000" />
+				<add order="0x40" stat="inventoryLimit" val="8" />
 			</effect>
 			<effect name="Cancel" noicon="1" val="0" effectPower="100" />
 			<effect name="Buff" abnormalTime="460" noicon="1" val="0" abnormalLvl="100" abnormalType="improve_speed_avoid_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -72,9 +72,9 @@
 		<set name="transformId" val="124" />
 		<for>
 			<effect name="Transformation" abnormalTime="215" val="0" abnormalLvl="99" abnormalType="transform">
-				<mul stat="weightLimit" val="11" />
-				<add stat="weightPenalty" val="9000" />
-				<add stat="inventoryLimit" val="8" />
+				<mul order="0x30" stat="weightLimit" val="11" />
+				<add order="0x40" stat="weightPenalty" val="9000" />
+				<add order="0x40" stat="inventoryLimit" val="8" />
 			</effect>
 			<effect name="Cancel" noicon="1" val="0" effectPower="100" />
 			<effect name="Buff" abnormalTime="215" noicon="1" val="0" abnormalLvl="100" abnormalType="improve_speed_avoid_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -97,9 +97,9 @@
 		<set name="transformId" val="113" />
 		<for>
 			<effect name="Transformation" abnormalTime="-1" val="0" abnormalLvl="99" abnormalType="transform">
-				<mul stat="weightLimit" val="11" />
-				<add stat="weightPenalty" val="9000" />
-				<add stat="inventoryLimit" val="8" />
+				<mul order="0x30" stat="weightLimit" val="11" />
+				<add order="0x40" stat="weightPenalty" val="9000" />
+				<add order="0x40" stat="inventoryLimit" val="8" />
 			</effect>
 			<effect name="Cancel" noicon="1" val="0" effectPower="100" />
 			<effect name="Buff" abnormalTime="-1" noicon="1" val="0" abnormalLvl="100" abnormalType="improve_speed_avoid_up" /> <!-- FIXME: Temp Fix until support for blockBuff by abnormalType is done -->
@@ -183,7 +183,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="15" val="0" abnormalLvl="2" abnormalType="speed_up_special">
-				<add stat="runSpd" val="66" />
+				<add order="0x40" stat="runSpd" val="66" />
 			</effect>
 		</for>
 	</skill>
@@ -198,17 +198,17 @@
 	</skill>
 	<skill id="6209" levels="4" name="Weapon Grade Penalty">
 		<table name="#cAtk"> 0.9 0.8 0.7 0.6 </table>
-		<table name="#rCrit"> 0.9 0.8 0.7 0.6 </table>
+		<table name="#rCrit"> -0.1 -0.2 -0.3 -0.4 </table>
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="P" />
 		<set name="stayAfterDeath" val="true" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="accCombat" val="16" />
-			<mul stat="rCrit" val="#rCrit" />
-			<mul stat="cAtk" val="#cAtk" />
-			<mul stat="pAtkSpd" val="0.9" />
-			<mul stat="pAtk" val="0.9" />
+			<sub order="0x40" stat="accCombat" val="16" />
+			<basemul order="0x30" stat="rCrit" val="#rCrit" />
+			<mul order="0x30" stat="cAtk" val="#cAtk" />
+			<mul order="0x30" stat="pAtkSpd" val="0.9" />
+			<mul order="0x30" stat="pAtk" val="0.9" />
 		</for>
 	</skill>
 	<skill id="6213" levels="4" name="Armor Grade Penalty">
@@ -219,10 +219,10 @@
 		<set name="stayAfterDeath" val="true" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="rEvas" val="#rEvas" />
-			<mul stat="pAtkSpd" val="#amount" />
-			<mul stat="mAtkSpd" val="#amount" />
-			<mul stat="runSpd" val="#amount" />
+			<sub order="0x40" stat="rEvas" val="#rEvas" />
+			<mul order="0x30" stat="pAtkSpd" val="#amount" />
+			<mul order="0x30" stat="mAtkSpd" val="#amount" />
+			<mul order="0x30" stat="runSpd" val="#amount" />
 		</for>
 	</skill>
 	<skill id="6217" levels="1" name="Raid Boss - Level 81">
@@ -363,7 +363,7 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Debuff" abnormalTime="10" val="0" special="stakatoroot" abnormalLvl="3" abnormalType="speed_down">
-				<mul stat="runSpd" val="0.2" />
+				<mul order="0x30" stat="runSpd" val="0.2" />
 			</effect>
 		</for>
 	</skill>
@@ -385,9 +385,9 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Debuff" abnormalTime="10" val="0" special="stakatoroot" effectPower="100" abnormalLvl="4" abnormalType="speed_down">
-				<mul stat="runSpd" val="0.5" />
-				<mul stat="pAtkSpd" val="0.5" />
-				<mul stat="mAtkSpd" val="0.5" />
+				<mul order="0x30" stat="runSpd" val="0.5" />
+				<mul order="0x30" stat="pAtkSpd" val="0.5" />
+				<mul order="0x30" stat="mAtkSpd" val="0.5" />
 			</effect>
 		</for>
 	</skill>
@@ -881,7 +881,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="10" val="0" abnormalLvl="1" abnormalType="reflect_magic_dd">
-				<add stat="vengeanceMdam" val="20" />
+				<add order="0x40" stat="vengeanceMdam" val="20" />
 			</effect>
 		</for>
 	</skill>
@@ -916,9 +916,9 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="3" abnormalType="pa_up">
-				<mul stat="pDef" val="1.15" />
-				<mul stat="pAtk" val="1.15" />
-				<mul stat="pAtkSpd" val="1.15" />
+				<mul order="0x30" stat="pDef" val="1.15" />
+				<mul order="0x30" stat="pAtk" val="1.15" />
+				<mul order="0x30" stat="pAtkSpd" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -936,7 +936,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="1800" val="0" abnormalLvl="1" abnormalType="casting_time_down">
-				<mul stat="mAtkSpd" val="1.15" />
+				<mul order="0x30" stat="mAtkSpd" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -958,8 +958,8 @@
 		<set name="targetType" val="ONE" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="2" abnormalType="pd_up">
-				<mul stat="pDef" val="1.1" />
-				<mul stat="regHp" val="1.15" />
+				<mul order="0x30" stat="pDef" val="1.1" />
+				<mul order="0x30" stat="regHp" val="1.15" />
 			</effect>
 		</for>
 	</skill>
@@ -995,8 +995,8 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="signal_a">
-				<mul stat="pDef" val="4" />
-				<mul stat="mDef" val="4" />
+				<mul order="0x30" stat="pDef" val="4" />
+				<mul order="0x30" stat="mDef" val="4" />
 			</effect>
 		</for>
 	</skill>
@@ -1015,10 +1015,10 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Buff" abnormalTime="30" val="0" abnormalLvl="1" abnormalType="signal_b">
-				<mul stat="pAtk" val="3" />
-				<mul stat="mAtk" val="3" />
-				<mul stat="pAtkSpd" val="1.25" />
-				<mul stat="mAtkSpd" val="1.25" />
+				<mul order="0x30" stat="pAtk" val="3" />
+				<mul order="0x30" stat="mAtk" val="3" />
+				<mul order="0x30" stat="pAtkSpd" val="1.25" />
+				<mul order="0x30" stat="mAtkSpd" val="1.25" />
 			</effect>
 		</for>
 	</skill>
@@ -1114,7 +1114,7 @@
 		<set name="targetType" val="CLAN" />
 		<for>
 			<effect name="Buff" abnormalTime="300" val="0" abnormalLvl="3" abnormalType="pa_up">
-				<mul stat="pAtk" val="1.15" />
+				<mul order="0x30" stat="pAtk" val="1.15" />
 			</effect>
 		</for>
 	</skill>
