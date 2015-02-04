@@ -6,7 +6,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="runSpd" val="5" />
+			<add order="0x40" stat="runSpd" val="5" />
 		</for>
 	</skill>
 	<skill id="3301" levels="1" name="Yellow Talisman of Violent Haste">
@@ -15,7 +15,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="pAtkSpd" val="10" />
+			<add order="0x40" stat="pAtkSpd" val="10" />
 		</for>
 	</skill>
 	<skill id="3302" levels="1" name="Yellow Talisman of Arcane Haste">
@@ -24,7 +24,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="mAtkSpd" val="8" />
+			<add order="0x40" stat="mAtkSpd" val="8" />
 		</for>
 	</skill>
 	<skill id="3303" levels="1" name="White Talisman of Bandages">
@@ -33,7 +33,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="bleedVuln" val="10" />
+			<sub order="0x40" stat="bleedVuln" val="10" />
 		</for>
 	</skill>
 	<skill id="3304" levels="1" name="White Talisman of Attention">
@@ -42,7 +42,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="sleepVuln" val="10" />
+			<sub order="0x40" stat="sleepVuln" val="10" />
 		</for>
 	</skill>
 	<skill id="3305" levels="1" name="White Talisman of Grounding">
@@ -51,7 +51,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="stunVuln" val="10" />
+			<sub order="0x40" stat="stunVuln" val="10" />
 		</for>
 	</skill>
 	<skill id="3306" levels="1" name="White Talisman of Bravery">
@@ -60,7 +60,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="derangementVuln" val="10" />
+			<sub order="0x40" stat="derangementVuln" val="10" />
 		</for>
 	</skill>
 	<skill id="3307" levels="1" name="White Talisman of Motion">
@@ -69,7 +69,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="paralyzeVuln" val="10" />
+			<sub order="0x40" stat="paralyzeVuln" val="10" />
 		</for>
 	</skill>
 	<skill id="3308" levels="1" name="White Talisman of Freedom">
@@ -78,7 +78,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="rootVuln" val="10" />
+			<sub order="0x40" stat="rootVuln" val="10" />
 		</for>
 	</skill>
 	<skill id="3309" levels="1" name="White Talisman of Protection">
@@ -87,7 +87,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="cancelVuln" val="100" />
+			<sub order="0x40" stat="cancelVuln" val="100" />
 		</for>
 	</skill>
 	<skill id="3310" levels="1" name="Yellow Talisman of Physical Regeneration">
@@ -96,7 +96,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="regHp" val="1.03" />
+			<mul order="0x30" stat="regHp" val="1.03" />
 		</for>
 	</skill>
 	<skill id="3311" levels="1" name="Yellow Talisman of CP Regeneration">
@@ -105,7 +105,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="regCp" val="1.03" />
+			<mul order="0x30" stat="regCp" val="1.03" />
 		</for>
 	</skill>
 	<skill id="3312" levels="1" name="Yellow Talisman of Healing">
@@ -114,7 +114,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="healEffect" val="40" />
+			<add order="0x40" stat="healEffect" val="40" />
 		</for>
 	</skill>
 	<skill id="3313" levels="1" name="Yellow Talisman of Alacrity">
@@ -123,9 +123,9 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="pAtkSpd" val="5" />
-			<add stat="mAtkSpd" val="4" />
-			<add stat="runSpd" val="3" />
+			<add order="0x40" stat="pAtkSpd" val="5" />
+			<add order="0x40" stat="mAtkSpd" val="4" />
+			<add order="0x40" stat="runSpd" val="3" />
 		</for>
 	</skill>
 	<skill id="3314" levels="1" name="Grey Talisman of Weight Training">
@@ -134,7 +134,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="weightLimit" val="1.1" />
+			<mul order="0x30" stat="weightLimit" val="1.1" />
 		</for>
 	</skill>
 	<skill id="3315" levels="1" name="Grey Talisman of Fishing">
@@ -149,7 +149,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="defCritRate" val="0.97" />
+			<mul order="0x30" stat="defCritRate" val="0.97" />
 		</for>
 	</skill>
 	<skill id="3317" levels="1" name="Yellow Talisman of Critical Reduction">
@@ -158,7 +158,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="defCritDamageAdd" val="100" />
+			<sub order="0x40" stat="defCritDamageAdd" val="100" />
 		</for>
 	</skill>
 	<skill id="3318" levels="1" name="Flag Display">
@@ -186,7 +186,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="gustVuln" val="100" />
+			<sub order="0x40" stat="gustVuln" val="100" />
 		</for>
 	</skill>
 	<skill id="3320" levels="1" name="Yellow Talisman of Mental Regeneration">
@@ -195,7 +195,7 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="regMp" val="1.03" />
+			<mul order="0x30" stat="regMp" val="1.03" />
 		</for>
 	</skill>
 	<skill id="3321" levels="1" name="Blue Talisman of Evasion">
@@ -216,8 +216,8 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
-				<add stat="rEvas" val="2" />
-				<mul stat="defCritRate" val="0.95" />
+				<add order="0x40" stat="rEvas" val="2" />
+				<mul order="0x30" stat="defCritRate" val="0.95" />
 			</effect>
 		</for>
 	</skill>
@@ -225,42 +225,42 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<set stat="talisman" val="1" />
+			<set order="0x50" stat="talisman" val="1" />
 		</for>
 	</skill>
 	<skill id="3323" levels="1" name="Bronze Bracelet">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<set stat="talisman" val="2" />
+			<set order="0x50" stat="talisman" val="2" />
 		</for>
 	</skill>
 	<skill id="3324" levels="1" name="Steel Bracelet">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<set stat="talisman" val="3" />
+			<set order="0x50" stat="talisman" val="3" />
 		</for>
 	</skill>
 	<skill id="3325" levels="1" name="Mithril Bracelet">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<set stat="talisman" val="4" />
+			<set order="0x50" stat="talisman" val="4" />
 		</for>
 	</skill>
 	<skill id="3326" levels="1" name="Jewelry Bracelet">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<set stat="talisman" val="5" />
+			<set order="0x50" stat="talisman" val="5" />
 		</for>
 	</skill>
 	<skill id="3327" levels="1" name="Oriharukon Bracelet">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<set stat="talisman" val="6" />
+			<set order="0x50" stat="talisman" val="6" />
 		</for>
 	</skill>
 	<skill id="3328" levels="1" name="Double Stab">
@@ -482,12 +482,12 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="pDef" val="1.054" /> <!-- P. Def. +5.4% -->
-			<add stat="maxHp" val="492" /> <!-- Max HP +492 effect -->
-			<mul stat="healEffect" val="1.03" /> <!-- Received Increased Heal +3% -->
-			<sub stat="stunVuln" val="13" /> <!-- Shock resistance is increased +13% -->
-			<add stat="darkRes" val="8" /> <!-- Darkness resistance is increased +8 -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<mul order="0x30" stat="pDef" val="1.054" /> <!-- P. Def. +5.4% -->
+			<add order="0x40" stat="maxHp" val="492" /> <!-- Max HP +492 effect -->
+			<mul order="0x30" stat="healEffect" val="1.03" /> <!-- Received Increased Heal +3% -->
+			<sub order="0x40" stat="stunVuln" val="13" /> <!-- Shock resistance is increased +13% -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Darkness resistance is increased +8 -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3349" levels="1" name="Dynasty Breast Plate - Weapon Master">
@@ -496,12 +496,12 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="pAtk" val="1.054" /> <!-- P. Atk +5.4% -->
-			<add stat="maxHp" val="492" /> <!-- MaxHP +492 -->
-			<add stat="rCrit" val="24.6" /> <!-- Critical Damage Chance +24.6 -->
-			<add stat="cAtkAdd" val="234" /> <!-- Critical Damage +234 -->
-			<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<mul order="0x30" stat="pAtk" val="1.054" /> <!-- P. Atk +5.4% -->
+			<add order="0x40" stat="maxHp" val="492" /> <!-- MaxHP +492 -->
+			<add order="0x40" stat="rCrit" val="24.6" /> <!-- Critical Damage Chance +24.6 -->
+			<add order="0x40" stat="cAtkAdd" val="234" /> <!-- Critical Damage +234 -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3350" levels="1" name="Dynasty Breast Plate - Force Master">
@@ -510,11 +510,11 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="pAtk" val="1.054" /> <!-- P. Atk. +5.4% -->
-			<add stat="maxHp" val="492" /> <!-- HP +492 -->
-			<add stat="darkRes" val="8" /> <!-- Resistance to Darkness attacks +8 -->
-			<mul stat="PhysicalMpConsumeRate" val="0.95" /> <!-- MP consumption of the active skill is decreased -5% -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<mul order="0x30" stat="pAtk" val="1.054" /> <!-- P. Atk. +5.4% -->
+			<add order="0x40" stat="maxHp" val="492" /> <!-- HP +492 -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Resistance to Darkness attacks +8 -->
+			<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95" /> <!-- MP consumption of the active skill is decreased -5% -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3351" levels="1" name="Dynasty Breast Plate - Bard">
@@ -523,11 +523,11 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="pDef" val="1.054" /> <!-- P. Def. +5.4% -->
-			<add stat="maxHp" val="492" /> <!-- Max HP +492 effect -->
-			<mul stat="DanceMpConsumeRate" val="0.95" /> <!-- MP consumption is decreased when song and dance skills are used -5% -->
-			<add stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<mul order="0x30" stat="pDef" val="1.054" /> <!-- P. Def. +5.4% -->
+			<add order="0x40" stat="maxHp" val="492" /> <!-- Max HP +492 effect -->
+			<mul order="0x30" stat="DanceMpConsumeRate" val="0.95" /> <!-- MP consumption is decreased when song and dance skills are used -5% -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3352" levels="1" name="Dynasty Leather Armor - Dagger Master">
@@ -536,12 +536,12 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="rEvas" val="4.3" /> <!-- Evasion +4.3 -->
-			<add stat="maxHp" val="492" /> <!-- Max HP +492 Effect -->
-			<mul stat="pAtkSpd" val="1.0266" /> <!-- Atk. Spd. are increased +2.66% -->
-			<sub stat="rootVuln" val="13" /> <!-- Hold resistance are increased +13 -->
-			<add stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<add order="0x40" stat="rEvas" val="4.3" /> <!-- Evasion +4.3 -->
+			<add order="0x40" stat="maxHp" val="492" /> <!-- Max HP +492 Effect -->
+			<mul order="0x30" stat="pAtkSpd" val="1.0266" /> <!-- Atk. Spd. are increased +2.66% -->
+			<sub order="0x40" stat="rootVuln" val="13" /> <!-- Hold resistance are increased +13 -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3353" levels="1" name="Dynasty Leather Armor - Bow Master">
@@ -550,12 +550,12 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<add stat="accCombat" val="4.3" /> <!-- Accuracy +4.3 -->
-			<add stat="maxMp" val="321" /> <!-- Max MP +321 Effect -->
-			<mul stat="pAtkSpd" val="1.0266" /> <!-- Atk. Spd. are increased +2.66% -->
-			<add stat="regMp" val="1.72" /> <!-- MP recovery are increased +1.72 -->
-			<add stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<add order="0x40" stat="accCombat" val="4.3" /> <!-- Accuracy +4.3 -->
+			<add order="0x40" stat="maxMp" val="321" /> <!-- Max MP +321 Effect -->
+			<mul order="0x30" stat="pAtkSpd" val="1.0266" /> <!-- Atk. Spd. are increased +2.66% -->
+			<add order="0x40" stat="regMp" val="1.72" /> <!-- MP recovery are increased +1.72 -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3354" levels="1" name="Dynasty Tunic - Healer">
@@ -564,12 +564,12 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
-			<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
-			<add stat="healEffect" val="20" /> <!-- Increase amount of heal +20 -->
-			<sub stat="cancel" val="15" /> <!-- Decrease magic cancel rate -15% -->
-			<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<mul order="0x30" stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+			<add order="0x40" stat="maxMp" val="321" /> <!-- Max MP +321 -->
+			<add order="0x40" stat="healEffect" val="20" /> <!-- Increase amount of heal +20 -->
+			<sub order="0x40" stat="cancel" val="15" /> <!-- Decrease magic cancel rate -15% -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3355" levels="1" name="Dynasty Tunic - Enchanter">
@@ -578,12 +578,12 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
-			<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
-			<sub stat="cancel" val="15" /> <!-- Decrease magic cancel rate -15% -->
-			<mul stat="MagicalMpConsumeRate" val="0.95" /> <!-- Decrease MP consumption -5% -->
-			<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<mul order="0x30" stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+			<add order="0x40" stat="maxMp" val="321" /> <!-- Max MP +321 -->
+			<sub order="0x40" stat="cancel" val="15" /> <!-- Decrease magic cancel rate -15% -->
+			<mul order="0x30" stat="MagicalMpConsumeRate" val="0.95" /> <!-- Decrease MP consumption -5% -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3356" levels="1" name="Dynasty Tunic - Summoner">
@@ -592,12 +592,12 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
-			<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
-			<mul stat="pDef" val="1.026" /> <!-- P. Def. +2.6% -->
-			<mul stat="pAtk" val="1.026" /> <!-- Increase P. Atk. +2.6% -->
-			<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<mul order="0x30" stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+			<add order="0x40" stat="maxMp" val="321" /> <!-- Max MP +321 -->
+			<mul order="0x30" stat="pDef" val="1.026" /> <!-- P. Def. +2.6% -->
+			<mul order="0x30" stat="pAtk" val="1.026" /> <!-- Increase P. Atk. +2.6% -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3357" levels="1" name="Dynasty Tunic - Wizard">
@@ -606,11 +606,11 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
-			<mul stat="mAtk" val="1.054" /> <!-- Increase M. Atk +5.4% -->
-			<add stat="maxMp" val="321" /> <!-- Max MP +321 -->
-			<add stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
-			<add stat="cloak" val="1" /> <!-- Opens cloak slot -->
+			<mul order="0x30" stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
+			<mul order="0x30" stat="mAtk" val="1.054" /> <!-- Increase M. Atk +5.4% -->
+			<add order="0x40" stat="maxMp" val="321" /> <!-- Max MP +321 -->
+			<add order="0x40" stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
+			<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 		</for>
 	</skill>
 	<skill id="3358" levels="1" name="Flag Equip">
@@ -620,11 +620,11 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="runSpd" val="0.2" />
-			<mul stat="pAtkSpd" val="0.2" />
-			<mul stat="pAtk" val="0.2" />
-			<mul stat="mAtkSpd" val="0.2" />
-			<mul stat="mAtk" val="0.2" />
+			<mul order="0x30" stat="runSpd" val="0.2" />
+			<mul order="0x30" stat="pAtkSpd" val="0.2" />
+			<mul order="0x30" stat="pAtk" val="0.2" />
+			<mul order="0x30" stat="mAtkSpd" val="0.2" />
+			<mul order="0x30" stat="mAtk" val="0.2" />
 
 		</for>
 	</skill>
@@ -653,8 +653,8 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<mul stat="PhysicalMpConsumeRate" val="0.88" />
-			<mul stat="MagicalMpConsumeRate" val="0.88" />
+			<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.88" />
+			<mul order="0x30" stat="MagicalMpConsumeRate" val="0.88" />
 		</for>
 	</skill>
 	<skill id="3361" levels="1" name="Summon Agathion - Fortress">
@@ -688,21 +688,21 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="stunVuln" val="18" /> <!-- Stun Resistance +18 -->
+			<sub order="0x40" stat="stunVuln" val="18" /> <!-- Stun Resistance +18 -->
 		</for>
 	</skill>
 	<skill id="3366" levels="1" name="Dynasty Resistance Ring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="stunVuln" val="8" /> <!-- Stun Resistance +8 -->
+			<sub order="0x40" stat="stunVuln" val="8" /> <!-- Stun Resistance +8 -->
 		</for>
 	</skill>
 	<skill id="3367" levels="1" name="Dynasty Resistance Earring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="stunVuln" val="12" /> <!-- Stun Resistance +12 -->
+			<sub order="0x40" stat="stunVuln" val="12" /> <!-- Stun Resistance +12 -->
 		</for>
 	</skill>
 	<skill id="3368" levels="1" name="Traits Strengthen Necklace">
@@ -724,21 +724,21 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="bleedVuln" val="11" /> <!-- Bleed Resistance +11 -->
+			<sub order="0x40" stat="bleedVuln" val="11" /> <!-- Bleed Resistance +11 -->
 		</for>
 	</skill>
 	<skill id="3372" levels="1" name="Dynasty Resistance Ring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="bleedVuln" val="5" /> <!-- Bleed Resistance +5 -->
+			<sub order="0x40" stat="bleedVuln" val="5" /> <!-- Bleed Resistance +5 -->
 		</for>
 	</skill>
 	<skill id="3373" levels="1" name="Dynasty Resistance Earring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="bleedVuln" val="8" /> <!-- Bleed Resistance +8 -->
+			<sub order="0x40" stat="bleedVuln" val="8" /> <!-- Bleed Resistance +8 -->
 		</for>
 	</skill>
 	<skill id="3374" levels="1" name="Traits Strengthen Necklace">
@@ -760,21 +760,21 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="poisonVuln" val="16" /> <!-- Poison Resistance +16 -->
+			<sub order="0x40" stat="poisonVuln" val="16" /> <!-- Poison Resistance +16 -->
 		</for>
 	</skill>
 	<skill id="3378" levels="1" name="Dynasty Resistance Ring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="poisonVuln" val="7" /> <!-- Poison Resistance +7 -->
+			<sub order="0x40" stat="poisonVuln" val="7" /> <!-- Poison Resistance +7 -->
 		</for>
 	</skill>
 	<skill id="3379" levels="1" name="Dynasty Resistance Earring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="poisonVuln" val="11" /> <!-- Poison Resistance +11 -->
+			<sub order="0x40" stat="poisonVuln" val="11" /> <!-- Poison Resistance +11 -->
 		</for>
 	</skill>
 	<skill id="3380" levels="1" name="Traits Strengthen Necklace">
@@ -796,21 +796,21 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="paralyzeVuln" val="9" /> <!-- Paralysis Resistance +9 -->
+			<sub order="0x40" stat="paralyzeVuln" val="9" /> <!-- Paralysis Resistance +9 -->
 		</for>
 	</skill>
 	<skill id="3384" levels="1" name="Dynasty Resistance Ring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="paralyzeVuln" val="4" /> <!-- Paralysis Resistance +4 -->
+			<sub order="0x40" stat="paralyzeVuln" val="4" /> <!-- Paralysis Resistance +4 -->
 		</for>
 	</skill>
 	<skill id="3385" levels="1" name="Dynasty Resistance Earring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="paralyzeVuln" val="6" /> <!-- Paralysis Resistance +6 -->
+			<sub order="0x40" stat="paralyzeVuln" val="6" /> <!-- Paralysis Resistance +6 -->
 		</for>
 	</skill>
 	<skill id="3386" levels="1" name="Traits Strengthen Necklace">
@@ -832,21 +832,21 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="rootVuln" val="18" /> <!-- Hold Resistance +18 -->
+			<sub order="0x40" stat="rootVuln" val="18" /> <!-- Hold Resistance +18 -->
 		</for>
 	</skill>
 	<skill id="3390" levels="1" name="Dynasty Resistance Ring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="rootVuln" val="8" /> <!-- Hold Resistance +8 -->
+			<sub order="0x40" stat="rootVuln" val="8" /> <!-- Hold Resistance +8 -->
 		</for>
 	</skill>
 	<skill id="3391" levels="1" name="Dynasty Resistance Earring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="rootVuln" val="12" /> <!-- Hold Resistance +12 -->
+			<sub order="0x40" stat="rootVuln" val="12" /> <!-- Hold Resistance +12 -->
 		</for>
 	</skill>
 	<skill id="3392" levels="1" name="Traits Strengthen Necklace">
@@ -868,21 +868,21 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="sleepVuln" val="18" /> <!-- Sleep Resistance +18 -->
+			<sub order="0x40" stat="sleepVuln" val="18" /> <!-- Sleep Resistance +18 -->
 		</for>
 	</skill>
 	<skill id="3396" levels="1" name="Dynasty Resistance Ring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="sleepVuln" val="8" /> <!-- Sleep Resistance +8 -->
+			<sub order="0x40" stat="sleepVuln" val="8" /> <!-- Sleep Resistance +8 -->
 		</for>
 	</skill>
 	<skill id="3397" levels="1" name="Dynasty Resistance Earring">
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<sub stat="sleepVuln" val="12" /> <!-- Sleep Resistance +12 -->
+			<sub order="0x40" stat="sleepVuln" val="12" /> <!-- Sleep Resistance +12 -->
 		</for>
 	</skill>
 	<skill id="3398" levels="1" name="Traits Strengthen Necklace">
